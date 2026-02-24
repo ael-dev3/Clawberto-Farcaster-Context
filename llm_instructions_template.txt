@@ -1,0 +1,14 @@
+﻿ESTIMATED_LLM_TOKENS_FOR_SCRAPED_DATA: <filled at runtime>
+
+Use this template when analyzing a generated Farcaster daily output file.
+
+1. Read all JSON lines after metadata headers.
+2. Keep algorithmic_score_1_to_10 and rank unchanged.
+3. Use author_username_with_fid for user references.
+4. Report:
+   - total volume (posts vs comments)
+   - top 20 casts by score
+   - recurring topics
+   - engagement quality patterns (genuine_like_count, mean_liker_score)
+5. Flag suspicious engagement patterns and likely spam.
+6. Do not invent missing fields.
