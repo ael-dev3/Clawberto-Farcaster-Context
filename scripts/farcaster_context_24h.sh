@@ -23,6 +23,9 @@ python3 "$REPO_DIR/scripts/farcaster_daily_scraper.py" \
   --final-comments-per-post "${FC_CONTEXT_COMMENTS_PER_POST:-3}" \
   --final-snippet-length "${FC_CONTEXT_SNIPPET_LEN:-180}" \
   --exclude-themes "${FC_CONTEXT_EXCLUDE_THEMES:-general_chat,daily_greetings,empty}" \
+  --exclude-empty-records \
+  --exclude-promo-records \
+  --exclude-gm-gn-records \
   --focus-themes "${FC_CONTEXT_FOCUS_THEMES:-}" \
   --output "$OUTPUT_DIR/farcaster_24h_${TIMESTAMP}.txt" \
   --instructions-output "$OUTPUT_DIR/llm_instructions_24h_${TIMESTAMP}.txt" \

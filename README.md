@@ -67,17 +67,23 @@ Use additional flags supported by `farcaster_daily_scraper.py`, including:
 - `--final-top-posts`
 - `--final-comments-per-post`
 - `--final-snippet-length`
+- `--exclude-empty-records`
+- `--exclude-promo-records`
+- `--exclude-gm-gn-records`
 - `--focus-themes`
 - `--exclude-themes`
 
 ### Theme knobs
 
-Defaults for the bundled 24h and 1h skills exclude noisy `general_chat`, `daily_greetings`, and `empty` themes. You can tune this per run with environment variables:
+Defaults for the bundled 24h and 1h skills exclude noisy `general_chat`, `daily_greetings`, and `empty` themes, while also filtering out empty, promo, and GM/GN entries by default.
+You can tune this per run with environment variables:
 
 ```bash
 export FC_CONTEXT_FOCUS_THEMES="protocol_fork,security_ops,base_culture"
 export FC_CONTEXT_EXCLUDE_THEMES="general_chat,daily_greetings"
 ```
+
+If you run the scraper script directly, include `--exclude-empty-records`, `--exclude-promo-records`, and `--exclude-gm-gn-records` explicitly.
 
 Supported theme values:
 

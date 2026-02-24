@@ -164,6 +164,9 @@ class ScrapeConfig:
     final_snippet_length: int
     focus_themes: tuple[str, ...]
     exclude_themes: tuple[str, ...]
+    filter_empty_records: bool
+    filter_promo_records: bool
+    filter_gm_gn_records: bool
 
 
 def parse_date(value: str) -> date:
@@ -1194,6 +1197,30 @@ def detect_content_label(text: str) -> str:
     return "general"
 
 
+def is_gm_gn_entry(value: Any) -> bool:
+    text = normalize_text(value).lower()
+    if not text:
+        return False
+    if text in {"gm", "gn", "good morning", "good afternoon", "good evening", "good night", "good noon"}:
+        return True
+    if re.search(r"\bgm\b", text) or re.search(r"\bgn\b", text):
+        return True
+    if re.search(r"\bg\W*m\b", text):
+        return True
+    if re.search(r"\bg\W*n\b", text):
+        return True
+    if re.search(r"\bgood\s+(morning|afternoon|evening|night|noon)\b", text):
+        return True
+    if re.search(r"\bm\W*o\W*r\W*n\W*i\W*n\W*g\b", text):
+        return True
+    if re.search(
+        r"\b(base\s*morning|base\s*evening|base\s*noon|happy\s+(?:monday|tuesday|wednesday|thursday|friday|saturday|sunday|tree\s+tuesday))\b",
+        text,
+    ):
+        return True
+    return False
+
+
 def classify_visibility_tier(score: float, within_ranking_window: bool) -> str:
     if not within_ranking_window:
         return "STALE"
@@ -1212,6 +1239,7 @@ def build_scored_records(
 
     like_metrics_by_hash: dict[str, dict[str, Any]] = {}
     casts_needing_likes = []
+    filter_exclusion_counts: Counter[str] = Counter()
 
     for cast in casts:
         cast_hash = cast.get("hash")
@@ -1332,6 +1360,17 @@ def build_scored_records(
         channel = cast.get("channel") or {}
         text_value = cast.get("text")
         text_preview = preview_text(text_value, limit=360)
+        content_label = detect_content_label(text_preview)
+        if config.filter_empty_records and content_label == "empty":
+            filter_exclusion_counts["empty"] += 1
+            continue
+        if config.filter_promo_records and content_label == "promo":
+            filter_exclusion_counts["promo"] += 1
+            continue
+        if config.filter_gm_gn_records and is_gm_gn_entry(text_value):
+            filter_exclusion_counts["gm_gn"] += 1
+            continue
+
         author_fid = cast_author.get("fid")
         author_username = cast_author.get("username")
         if author_username is not None and author_fid is not None:
@@ -1356,7 +1395,7 @@ def build_scored_records(
                 "text_preview": text_preview,
                 "parent_hash": cast.get("parent_hash"),
                 "cast_url": build_cast_url(cast_hash),
-                "content_label": detect_content_label(text_preview),
+                "content_label": content_label,
                 "age_hours": age_hours,
                 "within_like_ranking_window": within_like_ranking_window,
                 "ranking_like_count": ranking_like_count,
@@ -1378,6 +1417,17 @@ def build_scored_records(
                     "stale casts ranked below fresh ones"
                 ),
             }
+        )
+
+    if filter_exclusion_counts:
+        logging.info(
+            "Filtered scored records: empty=%s promo=%s gm_gn=%s (config filters enabled: empty=%s promos=%s gm_gn=%s)",
+            filter_exclusion_counts.get("empty", 0),
+            filter_exclusion_counts.get("promo", 0),
+            filter_exclusion_counts.get("gm_gn", 0),
+            config.filter_empty_records,
+            config.filter_promo_records,
+            config.filter_gm_gn_records,
         )
 
     if not scored:
@@ -3096,6 +3146,21 @@ def parse_args() -> argparse.Namespace:
         help="Max text length per post/comment snippet in final context output.",
     )
     parser.add_argument(
+        "--exclude-empty-records",
+        action="store_true",
+        help="Drop empty / no-content casts from scored output."
+    )
+    parser.add_argument(
+        "--exclude-promo-records",
+        action="store_true",
+        help="Drop promo/ticker/airdrops style casts from scored output."
+    )
+    parser.add_argument(
+        "--exclude-gm-gn-records",
+        action="store_true",
+        help="Drop GM/GN/greeting-style casts from scored output."
+    )
+    parser.add_argument(
         "--focus-themes",
         default="",
         help="Comma-separated themes to keep (e.g. protocol_fork,security_ops,base_culture). Supported themes: protocol_fork,token_promo,security_ops,apps_games,base_culture,daily_greetings,general_chat,empty.",
@@ -3237,6 +3302,9 @@ def main() -> None:
         final_snippet_length=args.final_snippet_length,
         focus_themes=args.focus_themes,
         exclude_themes=args.exclude_themes,
+        filter_empty_records=args.exclude_empty_records,
+        filter_promo_records=args.exclude_promo_records,
+        filter_gm_gn_records=args.exclude_gm_gn_records,
     )
 
     session = (
