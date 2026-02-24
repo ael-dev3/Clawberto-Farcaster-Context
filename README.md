@@ -67,6 +67,35 @@ Use additional flags supported by `farcaster_daily_scraper.py`, including:
 - `--final-top-posts`
 - `--final-comments-per-post`
 - `--final-snippet-length`
+- `--focus-themes`
+- `--exclude-themes`
+
+### Theme knobs
+
+Defaults for the bundled 24h and 1h skills exclude noisy `general_chat`, `daily_greetings`, and `empty` themes. You can tune this per run with environment variables:
+
+```bash
+export FC_CONTEXT_FOCUS_THEMES="protocol_fork,security_ops,base_culture"
+export FC_CONTEXT_EXCLUDE_THEMES="general_chat,daily_greetings"
+```
+
+Supported theme values:
+
+- `protocol_fork`
+- `token_promo`
+- `security_ops`
+- `apps_games`
+- `base_culture`
+- `daily_greetings`
+- `general_chat`
+- `empty`
+
+Examples:
+
+```bash
+bash scripts/farcaster_context_24h.sh --focus-themes protocol_fork,security_ops
+bash scripts/farcaster_context_24h.sh --exclude-themes token_promo,general_chat,daily_greetings
+```
 
 For full flag list, run:
 

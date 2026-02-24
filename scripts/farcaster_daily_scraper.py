@@ -162,6 +162,8 @@ class ScrapeConfig:
     final_top_posts: int
     final_comments_per_post: int
     final_snippet_length: int
+    focus_themes: tuple[str, ...]
+    exclude_themes: tuple[str, ...]
 
 
 def parse_date(value: str) -> date:
@@ -1786,6 +1788,60 @@ def theme_display_name(theme: str) -> str:
     return mapping.get(theme, theme)
 
 
+THEME_ALIASES = {
+    "protocol": "protocol_fork",
+    "protocol_fork": "protocol_fork",
+    "fork": "protocol_fork",
+    "forks": "protocol_fork",
+    "token": "token_promo",
+    "token_promo": "token_promo",
+    "promo": "token_promo",
+    "airdrop": "token_promo",
+    "airdrops": "token_promo",
+    "security": "security_ops",
+    "security_ops": "security_ops",
+    "ops": "security_ops",
+    "app": "apps_games",
+    "apps": "apps_games",
+    "apps_games": "apps_games",
+    "game": "apps_games",
+    "base": "base_culture",
+    "base_culture": "base_culture",
+    "greeting": "daily_greetings",
+    "greetings": "daily_greetings",
+    "daily_greetings": "daily_greetings",
+    "chat": "general_chat",
+    "general": "general_chat",
+    "general_chat": "general_chat",
+    "empty": "empty",
+}
+
+KNOWN_THEMES = frozenset(THEME_ALIASES.values())
+
+
+def parse_theme_filters(raw_value: str) -> tuple[str, ...]:
+    raw_value = (raw_value or "").strip()
+    if not raw_value:
+        return tuple()
+
+    normalized: list[str] = []
+    unknown: list[str] = []
+    for item in raw_value.split(","):
+        token = item.strip().lower()
+        if not token:
+            continue
+        canonical = THEME_ALIASES.get(token.replace(" ", "_").replace("-", "_"), token)
+        if canonical not in KNOWN_THEMES:
+            unknown.append(token)
+            continue
+        if canonical not in normalized:
+            normalized.append(canonical)
+
+    if unknown:
+        raise ValueError(f"Unknown theme value(s): {', '.join(sorted(unknown))}")
+    return tuple(normalized)
+
+
 FINAL_GREETING_PATTERN = re.compile(
     r"\b(?:gm|gn|bm|ge|ga|bn|good morning|good night|good evening|good afternoon|morning|evening|afternoon|night|morning fam|base morning|base noon|base evening|good noon|happy tree tuesday|tree tuesday|happy monday|happy tuesday|happy wednesday|happy thursday|happy friday|happy saturday|happy sunday)\b",
     re.IGNORECASE,
@@ -2125,11 +2181,15 @@ def write_final_context_txt(
     final_comments_per_post: int,
     final_snippet_length: int,
     hub_url: str | None = None,
+    focus_themes: tuple[str, ...] = tuple(),
+    exclude_themes: tuple[str, ...] = tuple(),
 ) -> int:
     tz = resolve_timezone(timezone_name)
     top_cast_limit = max(200, get_int(final_top_posts, default=200))
     thread_comments_per_post = max(0, min(final_comments_per_post, 5))
     snippet_len = max(100, min(final_snippet_length, 200))
+    focus_theme_set = set(focus_themes or ())
+    exclude_theme_set = set(exclude_themes or ())
 
     total = len(records)
     posts = [record for record in records if record.get("type") == "post"]
@@ -2161,6 +2221,14 @@ def write_final_context_txt(
     exclusion_counts: Counter[str] = Counter()
     scored_candidates: list[tuple[float, int, int, int, int, dict[str, Any]]] = []
     for record in records:
+        theme = infer_daily_theme(record.get("text"))
+        if focus_theme_set and theme not in focus_theme_set:
+            exclusion_counts["excluded_by_theme_focus"] += 1
+            continue
+        if theme in exclude_theme_set:
+            exclusion_counts["excluded_by_theme"] += 1
+            continue
+
         exclusion_reason = final_exclusion_reason(record)
         if exclusion_reason is not None:
             exclusion_counts[exclusion_reason] += 1
@@ -2626,6 +2694,11 @@ def write_final_context_txt(
 
     summary_lines = [
         (
+            "S00 Theme filter active: "
+            f"include={','.join(sorted(focus_theme_set)) if focus_theme_set else 'all'} | "
+            f"exclude={','.join(sorted(exclude_theme_set)) if exclude_theme_set else 'none'}"
+        ),
+        (
             f"S01 Captured {total} casts ({len(posts)} posts, {len(comments)} comments) "
             f"from {unique_authors} authors."
         ),
@@ -3023,6 +3096,16 @@ def parse_args() -> argparse.Namespace:
         help="Max text length per post/comment snippet in final context output.",
     )
     parser.add_argument(
+        "--focus-themes",
+        default="",
+        help="Comma-separated themes to keep (e.g. protocol_fork,security_ops,base_culture). Supported themes: protocol_fork,token_promo,security_ops,apps_games,base_culture,daily_greetings,general_chat,empty.",
+    )
+    parser.add_argument(
+        "--exclude-themes",
+        default="",
+        help="Comma-separated themes to remove. Same values as --focus-themes.",
+    )
+    parser.add_argument(
         "--verbose",
         action="store_true",
         help="Enable debug-level logs.",
@@ -3064,6 +3147,20 @@ def parse_args() -> argparse.Namespace:
         parser.error("--final-snippet-length must be > 0")
     if args.snapchain_event_id_span <= 0:
         parser.error("--snapchain-event-id-span must be > 0")
+
+    try:
+        args.focus_themes = parse_theme_filters(args.focus_themes)
+    except ValueError as exc:
+        parser.error(str(exc))
+
+    try:
+        args.exclude_themes = parse_theme_filters(args.exclude_themes)
+    except ValueError as exc:
+        parser.error(str(exc))
+
+    overlap = set(args.focus_themes) & set(args.exclude_themes)
+    if overlap:
+        parser.error(f"Theme filters overlap between --focus-themes and --exclude-themes: {', '.join(sorted(overlap))}")
 
     try:
         shard_values = tuple(
@@ -3138,6 +3235,8 @@ def main() -> None:
         final_top_posts=args.final_top_posts,
         final_comments_per_post=args.final_comments_per_post,
         final_snippet_length=args.final_snippet_length,
+        focus_themes=args.focus_themes,
+        exclude_themes=args.exclude_themes,
     )
 
     session = (
@@ -3187,6 +3286,8 @@ def main() -> None:
         final_comments_per_post=config.final_comments_per_post,
         final_snippet_length=config.final_snippet_length,
         hub_url=config.hub_url if config.source == "snapchain" else None,
+        focus_themes=config.focus_themes,
+        exclude_themes=config.exclude_themes,
     )
 
     posts = sum(1 for r in scored_records if r.get("type") == "post")

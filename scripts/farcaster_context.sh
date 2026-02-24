@@ -14,6 +14,8 @@ ARGS=(
   --final-top-posts "${FC_CONTEXT_TOP_POSTS:-12}"
   --final-comments-per-post "${FC_CONTEXT_COMMENTS_PER_POST:-3}"
   --final-snippet-length "${FC_CONTEXT_SNIPPET_LEN:-180}"
+  --exclude-themes "${FC_CONTEXT_EXCLUDE_THEMES:-}"
+  --focus-themes "${FC_CONTEXT_FOCUS_THEMES:-}"
   --output "$OUTPUT_DIR/farcaster_${DATE}.txt"
   --instructions-output "$OUTPUT_DIR/llm_instructions_${DATE}.txt"
   --readable-output "$OUTPUT_DIR/farcaster_${DATE}_readable.txt"
@@ -29,5 +31,5 @@ fi
 python3 "$REPO_DIR/scripts/farcaster_daily_scraper.py" "${ARGS[@]}" "$@"
 
 echo "
-Latest final context:
-$(tail -n 120 "$OUTPUT_DIR/farcaster_${DATE}_final.txt")"
+Latest final context:"
+tail -n 120 "$OUTPUT_DIR/farcaster_${DATE}_final.txt"
