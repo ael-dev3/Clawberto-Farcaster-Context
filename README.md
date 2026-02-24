@@ -24,19 +24,19 @@ $env:NEYNAR_API_KEY="YOUR_KEY"
 ## Run for the day script is executed
 
 ```bash
-python farcaster_daily_scraper.py
+python scripts/farcaster_daily_scraper.py
 ```
 
 ## Run keyless direct Snapchain 24h scrape
 
 ```bash
-python farcaster_daily_scraper.py --source snapchain --collect-last-hours 24 --timezone UTC
+python scripts/farcaster_daily_scraper.py --source snapchain --collect-last-hours 24 --timezone UTC
 ```
 
 ## Run for a specific day (example: 2/15/2026)
 
 ```bash
-python farcaster_daily_scraper.py --date 2/15/2026 --timezone UTC
+python scripts/farcaster_daily_scraper.py --date 2/15/2026 --timezone UTC
 ```
 
 ## Outputs
