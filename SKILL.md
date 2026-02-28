@@ -8,8 +8,8 @@ description: "Generate Farcaster context snapshots (24h or 1h) for @clawberto wi
 
 This repo supports two operational modes:
 
-- Run 24-hour rolling context: `scripts/farcaster_context_24h.sh`
-- Run 1-hour rolling context: `scripts/farcaster_context_last_hour.sh`
+- Run 24-hour rolling context: `bash scripts/farcaster_context_24h.sh`
+- Run 1-hour rolling context: `bash scripts/farcaster_context_last_hour.sh`
 
 Both modes write timestamped files under `data/`:
 - raw scored output
@@ -20,8 +20,8 @@ Both modes write timestamped files under `data/`:
 Example:
 
 ```bash
-python3 scripts/farcaster_context_24h.sh
-python3 scripts/farcaster_context_last_hour.sh
+bash scripts/farcaster_context_24h.sh
+bash scripts/farcaster_context_last_hour.sh
 ```
 
 Use `--help` on any script for extra flags.

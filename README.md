@@ -63,7 +63,7 @@ python3 scripts/farcaster_daily_scraper.py --source snapchain --collect-last-hou
 Use additional flags supported by `farcaster_daily_scraper.py`, including:
 - `--query`
 - `--timezone`
-- `--source snapchain|neynar`
+- `--source snapchain`
 - `--final-top-posts`
 - `--final-comments-per-post`
 - `--final-snippet-length`

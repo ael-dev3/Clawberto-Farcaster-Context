@@ -133,6 +133,13 @@ KEYWORD_STOPWORDS = {
     "your",
 }
 
+CAST_ADD_MESSAGE_TYPES = {"MESSAGE_TYPE_CAST_ADD", "CAST_ADD", "1"}
+CAST_REMOVE_MESSAGE_TYPES = {"MESSAGE_TYPE_CAST_REMOVE", "CAST_REMOVE", "2"}
+REACTION_ADD_MESSAGE_TYPES = {"MESSAGE_TYPE_REACTION_ADD", "REACTION_ADD", "3"}
+REACTION_REMOVE_MESSAGE_TYPES = {"MESSAGE_TYPE_REACTION_REMOVE", "REACTION_REMOVE", "4"}
+REACTION_LIKE_TYPES = {"REACTION_TYPE_LIKE", "LIKE", "1"}
+REACTION_RECAST_TYPES = {"REACTION_TYPE_RECAST", "RECAST", "2"}
+
 _thread_local = threading.local()
 
 
@@ -310,6 +317,50 @@ def get_int(value: Any, default: int = 0) -> int:
     return default
 
 
+def enum_token(value: Any) -> str:
+    if isinstance(value, str):
+        token = value.strip()
+        if not token:
+            return ""
+        if token.isdigit():
+            return str(int(token))
+        return token.upper()
+    if isinstance(value, bool):
+        return ""
+    if isinstance(value, (int, float)):
+        return str(int(value))
+    return ""
+
+
+def is_cast_add_message_type(value: Any) -> bool:
+    return enum_token(value) in CAST_ADD_MESSAGE_TYPES
+
+
+def is_cast_remove_message_type(value: Any) -> bool:
+    return enum_token(value) in CAST_REMOVE_MESSAGE_TYPES
+
+
+def is_reaction_add_message_type(value: Any) -> bool:
+    return enum_token(value) in REACTION_ADD_MESSAGE_TYPES
+
+
+def is_reaction_remove_message_type(value: Any) -> bool:
+    return enum_token(value) in REACTION_REMOVE_MESSAGE_TYPES
+
+
+def is_reaction_message_type(value: Any) -> bool:
+    return is_reaction_add_message_type(value) or is_reaction_remove_message_type(value)
+
+
+def reaction_kind(value: Any) -> str:
+    token = enum_token(value)
+    if token in REACTION_LIKE_TYPES:
+        return "like"
+    if token in REACTION_RECAST_TYPES:
+        return "recast"
+    return ""
+
+
 def farcaster_time_to_utc(fc_seconds: int) -> datetime:
     return FARCASTER_EPOCH + timedelta(seconds=int(fc_seconds))
 
@@ -400,6 +451,68 @@ def get_hub_events_page(
     )
     events = payload.get("events") or []
     return [event for event in events if isinstance(event, dict)]
+
+
+def get_hub_first_event_timestamp(
+    session: requests.Session,
+    hub_url: str,
+    shard_index: int,
+    from_event_id: int,
+) -> tuple[int, int | None] | None:
+    page = get_hub_events_page(
+        session=session,
+        hub_url=hub_url,
+        shard_index=shard_index,
+        from_event_id=from_event_id,
+        page_size=1,
+    )
+    if not page:
+        return None
+    event = page[0]
+    event_id = get_int(event.get("id"), default=from_event_id)
+    ts = event_timestamp_farcaster_seconds(event)
+    return event_id, ts
+
+
+def find_hub_start_event_id_for_target_time(
+    session: requests.Session,
+    hub_url: str,
+    shard_index: int,
+    lower_event_id: int,
+    upper_event_id: int,
+    target_fc_timestamp: int,
+) -> int:
+    lo = max(0, int(lower_event_id))
+    hi = max(lo, int(upper_event_id))
+    best = lo
+    found = False
+
+    while lo <= hi:
+        mid = (lo + hi) // 2
+        first = get_hub_first_event_timestamp(
+            session=session,
+            hub_url=hub_url,
+            shard_index=shard_index,
+            from_event_id=mid,
+        )
+        if first is None:
+            hi = mid - 1
+            continue
+
+        event_id, ts = first
+        if ts is None:
+            lo = event_id + 1
+            continue
+
+        if ts < target_fc_timestamp:
+            lo = event_id + 1
+            continue
+
+        found = True
+        best = event_id
+        hi = mid - 1
+
+    return best if found else max(0, int(lower_event_id))
 
 
 def get_hub_shard_max_heights(
@@ -554,6 +667,23 @@ def fetch_casts_for_day_from_snapchain(
                 if shard_start_id == 0:
                     break
 
+            refined_start_id = find_hub_start_event_id_for_target_time(
+                session=session,
+                hub_url=config.hub_url,
+                shard_index=shard_index,
+                lower_event_id=shard_start_id,
+                upper_event_id=tip_event_id,
+                target_fc_timestamp=target_fc_start,
+            )
+            if refined_start_id > shard_start_id:
+                logging.info(
+                    "Refined shard %s start_id from %s to %s based on target timestamp",
+                    shard_index,
+                    shard_start_id,
+                    refined_start_id,
+                )
+                shard_start_id = refined_start_id
+
         logging.info(
             "Reading hub shard %s events from id=%s (tip=%s)",
             shard_index,
@@ -599,8 +729,8 @@ def fetch_casts_for_day_from_snapchain(
                 if not cast_record_in_scope(cast_dt_utc, config, tz, now_utc):
                     continue
 
-                message_type = str(data.get("type") or "")
-                if message_type == "MESSAGE_TYPE_CAST_ADD":
+                message_type = data.get("type")
+                if is_cast_add_message_type(message_type):
                     cast_messages_processed += 1
                     cast_hash = normalize_hash(message.get("hash"))
                     if cast_hash is None:
@@ -635,7 +765,7 @@ def fetch_casts_for_day_from_snapchain(
                     if parent_hash:
                         replies_by_hash[parent_hash] += 1
 
-                elif message_type in ("MESSAGE_TYPE_REACTION_ADD", "MESSAGE_TYPE_REACTION_REMOVE"):
+                elif is_reaction_message_type(message_type):
                     reaction_messages_processed += 1
                     reaction_body = data.get("reactionBody") or {}
                     if not isinstance(reaction_body, dict):
@@ -644,14 +774,14 @@ def fetch_casts_for_day_from_snapchain(
                     if target_hash is None:
                         continue
 
-                    reaction_type = str(reaction_body.get("type") or "")
-                    delta = 1 if message_type.endswith("_ADD") else -1
-                    if "LIKE" in reaction_type:
+                    delta = 1 if is_reaction_add_message_type(message_type) else -1
+                    kind = reaction_kind(reaction_body.get("type"))
+                    if kind == "like":
                         likes_by_hash[target_hash] += delta
-                    elif "RECAST" in reaction_type:
+                    elif kind == "recast":
                         recasts_by_hash[target_hash] += delta
 
-                elif message_type == "MESSAGE_TYPE_CAST_REMOVE":
+                elif is_cast_remove_message_type(message_type):
                     cast_remove_body = data.get("castRemoveBody") or {}
                     if not isinstance(cast_remove_body, dict):
                         continue
@@ -841,11 +971,9 @@ def fetch_casts_for_day_from_neynar(
 
 
 def fetch_casts_for_day(session: requests.Session, config: ScrapeConfig) -> list[dict[str, Any]]:
-    if config.source == "snapchain":
-        return fetch_casts_for_day_from_snapchain(session=session, config=config)
-    if config.source == "neynar":
-        return fetch_casts_for_day_from_neynar(session=session, config=config)
-    raise RuntimeError(f"Unsupported source '{config.source}'. Use 'snapchain' or 'neynar'.")
+    if config.source != "snapchain":
+        raise RuntimeError(f"Unsupported source '{config.source}'. Use 'snapchain'.")
+    return fetch_casts_for_day_from_snapchain(session=session, config=config)
 
 
 def fetch_like_reactions(
@@ -3013,14 +3141,9 @@ def parse_args() -> argparse.Namespace:
 
     parser.add_argument(
         "--source",
-        choices=("snapchain", "neynar"),
+        choices=("snapchain",),
         default="snapchain",
-        help="Data source. Default is direct hub data via snapchain.",
-    )
-    parser.add_argument(
-        "--api-key",
-        default=os.getenv("NEYNAR_API_KEY") or os.getenv("FARCASTER_API_KEY"),
-        help="Neynar API key (required only when --source neynar).",
+        help="Data source. Snapchain only.",
     )
     parser.add_argument(
         "--hub-url",
@@ -3064,7 +3187,7 @@ def parse_args() -> argparse.Namespace:
         "--page-size",
         type=int,
         default=1000,
-        help="Page size (Neynar cast page or Snapchain event page).",
+        help="Snapchain event page size.",
     )
     parser.add_argument(
         "--max-pages",
@@ -3183,13 +3306,8 @@ def parse_args() -> argparse.Namespace:
 
     args = parser.parse_args()
 
-    if args.source == "neynar" and not args.api_key:
-        parser.error("Missing API key for source=neynar. Set --api-key or NEYNAR_API_KEY.")
-
     if args.page_size <= 0:
         parser.error("--page-size must be > 0")
-    if args.source == "neynar" and args.page_size > 100:
-        parser.error("--page-size must be <= 100 when --source neynar")
     if args.collect_last_hours is not None and args.collect_last_hours <= 0:
         parser.error("--collect-last-hours must be > 0 when provided")
     if args.like_page_size <= 0:
@@ -3277,7 +3395,7 @@ def main() -> None:
 
     config = ScrapeConfig(
         source=args.source,
-        api_key=args.api_key if args.source == "neynar" else None,
+        api_key=None,
         hub_url=args.hub_url,
         snapchain_shards=tuple(args.snapchain_shards),
         snapchain_event_id_span=args.snapchain_event_id_span,
@@ -3307,20 +3425,8 @@ def main() -> None:
         filter_gm_gn_records=args.exclude_gm_gn_records,
     )
 
-    session = (
-        build_neynar_session(str(config.api_key))
-        if config.source == "neynar"
-        else build_plain_session()
-    )
-    try:
-        casts = fetch_casts_for_day(session, config)
-    except RuntimeError as exc:
-        message = str(exc)
-        if config.source == "neynar" and "HTTP 403" in message:
-            raise SystemExit(
-                "API access forbidden (HTTP 403). Use a valid NEYNAR_API_KEY with cast search access."
-            ) from exc
-        raise
+    session = build_plain_session()
+    casts = fetch_casts_for_day(session, config)
     scored_records = build_scored_records(casts, config)
 
     token_estimate = write_scored_txt(
@@ -3353,7 +3459,7 @@ def main() -> None:
         final_top_posts=config.final_top_posts,
         final_comments_per_post=config.final_comments_per_post,
         final_snippet_length=config.final_snippet_length,
-        hub_url=config.hub_url if config.source == "snapchain" else None,
+        hub_url=config.hub_url,
         focus_themes=config.focus_themes,
         exclude_themes=config.exclude_themes,
     )
@@ -3366,8 +3472,7 @@ def main() -> None:
     print(f"Saved: {config.readable_output_path}")
     print(f"Saved: {config.final_output_path}")
     print(f"Source: {config.source}")
-    if config.source == "snapchain":
-        print(f"Hub: {config.hub_url} | shards={','.join(str(s) for s in config.snapchain_shards)}")
+    print(f"Hub: {config.hub_url} | shards={','.join(str(s) for s in config.snapchain_shards)}")
     print(f"Date: {config.target_date.isoformat()} ({config.timezone_name})")
     print(f"Records: {len(scored_records)} | posts={posts} comments={comments}")
     print(f"Estimated LLM tokens for scraped data: {token_estimate}")
@@ -3376,4 +3481,3 @@ def main() -> None:
 
 if __name__ == "__main__":
     main()
-
