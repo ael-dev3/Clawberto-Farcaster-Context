@@ -18,6 +18,15 @@ python -m pip install -r requirements.txt
 
 Default source is direct Snapchain hub ingestion (no API key required).
 
+## Local validation
+
+Run the parser/import checks without collecting live data:
+
+```bash
+python -m compileall scripts
+python scripts/farcaster_daily_scraper.py --help
+```
+
 ## Run (single-command workflows)
 
 ### 24-hour context (daily-ish)
