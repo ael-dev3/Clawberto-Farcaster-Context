@@ -1,0 +1,662 @@
+#!/usr/bin/env python3
+from __future__ import annotations
+
+import csv
+import html
+import json
+import math
+import re
+import shutil
+from collections import Counter, defaultdict
+from datetime import datetime, timezone
+from pathlib import Path
+from typing import Any
+
+ROOT = Path(__file__).resolve().parents[1]
+DATA = ROOT / "data"
+GENERATED = ROOT / "generated"
+PUBLIC_GENERATED = ROOT / "public" / "generated"
+SITE_URL = "https://ael-dev3.github.io/Clawberto-Farcaster-Context/"
+REPO_URL = "https://github.com/ael-dev3/Clawberto-Farcaster-Context"
+
+STOPWORDS = {
+    "about", "after", "again", "also", "amp", "and", "are", "because", "been", "being", "can", "com",
+    "could", "day", "did", "does", "don", "for", "from", "get", "got", "has", "have", "here", "https",
+    "into", "just", "like", "more", "not", "now", "one", "out", "our", "post", "really", "see", "should",
+    "some", "that", "the", "their", "them", "then", "there", "they", "this", "today", "too", "was", "way",
+    "what", "when", "where", "who", "will", "with", "would", "you", "your",
+}
+TOKEN_RE = re.compile(r"[a-z][a-z0-9]{2,}", re.IGNORECASE)
+
+
+def esc(value: Any) -> str:
+    return html.escape(str(value if value is not None else ""), quote=True)
+
+
+def clamp_text(value: Any, limit: int = 220) -> str:
+    text = " ".join(str(value or "").split())
+    if len(text) <= limit:
+        return text
+    return text[: max(0, limit - 1)].rstrip() + "…"
+
+
+def read_latest_raw() -> tuple[Path, dict[str, str], list[dict[str, Any]]]:
+    if not DATA.exists():
+        raise SystemExit("No data/ directory found. Run `bash scripts/farcaster_context_24h.sh` first.")
+    candidates = [
+        path
+        for path in DATA.glob("farcaster_24h_*.txt")
+        if "_final_" not in path.name and "_readable_" not in path.name
+    ]
+    if not candidates:
+        candidates = [
+            path
+            for path in DATA.glob("farcaster_*.txt")
+            if "_final_" not in path.name and "_readable_" not in path.name
+        ]
+    if not candidates:
+        raise SystemExit("No raw Farcaster output found. Run `bash scripts/farcaster_context_24h.sh` first.")
+
+    raw_path = max(candidates, key=lambda p: p.stat().st_mtime)
+    metadata: dict[str, str] = {}
+    records: list[dict[str, Any]] = []
+    with raw_path.open("r", encoding="utf-8-sig") as f:
+        for line in f:
+            text = line.strip()
+            if not text:
+                continue
+            if text.startswith("{"):
+                try:
+                    records.append(json.loads(text))
+                except json.JSONDecodeError as exc:
+                    raise SystemExit(f"Invalid JSON line in {raw_path}: {exc}") from exc
+            elif ":" in text:
+                key, value = text.split(":", 1)
+                metadata[key.strip()] = value.strip()
+    return raw_path, metadata, records
+
+
+def latest_final_path(raw_path: Path) -> Path | None:
+    final_name = raw_path.name.replace("farcaster_24h_", "farcaster_24h_final_")
+    direct = raw_path.with_name(final_name)
+    if direct.exists():
+        return direct
+    candidates = sorted(DATA.glob("farcaster_*_final_*.txt"), key=lambda p: p.stat().st_mtime, reverse=True)
+    return candidates[0] if candidates else None
+
+
+def parse_final_user(value: str) -> tuple[str, str]:
+    text = value.strip()
+    match = re.match(r"(.+?)\s*\((\d+)\)$", text)
+    if match:
+        username = match.group(1).strip().lstrip("@").lower()
+        fid = match.group(2)
+        if username.startswith("fid:") or username in {"unknown", "none"}:
+            username = ""
+        return username, fid
+    fid_match = re.search(r"fid:(\d+)", text)
+    return "", fid_match.group(1) if fid_match else ""
+
+
+def parse_final_context(raw_path: Path, records: list[dict[str, Any]]) -> tuple[Path | None, list[dict[str, Any]], list[str]]:
+    final_path = latest_final_path(raw_path)
+    if final_path is None or not final_path.exists():
+        return None, [], []
+    raw_by_hash = {str(record.get("hash") or "").lower(): record for record in records if record.get("hash")}
+    enriched: list[dict[str, Any]] = []
+    summary_lines: list[str] = []
+    with final_path.open("r", encoding="utf-8-sig") as f:
+        for line in f:
+            text = line.strip()
+            if re.match(r"^[SN]\d{2}\s+", text):
+                summary_lines.append(re.sub(r"^[SN]\d{2}\s+", "", text))
+                continue
+            if not re.match(r"^E\d{3}\|", text):
+                continue
+            parts = text.split("|", 13)
+            if len(parts) < 14:
+                continue
+            idx, cast_type, eng, likes, recasts, replies, rank, fid, user, theme, label, ts_local, hash_value, cast_text = parts
+            username, parsed_fid = parse_final_user(user)
+            fid = fid or parsed_fid
+            hash_value = hash_value.strip()
+            base = dict(raw_by_hash.get(hash_value.lower(), {}))
+            if username:
+                profile_name = username
+                display_with_fid = f"{username} ({fid})" if fid else username
+                final_cast_url = f"https://farcaster.xyz/{username}/{hash_value[:10]}" if hash_value.startswith("0x") else ""
+            else:
+                profile_name = ""
+                display_with_fid = f"fid:{fid}" if fid else user.strip()
+                final_cast_url = f"https://warpcast.com/~/conversations/{hash_value}" if hash_value.startswith("0x") else ""
+            base.update(
+                {
+                    "type": cast_type.strip(),
+                    "hash": hash_value,
+                    "text": cast_text.strip(),
+                    "timestamp": ts_local.strip(),
+                    "author_username": profile_name,
+                    "author_fid": fid,
+                    "author_username_with_fid": display_with_fid,
+                    "content_label": theme.strip(),
+                    "visibility_tier": label.strip(),
+                    "cast_url": final_cast_url or base.get("cast_url") or "",
+                    "engagement": {
+                        "likes_count": intish(likes),
+                        "recasts_count": intish(recasts),
+                        "replies_count": intish(replies),
+                    },
+                    "ranking_like_count": intish(likes),
+                    "_engagement_score": float(eng or 0),
+                    "_site_order": len(enriched) + 1,
+                    "_final_rank": intish(rank),
+                }
+            )
+            enriched.append(base)
+    return final_path, enriched, summary_lines[:10]
+
+
+def parse_dt(value: Any) -> datetime | None:
+    text = str(value or "").strip()
+    if not text:
+        return None
+    try:
+        return datetime.fromisoformat(text.replace("Z", "+00:00"))
+    except ValueError:
+        return None
+
+
+def iso_z(dt: datetime | None) -> str:
+    if dt is None:
+        return ""
+    return dt.astimezone(timezone.utc).strftime("%Y-%m-%d %H:%M:%S")
+
+
+def score(record: dict[str, Any]) -> float:
+    try:
+        return float(record.get("algorithmic_score_1_to_10") or 0)
+    except (TypeError, ValueError):
+        return 0.0
+
+
+def intish(value: Any) -> int:
+    try:
+        return int(float(value or 0))
+    except (TypeError, ValueError):
+        return 0
+
+
+def engagement(record: dict[str, Any], key: str) -> int:
+    raw_data = record.get("engagement")
+    data: dict[str, Any] = raw_data if isinstance(raw_data, dict) else {}
+    return intish(data.get(key))
+
+
+def author_key(record: dict[str, Any]) -> str:
+    username = str(record.get("author_username") or "").strip().lstrip("@")
+    if username:
+        return username.lower()
+    fid = str(record.get("author_username_with_fid") or "").strip()
+    if fid:
+        return fid.lower()
+    fid_value = record.get("author_fid")
+    return f"fid:{fid_value}" if fid_value not in (None, "") else "unknown"
+
+
+def author_display(record: dict[str, Any]) -> str:
+    username = str(record.get("author_username") or "").strip().lstrip("@")
+    if username:
+        return f"@{username}"
+    fid = str(record.get("author_username_with_fid") or "").strip()
+    if fid:
+        return fid
+    fid_value = record.get("author_fid")
+    return f"fid:{fid_value}" if fid_value not in (None, "") else "unknown"
+
+
+def author_url(record_or_name: dict[str, Any] | str) -> str:
+    if isinstance(record_or_name, dict):
+        username = str(record_or_name.get("author_username") or "").strip().lstrip("@")
+        fid = record_or_name.get("author_fid")
+        display = author_display(record_or_name)
+    else:
+        username = str(record_or_name or "").strip().lstrip("@")
+        fid = None
+        display = str(record_or_name or "")
+    if username and not username.lower().startswith("fid:"):
+        return f"https://farcaster.xyz/{username}"
+    fid_match = re.search(r"fid:(\d+)", display)
+    if fid_match:
+        return f"https://warpcast.com/~/profiles/{fid_match.group(1)}"
+    if fid not in (None, ""):
+        return f"https://warpcast.com/~/profiles/{fid}"
+    return ""
+
+
+def cast_url(record: dict[str, Any]) -> str:
+    url = str(record.get("cast_url") or "").strip()
+    if url:
+        return url
+    username = str(record.get("author_username") or "").strip().lstrip("@")
+    hash_value = str(record.get("hash") or "").strip()
+    if username and hash_value.startswith("0x"):
+        return f"https://farcaster.xyz/{username}/{hash_value[2:10]}"
+    return ""
+
+
+def row_for_record(record: dict[str, Any], rank: int) -> dict[str, Any]:
+    ts = parse_dt(record.get("timestamp"))
+    text = str(record.get("text") or record.get("text_preview") or "")
+    eng_score = record.get("_engagement_score")
+    if eng_score in (None, ""):
+        eng_score = engagement(record, "likes_count") + 1.5 * engagement(record, "recasts_count") + 2.5 * engagement(record, "replies_count")
+    return {
+        "rank": intish(record.get("_site_order")) or rank,
+        "timestamp_utc": iso_z(ts),
+        "type": record.get("type") or "cast",
+        "author": author_display(record),
+        "author_url": author_url(record),
+        "score": f"{score(record):.2f}",
+        "engagement": f"{float(eng_score):.2f}",
+        "likes": engagement(record, "likes_count"),
+        "recasts": engagement(record, "recasts_count"),
+        "replies": engagement(record, "replies_count"),
+        "theme": record.get("content_label") or "general",
+        "visibility": record.get("visibility_tier") or "",
+        "hash": record.get("hash") or "",
+        "cast_url": cast_url(record),
+        "parent_hash": record.get("parent_hash") or "",
+        "preview": clamp_text(text, 260),
+        "text": text,
+    }
+
+
+def sorted_records(records: list[dict[str, Any]]) -> list[dict[str, Any]]:
+    return sorted(
+        records,
+        key=lambda r: (
+            score(r),
+            intish(r.get("ranking_like_count")),
+            engagement(r, "likes_count"),
+            parse_dt(r.get("timestamp")) or datetime.min.replace(tzinfo=timezone.utc),
+        ),
+        reverse=True,
+    )
+
+
+def build_tables(records: list[dict[str, Any]], metadata: dict[str, str], site_records: list[dict[str, Any]] | None = None) -> dict[str, list[dict[str, Any]]]:
+    ordered = sorted_records(records)
+    visible_records = list(site_records or ordered)
+    top_casts = [row_for_record(record, i + 1) for i, record in enumerate(visible_records[:150])]
+    posts = [row_for_record(record, i + 1) for i, record in enumerate([r for r in visible_records if r.get("type") == "post"][:150])]
+    comments = [row_for_record(record, i + 1) for i, record in enumerate([r for r in visible_records if r.get("type") == "comment"][:150])]
+
+    by_author: dict[str, dict[str, Any]] = {}
+    for record in visible_records:
+        key = author_key(record)
+        item = by_author.setdefault(
+            key,
+            {
+                "author": author_display(record),
+                "author_url": author_url(record),
+                "casts": 0,
+                "posts": 0,
+                "comments": 0,
+                "likes": 0,
+                "recasts": 0,
+                "replies": 0,
+                "score_total": 0.0,
+                "best_score": 0.0,
+                "top_cast_url": "",
+            },
+        )
+        item["casts"] += 1
+        if record.get("type") == "post":
+            item["posts"] += 1
+        if record.get("type") == "comment":
+            item["comments"] += 1
+        item["likes"] += engagement(record, "likes_count")
+        item["recasts"] += engagement(record, "recasts_count")
+        item["replies"] += engagement(record, "replies_count")
+        item["score_total"] += score(record)
+        if score(record) >= item["best_score"]:
+            item["best_score"] = score(record)
+            item["top_cast_url"] = cast_url(record)
+    authors = []
+    for item in by_author.values():
+        casts = max(1, int(item["casts"]))
+        item["avg_score"] = f"{float(item['score_total']) / casts:.2f}"
+        item["best_score"] = f"{float(item['best_score']):.2f}"
+        del item["score_total"]
+        authors.append(item)
+    authors.sort(key=lambda x: (int(x["likes"]), float(x["best_score"]), int(x["casts"])), reverse=True)
+    authors = authors[:100]
+
+    theme_rows = []
+    by_theme: dict[str, list[dict[str, Any]]] = defaultdict(list)
+    for record in visible_records:
+        by_theme[str(record.get("content_label") or "general")].append(record)
+    for theme, group in sorted(by_theme.items(), key=lambda kv: len(kv[1]), reverse=True):
+        top = sorted_records(group)[0] if group else {}
+        theme_rows.append(
+            {
+                "theme": theme,
+                "casts": len(group),
+                "posts": sum(1 for r in group if r.get("type") == "post"),
+                "comments": sum(1 for r in group if r.get("type") == "comment"),
+                "likes": sum(engagement(r, "likes_count") for r in group),
+                "avg_score": f"{sum(score(r) for r in group) / max(1, len(group)):.2f}",
+                "top_author": author_display(top) if top else "",
+                "top_cast_url": cast_url(top) if top else "",
+            }
+        )
+
+    timestamps = [dt for dt in (parse_dt(r.get("timestamp")) for r in records) if dt]
+    window_start = min(timestamps) if timestamps else None
+    window_end = max(timestamps) if timestamps else None
+    total_likes = sum(engagement(r, "likes_count") for r in records)
+    total_recasts = sum(engagement(r, "recasts_count") for r in records)
+    total_replies = sum(engagement(r, "replies_count") for r in records)
+    unique_authors = len({author_key(r) for r in records})
+    top_record = visible_records[0] if visible_records else (ordered[0] if ordered else {})
+    metrics = [
+        {"metric": "site_url", "value": SITE_URL},
+        {"metric": "repo_url", "value": REPO_URL},
+        {"metric": "generated_at_utc", "value": datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M:%S")},
+        {"metric": "source", "value": metadata.get("SOURCE", "")},
+        {"metric": "hub_url", "value": metadata.get("HUB_URL", "")},
+        {"metric": "snapchain_shards", "value": metadata.get("SNAPCHAIN_SHARDS", "")},
+        {"metric": "collect_last_hours", "value": metadata.get("COLLECT_LAST_HOURS", "")},
+        {"metric": "window_start_utc", "value": iso_z(window_start)},
+        {"metric": "window_end_utc", "value": iso_z(window_end)},
+        {"metric": "total_records", "value": len(records)},
+        {"metric": "posts", "value": sum(1 for r in records if r.get("type") == "post")},
+        {"metric": "comments", "value": sum(1 for r in records if r.get("type") == "comment")},
+        {"metric": "selected_records", "value": len(visible_records)},
+        {"metric": "unique_authors", "value": unique_authors},
+        {"metric": "total_likes", "value": total_likes},
+        {"metric": "total_recasts", "value": total_recasts},
+        {"metric": "total_replies", "value": total_replies},
+        {"metric": "top_cast_score", "value": f"{score(top_record):.2f}" if top_record else ""},
+        {"metric": "top_cast_author", "value": author_display(top_record) if top_record else ""},
+        {"metric": "top_cast_url", "value": cast_url(top_record) if top_record else ""},
+    ]
+    return {
+        "summary_metrics": metrics,
+        "theme_summary": theme_rows,
+        "authors": authors,
+        "top_casts": top_casts,
+        "posts": posts,
+        "comments": comments,
+    }
+
+
+def keyword_summary(records: list[dict[str, Any]], limit: int = 18) -> list[tuple[str, int]]:
+    counter: Counter[str] = Counter()
+    for record in records:
+        text = str(record.get("text") or record.get("text_preview") or "")
+        for token in TOKEN_RE.findall(text.lower()):
+            if token not in STOPWORDS and not token.startswith("http") and not token.isdigit():
+                counter[token] += 1
+    return counter.most_common(limit)
+
+
+def write_table(name: str, rows: list[dict[str, Any]]) -> dict[str, Any]:
+    GENERATED.mkdir(parents=True, exist_ok=True)
+    PUBLIC_GENERATED.mkdir(parents=True, exist_ok=True)
+    fields = list(rows[0].keys()) if rows else ["empty"]
+    csv_path = GENERATED / f"{name}.csv"
+    json_path = GENERATED / f"{name}.json"
+    with csv_path.open("w", encoding="utf-8", newline="") as f:
+        writer = csv.DictWriter(f, fieldnames=fields, lineterminator="\n")
+        writer.writeheader()
+        for row in rows:
+            writer.writerow(row)
+    with json_path.open("w", encoding="utf-8") as f:
+        json.dump(rows, f, indent=2, ensure_ascii=False)
+        f.write("\n")
+    shutil.copy2(csv_path, PUBLIC_GENERATED / csv_path.name)
+    shutil.copy2(json_path, PUBLIC_GENERATED / json_path.name)
+    return {"table": name, "file": f"generated/{name}.csv", "rows": len(rows)}
+
+
+def write_generated(tables: dict[str, list[dict[str, Any]]]) -> list[dict[str, Any]]:
+    for path in [GENERATED, PUBLIC_GENERATED]:
+        path.mkdir(parents=True, exist_ok=True)
+    manifest = []
+    for name, rows in tables.items():
+        manifest.append(write_table(name, rows))
+    write_table("manifest", manifest)
+    return manifest
+
+
+def cell_html(key: str, value: Any, row: dict[str, Any]) -> str:
+    text = str(value if value is not None else "")
+    if key in {"author", "top_author"} and row.get("author_url"):
+        return f'<a class="chip-link profile" href="{esc(row["author_url"])}" target="_blank" rel="noopener noreferrer">{esc(text)}</a>'
+    if key == "top_author" and row.get("top_cast_url"):
+        return f'<a class="chip-link" href="{esc(row["top_cast_url"])}" target="_blank" rel="noopener noreferrer">{esc(text)}</a>'
+    if key in {"cast_url", "top_cast_url"}:
+        return f'<a class="chip-link cast" href="{esc(text)}" target="_blank" rel="noopener noreferrer">open cast</a>' if text else ""
+    if key == "author_url":
+        return f'<a class="chip-link profile" href="{esc(text)}" target="_blank" rel="noopener noreferrer">profile</a>' if text else ""
+    if key == "preview":
+        return f'<span class="preview-text">{esc(text)}</span>'
+    if key == "theme":
+        return f'<span class="theme-pill">{esc(text)}</span>'
+    return esc(text)
+
+
+def render_table(name: str, rows: list[dict[str, Any]], columns: list[str], title: str, featured: bool = False) -> str:
+    head = "".join(
+        f'<th scope="col" aria-sort="none"><button type="button" data-col="{idx}">{esc(col.replace("_", " "))}</button></th>'
+        for idx, col in enumerate(columns)
+    )
+    body_parts = []
+    for row in rows:
+        body_parts.append("<tr>" + "".join(f"<td>{cell_html(col, row.get(col, ''), row)}</td>" for col in columns) + "</tr>")
+    cls = "table-card featured-table" if featured else "table-card"
+    return (
+        f'<section class="{cls}" data-name="{esc(name)}">'
+        f'<div class="table-scroll"><table data-table="{esc(name)}">'
+        f'<caption><span>{esc(title)}</span><span data-total="{len(rows)}">{len(rows)} rows</span></caption>'
+        f"<thead><tr>{head}</tr></thead><tbody>{''.join(body_parts)}</tbody></table></div></section>"
+    )
+
+
+def metric_value(metrics: list[dict[str, Any]], key: str) -> str:
+    for row in metrics:
+        if row.get("metric") == key:
+            return str(row.get("value", ""))
+    return ""
+
+
+def render_index(raw_path: Path, final_path: Path | None, tables: dict[str, list[dict[str, Any]]], manifest: list[dict[str, Any]], keywords: list[tuple[str, int]], summary_lines: list[str]) -> None:
+    metrics = tables["summary_metrics"]
+    top_casts = tables["top_casts"]
+    theme_rows = tables["theme_summary"]
+    authors = tables["authors"]
+    window = f"{metric_value(metrics, 'window_start_utc')} → {metric_value(metrics, 'window_end_utc')}"
+    top_cards = []
+    for row in top_casts[:6]:
+        top_cards.append(
+            '<article class="cast-card">'
+            f'<div class="cast-meta"><span>#{esc(row["rank"])}</span><span>{esc(row["type"])}</span><span>eng {esc(row["engagement"])}</span><span>score {esc(row["score"])}</span></div>'
+            f'<h3>{cell_html("author", row["author"], row)}</h3>'
+            f'<p>{esc(row["preview"])}</p>'
+            f'<div class="cast-actions"><a href="{esc(row["cast_url"])}" target="_blank" rel="noopener noreferrer">Open post</a><span>{esc(row["likes"])} likes</span><span>{esc(row["theme"])} </span></div>'
+            '</article>'
+        )
+    keyword_html = "".join(f"<span>{esc(word)} <b>{count}</b></span>" for word, count in keywords)
+    summary_html = "".join(f"<li>{esc(line)}</li>" for line in summary_lines[:8]) or "<li>Summary lines unavailable for this run.</li>"
+    export_rows = "".join(
+        f'<tr><td>{esc(item["table"].replace("_", " "))}</td><td>{esc(item["rows"])}</td>'
+        f'<td><a href="{esc(item["file"])}" download>CSV</a><a href="{esc(item["file"].replace(".csv", ".json"))}" download>JSON</a></td></tr>'
+        for item in manifest
+        if item["table"] != "manifest"
+    )
+    primary_table = render_table(
+        "top_casts",
+        top_casts,
+        ["rank", "author", "type", "engagement", "score", "likes", "recasts", "replies", "theme", "preview", "cast_url", "timestamp_utc"],
+        "top casts",
+        featured=True,
+    )
+    secondary_tables = "".join(
+        [
+            render_table("theme_summary", theme_rows, ["theme", "casts", "posts", "comments", "likes", "avg_score", "top_author", "top_cast_url"], "theme summary"),
+            render_table("authors", authors, ["author", "casts", "posts", "comments", "likes", "recasts", "replies", "avg_score", "best_score", "top_cast_url"], "top authors"),
+            render_table("posts", tables["posts"], ["rank", "author", "score", "likes", "replies", "theme", "preview", "cast_url", "timestamp_utc"], "posts"),
+            render_table("comments", tables["comments"], ["rank", "author", "score", "likes", "replies", "theme", "preview", "cast_url", "timestamp_utc"], "comments"),
+        ]
+    )
+    css = """
+:root{color-scheme:dark;--bg:#07000f;--bg2:#120020;--panel:#17042d;--panel2:#21063e;--ink:#f6e9ff;--muted:#b99bd6;--line:#4f1d7a;--accent:#b45cff;--accent2:#ff4fd8;--accent3:#7c3aed;--good:#39f5c6;--shadow:0 24px 80px rgba(0,0,0,.45);font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}*{box-sizing:border-box}html{background:radial-gradient(circle at top left,#35115d 0,#120020 36%,#07000f 76%)}body{margin:0;min-width:320px;background:linear-gradient(145deg,rgba(124,58,237,.18),transparent 38%),var(--bg);color:var(--ink)}a{color:var(--ink);text-decoration:none}.shell{width:min(1480px,calc(100% - 32px));margin:0 auto;padding:28px 0 48px}.hero,.table-card,.exports,details,.insight-card,.cast-card{background:linear-gradient(180deg,rgba(33,6,62,.94),rgba(15,2,31,.96));border:1px solid rgba(180,92,255,.38);box-shadow:var(--shadow);backdrop-filter:blur(14px)}.hero{position:relative;overflow:hidden;border-radius:32px;padding:34px;display:grid;grid-template-columns:minmax(300px,1fr) minmax(320px,.75fr);gap:26px}.hero:before{content:"";position:absolute;inset:-120px -80px auto auto;width:420px;height:420px;background:radial-gradient(circle,rgba(255,79,216,.34),transparent 68%);filter:blur(8px)}.eyebrow{display:flex;gap:10px;align-items:center;color:var(--good);font-size:12px;font-weight:900;letter-spacing:.12em;text-transform:uppercase}.orb{width:12px;height:12px;border-radius:999px;background:var(--good);box-shadow:0 0 28px var(--good)}h1{font-size:clamp(46px,8vw,112px);line-height:.86;margin:18px 0 14px;letter-spacing:-.075em;max-width:10ch}.subtitle{color:var(--muted);font-weight:700;line-height:1.5;max-width:760px}.hero-actions,.cast-actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:18px}.hero-actions a,.cast-actions a,.exports a,.chip-link{display:inline-flex;align-items:center;gap:6px;border:1px solid rgba(180,92,255,.5);background:rgba(124,58,237,.18);border-radius:999px;padding:8px 11px;font-weight:850;color:#f9edff}.hero-actions a:hover,.cast-actions a:hover,.exports a:hover,.chip-link:hover{border-color:var(--accent2);box-shadow:0 0 24px rgba(255,79,216,.22);transform:translateY(-1px)}.stats{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;position:relative}.stat{border:1px solid rgba(185,155,214,.24);border-radius:22px;background:rgba(7,0,15,.42);padding:16px}.stat b{display:block;color:var(--muted);font-size:11px;text-transform:uppercase;letter-spacing:.11em;margin-bottom:6px}.stat span{font-size:clamp(24px,4vw,42px);font-weight:950;letter-spacing:-.04em}.toolbar{position:sticky;top:0;z-index:5;padding:14px 0;background:linear-gradient(180deg,var(--bg),rgba(7,0,15,.72));backdrop-filter:blur(12px)}#filter{width:100%;border:1px solid rgba(180,92,255,.46);background:#0d0219;color:var(--ink);border-radius:999px;padding:15px 20px;font-size:16px;outline:none;box-shadow:inset 0 0 0 1px rgba(255,255,255,.03)}#filter:focus{border-color:var(--accent2);box-shadow:0 0 0 4px rgba(255,79,216,.14)}.insights{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin:18px 0}.insight-card{border-radius:26px;padding:22px}.insight-card h2,.exports h2{margin:0 0 12px;font-size:18px}.keyword-cloud{display:flex;flex-wrap:wrap;gap:8px}.keyword-cloud span,.theme-pill{border:1px solid rgba(180,92,255,.38);background:rgba(180,92,255,.12);border-radius:999px;padding:6px 9px;color:#ead7ff;font-weight:800}.keyword-cloud b{color:var(--good)}.summary-list{margin:0;padding-left:18px;color:#dec8f5;line-height:1.5}.cast-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;margin:18px 0}.cast-card{border-radius:24px;padding:18px;min-height:250px}.cast-meta{display:flex;gap:8px;flex-wrap:wrap;color:var(--good);font-size:12px;font-weight:900;text-transform:uppercase}.cast-card h3{margin:12px 0 10px}.cast-card p{color:#dec8f5;line-height:1.45}.cast-actions span{border:1px solid rgba(185,155,214,.22);border-radius:999px;padding:8px 10px;color:var(--muted);font-weight:800}.table-card{border-radius:24px;margin:18px 0;overflow:hidden}.table-scroll{overflow:auto;max-height:760px}table{width:100%;border-collapse:collapse;min-width:980px}caption{text-align:left;padding:16px 18px;font-weight:950;text-transform:uppercase;letter-spacing:.08em;display:flex;justify-content:space-between;background:rgba(7,0,15,.44);color:#f8eaff}th,td{padding:12px 14px;border-top:1px solid rgba(185,155,214,.16);vertical-align:top}th{position:sticky;top:0;z-index:1;background:#130324;color:var(--muted);text-align:left;font-size:12px;text-transform:uppercase;letter-spacing:.08em}th button{all:unset;cursor:pointer}tr:hover td{background:rgba(180,92,255,.08)}td{color:#eadcf7}.preview-text{display:inline-block;max-width:520px;line-height:1.42}.exports{border-radius:24px;padding:18px;margin:18px 0}.exports table{min-width:0}.exports a{margin-right:8px}.advanced{border-radius:24px;margin-top:18px}.advanced summary{cursor:pointer;padding:18px;font-weight:950;text-transform:uppercase;color:#f8eaff}.advanced .inner{padding:0 18px 18px}.footer{color:var(--muted);text-align:center;margin-top:28px;font-size:13px}.cast:after,.hero-actions a:after,.cast-actions a:after{content:"↗";font-size:12px;color:var(--good)}@media(max-width:980px){.hero,.insights{grid-template-columns:1fr}.cast-grid{grid-template-columns:1fr}.stats{grid-template-columns:repeat(2,minmax(0,1fr))}}@media(max-width:620px){.shell{width:min(100% - 20px,1480px)}.hero{padding:22px;border-radius:22px}.stats{grid-template-columns:1fr}h1{font-size:52px}}
+"""
+    js = """
+const filter=document.getElementById('filter');
+const key=v=>{const s=v.trim().replaceAll(',','').replace(/[()$]/g,'');const n=Number(s.split(' ')[0]);return s!==''&&Number.isFinite(n)?n:v.trim().toLowerCase();};
+const updateCounts=()=>{document.querySelectorAll('table').forEach(table=>{const rows=[...table.tBodies[0].rows];const visible=rows.filter(row=>!row.hidden).length;const total=table.caption?.querySelector('[data-total]');if(total){const base=Number(total.dataset.total);total.textContent=visible===base?`${base} rows`:`${visible} / ${base} rows`;}});};
+filter.addEventListener('input',()=>{const q=filter.value.trim().toLowerCase();document.querySelectorAll('tbody tr').forEach(tr=>{tr.hidden=q!==''&&!tr.textContent.toLowerCase().includes(q);});updateCounts();});
+document.querySelectorAll('th button').forEach(button=>{button.addEventListener('click',()=>{const table=button.closest('table');const tbody=table.tBodies[0];const col=Number(button.dataset.col);const next=button.dataset.dir==='asc'?'desc':'asc';table.querySelectorAll('th').forEach(th=>{const b=th.querySelector('button');if(b)delete b.dataset.dir;th.setAttribute('aria-sort','none');});button.dataset.dir=next;button.closest('th').setAttribute('aria-sort',next==='asc'?'ascending':'descending');const rows=[...tbody.rows].sort((a,b)=>{const av=key(a.cells[col]?.textContent||'');const bv=key(b.cells[col]?.textContent||'');const cmp=typeof av==='number'&&typeof bv==='number'?av-bv:String(av).localeCompare(String(bv));return next==='asc'?cmp:-cmp;});rows.forEach(row=>tbody.appendChild(row));});});
+updateCounts();
+"""
+    html_doc = f"""<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#120020">
+<title>Clawberto Farcaster Context</title>
+<style>{css}</style>
+</head>
+<body>
+<div class="shell">
+  <section class="hero" aria-label="Farcaster context overview">
+    <div>
+      <div class="eyebrow"><span class="orb"></span>Hypersnap Farcaster context</div>
+      <h1>Clawberto context</h1>
+      <p class="subtitle">Parsed, ranked, and summarized Farcaster activity from the latest 24-hour Hypersnap scrape. Dark-purple signal board with linkable authors, casts, cached data exports, and searchable tables.</p>
+      <div class="hero-actions"><a href="{esc(REPO_URL)}" target="_blank" rel="noopener noreferrer">GitHub repo</a><a href="generated/top_casts.csv" download>Download top casts CSV</a><a href="generated/top_casts.json" download>Download JSON</a></div>
+    </div>
+    <div class="stats">
+      <div class="stat"><b>Total casts</b><span>{esc(metric_value(metrics, 'total_records'))}</span></div>
+      <div class="stat"><b>Unique authors</b><span>{esc(metric_value(metrics, 'unique_authors'))}</span></div>
+      <div class="stat"><b>Posts / comments</b><span>{esc(metric_value(metrics, 'posts'))} / {esc(metric_value(metrics, 'comments'))}</span></div>
+      <div class="stat"><b>Total likes</b><span>{esc(metric_value(metrics, 'total_likes'))}</span></div>
+      <div class="stat"><b>Readable shards</b><span>{esc(metric_value(metrics, 'snapchain_shards'))}</span></div>
+      <div class="stat"><b>Selected signal</b><span>{esc(metric_value(metrics, 'selected_records'))}</span></div>
+    </div>
+  </section>
+  <div class="toolbar"><input id="filter" type="search" aria-label="filter visible tables" placeholder="Search usernames, posts, themes, hashes" autocomplete="off"></div>
+  <section class="insights" aria-label="Context summary">
+    <article class="insight-card"><h2>Snapshot window</h2><p class="subtitle">{esc(window)}</p><p class="subtitle">Hub: {esc(metric_value(metrics, 'hub_url'))}</p><p class="subtitle">Raw source: {esc(raw_path.name)}</p><p class="subtitle">Final context: {esc(final_path.name if final_path else 'not found')}</p></article>
+    <article class="insight-card"><h2>Daily summary</h2><ul class="summary-list">{summary_html}</ul></article>
+    <article class="insight-card"><h2>Recurring terms</h2><div class="keyword-cloud">{keyword_html}</div></article>
+  </section>
+  <section class="cast-grid" aria-label="Featured casts">{''.join(top_cards)}</section>
+  <main>{primary_table}</main>
+  <section class="exports"><h2>Cached data exports</h2><table><thead><tr><th>table</th><th>rows</th><th>download</th></tr></thead><tbody>{export_rows}</tbody></table></section>
+  <details class="advanced" open><summary>Advanced parsed tables</summary><div class="inner">{secondary_tables}</div></details>
+  <p class="footer">Generated from Hypersnap/Snapchain node data. Profile and post links open Farcaster/Warpcast in a new tab.</p>
+</div>
+<script>{js}</script>
+</body>
+</html>
+"""
+    (ROOT / "index.html").write_text(html_doc, encoding="utf-8")
+
+
+def render_readme(tables: dict[str, list[dict[str, Any]]], manifest: list[dict[str, Any]]) -> None:
+    metrics = tables["summary_metrics"]
+    rows = {row["metric"]: row["value"] for row in metrics}
+    manifest_lines = "\n".join(
+        f"| {item['table']} | `{item['file']}` | {item['rows']} | [CSV]({item['file']}) / [JSON]({item['file'].replace('.csv', '.json')}) |"
+        for item in manifest
+        if item["table"] != "manifest"
+    )
+    readme = f"""# Clawberto Farcaster Context
+
+Static, cached Farcaster context from direct Hypersnap/Snapchain node scraping. The public site serves parsed and summarized 24-hour context tables with linkable usernames, cast URLs, and downloadable CSV/JSON exports.
+
+## Links
+
+- Live context site: [{SITE_URL}]({SITE_URL})
+- Repository: [{REPO_URL}]({REPO_URL})
+- Generated exports: [`generated/`](generated/)
+
+## Current snapshot
+
+| Field | Value |
+| --- | --- |
+| Source | {rows.get('source', '')} |
+| Hub URL | {rows.get('hub_url', '')} |
+| Readable shards | {rows.get('snapchain_shards', '')} |
+| Window UTC | {rows.get('window_start_utc', '')} → {rows.get('window_end_utc', '')} |
+| Total casts | {rows.get('total_records', '')} |
+| Posts / comments | {rows.get('posts', '')} / {rows.get('comments', '')} |
+| Unique authors | {rows.get('unique_authors', '')} |
+| Total likes / recasts / replies | {rows.get('total_likes', '')} / {rows.get('total_recasts', '')} / {rows.get('total_replies', '')} |
+| Top cast author | {rows.get('top_cast_author', '')} |
+| Top cast | {rows.get('top_cast_url', '')} |
+
+## Published datasets
+
+| Table | CSV path | Rows | Downloads |
+| --- | --- | --- | --- |
+{manifest_lines}
+
+## Data pipeline
+
+1. `scripts/farcaster_daily_scraper.py` talks directly to Hypersnap/Snapchain HTTP nodes (`/v1/info`, `/v1/events`, and username lookup endpoints).
+2. `scripts/farcaster_context_24h.sh` collects the latest rolling 24-hour context and writes raw/readable/final text outputs under ignored `data/`.
+3. `scripts/build_site.py` parses the latest raw output into cached CSV/JSON datasets under `generated/` and `public/generated/`.
+4. `index.html` renders the dark-purple searchable context site with linkable profiles, casts, summaries, and exports.
+5. GitHub Pages deploys the static site from the Vite build artifact.
+
+## Local development
+
+```bash
+python3 -m pip install -r requirements.txt
+npm ci
+npm run refresh      # scrape latest 24h + rebuild generated site artifacts
+npm run build        # Vite build for GitHub Pages
+npm run preview -- --host 127.0.0.1 --port 4188 --strictPort
+```
+
+For scraper-only validation:
+
+```bash
+python3 -m compileall scripts tests
+python3 -m unittest discover -s tests -v
+python3 scripts/farcaster_daily_scraper.py --help
+```
+
+## Node configuration
+
+```bash
+export HYPERSNAP_NODE_URLS="http://node-a:3381,http://node-b:3381"
+export FC_CONTEXT_SNAPCHAIN_SHARDS="auto"
+```
+
+`--source hypersnap` is the default. `snapchain` remains a backwards-compatible alias.
+"""
+    (ROOT / "README.md").write_text(readme, encoding="utf-8")
+
+
+def main() -> None:
+    raw_path, metadata, records = read_latest_raw()
+    if not records:
+        raise SystemExit(f"No records found in {raw_path}")
+    final_path, site_records, summary_lines = parse_final_context(raw_path, records)
+    tables = build_tables(records, metadata, site_records=site_records or None)
+    manifest = write_generated(tables)
+    keywords = keyword_summary(site_records or records)
+    render_index(raw_path, final_path, tables, manifest, keywords, summary_lines)
+    render_readme(tables, manifest)
+    print(f"Built site from {raw_path}")
+    print(f"Records: {len(records)} | Generated tables: {len(manifest)} | Site: {SITE_URL}")
+
+
+if __name__ == "__main__":
+    main()

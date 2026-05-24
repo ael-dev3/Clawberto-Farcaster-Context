@@ -1,0 +1,15 @@
+{
+  "name": "clawberto-farcaster-context",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "site": "python3 scripts/build_site.py",
+    "refresh": "bash scripts/farcaster_context_site.sh",
+    "build": "vite build --base=/Clawberto-Farcaster-Context/",
+    "preview": "vite preview --host 0.0.0.0"
+  },
+  "devDependencies": {
+    "vite": "^8.0.13"
+  }
+}
