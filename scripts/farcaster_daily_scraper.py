@@ -1,4 +1,4 @@
-﻿#!/usr/bin/env python3
+#!/usr/bin/env python3
 """Production-style Farcaster daily scraper with engagement scoring.
 
 What it does:
@@ -25,7 +25,7 @@ import math
 import os
 import re
 import threading
-from dataclasses import dataclass
+from dataclasses import dataclass, replace
 from datetime import date, datetime, timedelta, timezone, tzinfo
 from pathlib import Path
 from typing import Any
@@ -42,6 +42,14 @@ HUB_EVENTS_URL_PATH = "/v1/events"
 HUB_USER_DATA_BY_FID_URL_PATH = "/v1/userDataByFid"
 HUB_USERNAME_PROOFS_BY_FID_URL_PATH = "/v1/userNameProofsByFid"
 DEFAULT_HUB_URL = "http://54.157.62.17:3381"
+DEFAULT_HYPERSNAP_NODE_URLS = (DEFAULT_HUB_URL,)
+HUB_URL_ENV_VARS = (
+    "HYPERSNAP_NODE_URLS",
+    "HYPERSNAP_HUB_URLS",
+    "SNAPCHAIN_HUB_URLS",
+    "HYPERSNAP_NODE_URL",
+    "SNAPCHAIN_HUB_URL",
+)
 FARCASTER_EPOCH = datetime(2021, 1, 1, tzinfo=timezone.utc)
 DEFAULT_MAIN_QUESTION = "What's the most amusing thing you saw on Farcaster today?"
 KEYWORD_PATTERN = re.compile(r"[a-z][a-z0-9']{2,}")
@@ -148,6 +156,7 @@ class ScrapeConfig:
     source: str
     api_key: str | None
     hub_url: str
+    hub_urls: tuple[str, ...]
     snapchain_shards: tuple[int, ...]
     snapchain_event_id_span: int
     target_date: date
@@ -221,6 +230,69 @@ def setup_logging(verbose: bool) -> None:
         datefmt="%Y-%m-%d %H:%M:%S",
     )
 
+
+
+
+def normalize_hub_url(value: str) -> str:
+    text = str(value or "").strip().rstrip("/")
+    if not text:
+        raise ValueError("Hub URL cannot be empty")
+    if not re.match(r"^https?://", text, flags=re.IGNORECASE):
+        text = f"http://{text}"
+    return text
+
+
+def parse_hub_urls(*explicit_values: str | None) -> tuple[str, ...]:
+    chunks = [str(value) for value in explicit_values if str(value or "").strip()]
+    if not chunks:
+        for env_name in HUB_URL_ENV_VARS:
+            env_value = os.getenv(env_name)
+            if env_value and env_value.strip():
+                chunks.append(env_value)
+                break
+    if not chunks:
+        chunks.extend(DEFAULT_HYPERSNAP_NODE_URLS)
+
+    urls: list[str] = []
+    seen: set[str] = set()
+    for chunk in chunks:
+        for raw_part in re.split(r"[\s,]+", chunk):
+            if not raw_part.strip():
+                continue
+            url = normalize_hub_url(raw_part)
+            if url not in seen:
+                urls.append(url)
+                seen.add(url)
+
+    if not urls:
+        raise ValueError("At least one Hypersnap/Snapchain node URL is required")
+    return tuple(urls)
+
+
+def parse_snapchain_shards(value: Any) -> tuple[int, ...]:
+    raw = str(value or "auto").strip()
+    if raw.lower() in {"auto", "all", "*"}:
+        # Empty tuple means: resolve every shard advertised by /v1/info at runtime.
+        return tuple()
+
+    try:
+        shard_values = tuple(
+            sorted(
+                {
+                    int(part.strip())
+                    for part in raw.split(",")
+                    if part.strip()
+                }
+            )
+        )
+    except ValueError as exc:
+        raise ValueError(f"Invalid --snapchain-shards value: {exc}") from exc
+
+    if not shard_values:
+        raise ValueError("--snapchain-shards must include at least one shard index or 'auto'")
+    if any(shard < 0 for shard in shard_values):
+        raise ValueError("--snapchain-shards values must be >= 0")
+    return shard_values
 
 def build_plain_session() -> requests.Session:
     session = requests.Session()
@@ -515,16 +587,19 @@ def find_hub_start_event_id_for_target_time(
     return best if found else max(0, int(lower_event_id))
 
 
-def get_hub_shard_max_heights(
+def fetch_hub_info(
     session: requests.Session,
     hub_url: str,
-) -> dict[int, int]:
-    payload = request_json(
+) -> dict[str, Any]:
+    return request_json(
         session=session,
         url=f"{hub_url.rstrip('/')}{HUB_INFO_URL_PATH}",
         params={},
         timeout=20,
     )
+
+
+def parse_hub_shard_max_heights(payload: dict[str, Any]) -> dict[int, int]:
     shard_infos = payload.get("shardInfos") or []
     max_heights: dict[int, int] = {}
     for shard_info in shard_infos:
@@ -535,6 +610,83 @@ def get_hub_shard_max_heights(
         if shard_id >= 0 and max_height >= 0:
             max_heights[shard_id] = max_height
     return max_heights
+
+
+def get_hub_shard_max_heights(
+    session: requests.Session,
+    hub_url: str,
+) -> dict[int, int]:
+    return parse_hub_shard_max_heights(fetch_hub_info(session=session, hub_url=hub_url))
+
+
+def resolve_snapchain_runtime_config(
+    session: requests.Session,
+    config: ScrapeConfig,
+) -> ScrapeConfig:
+    if config.source not in {"snapchain", "hypersnap"}:
+        return config
+
+    last_error: Exception | None = None
+    for hub_url in config.hub_urls:
+        try:
+            info_payload = fetch_hub_info(session=session, hub_url=hub_url)
+        except Exception as exc:
+            last_error = exc
+            logging.warning("Hypersnap/Snapchain node unavailable: %s (%s)", hub_url, exc)
+            continue
+
+        shard_max_heights = parse_hub_shard_max_heights(info_payload)
+        if config.snapchain_shards:
+            shard_values = tuple(config.snapchain_shards)
+        else:
+            readable_shards: list[int] = []
+            for shard_index in sorted(shard_max_heights):
+                try:
+                    # Some nodes advertise auxiliary shards in /v1/info before their
+                    # /v1/events service can read them. Probe cheaply so auto mode
+                    # only reports shards that will actually be scraped.
+                    get_hub_events_page(
+                        session=session,
+                        hub_url=hub_url,
+                        shard_index=shard_index,
+                        from_event_id=0,
+                        page_size=1,
+                    )
+                except RuntimeError as exc:
+                    logging.warning(
+                        "Skipping advertised shard %s on node %s because /v1/events is not readable: %s",
+                        shard_index,
+                        hub_url,
+                        exc,
+                    )
+                    continue
+                readable_shards.append(shard_index)
+
+            shard_values = tuple(readable_shards)
+            if not shard_values:
+                shard_values = (2,)
+                logging.warning(
+                    "Node %s did not advertise shardInfos; falling back to shard 2",
+                    hub_url,
+                )
+
+        logging.info(
+            "Using Hypersnap/Snapchain node %s with shards=%s",
+            hub_url,
+            ",".join(str(shard) for shard in shard_values),
+        )
+        return replace(
+            config,
+            hub_url=hub_url,
+            snapchain_shards=shard_values,
+        )
+
+    detail = f": {last_error}" if last_error else ""
+    raise RuntimeError(
+        "No reachable Hypersnap/Snapchain nodes. Set --hub-url, --hub-urls, "
+        "HYPERSNAP_NODE_URLS, or SNAPCHAIN_HUB_URLS"
+        f"{detail}"
+    )
 
 
 def find_hub_tip_event_id(
@@ -617,12 +769,20 @@ def fetch_casts_for_day_from_snapchain(
     shard_max_heights = get_hub_shard_max_heights(session=session, hub_url=config.hub_url)
 
     for shard_index in config.snapchain_shards:
-        tip_event_id = find_hub_tip_event_id(
-            session=session,
-            hub_url=config.hub_url,
-            shard_index=shard_index,
-            shard_max_height=shard_max_heights.get(shard_index),
-        )
+        try:
+            tip_event_id = find_hub_tip_event_id(
+                session=session,
+                hub_url=config.hub_url,
+                shard_index=shard_index,
+                shard_max_height=shard_max_heights.get(shard_index),
+            )
+        except RuntimeError as exc:
+            logging.warning(
+                "Skipping shard %s because the selected node could not serve events: %s",
+                shard_index,
+                exc,
+            )
+            continue
         if tip_event_id is None:
             logging.warning("Shard %s has no readable events.", shard_index)
             continue
@@ -641,13 +801,22 @@ def fetch_casts_for_day_from_snapchain(
         if config.collect_last_hours is not None and shard_start_id > 0:
             # Expand backwards if our initial span starts after the intended 24h window.
             while True:
-                first_batch = get_hub_events_page(
-                    session=session,
-                    hub_url=config.hub_url,
-                    shard_index=shard_index,
-                    from_event_id=shard_start_id,
-                    page_size=1,
-                )
+                try:
+                    first_batch = get_hub_events_page(
+                        session=session,
+                        hub_url=config.hub_url,
+                        shard_index=shard_index,
+                        from_event_id=shard_start_id,
+                        page_size=1,
+                    )
+                except RuntimeError as exc:
+                    logging.warning(
+                        "Cannot probe shard %s start_id=%s; skipping shard: %s",
+                        shard_index,
+                        shard_start_id,
+                        exc,
+                    )
+                    break
                 if not first_batch:
                     break
                 first_ts = event_timestamp_farcaster_seconds(first_batch[0])
@@ -667,14 +836,23 @@ def fetch_casts_for_day_from_snapchain(
                 if shard_start_id == 0:
                     break
 
-            refined_start_id = find_hub_start_event_id_for_target_time(
-                session=session,
-                hub_url=config.hub_url,
-                shard_index=shard_index,
-                lower_event_id=shard_start_id,
-                upper_event_id=tip_event_id,
-                target_fc_timestamp=target_fc_start,
-            )
+            try:
+                refined_start_id = find_hub_start_event_id_for_target_time(
+                    session=session,
+                    hub_url=config.hub_url,
+                    shard_index=shard_index,
+                    lower_event_id=shard_start_id,
+                    upper_event_id=tip_event_id,
+                    target_fc_timestamp=target_fc_start,
+                )
+            except RuntimeError as exc:
+                logging.warning(
+                    "Could not refine shard %s start_id; using coarse start_id=%s: %s",
+                    shard_index,
+                    shard_start_id,
+                    exc,
+                )
+                refined_start_id = shard_start_id
             if refined_start_id > shard_start_id:
                 logging.info(
                     "Refined shard %s start_id from %s to %s based on target timestamp",
@@ -694,13 +872,22 @@ def fetch_casts_for_day_from_snapchain(
         cursor = shard_start_id
         shard_pages_consumed = 0
         while True:
-            batch = get_hub_events_page(
-                session=session,
-                hub_url=config.hub_url,
-                shard_index=shard_index,
-                from_event_id=cursor,
-                page_size=config.page_size,
-            )
+            try:
+                batch = get_hub_events_page(
+                    session=session,
+                    hub_url=config.hub_url,
+                    shard_index=shard_index,
+                    from_event_id=cursor,
+                    page_size=config.page_size,
+                )
+            except RuntimeError as exc:
+                logging.warning(
+                    "Stopping shard %s at cursor=%s due to event page error: %s",
+                    shard_index,
+                    cursor,
+                    exc,
+                )
+                break
             if not batch:
                 break
 
@@ -971,8 +1158,8 @@ def fetch_casts_for_day_from_neynar(
 
 
 def fetch_casts_for_day(session: requests.Session, config: ScrapeConfig) -> list[dict[str, Any]]:
-    if config.source != "snapchain":
-        raise RuntimeError(f"Unsupported source '{config.source}'. Use 'snapchain'.")
+    if config.source not in {"snapchain", "hypersnap"}:
+        raise RuntimeError(f"Unsupported source '{config.source}'. Use 'hypersnap' or 'snapchain'.")
     return fetch_casts_for_day_from_snapchain(session=session, config=config)
 
 
@@ -1605,6 +1792,10 @@ def write_scored_txt(
     target_date: date,
     timezone_name: str,
     query: str,
+    source: str | None = None,
+    hub_url: str | None = None,
+    collect_last_hours: float | None = None,
+    snapchain_shards: tuple[int, ...] = tuple(),
 ) -> int:
     output_path.parent.mkdir(parents=True, exist_ok=True)
 
@@ -1619,6 +1810,14 @@ def write_scored_txt(
         )
         f.write(f"DATE: {target_date.isoformat()}\n")
         f.write(f"TIMEZONE: {timezone_name}\n")
+        if collect_last_hours is not None:
+            f.write(f"COLLECT_LAST_HOURS: {collect_last_hours:g}\n")
+        if source:
+            f.write(f"SOURCE: {source}\n")
+        if hub_url:
+            f.write(f"HUB_URL: {hub_url}\n")
+        if snapchain_shards:
+            f.write(f"SNAPCHAIN_SHARDS: {','.join(str(s) for s in snapchain_shards)}\n")
         f.write(f"QUERY: {query}\n")
         f.write(f"TOTAL_RECORDS: {len(records)}\n")
         for line in json_lines:
@@ -1642,7 +1841,7 @@ def write_llm_instructions_txt(
         f"TARGET_DATE: {target_date.isoformat()}",
         f"MAIN_QUESTION: {main_question}",
         "",
-        "You are analyzing Farcaster posts/comments for one day.",
+        "You are analyzing Farcaster posts/comments for one day or a rolling collection window.",
         "",
         "Instructions:",
         "1. Read every JSON line in DATA_FILE after metadata header lines.",
@@ -2359,6 +2558,9 @@ def write_final_context_txt(
     final_comments_per_post: int,
     final_snippet_length: int,
     hub_url: str | None = None,
+    source: str | None = None,
+    collect_last_hours: float | None = None,
+    snapchain_shards: tuple[int, ...] = tuple(),
     focus_themes: tuple[str, ...] = tuple(),
     exclude_themes: tuple[str, ...] = tuple(),
 ) -> int:
@@ -2963,6 +3165,10 @@ def write_final_context_txt(
         f"DATE: {target_date.isoformat()}",
         f"TIMEZONE: {timezone_name}",
         f"WINDOW_UTC: {window_start_utc} -> {window_end_utc}",
+        f"COLLECT_LAST_HOURS: {collect_last_hours:g}" if collect_last_hours is not None else "COLLECT_LAST_HOURS: calendar-day",
+        f"SOURCE: {source or 'unknown'}",
+        f"HUB_URL: {hub_url or 'unknown'}",
+        f"SNAPCHAIN_SHARDS: {','.join(str(s) for s in snapchain_shards) if snapchain_shards else 'unknown'}",
         "RANKING_FORMULA: engagement_score=likes + 1.5*recasts + 2.5*replies + 0.2*min(informative_tokens,25)",
         (
             "FILTER_RULES: remove greeting chatter (gm/gn/good morning-like), "
@@ -3139,21 +3345,41 @@ def parse_args() -> argparse.Namespace:
         )
     )
 
+    default_source = os.getenv("FC_CONTEXT_SOURCE", "hypersnap").strip().lower()
+    if default_source not in {"hypersnap", "snapchain"}:
+        default_source = "hypersnap"
     parser.add_argument(
         "--source",
-        choices=("snapchain",),
-        default="snapchain",
-        help="Data source. Snapchain only.",
+        choices=("hypersnap", "snapchain"),
+        default=default_source,
+        help=(
+            "Data source. 'hypersnap' talks directly to Hypersnap/Snapchain "
+            "HTTP nodes; 'snapchain' is kept as a backwards-compatible alias."
+        ),
     )
     parser.add_argument(
         "--hub-url",
-        default=os.getenv("SNAPCHAIN_HUB_URL") or DEFAULT_HUB_URL,
-        help=f"Snapchain hub base URL. Default: {DEFAULT_HUB_URL}",
+        default=None,
+        help=(
+            "Single Hypersnap/Snapchain node URL. For backwards compatibility, "
+            "a comma-separated list is also accepted."
+        ),
+    )
+    parser.add_argument(
+        "--hub-urls",
+        default=None,
+        help=(
+            "Comma-separated Hypersnap/Snapchain node URLs with failover. Env fallback: "
+            f"{', '.join(HUB_URL_ENV_VARS)}. Default: {DEFAULT_HUB_URL}"
+        ),
     )
     parser.add_argument(
         "--snapchain-shards",
-        default="2",
-        help="Comma-separated shard indices to read in snapchain mode (e.g. 2 or 0,2).",
+        default=os.getenv("FC_CONTEXT_SNAPCHAIN_SHARDS", "auto"),
+        help=(
+            "Comma-separated shard indices, or 'auto'/'all' to read every shard "
+            "advertised by the selected node /v1/info endpoint. Default: auto."
+        ),
     )
     parser.add_argument(
         "--snapchain-event-id-span",
@@ -3346,22 +3572,15 @@ def parse_args() -> argparse.Namespace:
         parser.error(f"Theme filters overlap between --focus-themes and --exclude-themes: {', '.join(sorted(overlap))}")
 
     try:
-        shard_values = tuple(
-            sorted(
-                {
-                    int(part.strip())
-                    for part in str(args.snapchain_shards).split(",")
-                    if part.strip()
-                }
-            )
-        )
+        args.hub_urls = parse_hub_urls(args.hub_urls, args.hub_url)
     except ValueError as exc:
-        parser.error(f"Invalid --snapchain-shards value: {exc}")
-    if not shard_values:
-        parser.error("--snapchain-shards must include at least one shard index")
-    if any(shard < 0 for shard in shard_values):
-        parser.error("--snapchain-shards values must be >= 0")
-    args.snapchain_shards = shard_values
+        parser.error(str(exc))
+    args.hub_url = args.hub_urls[0]
+
+    try:
+        args.snapchain_shards = parse_snapchain_shards(args.snapchain_shards)
+    except ValueError as exc:
+        parser.error(str(exc))
 
     _ = resolve_timezone(args.timezone)
     return args
@@ -3397,6 +3616,7 @@ def main() -> None:
         source=args.source,
         api_key=None,
         hub_url=args.hub_url,
+        hub_urls=tuple(args.hub_urls),
         snapchain_shards=tuple(args.snapchain_shards),
         snapchain_event_id_span=args.snapchain_event_id_span,
         target_date=target_date,
@@ -3426,6 +3646,7 @@ def main() -> None:
     )
 
     session = build_plain_session()
+    config = resolve_snapchain_runtime_config(session, config)
     casts = fetch_casts_for_day(session, config)
     scored_records = build_scored_records(casts, config)
 
@@ -3435,6 +3656,10 @@ def main() -> None:
         target_date=config.target_date,
         timezone_name=config.timezone_name,
         query=config.query,
+        source=config.source,
+        hub_url=config.hub_url,
+        collect_last_hours=config.collect_last_hours,
+        snapchain_shards=config.snapchain_shards,
     )
     write_llm_instructions_txt(
         instructions_path=config.instructions_path,
@@ -3460,6 +3685,9 @@ def main() -> None:
         final_comments_per_post=config.final_comments_per_post,
         final_snippet_length=config.final_snippet_length,
         hub_url=config.hub_url,
+        source=config.source,
+        collect_last_hours=config.collect_last_hours,
+        snapchain_shards=config.snapchain_shards,
         focus_themes=config.focus_themes,
         exclude_themes=config.exclude_themes,
     )

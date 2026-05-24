@@ -16,7 +16,19 @@ Supports two modes:
 python -m pip install -r requirements.txt
 ```
 
-Default source is direct Snapchain hub ingestion (no API key required).
+Default source is direct Hypersnap/Snapchain node ingestion (no API key required).
+The scraper talks to the node HTTP API (`/v1/info`, `/v1/events`, and username lookup endpoints), auto-discovers available shards from `/v1/info`, and fails over across multiple node URLs when configured.
+
+Node URL configuration, in priority order:
+
+```bash
+# CLI, single or comma-separated list
+python3 scripts/farcaster_daily_scraper.py --hub-urls "http://node-a:3381,http://node-b:3381" --collect-last-hours 24
+
+# Environment fallback
+export HYPERSNAP_NODE_URLS="http://node-a:3381,http://node-b:3381"
+export FC_CONTEXT_SNAPCHAIN_SHARDS="auto"   # default: every shard advertised by /v1/info
+```
 
 ## Local validation
 
@@ -24,6 +36,7 @@ Run the parser/import checks without collecting live data:
 
 ```bash
 python -m compileall scripts
+python -m unittest discover -s tests
 python scripts/farcaster_daily_scraper.py --help
 ```
 
@@ -44,13 +57,13 @@ bash scripts/farcaster_context_last_hour.sh
 You can also call the underlying script directly:
 
 ```bash
-python3 scripts/farcaster_daily_scraper.py --source snapchain --collect-last-hours 24 --timezone UTC
+python3 scripts/farcaster_daily_scraper.py --source hypersnap --collect-last-hours 24 --timezone UTC
 ```
 
 or
 
 ```bash
-python3 scripts/farcaster_daily_scraper.py --source snapchain --collect-last-hours 1 --timezone UTC
+python3 scripts/farcaster_daily_scraper.py --source hypersnap --collect-last-hours 1 --timezone UTC
 ```
 
 ## Output files
@@ -72,7 +85,9 @@ python3 scripts/farcaster_daily_scraper.py --source snapchain --collect-last-hou
 Use additional flags supported by `farcaster_daily_scraper.py`, including:
 - `--query`
 - `--timezone`
-- `--source snapchain`
+- `--source hypersnap` (`snapchain` remains a backwards-compatible alias)
+- `--hub-url` / `--hub-urls`
+- `--snapchain-shards auto` (default, reads all shards advertised by the selected node)
 - `--final-top-posts`
 - `--final-comments-per-post`
 - `--final-snippet-length`
