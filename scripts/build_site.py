@@ -478,7 +478,7 @@ def render_index(raw_path: Path, final_path: Path | None, tables: dict[str, list
     authors = tables["authors"]
     window = f"{metric_value(metrics, 'window_start_utc')} → {metric_value(metrics, 'window_end_utc')}"
     top_cards = []
-    for row in top_casts[:6]:
+    for row in top_casts[:3]:
         top_cards.append(
             '<article class="cast-card">'
             f'<div class="cast-meta"><span>#{esc(row["rank"])}</span><span>{esc(row["type"])}</span><span>eng {esc(row["engagement"])}</span><span>score {esc(row["score"])}</span></div>'
@@ -488,7 +488,25 @@ def render_index(raw_path: Path, final_path: Path | None, tables: dict[str, list
             '</article>'
         )
     keyword_html = "".join(f"<span>{esc(word)} <b>{count}</b></span>" for word, count in keywords)
-    summary_html = "".join(f"<li>{esc(line)}</li>" for line in summary_lines[:8]) or "<li>Summary lines unavailable for this run.</li>"
+    key_summary_lines = [
+        line
+        for line in summary_lines
+        if not line.lower().startswith(("theme filter active", "filter removed", "mean engagement score", "most discussed thread hashes"))
+    ]
+    summary_html = "".join(f"<li>{esc(line)}</li>" for line in key_summary_lines[:4]) or "<li>Summary lines unavailable for this run.</li>"
+    technical_summary_html = "".join(f"<li>{esc(line)}</li>" for line in summary_lines) or "<li>Run notes unavailable for this snapshot.</li>"
+    technical_rows = "".join(
+        f"<div><dt>{esc(label)}</dt><dd>{esc(value)}</dd></div>"
+        for label, value in [
+            ("Window UTC", window),
+            ("Generated UTC", metric_value(metrics, "generated_at_utc")),
+            ("Source", metric_value(metrics, "source")),
+            ("Hub", metric_value(metrics, "hub_url")),
+            ("Readable shards", metric_value(metrics, "snapchain_shards")),
+            ("Raw file", raw_path.name),
+            ("Final context", final_path.name if final_path else "not found"),
+        ]
+    )
     export_rows = "".join(
         f'<tr><td>{esc(item["table"].replace("_", " "))}</td><td>{esc(item["rows"])}</td>'
         f'<td><a href="{esc(item["file"])}" download>CSV</a><a href="{esc(item["file"].replace(".csv", ".json"))}" download>JSON</a></td></tr>'
@@ -511,7 +529,7 @@ def render_index(raw_path: Path, final_path: Path | None, tables: dict[str, list
         ]
     )
     css = """
-:root{color-scheme:dark;--bg:#07000f;--bg2:#120020;--panel:#17042d;--panel2:#21063e;--ink:#f6e9ff;--muted:#b99bd6;--line:#4f1d7a;--accent:#b45cff;--accent2:#ff4fd8;--accent3:#7c3aed;--good:#39f5c6;--shadow:0 24px 80px rgba(0,0,0,.45);font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}*{box-sizing:border-box}html{background:radial-gradient(circle at top left,#35115d 0,#120020 36%,#07000f 76%)}body{margin:0;min-width:320px;background:linear-gradient(145deg,rgba(124,58,237,.18),transparent 38%),var(--bg);color:var(--ink)}a{color:var(--ink);text-decoration:none}.shell{width:min(1480px,calc(100% - 32px));margin:0 auto;padding:28px 0 48px}.hero,.table-card,.exports,details,.insight-card,.cast-card{background:linear-gradient(180deg,rgba(33,6,62,.94),rgba(15,2,31,.96));border:1px solid rgba(180,92,255,.38);box-shadow:var(--shadow);backdrop-filter:blur(14px)}.hero{position:relative;overflow:hidden;border-radius:32px;padding:34px;display:grid;grid-template-columns:minmax(300px,1fr) minmax(320px,.75fr);gap:26px}.hero:before{content:"";position:absolute;inset:-120px -80px auto auto;width:420px;height:420px;background:radial-gradient(circle,rgba(255,79,216,.34),transparent 68%);filter:blur(8px)}.eyebrow{display:flex;gap:10px;align-items:center;color:var(--good);font-size:12px;font-weight:900;letter-spacing:.12em;text-transform:uppercase}.orb{width:12px;height:12px;border-radius:999px;background:var(--good);box-shadow:0 0 28px var(--good)}h1{font-size:clamp(46px,8vw,112px);line-height:.86;margin:18px 0 14px;letter-spacing:-.075em;max-width:10ch}.subtitle{color:var(--muted);font-weight:700;line-height:1.5;max-width:760px}.hero-actions,.cast-actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:18px}.hero-actions a,.cast-actions a,.exports a,.chip-link{display:inline-flex;align-items:center;gap:6px;border:1px solid rgba(180,92,255,.5);background:rgba(124,58,237,.18);border-radius:999px;padding:8px 11px;font-weight:850;color:#f9edff}.hero-actions a:hover,.cast-actions a:hover,.exports a:hover,.chip-link:hover{border-color:var(--accent2);box-shadow:0 0 24px rgba(255,79,216,.22);transform:translateY(-1px)}.stats{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;position:relative}.stat{border:1px solid rgba(185,155,214,.24);border-radius:22px;background:rgba(7,0,15,.42);padding:16px}.stat b{display:block;color:var(--muted);font-size:11px;text-transform:uppercase;letter-spacing:.11em;margin-bottom:6px}.stat span{font-size:clamp(24px,4vw,42px);font-weight:950;letter-spacing:-.04em}.toolbar{position:sticky;top:0;z-index:5;padding:14px 0;background:linear-gradient(180deg,var(--bg),rgba(7,0,15,.72));backdrop-filter:blur(12px)}#filter{width:100%;border:1px solid rgba(180,92,255,.46);background:#0d0219;color:var(--ink);border-radius:999px;padding:15px 20px;font-size:16px;outline:none;box-shadow:inset 0 0 0 1px rgba(255,255,255,.03)}#filter:focus{border-color:var(--accent2);box-shadow:0 0 0 4px rgba(255,79,216,.14)}.insights{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin:18px 0}.insight-card{border-radius:26px;padding:22px}.insight-card h2,.exports h2{margin:0 0 12px;font-size:18px}.keyword-cloud{display:flex;flex-wrap:wrap;gap:8px}.keyword-cloud span,.theme-pill{border:1px solid rgba(180,92,255,.38);background:rgba(180,92,255,.12);border-radius:999px;padding:6px 9px;color:#ead7ff;font-weight:800}.keyword-cloud b{color:var(--good)}.summary-list{margin:0;padding-left:18px;color:#dec8f5;line-height:1.5}.cast-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;margin:18px 0}.cast-card{border-radius:24px;padding:18px;min-height:250px}.cast-meta{display:flex;gap:8px;flex-wrap:wrap;color:var(--good);font-size:12px;font-weight:900;text-transform:uppercase}.cast-card h3{margin:12px 0 10px}.cast-card p{color:#dec8f5;line-height:1.45}.cast-actions span{border:1px solid rgba(185,155,214,.22);border-radius:999px;padding:8px 10px;color:var(--muted);font-weight:800}.table-card{border-radius:24px;margin:18px 0;overflow:hidden}.table-scroll{overflow:auto;max-height:760px}table{width:100%;border-collapse:collapse;min-width:980px}caption{text-align:left;padding:16px 18px;font-weight:950;text-transform:uppercase;letter-spacing:.08em;display:flex;justify-content:space-between;background:rgba(7,0,15,.44);color:#f8eaff}th,td{padding:12px 14px;border-top:1px solid rgba(185,155,214,.16);vertical-align:top}th{position:sticky;top:0;z-index:1;background:#130324;color:var(--muted);text-align:left;font-size:12px;text-transform:uppercase;letter-spacing:.08em}th button{all:unset;cursor:pointer}tr:hover td{background:rgba(180,92,255,.08)}td{color:#eadcf7}.preview-text{display:inline-block;max-width:520px;line-height:1.42}.exports{border-radius:24px;padding:18px;margin:18px 0}.exports table{min-width:0}.exports a{margin-right:8px}.advanced{border-radius:24px;margin-top:18px}.advanced summary{cursor:pointer;padding:18px;font-weight:950;text-transform:uppercase;color:#f8eaff}.advanced .inner{padding:0 18px 18px}.footer{color:var(--muted);text-align:center;margin-top:28px;font-size:13px}.cast:after,.hero-actions a:after,.cast-actions a:after{content:"↗";font-size:12px;color:var(--good)}@media(max-width:980px){.hero,.insights{grid-template-columns:1fr}.cast-grid{grid-template-columns:1fr}.stats{grid-template-columns:repeat(2,minmax(0,1fr))}}@media(max-width:620px){.shell{width:min(100% - 20px,1480px)}.hero{padding:22px;border-radius:22px}.stats{grid-template-columns:1fr}h1{font-size:52px}}
+:root{color-scheme:dark;--bg:#0b0a10;--surface:#17131f;--surface-2:#201a2c;--ink:#eeeaf6;--muted:#a9a0b8;--line:#332a45;--accent:#5f35a8;--accent-soft:rgba(95,53,168,.18);--shadow:0 18px 48px rgba(0,0,0,.34);font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}*{box-sizing:border-box}html{background:var(--bg)}body{margin:0;min-width:320px;background:var(--bg);color:var(--ink)}a{color:var(--ink);text-decoration:none}.shell{width:min(1320px,calc(100% - 28px));margin:0 auto;padding:16px 0 40px}.hero,.table-card,.exports,details,.insight-card,.cast-card,.technical-card{background:var(--surface);border:1px solid var(--line);box-shadow:var(--shadow)}.hero{border-radius:20px;padding:18px;display:grid;grid-template-columns:minmax(260px,.78fr) minmax(460px,1.22fr);gap:14px;align-items:stretch}.eyebrow{display:flex;gap:9px;align-items:center;color:var(--muted);font-size:11px;font-weight:900;letter-spacing:.12em;text-transform:uppercase}.orb{width:10px;height:10px;border-radius:999px;background:var(--accent)}h1{font-size:clamp(34px,4.2vw,56px);line-height:.94;margin:8px 0 8px;letter-spacing:-.05em;max-width:12ch}.subtitle{color:var(--muted);font-weight:650;line-height:1.35;max-width:680px}.hero-actions,.cast-actions{display:flex;gap:8px;flex-wrap:wrap;margin-top:10px}.hero-actions a,.cast-actions a,.exports a,.chip-link{display:inline-flex;align-items:center;gap:6px;border:1px solid var(--line);background:var(--accent-soft);border-radius:999px;padding:7px 10px;font-weight:800;color:#f4effc}.hero-actions a:hover,.cast-actions a:hover,.exports a:hover,.chip-link:hover{border-color:var(--accent);background:rgba(95,53,168,.28)}.stats{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px}.stat{background:var(--surface-2);border:1px solid var(--line);border-radius:14px;padding:10px;min-height:68px}.stat b{display:block;color:var(--muted);font-size:10px;letter-spacing:.09em;text-transform:uppercase}.stat span{display:block;margin-top:6px;font-size:clamp(18px,2.5vw,28px);font-weight:900;letter-spacing:-.04em;overflow-wrap:anywhere}.toolbar{margin:12px 0 10px}.toolbar input{width:100%;border:1px solid var(--line);background:var(--surface);border-radius:16px;color:var(--ink);font-size:15px;font-weight:650;padding:14px 16px;outline:none}.toolbar input:focus{border-color:var(--accent);box-shadow:0 0 0 3px rgba(95,53,168,.2)}.insights{display:grid;grid-template-columns:minmax(0,1.2fr) minmax(260px,.8fr);gap:10px;margin:10px 0}.insight-card,.cast-card,.table-card,.exports,details,.technical-card{border-radius:20px}.insight-card{padding:14px}.insight-card h2,.exports h2,.technical-card h2{margin:0 0 8px;font-size:16px;letter-spacing:-.02em}.summary-list{margin:0;padding-left:18px;color:var(--muted);line-height:1.35}.summary-list li{margin:3px 0}.keyword-cloud{display:flex;flex-wrap:wrap;gap:8px}.keyword-cloud span,.theme-pill,.cast-meta span{border:1px solid var(--line);background:var(--surface-2);border-radius:999px;padding:5px 8px;color:var(--muted);font-size:11px;font-weight:800}.keyword-cloud b{color:var(--ink)}.cast-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px;margin:10px 0 14px}.cast-card{padding:13px}.cast-card h3{margin:8px 0 6px;font-size:17px}.cast-card p{margin:0;color:var(--muted);line-height:1.35;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}.cast-meta{display:flex;gap:7px;flex-wrap:wrap}.cast-actions span{color:var(--muted);font-size:12px;font-weight:800;padding:7px 0}.table-scroll{overflow:auto;max-height:72vh}table{width:100%;border-collapse:separate;border-spacing:0}caption{text-align:left;padding:14px 16px;font-size:18px;font-weight:900;display:flex;justify-content:space-between;gap:16px;position:sticky;left:0;background:var(--surface);z-index:1}th,td{border-bottom:1px solid var(--line);padding:10px 12px;vertical-align:top;text-align:left}th{position:sticky;top:0;background:var(--surface-2);z-index:2}th button{all:unset;cursor:pointer;color:var(--ink);font-size:12px;font-weight:900;text-transform:uppercase;letter-spacing:.08em}td{color:var(--muted);font-size:13px;line-height:1.4}tbody tr:hover td{background:rgba(95,53,168,.08)}.featured-table .preview-text{display:inline-block;min-width:360px;max-width:620px;color:var(--ink)}.technical{margin-top:22px}.technical-grid{display:grid;grid-template-columns:minmax(0,.95fr) minmax(300px,.65fr);gap:14px}.technical-card,.exports{padding:18px}.technical-card dl{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;margin:0}.technical-card dl div{border:1px solid var(--line);background:var(--surface-2);border-radius:14px;padding:10px}.technical-card dt{color:var(--muted);font-size:11px;font-weight:900;letter-spacing:.08em;text-transform:uppercase}.technical-card dd{margin:6px 0 0;color:var(--ink);font-weight:750;overflow-wrap:anywhere}.exports table td,.exports table th{padding:9px}.exports a{margin-right:7px}details{margin-top:14px;padding:0;overflow:hidden}summary{cursor:pointer;padding:16px 18px;font-size:16px;font-weight:900;color:var(--ink);list-style:none}summary::-webkit-details-marker{display:none}.inner{display:grid;gap:14px;padding:0 14px 14px}.footer{color:var(--muted);text-align:center;margin:24px 0 0;font-size:13px}@media(max-width:980px){.hero,.insights,.technical-grid{grid-template-columns:1fr}.stats,.cast-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.technical-card dl{grid-template-columns:1fr}}@media(max-width:640px){.shell{width:min(100% - 18px,1320px);padding-top:12px}.hero{padding:18px}.stats,.cast-grid{grid-template-columns:1fr}th,td{padding:9px}.featured-table .preview-text{min-width:260px}}
 """
     js = """
 const filter=document.getElementById('filter');
@@ -526,7 +544,7 @@ updateCounts();
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="theme-color" content="#120020">
+<meta name="theme-color" content="#0b0a10">
 <title>Clawberto Farcaster Context</title>
 <style>{css}</style>
 </head>
@@ -534,30 +552,34 @@ updateCounts();
 <div class="shell">
   <section class="hero" aria-label="Farcaster context overview">
     <div>
-      <div class="eyebrow"><span class="orb"></span>Hypersnap Farcaster context</div>
+      <div class="eyebrow"><span class="orb"></span>Farcaster signal board</div>
       <h1>Clawberto context</h1>
-      <p class="subtitle">Parsed, ranked, and summarized Farcaster activity from the latest 24-hour Hypersnap scrape. Dark-purple signal board with linkable authors, casts, cached data exports, and searchable tables.</p>
-      <div class="hero-actions"><a href="{esc(REPO_URL)}" target="_blank" rel="noopener noreferrer">GitHub repo</a><a href="generated/top_casts.csv" download>Download top casts CSV</a><a href="generated/top_casts.json" download>Download JSON</a></div>
+      <p class="subtitle">Latest 24-hour Farcaster activity, filtered into the casts, authors, and themes worth checking first.</p>
+      <div class="hero-actions"><a href="{esc(REPO_URL)}" target="_blank" rel="noopener noreferrer">GitHub repo</a></div>
     </div>
     <div class="stats">
       <div class="stat"><b>Total casts</b><span>{esc(metric_value(metrics, 'total_records'))}</span></div>
       <div class="stat"><b>Unique authors</b><span>{esc(metric_value(metrics, 'unique_authors'))}</span></div>
+      <div class="stat"><b>Selected signal</b><span>{esc(metric_value(metrics, 'selected_records'))}</span></div>
       <div class="stat"><b>Posts / comments</b><span>{esc(metric_value(metrics, 'posts'))} / {esc(metric_value(metrics, 'comments'))}</span></div>
       <div class="stat"><b>Total likes</b><span>{esc(metric_value(metrics, 'total_likes'))}</span></div>
-      <div class="stat"><b>Readable shards</b><span>{esc(metric_value(metrics, 'snapchain_shards'))}</span></div>
-      <div class="stat"><b>Selected signal</b><span>{esc(metric_value(metrics, 'selected_records'))}</span></div>
+      <div class="stat"><b>Top author</b><span>{esc(metric_value(metrics, 'top_cast_author'))}</span></div>
     </div>
   </section>
-  <div class="toolbar"><input id="filter" type="search" aria-label="filter visible tables" placeholder="Search usernames, posts, themes, hashes" autocomplete="off"></div>
-  <section class="insights" aria-label="Context summary">
-    <article class="insight-card"><h2>Snapshot window</h2><p class="subtitle">{esc(window)}</p><p class="subtitle">Hub: {esc(metric_value(metrics, 'hub_url'))}</p><p class="subtitle">Raw source: {esc(raw_path.name)}</p><p class="subtitle">Final context: {esc(final_path.name if final_path else 'not found')}</p></article>
-    <article class="insight-card"><h2>Daily summary</h2><ul class="summary-list">{summary_html}</ul></article>
+  <section class="insights" aria-label="Key context summary">
+    <article class="insight-card"><h2>Key readout</h2><ul class="summary-list">{summary_html}</ul></article>
     <article class="insight-card"><h2>Recurring terms</h2><div class="keyword-cloud">{keyword_html}</div></article>
   </section>
   <section class="cast-grid" aria-label="Featured casts">{''.join(top_cards)}</section>
+  <div class="toolbar"><input id="filter" type="search" aria-label="filter visible tables" placeholder="Search usernames, posts, themes, hashes" autocomplete="off"></div>
   <main>{primary_table}</main>
-  <section class="exports"><h2>Cached data exports</h2><table><thead><tr><th>table</th><th>rows</th><th>download</th></tr></thead><tbody>{export_rows}</tbody></table></section>
-  <details class="advanced" open><summary>Advanced parsed tables</summary><div class="inner">{secondary_tables}</div></details>
+  <section class="technical" aria-label="Technical context">
+    <div class="technical-grid">
+      <article class="technical-card"><h2>Technical context</h2><dl>{technical_rows}</dl></article>
+      <section class="exports"><h2>Cached data exports</h2><table><thead><tr><th>table</th><th>rows</th><th>download</th></tr></thead><tbody>{export_rows}</tbody></table></section>
+    </div>
+  </section>
+  <details class="advanced"><summary>Technical parsed tables</summary><div class="inner"><article class="technical-card"><h2>Full run notes</h2><ul class="summary-list">{technical_summary_html}</ul></article>{secondary_tables}</div></details>
   <p class="footer">Generated from Hypersnap/Snapchain node data. Profile and post links open Farcaster/Warpcast in a new tab.</p>
 </div>
 <script>{js}</script>
