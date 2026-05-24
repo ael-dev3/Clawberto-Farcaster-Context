@@ -68,3 +68,12 @@ export FC_CONTEXT_SNAPCHAIN_SHARDS="auto"
 ```
 
 `--source hypersnap` is the default. `snapchain` remains a backwards-compatible alias.
+
+## Deployment notes
+
+If the first GitHub Pages deploy fails in `actions/configure-pages` with `Resource not accessible by integration`, Pages has not been enabled for the repo yet. Enable workflow-based Pages once, then rerun the deploy workflow:
+
+```bash
+gh api repos/ael-dev3/Clawberto-Farcaster-Context/pages -X POST -f build_type=workflow
+gh run rerun <deploy-run-id>
+```
