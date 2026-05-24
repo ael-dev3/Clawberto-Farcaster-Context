@@ -1,0 +1,82 @@
+[
+  {
+    "metric": "site_url",
+    "value": "https://ael-dev3.github.io/Clawberto-Farcaster-Context/"
+  },
+  {
+    "metric": "repo_url",
+    "value": "https://github.com/ael-dev3/Clawberto-Farcaster-Context"
+  },
+  {
+    "metric": "generated_at_utc",
+    "value": "2026-05-24 13:54:35"
+  },
+  {
+    "metric": "source",
+    "value": "hypersnap"
+  },
+  {
+    "metric": "hub_url",
+    "value": "http://54.157.62.17:3381"
+  },
+  {
+    "metric": "snapchain_shards",
+    "value": "1,2"
+  },
+  {
+    "metric": "collect_last_hours",
+    "value": "24"
+  },
+  {
+    "metric": "window_start_utc",
+    "value": "2026-05-23 13:41:57"
+  },
+  {
+    "metric": "window_end_utc",
+    "value": "2026-05-24 13:41:43"
+  },
+  {
+    "metric": "total_records",
+    "value": 16845
+  },
+  {
+    "metric": "posts",
+    "value": 5172
+  },
+  {
+    "metric": "comments",
+    "value": 11673
+  },
+  {
+    "metric": "selected_records",
+    "value": 200
+  },
+  {
+    "metric": "unique_authors",
+    "value": 4075
+  },
+  {
+    "metric": "total_likes",
+    "value": 16180
+  },
+  {
+    "metric": "total_recasts",
+    "value": 1704
+  },
+  {
+    "metric": "total_replies",
+    "value": 6725
+  },
+  {
+    "metric": "top_cast_score",
+    "value": "10.00"
+  },
+  {
+    "metric": "top_cast_author",
+    "value": "@basebuzz"
+  },
+  {
+    "metric": "top_cast_url",
+    "value": "https://farcaster.xyz/basebuzz/0xba435ad9"
+  }
+]
