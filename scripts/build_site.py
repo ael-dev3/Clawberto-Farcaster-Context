@@ -20,10 +20,11 @@ SITE_URL = "https://ael-dev3.github.io/Clawberto-Farcaster-Context/"
 REPO_URL = "https://github.com/ael-dev3/Clawberto-Farcaster-Context"
 
 STOPWORDS = {
-    "about", "after", "again", "also", "amp", "and", "are", "because", "been", "being", "can", "com",
-    "could", "day", "did", "does", "don", "for", "from", "get", "got", "has", "have", "here", "https",
-    "into", "just", "like", "more", "not", "now", "one", "out", "our", "post", "really", "see", "should",
-    "some", "that", "the", "their", "them", "then", "there", "they", "this", "today", "too", "was", "way",
+    "about", "after", "again", "all", "also", "amp", "and", "any", "are", "because", "been", "being", "but",
+    "can", "com", "could", "created", "day", "did", "does", "don", "each", "every", "for", "from",
+    "get", "got", "has", "have", "here", "how", "https", "into", "its", "just", "like", "made", "make",
+    "more", "not", "now", "one", "out", "our", "post", "really", "see", "should", "some", "that", "the",
+    "their", "them", "then", "there", "they", "this", "today", "too", "use", "using", "via", "was", "way",
     "what", "when", "where", "who", "will", "with", "would", "you", "your",
 }
 TOKEN_RE = re.compile(r"[a-z][a-z0-9]{2,}", re.IGNORECASE)
@@ -471,11 +472,82 @@ def metric_value(metrics: list[dict[str, Any]], key: str) -> str:
     return ""
 
 
+def pct(value: Any, total: Any) -> str:
+    try:
+        numerator = float(value or 0)
+        denominator = float(total or 0)
+    except (TypeError, ValueError):
+        return "0%"
+    if denominator <= 0:
+        return "0%"
+    return f"{(numerator / denominator) * 100:.0f}%"
+
+
+def build_agent_take(tables: dict[str, list[dict[str, Any]]], keywords: list[tuple[str, int]], summary_lines: list[str]) -> list[dict[str, str]]:
+    """Create a concise data-backed editorial readout for the public site.
+
+    This intentionally stays deterministic so scheduled refreshes keep the
+    website useful without needing live LLM credentials in CI.
+    """
+    metrics = tables.get("summary_metrics", [])
+    theme_rows = tables.get("theme_summary", [])
+    top_casts = tables.get("top_casts", [])
+    authors = tables.get("authors", [])
+    selected_total = sum(intish(row.get("casts")) for row in theme_rows) or intish(metric_value(metrics, "selected_records"))
+    top_theme = theme_rows[0] if theme_rows else {"theme": "the dominant theme", "casts": 0, "top_author": ""}
+    second_theme = theme_rows[1] if len(theme_rows) > 1 else {"theme": "secondary chatter", "casts": 0}
+    security = next((row for row in theme_rows if str(row.get("theme", "")).lower() == "security/ops"), {})
+    protocol = next((row for row in theme_rows if str(row.get("theme", "")).lower() == "protocol/fork"), {})
+    token = next((row for row in theme_rows if str(row.get("theme", "")).lower() == "token/promo"), {})
+    top_author = authors[0].get("author", "") if authors else metric_value(metrics, "top_cast_author")
+    second_author = authors[1].get("author", "") if len(authors) > 1 else ""
+    top_one = top_casts[0] if top_casts else {}
+    top_two = top_casts[1] if len(top_casts) > 1 else {}
+    engagement_total = sum(float(row.get("engagement") or 0) for row in top_casts)
+    top_two_eng = sum(float(row.get("engagement") or 0) for row in top_casts[:2])
+    low_signal_terms = {"podium", "good", "caster", "score", "name", "something", "thing", "back", "real"}
+    keyword_terms = ", ".join([word for word, _ in keywords if word not in low_signal_terms][:5])
+    total_records = metric_value(metrics, "total_records")
+    unique_authors = metric_value(metrics, "unique_authors")
+    selected_records = metric_value(metrics, "selected_records")
+    base_share = pct(top_theme.get("casts"), selected_total)
+    top_two_share = pct(top_two_eng, engagement_total)
+    protocol_note = ""
+    if protocol:
+        protocol_note = f" {protocol.get('theme')} is only {pct(protocol.get('casts'), selected_total)} of selected casts, but it carries the {top_two.get('author', 'second-ranked')} miniapp/quorum thread, so it is high leverage despite low volume."
+    security_note = ""
+    if security:
+        security_note = f" {security.get('theme')} is {pct(security.get('casts'), selected_total)} and is mostly product friction, safety, and community-tool complaints."
+    token_note = ""
+    if token and intish(token.get("casts")):
+        token_note = f" Token/promo stayed small at {pct(token.get('casts'), selected_total)}, so I would not let it drive the narrative unless a single cast breaks out."
+
+    return [
+        {
+            "label": "My read",
+            "take": f"This is a Base-first snapshot, not a broad Farcaster one. {top_theme.get('theme')} is {base_share} of the selected signal, keywords cluster around {keyword_terms or 'Base, apps, builders, and onchain'}, and the feed is mostly community/status chatter with a few practical builder moments.",
+        },
+        {
+            "label": "What matters",
+            "take": f"Attention is concentrated. The first two casts account for {top_two_share} of top-table engagement: {top_one.get('author', top_author)} on Basebuzz analytics and {top_two.get('author', second_author)} on miniapp/quorum momentum. I would treat those as the anchor threads before scanning the long tail.",
+        },
+        {
+            "label": "Watch next",
+            "take": f"The useful tension is Base app growth versus Farcaster community identity.{protocol_note}{security_note} If that friction keeps showing up, it is where good commentary and support content will land.",
+        },
+        {
+            "label": "Clawberto angle",
+            "take": f"Best move: play curator, not hype account. Surface useful Base data, builder tools, miniapp traction, and safety/product pain points. Ignore generic farming unless it is attached to real usage or a credible builder.{token_note}",
+        },
+    ]
+
+
 def render_index(raw_path: Path, final_path: Path | None, tables: dict[str, list[dict[str, Any]]], manifest: list[dict[str, Any]], keywords: list[tuple[str, int]], summary_lines: list[str]) -> None:
     metrics = tables["summary_metrics"]
     top_casts = tables["top_casts"]
     theme_rows = tables["theme_summary"]
     authors = tables["authors"]
+    agent_take = tables.get("agent_take") or build_agent_take(tables, keywords, summary_lines)
     window = f"{metric_value(metrics, 'window_start_utc')} → {metric_value(metrics, 'window_end_utc')}"
     top_cards = []
     for row in top_casts[:3]:
@@ -488,6 +560,10 @@ def render_index(raw_path: Path, final_path: Path | None, tables: dict[str, list
             '</article>'
         )
     keyword_html = "".join(f"<span>{esc(word)} <b>{count}</b></span>" for word, count in keywords)
+    take_cards = "".join(
+        f'<article><b>{esc(row.get("label", "Take"))}</b><p>{esc(row.get("take", ""))}</p></article>'
+        for row in agent_take
+    )
     key_summary_lines = [
         line
         for line in summary_lines
@@ -529,7 +605,7 @@ def render_index(raw_path: Path, final_path: Path | None, tables: dict[str, list
         ]
     )
     css = """
-:root{color-scheme:dark;--bg:#0b0a10;--surface:#17131f;--surface-2:#201a2c;--ink:#eeeaf6;--muted:#a9a0b8;--line:#332a45;--accent:#5f35a8;--accent-soft:rgba(95,53,168,.18);--shadow:0 18px 48px rgba(0,0,0,.34);font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}*{box-sizing:border-box}html{background:var(--bg)}body{margin:0;min-width:320px;background:var(--bg);color:var(--ink)}a{color:var(--ink);text-decoration:none}.shell{width:min(1320px,calc(100% - 28px));margin:0 auto;padding:16px 0 40px}.hero,.table-card,.exports,details,.insight-card,.cast-card,.technical-card{background:var(--surface);border:1px solid var(--line);box-shadow:var(--shadow)}.hero{border-radius:20px;padding:18px;display:grid;grid-template-columns:minmax(260px,.78fr) minmax(460px,1.22fr);gap:14px;align-items:stretch}.eyebrow{display:flex;gap:9px;align-items:center;color:var(--muted);font-size:11px;font-weight:900;letter-spacing:.12em;text-transform:uppercase}.orb{width:10px;height:10px;border-radius:999px;background:var(--accent)}h1{font-size:clamp(34px,4.2vw,56px);line-height:.94;margin:8px 0 8px;letter-spacing:-.05em;max-width:12ch}.subtitle{color:var(--muted);font-weight:650;line-height:1.35;max-width:680px}.hero-actions,.cast-actions{display:flex;gap:8px;flex-wrap:wrap;margin-top:10px}.hero-actions a,.cast-actions a,.exports a,.chip-link{display:inline-flex;align-items:center;gap:6px;border:1px solid var(--line);background:var(--accent-soft);border-radius:999px;padding:7px 10px;font-weight:800;color:#f4effc}.hero-actions a:hover,.cast-actions a:hover,.exports a:hover,.chip-link:hover{border-color:var(--accent);background:rgba(95,53,168,.28)}.stats{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px}.stat{background:var(--surface-2);border:1px solid var(--line);border-radius:14px;padding:10px;min-height:68px}.stat b{display:block;color:var(--muted);font-size:10px;letter-spacing:.09em;text-transform:uppercase}.stat span{display:block;margin-top:6px;font-size:clamp(18px,2.5vw,28px);font-weight:900;letter-spacing:-.04em;overflow-wrap:anywhere}.toolbar{margin:12px 0 10px}.toolbar input{width:100%;border:1px solid var(--line);background:var(--surface);border-radius:16px;color:var(--ink);font-size:15px;font-weight:650;padding:14px 16px;outline:none}.toolbar input:focus{border-color:var(--accent);box-shadow:0 0 0 3px rgba(95,53,168,.2)}.insights{display:grid;grid-template-columns:minmax(0,1.2fr) minmax(260px,.8fr);gap:10px;margin:10px 0}.insight-card,.cast-card,.table-card,.exports,details,.technical-card{border-radius:20px}.insight-card{padding:14px}.insight-card h2,.exports h2,.technical-card h2{margin:0 0 8px;font-size:16px;letter-spacing:-.02em}.summary-list{margin:0;padding-left:18px;color:var(--muted);line-height:1.35}.summary-list li{margin:3px 0}.keyword-cloud{display:flex;flex-wrap:wrap;gap:8px}.keyword-cloud span,.theme-pill,.cast-meta span{border:1px solid var(--line);background:var(--surface-2);border-radius:999px;padding:5px 8px;color:var(--muted);font-size:11px;font-weight:800}.keyword-cloud b{color:var(--ink)}.cast-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px;margin:10px 0 14px}.cast-card{padding:13px}.cast-card h3{margin:8px 0 6px;font-size:17px}.cast-card p{margin:0;color:var(--muted);line-height:1.35;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}.cast-meta{display:flex;gap:7px;flex-wrap:wrap}.cast-actions span{color:var(--muted);font-size:12px;font-weight:800;padding:7px 0}.table-scroll{overflow:auto;max-height:72vh}table{width:100%;border-collapse:separate;border-spacing:0}caption{text-align:left;padding:14px 16px;font-size:18px;font-weight:900;display:flex;justify-content:space-between;gap:16px;position:sticky;left:0;background:var(--surface);z-index:1}th,td{border-bottom:1px solid var(--line);padding:10px 12px;vertical-align:top;text-align:left}th{position:sticky;top:0;background:var(--surface-2);z-index:2}th button{all:unset;cursor:pointer;color:var(--ink);font-size:12px;font-weight:900;text-transform:uppercase;letter-spacing:.08em}td{color:var(--muted);font-size:13px;line-height:1.4}tbody tr:hover td{background:rgba(95,53,168,.08)}.featured-table .preview-text{display:inline-block;min-width:360px;max-width:620px;color:var(--ink)}.technical{margin-top:22px}.technical-grid{display:grid;grid-template-columns:minmax(0,.95fr) minmax(300px,.65fr);gap:14px}.technical-card,.exports{padding:18px}.technical-card dl{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;margin:0}.technical-card dl div{border:1px solid var(--line);background:var(--surface-2);border-radius:14px;padding:10px}.technical-card dt{color:var(--muted);font-size:11px;font-weight:900;letter-spacing:.08em;text-transform:uppercase}.technical-card dd{margin:6px 0 0;color:var(--ink);font-weight:750;overflow-wrap:anywhere}.exports table td,.exports table th{padding:9px}.exports a{margin-right:7px}details{margin-top:14px;padding:0;overflow:hidden}summary{cursor:pointer;padding:16px 18px;font-size:16px;font-weight:900;color:var(--ink);list-style:none}summary::-webkit-details-marker{display:none}.inner{display:grid;gap:14px;padding:0 14px 14px}.footer{color:var(--muted);text-align:center;margin:24px 0 0;font-size:13px}@media(max-width:980px){.hero,.insights,.technical-grid{grid-template-columns:1fr}.stats,.cast-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.technical-card dl{grid-template-columns:1fr}}@media(max-width:640px){.shell{width:min(100% - 18px,1320px);padding-top:12px}.hero{padding:18px}.stats,.cast-grid{grid-template-columns:1fr}th,td{padding:9px}.featured-table .preview-text{min-width:260px}}
+:root{color-scheme:dark;--bg:#0b0a10;--surface:#17131f;--surface-2:#201a2c;--ink:#eeeaf6;--muted:#a9a0b8;--line:#332a45;--accent:#5f35a8;--accent-soft:rgba(95,53,168,.18);--shadow:0 18px 48px rgba(0,0,0,.34);font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}*{box-sizing:border-box}html{background:var(--bg)}body{margin:0;min-width:320px;background:var(--bg);color:var(--ink)}a{color:var(--ink);text-decoration:none}.shell{width:min(1320px,calc(100% - 28px));margin:0 auto;padding:16px 0 40px}.hero,.table-card,.exports,details,.insight-card,.cast-card,.technical-card{background:var(--surface);border:1px solid var(--line);box-shadow:var(--shadow)}.hero{border-radius:20px;padding:18px;display:grid;grid-template-columns:minmax(260px,.78fr) minmax(460px,1.22fr);gap:14px;align-items:stretch}.eyebrow{display:flex;gap:9px;align-items:center;color:var(--muted);font-size:11px;font-weight:900;letter-spacing:.12em;text-transform:uppercase}.orb{width:10px;height:10px;border-radius:999px;background:var(--accent)}h1{font-size:clamp(34px,4.2vw,56px);line-height:.94;margin:8px 0 8px;letter-spacing:-.05em;max-width:12ch}.subtitle{color:var(--muted);font-weight:650;line-height:1.35;max-width:680px}.hero-actions,.cast-actions{display:flex;gap:8px;flex-wrap:wrap;margin-top:10px}.hero-actions a,.cast-actions a,.exports a,.chip-link{display:inline-flex;align-items:center;gap:6px;border:1px solid var(--line);background:var(--accent-soft);border-radius:999px;padding:7px 10px;font-weight:800;color:#f4effc}.hero-actions a:hover,.cast-actions a:hover,.exports a:hover,.chip-link:hover{border-color:var(--accent);background:rgba(95,53,168,.28)}.stats{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px}.stat{background:var(--surface-2);border:1px solid var(--line);border-radius:14px;padding:10px;min-height:68px}.stat b{display:block;color:var(--muted);font-size:10px;letter-spacing:.09em;text-transform:uppercase}.stat span{display:block;margin-top:6px;font-size:clamp(18px,2.5vw,28px);font-weight:900;letter-spacing:-.04em;overflow-wrap:anywhere}.toolbar{margin:12px 0 10px}.toolbar input{width:100%;border:1px solid var(--line);background:var(--surface);border-radius:16px;color:var(--ink);font-size:15px;font-weight:650;padding:14px 16px;outline:none}.toolbar input:focus{border-color:var(--accent);box-shadow:0 0 0 3px rgba(95,53,168,.2)}.insights{display:grid;grid-template-columns:minmax(0,1.2fr) minmax(260px,.8fr);gap:10px;margin:10px 0}.agent-take{margin:10px 0}.insight-card,.cast-card,.table-card,.exports,details,.technical-card{border-radius:20px}.insight-card{padding:14px}.take-card{padding:14px}.take-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:8px}.take-grid article{background:var(--surface-2);border:1px solid var(--line);border-radius:14px;padding:10px}.take-grid b{display:block;color:#f4effc;font-size:12px;letter-spacing:.06em;text-transform:uppercase}.take-grid p{margin:6px 0 0;color:var(--muted);line-height:1.38;font-size:13px}.insight-card h2,.exports h2,.technical-card h2{margin:0 0 8px;font-size:16px;letter-spacing:-.02em}.summary-list{margin:0;padding-left:18px;color:var(--muted);line-height:1.35}.summary-list li{margin:3px 0}.keyword-cloud{display:flex;flex-wrap:wrap;gap:8px}.keyword-cloud span,.theme-pill,.cast-meta span{border:1px solid var(--line);background:var(--surface-2);border-radius:999px;padding:5px 8px;color:var(--muted);font-size:11px;font-weight:800}.keyword-cloud b{color:var(--ink)}.cast-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px;margin:10px 0 14px}.cast-card{padding:13px}.cast-card h3{margin:8px 0 6px;font-size:17px}.cast-card p{margin:0;color:var(--muted);line-height:1.35;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}.cast-meta{display:flex;gap:7px;flex-wrap:wrap}.cast-actions span{color:var(--muted);font-size:12px;font-weight:800;padding:7px 0}.table-scroll{overflow:auto;max-height:72vh}table{width:100%;border-collapse:separate;border-spacing:0}caption{text-align:left;padding:14px 16px;font-size:18px;font-weight:900;display:flex;justify-content:space-between;gap:16px;position:sticky;left:0;background:var(--surface);z-index:1}th,td{border-bottom:1px solid var(--line);padding:10px 12px;vertical-align:top;text-align:left}th{position:sticky;top:0;background:var(--surface-2);z-index:2}th button{all:unset;cursor:pointer;color:var(--ink);font-size:12px;font-weight:900;text-transform:uppercase;letter-spacing:.08em}td{color:var(--muted);font-size:13px;line-height:1.4}tbody tr:hover td{background:rgba(95,53,168,.08)}.featured-table .preview-text{display:inline-block;min-width:360px;max-width:620px;color:var(--ink)}.technical{margin-top:22px}.technical-grid{display:grid;grid-template-columns:minmax(0,.95fr) minmax(300px,.65fr);gap:14px}.technical-card,.exports{padding:18px}.technical-card dl{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;margin:0}.technical-card dl div{border:1px solid var(--line);background:var(--surface-2);border-radius:14px;padding:10px}.technical-card dt{color:var(--muted);font-size:11px;font-weight:900;letter-spacing:.08em;text-transform:uppercase}.technical-card dd{margin:6px 0 0;color:var(--ink);font-weight:750;overflow-wrap:anywhere}.exports table td,.exports table th{padding:9px}.exports a{margin-right:7px}details{margin-top:14px;padding:0;overflow:hidden}summary{cursor:pointer;padding:16px 18px;font-size:16px;font-weight:900;color:var(--ink);list-style:none}summary::-webkit-details-marker{display:none}.inner{display:grid;gap:14px;padding:0 14px 14px}.footer{color:var(--muted);text-align:center;margin:24px 0 0;font-size:13px}@media(max-width:980px){.hero,.insights,.technical-grid{grid-template-columns:1fr}.take-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.stats,.cast-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.technical-card dl{grid-template-columns:1fr}}@media(max-width:640px){.shell{width:min(100% - 18px,1320px);padding-top:12px}.hero{padding:18px}.stats,.cast-grid,.take-grid{grid-template-columns:1fr}th,td{padding:9px}.featured-table .preview-text{min-width:260px}}
 """
     js = """
 const filter=document.getElementById('filter');
@@ -570,6 +646,9 @@ updateCounts();
     <article class="insight-card"><h2>Key readout</h2><ul class="summary-list">{summary_html}</ul></article>
     <article class="insight-card"><h2>Recurring terms</h2><div class="keyword-cloud">{keyword_html}</div></article>
   </section>
+  <section class="agent-take" aria-label="Clawberto analysis">
+    <article class="insight-card take-card"><h2>Clawberto take</h2><div class="take-grid">{take_cards}</div></article>
+  </section>
   <section class="cast-grid" aria-label="Featured casts">{''.join(top_cards)}</section>
   <div class="toolbar"><input id="filter" type="search" aria-label="filter visible tables" placeholder="Search usernames, posts, themes, hashes" autocomplete="off"></div>
   <main>{primary_table}</main>
@@ -599,7 +678,7 @@ def render_readme(tables: dict[str, list[dict[str, Any]]], manifest: list[dict[s
     )
     readme = f"""# Clawberto Farcaster Context
 
-Static, cached Farcaster context from direct Hypersnap/Snapchain node scraping. The public site serves parsed and summarized 24-hour context tables with linkable usernames, cast URLs, and downloadable CSV/JSON exports.
+Static, cached Farcaster context from direct Hypersnap/Snapchain node scraping. The public site serves parsed 24-hour context tables, a compact agent-written take, linkable usernames, cast URLs, and downloadable CSV/JSON exports.
 
 ## Links
 
@@ -681,8 +760,9 @@ def main() -> None:
         raise SystemExit(f"No records found in {raw_path}")
     final_path, site_records, summary_lines = parse_final_context(raw_path, records)
     tables = build_tables(records, metadata, site_records=site_records or None)
-    manifest = write_generated(tables)
     keywords = keyword_summary(site_records or records)
+    tables["agent_take"] = build_agent_take(tables, keywords, summary_lines)
+    manifest = write_generated(tables)
     render_index(raw_path, final_path, tables, manifest, keywords, summary_lines)
     render_readme(tables, manifest)
     print(f"Built site from {raw_path}")

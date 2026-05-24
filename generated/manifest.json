@@ -28,5 +28,10 @@
     "table": "comments",
     "file": "generated/comments.csv",
     "rows": 90
+  },
+  {
+    "table": "agent_take",
+    "file": "generated/agent_take.csv",
+    "rows": 4
   }
 ]

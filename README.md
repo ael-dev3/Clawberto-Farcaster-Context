@@ -1,6 +1,6 @@
 # Clawberto Farcaster Context
 
-Static, cached Farcaster context from direct Hypersnap/Snapchain node scraping. The public site serves parsed and summarized 24-hour context tables with linkable usernames, cast URLs, and downloadable CSV/JSON exports.
+Static, cached Farcaster context from direct Hypersnap/Snapchain node scraping. The public site serves parsed 24-hour context tables, a compact agent-written take, linkable usernames, cast URLs, and downloadable CSV/JSON exports.
 
 ## Links
 
@@ -33,6 +33,7 @@ Static, cached Farcaster context from direct Hypersnap/Snapchain node scraping. 
 | top_casts | `generated/top_casts.csv` | 150 | [CSV](generated/top_casts.csv) / [JSON](generated/top_casts.json) |
 | posts | `generated/posts.csv` | 110 | [CSV](generated/posts.csv) / [JSON](generated/posts.json) |
 | comments | `generated/comments.csv` | 90 | [CSV](generated/comments.csv) / [JSON](generated/comments.json) |
+| agent_take | `generated/agent_take.csv` | 4 | [CSV](generated/agent_take.csv) / [JSON](generated/agent_take.json) |
 
 ## Data pipeline
 
