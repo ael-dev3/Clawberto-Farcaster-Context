@@ -8,13 +8,14 @@ mkdir -p "$OUTPUT_DIR"
 
 if [[ "${1:-}" == --help || "${1:-}" == -h ]]; then
   echo "Usage: scripts/farcaster_context_last_hour.sh [extra args]"
-  echo "Defaults: source=snapchain, collect-last-hours=1, timezone=UTC,"
+  echo "Defaults: source=hypersnap, collect-last-hours=1, timezone=UTC, shards=auto,"
   echo "themes excluded: general_chat,daily_greetings,empty by default."
   exit 0
 fi
 
 python3 "$REPO_DIR/scripts/farcaster_daily_scraper.py" \
-  --source snapchain \
+  --source "${FC_CONTEXT_SOURCE:-hypersnap}" \
+  --snapchain-shards "${FC_CONTEXT_SNAPCHAIN_SHARDS:-auto}" \
   --collect-last-hours 1 \
   --timezone "${OPEN_CLAW_TIMEZONE:-UTC}" \
   --query "${FC_CONTEXT_QUERY:-*}" \

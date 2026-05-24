@@ -7,7 +7,8 @@ OUTPUT_DIR="${REPO_DIR}/data"
 mkdir -p "$OUTPUT_DIR"
 
 ARGS=(
-  --source snapchain
+  --source "${FC_CONTEXT_SOURCE:-hypersnap}"
+  --snapchain-shards "${FC_CONTEXT_SNAPCHAIN_SHARDS:-auto}"
   --collect-last-hours 24
   --timezone "${OPEN_CLAW_TIMEZONE:-UTC}"
   --query "${FC_CONTEXT_QUERY:-*}"
