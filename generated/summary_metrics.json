@@ -9,7 +9,7 @@
   },
   {
     "metric": "generated_at_utc",
-    "value": "2026-05-28 10:34:54"
+    "value": "2026-05-28 16:35:20"
   },
   {
     "metric": "source",
@@ -29,23 +29,23 @@
   },
   {
     "metric": "window_start_utc",
-    "value": "2026-05-27 10:34:53"
+    "value": "2026-05-27 16:34:57"
   },
   {
     "metric": "window_end_utc",
-    "value": "2026-05-28 10:34:38"
+    "value": "2026-05-28 16:34:56"
   },
   {
     "metric": "total_records",
-    "value": 18458
+    "value": 17826
   },
   {
     "metric": "posts",
-    "value": 5433
+    "value": 5733
   },
   {
     "metric": "comments",
-    "value": 13025
+    "value": 12093
   },
   {
     "metric": "selected_records",
@@ -53,30 +53,30 @@
   },
   {
     "metric": "unique_authors",
-    "value": 5033
+    "value": 5215
   },
   {
     "metric": "total_likes",
-    "value": 16125
+    "value": 16049
   },
   {
     "metric": "total_recasts",
-    "value": 1724
+    "value": 2091
   },
   {
     "metric": "total_replies",
-    "value": 6715
+    "value": 6364
   },
   {
     "metric": "top_cast_score",
-    "value": "6.69"
+    "value": "8.46"
   },
   {
     "metric": "top_cast_author",
-    "value": "@yalda6411"
+    "value": "@myk"
   },
   {
     "metric": "top_cast_url",
-    "value": "https://farcaster.xyz/yalda6411/0xc9b0a82a"
+    "value": "https://farcaster.xyz/myk/0x348270a1"
   }
 ]

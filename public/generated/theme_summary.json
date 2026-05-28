@@ -1,52 +1,52 @@
 [
   {
     "theme": "Base Culture",
-    "casts": 136,
-    "posts": 69,
-    "comments": 67,
-    "likes": 225,
-    "avg_score": "2.43",
-    "top_author": "@casterchain",
-    "top_cast_url": "https://farcaster.xyz/casterchain/0x74f482a7"
+    "casts": 127,
+    "posts": 71,
+    "comments": 56,
+    "likes": 234,
+    "avg_score": "2.50",
+    "top_author": "@myk",
+    "top_cast_url": "https://farcaster.xyz/myk/0x348270a1"
   },
   {
-    "theme": "Apps/Games",
-    "casts": 24,
-    "posts": 4,
-    "comments": 20,
-    "likes": 66,
-    "avg_score": "3.15",
-    "top_author": "@ds8",
-    "top_cast_url": "https://farcaster.xyz/ds8/0xe506ec48"
+    "theme": "Protocol/Fork",
+    "casts": 26,
+    "posts": 10,
+    "comments": 16,
+    "likes": 100,
+    "avg_score": "3.70",
+    "top_author": "@costi",
+    "top_cast_url": "https://farcaster.xyz/costi/0x6d27952a"
   },
   {
     "theme": "Security/Ops",
-    "casts": 20,
-    "posts": 11,
-    "comments": 9,
-    "likes": 32,
-    "avg_score": "2.48",
+    "casts": 22,
+    "posts": 9,
+    "comments": 13,
+    "likes": 41,
+    "avg_score": "2.80",
     "top_author": "@monteluna",
     "top_cast_url": "https://farcaster.xyz/monteluna/0x98565ab6"
   },
   {
-    "theme": "Protocol/Fork",
-    "casts": 17,
-    "posts": 7,
-    "comments": 10,
-    "likes": 42,
-    "avg_score": "2.92",
-    "top_author": "@nfthreat",
-    "top_cast_url": "https://farcaster.xyz/nfthreat/0x88ac5517"
+    "theme": "Apps/Games",
+    "casts": 22,
+    "posts": 6,
+    "comments": 16,
+    "likes": 54,
+    "avg_score": "3.30",
+    "top_author": "@ds8",
+    "top_cast_url": "https://farcaster.xyz/ds8/0xe5b05e12"
   },
   {
     "theme": "Token/Promo",
     "casts": 3,
     "posts": 3,
     "comments": 0,
-    "likes": 2,
+    "likes": 4,
     "avg_score": "2.06",
-    "top_author": "@peoples",
-    "top_cast_url": "https://farcaster.xyz/peoples/0x0b73a03c"
+    "top_author": "@viniapp",
+    "top_cast_url": "https://farcaster.xyz/viniapp/0x0fa6f464"
   }
 ]
