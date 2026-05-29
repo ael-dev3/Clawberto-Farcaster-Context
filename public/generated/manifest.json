@@ -7,7 +7,7 @@
   {
     "table": "theme_summary",
     "file": "generated/theme_summary.csv",
-    "rows": 5
+    "rows": 4
   },
   {
     "table": "authors",
@@ -22,12 +22,12 @@
   {
     "table": "posts",
     "file": "generated/posts.csv",
-    "rows": 99
+    "rows": 103
   },
   {
     "table": "comments",
     "file": "generated/comments.csv",
-    "rows": 101
+    "rows": 97
   },
   {
     "table": "agent_take",
