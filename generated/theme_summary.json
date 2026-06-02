@@ -1,52 +1,52 @@
 [
   {
     "theme": "Base Culture",
-    "casts": 109,
-    "posts": 59,
-    "comments": 50,
-    "likes": 372,
-    "avg_score": "3.02",
-    "top_author": "@priyanka",
-    "top_cast_url": "https://farcaster.xyz/priyanka/0x832ea143"
-  },
-  {
-    "theme": "Apps/Games",
-    "casts": 30,
-    "posts": 8,
-    "comments": 22,
-    "likes": 112,
-    "avg_score": "3.78",
-    "top_author": "@ds8",
-    "top_cast_url": "https://farcaster.xyz/ds8/0x3561aff4"
-  },
-  {
-    "theme": "Security/Ops",
-    "casts": 29,
-    "posts": 16,
-    "comments": 13,
-    "likes": 158,
-    "avg_score": "3.40",
-    "top_author": "@zaal",
-    "top_cast_url": "https://farcaster.xyz/zaal/0x4f42f6cb"
+    "casts": 114,
+    "posts": 61,
+    "comments": 53,
+    "likes": 258,
+    "avg_score": "2.93",
+    "top_author": "@jake",
+    "top_cast_url": "https://farcaster.xyz/jake/0x11a5b9f8"
   },
   {
     "theme": "Protocol/Fork",
-    "casts": 24,
-    "posts": 11,
-    "comments": 13,
-    "likes": 236,
-    "avg_score": "4.20",
+    "casts": 29,
+    "posts": 9,
+    "comments": 20,
+    "likes": 234,
+    "avg_score": "4.31",
     "top_author": "@cassie",
-    "top_cast_url": "https://farcaster.xyz/cassie/0xc687f621"
+    "top_cast_url": "https://farcaster.xyz/cassie/0x620cc86d"
+  },
+  {
+    "theme": "Apps/Games",
+    "casts": 27,
+    "posts": 9,
+    "comments": 18,
+    "likes": 90,
+    "avg_score": "3.56",
+    "top_author": "@ds8",
+    "top_cast_url": "https://farcaster.xyz/ds8/0x5f733e7b"
+  },
+  {
+    "theme": "Security/Ops",
+    "casts": 25,
+    "posts": 13,
+    "comments": 12,
+    "likes": 94,
+    "avg_score": "3.28",
+    "top_author": "@alitiknazoglu",
+    "top_cast_url": "https://farcaster.xyz/alitiknazoglu/0xee03d3e7"
   },
   {
     "theme": "Token/Promo",
-    "casts": 8,
-    "posts": 4,
-    "comments": 4,
-    "likes": 23,
-    "avg_score": "3.31",
-    "top_author": "@kenny",
-    "top_cast_url": "https://farcaster.xyz/kenny/0x5a20afbd"
+    "casts": 5,
+    "posts": 2,
+    "comments": 3,
+    "likes": 11,
+    "avg_score": "3.51",
+    "top_author": "@arjunlevi",
+    "top_cast_url": "https://farcaster.xyz/arjunlevi/0xe309f096"
   }
 ]
