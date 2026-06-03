@@ -9,7 +9,7 @@
   },
   {
     "metric": "generated_at_utc",
-    "value": "2026-06-03 11:25:01"
+    "value": "2026-06-03 17:20:19"
   },
   {
     "metric": "source",
@@ -29,23 +29,23 @@
   },
   {
     "metric": "window_start_utc",
-    "value": "2026-06-02 11:24:01"
+    "value": "2026-06-02 17:19:23"
   },
   {
     "metric": "window_end_utc",
-    "value": "2026-06-03 11:23:57"
+    "value": "2026-06-03 17:19:10"
   },
   {
     "metric": "total_records",
-    "value": 19488
+    "value": 19519
   },
   {
     "metric": "posts",
-    "value": 7071
+    "value": 6681
   },
   {
     "metric": "comments",
-    "value": 12417
+    "value": 12838
   },
   {
     "metric": "selected_records",
@@ -53,30 +53,30 @@
   },
   {
     "metric": "unique_authors",
-    "value": 4557
+    "value": 4574
   },
   {
     "metric": "total_likes",
-    "value": 17496
+    "value": 17066
   },
   {
     "metric": "total_recasts",
-    "value": 2092
+    "value": 1949
   },
   {
     "metric": "total_replies",
-    "value": 7635
+    "value": 7702
   },
   {
     "metric": "top_cast_score",
-    "value": "10.00"
+    "value": "8.93"
   },
   {
     "metric": "top_cast_author",
-    "value": "@wake"
+    "value": "@borodutch"
   },
   {
     "metric": "top_cast_url",
-    "value": "https://farcaster.xyz/wake/0xdc9b4f4a"
+    "value": "https://farcaster.xyz/borodutch/0x45096273"
   }
 ]
