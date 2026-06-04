@@ -9,7 +9,7 @@
   },
   {
     "metric": "generated_at_utc",
-    "value": "2026-06-03 21:31:42"
+    "value": "2026-06-04 05:09:31"
   },
   {
     "metric": "source",
@@ -29,23 +29,23 @@
   },
   {
     "metric": "window_start_utc",
-    "value": "2026-06-02 21:31:22"
+    "value": "2026-06-03 05:09:20"
   },
   {
     "metric": "window_end_utc",
-    "value": "2026-06-03 21:30:53"
+    "value": "2026-06-04 05:09:14"
   },
   {
     "metric": "total_records",
-    "value": 20220
+    "value": 19999
   },
   {
     "metric": "posts",
-    "value": 6578
+    "value": 6213
   },
   {
     "metric": "comments",
-    "value": 13642
+    "value": 13786
   },
   {
     "metric": "selected_records",
@@ -53,30 +53,30 @@
   },
   {
     "metric": "unique_authors",
-    "value": 4670
+    "value": 4672
   },
   {
     "metric": "total_likes",
-    "value": 16912
+    "value": 17143
   },
   {
     "metric": "total_recasts",
-    "value": 1868
+    "value": 2019
   },
   {
     "metric": "total_replies",
-    "value": 8399
+    "value": 8417
   },
   {
     "metric": "top_cast_score",
-    "value": "9.56"
+    "value": "7.20"
   },
   {
     "metric": "top_cast_author",
-    "value": "@dish"
+    "value": "@voodoonemesi"
   },
   {
     "metric": "top_cast_url",
-    "value": "https://farcaster.xyz/dish/0x2fef89d2"
+    "value": "https://farcaster.xyz/voodoonemesi/0x597a5768"
   }
 ]
