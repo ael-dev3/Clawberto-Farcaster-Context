@@ -9,7 +9,7 @@
   },
   {
     "metric": "generated_at_utc",
-    "value": "2026-06-04 20:27:03"
+    "value": "2026-06-05 04:48:53"
   },
   {
     "metric": "source",
@@ -29,23 +29,23 @@
   },
   {
     "metric": "window_start_utc",
-    "value": "2026-06-03 20:26:23"
+    "value": "2026-06-04 04:48:49"
   },
   {
     "metric": "window_end_utc",
-    "value": "2026-06-04 20:26:01"
+    "value": "2026-06-05 04:48:16"
   },
   {
     "metric": "total_records",
-    "value": 19436
+    "value": 18619
   },
   {
     "metric": "posts",
-    "value": 5798
+    "value": 5516
   },
   {
     "metric": "comments",
-    "value": 13638
+    "value": 13103
   },
   {
     "metric": "selected_records",
@@ -53,30 +53,30 @@
   },
   {
     "metric": "unique_authors",
-    "value": 4966
+    "value": 4849
   },
   {
     "metric": "total_likes",
-    "value": 16754
+    "value": 15370
   },
   {
     "metric": "total_recasts",
-    "value": 2405
+    "value": 2193
   },
   {
     "metric": "total_replies",
-    "value": 7930
+    "value": 7495
   },
   {
     "metric": "top_cast_score",
-    "value": "8.71"
+    "value": "9.39"
   },
   {
     "metric": "top_cast_author",
-    "value": "@voodoonemesi"
+    "value": "@kyle"
   },
   {
     "metric": "top_cast_url",
-    "value": "https://farcaster.xyz/voodoonemesi/0x597a5768"
+    "value": "https://farcaster.xyz/kyle/0x755ef3c0"
   }
 ]
