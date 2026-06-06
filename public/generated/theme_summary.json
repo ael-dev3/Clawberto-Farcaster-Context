@@ -1,43 +1,43 @@
 [
   {
     "theme": "Base Culture",
-    "casts": 127,
-    "posts": 60,
-    "comments": 67,
-    "likes": 338,
-    "avg_score": "2.90",
+    "casts": 128,
+    "posts": 62,
+    "comments": 66,
+    "likes": 378,
+    "avg_score": "3.13",
     "top_author": "@polynya",
     "top_cast_url": "https://farcaster.xyz/polynya/0x4708cf2d"
   },
   {
     "theme": "Security/Ops",
-    "casts": 30,
-    "posts": 12,
+    "casts": 29,
+    "posts": 11,
     "comments": 18,
-    "likes": 64,
-    "avg_score": "3.22",
-    "top_author": "@jerry-d",
-    "top_cast_url": "https://farcaster.xyz/jerry-d/0x02a0a81b"
+    "likes": 53,
+    "avg_score": "3.04",
+    "top_author": "@uniswap",
+    "top_cast_url": "https://farcaster.xyz/uniswap/0x60be1607"
   },
   {
     "theme": "Apps/Games",
     "casts": 25,
-    "posts": 7,
-    "comments": 18,
-    "likes": 138,
-    "avg_score": "3.83",
-    "top_author": "@kyle",
-    "top_cast_url": "https://farcaster.xyz/kyle/0x755ef3c0"
+    "posts": 6,
+    "comments": 19,
+    "likes": 76,
+    "avg_score": "3.38",
+    "top_author": "@madmaxgains",
+    "top_cast_url": "https://farcaster.xyz/madmaxgains/0x3badd444"
   },
   {
     "theme": "Protocol/Fork",
     "casts": 14,
     "posts": 4,
     "comments": 10,
-    "likes": 22,
-    "avg_score": "2.65",
-    "top_author": "@wellzy",
-    "top_cast_url": "https://farcaster.xyz/wellzy/0xa32bc0a4"
+    "likes": 35,
+    "avg_score": "3.36",
+    "top_author": "@statuette",
+    "top_cast_url": "https://farcaster.xyz/statuette/0xd39dae4f"
   },
   {
     "theme": "Token/Promo",
@@ -46,7 +46,7 @@
     "comments": 2,
     "likes": 2,
     "avg_score": "1.79",
-    "top_author": "@str34mx.base.eth",
-    "top_cast_url": "https://farcaster.xyz/str34mx.base.eth/0x4d664cde"
+    "top_author": "@sentri3nel.base.eth",
+    "top_cast_url": "https://farcaster.xyz/sentri3nel.base.eth/0x211fd7bb"
   }
 ]

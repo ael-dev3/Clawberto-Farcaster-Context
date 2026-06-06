@@ -15,13 +15,13 @@ Static, cached Farcaster context from direct Hypersnap/Snapchain node scraping. 
 | Source | hypersnap |
 | Hub URL | http://54.157.62.17:3381 |
 | Readable shards | 1,2 |
-| Window UTC | 2026-06-04 20:14:51 → 2026-06-05 20:14:34 |
-| Total casts | 16777 |
-| Posts / comments | 5263 / 11514 |
-| Unique authors | 4483 |
-| Total likes / recasts / replies | 14951 / 1945 / 6506 |
-| Top cast author | @kyle |
-| Top cast | https://farcaster.xyz/kyle/0x755ef3c0 |
+| Window UTC | 2026-06-05 04:29:48 → 2026-06-06 04:29:36 |
+| Total casts | 17196 |
+| Posts / comments | 5298 / 11898 |
+| Unique authors | 4442 |
+| Total likes / recasts / replies | 14431 / 1847 / 6517 |
+| Top cast author | @basedcoin |
+| Top cast | https://farcaster.xyz/basedcoin/0x15971785 |
 
 ## Published datasets
 
