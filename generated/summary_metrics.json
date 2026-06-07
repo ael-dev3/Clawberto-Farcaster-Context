@@ -9,7 +9,7 @@
   },
   {
     "metric": "generated_at_utc",
-    "value": "2026-06-07 09:41:26"
+    "value": "2026-06-07 14:21:49"
   },
   {
     "metric": "source",
@@ -29,47 +29,47 @@
   },
   {
     "metric": "window_start_utc",
-    "value": "2026-06-06 09:40:32"
+    "value": "2026-06-06 14:21:16"
   },
   {
     "metric": "window_end_utc",
-    "value": "2026-06-07 09:40:28"
+    "value": "2026-06-07 14:21:04"
   },
   {
     "metric": "total_records",
-    "value": 17140
+    "value": 17112
   },
   {
     "metric": "posts",
-    "value": 4963
+    "value": 5031
   },
   {
     "metric": "comments",
-    "value": 12177
+    "value": 12081
   },
   {
     "metric": "selected_records",
-    "value": 194
+    "value": 200
   },
   {
     "metric": "unique_authors",
-    "value": 4219
+    "value": 4458
   },
   {
     "metric": "total_likes",
-    "value": 15379
+    "value": 15772
   },
   {
     "metric": "total_recasts",
-    "value": 1617
+    "value": 1568
   },
   {
     "metric": "total_replies",
-    "value": 7392
+    "value": 8526
   },
   {
     "metric": "top_cast_score",
-    "value": "8.54"
+    "value": "8.71"
   },
   {
     "metric": "top_cast_author",
