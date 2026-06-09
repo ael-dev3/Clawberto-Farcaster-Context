@@ -9,7 +9,7 @@
   },
   {
     "metric": "generated_at_utc",
-    "value": "2026-06-09 04:38:04"
+    "value": "2026-06-09 10:05:15"
   },
   {
     "metric": "source",
@@ -29,23 +29,23 @@
   },
   {
     "metric": "window_start_utc",
-    "value": "2026-06-08 04:37:05"
+    "value": "2026-06-08 10:03:55"
   },
   {
     "metric": "window_end_utc",
-    "value": "2026-06-09 04:37:01"
+    "value": "2026-06-09 10:03:53"
   },
   {
     "metric": "total_records",
-    "value": 33881
+    "value": 40783
   },
   {
     "metric": "posts",
-    "value": 5533
+    "value": 5937
   },
   {
     "metric": "comments",
-    "value": 28348
+    "value": 34846
   },
   {
     "metric": "selected_records",
@@ -53,30 +53,30 @@
   },
   {
     "metric": "unique_authors",
-    "value": 4672
+    "value": 5211
   },
   {
     "metric": "total_likes",
-    "value": 15619
+    "value": 16677
   },
   {
     "metric": "total_recasts",
-    "value": 1932
+    "value": 2326
   },
   {
     "metric": "total_replies",
-    "value": 22020
+    "value": 24657
   },
   {
     "metric": "top_cast_score",
-    "value": "9.14"
+    "value": "10.00"
   },
   {
     "metric": "top_cast_author",
-    "value": "@giuseppe"
+    "value": "@0xtybrett"
   },
   {
     "metric": "top_cast_url",
-    "value": "https://farcaster.xyz/giuseppe/0x81653551"
+    "value": "https://farcaster.xyz/0xtybrett/0xfbdc17d1"
   }
 ]
