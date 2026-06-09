@@ -9,7 +9,7 @@
   },
   {
     "metric": "generated_at_utc",
-    "value": "2026-06-08 20:35:42"
+    "value": "2026-06-09 04:38:04"
   },
   {
     "metric": "source",
@@ -29,23 +29,23 @@
   },
   {
     "metric": "window_start_utc",
-    "value": "2026-06-07 20:34:29"
+    "value": "2026-06-08 04:37:05"
   },
   {
     "metric": "window_end_utc",
-    "value": "2026-06-08 20:34:26"
+    "value": "2026-06-09 04:37:01"
   },
   {
     "metric": "total_records",
-    "value": 27099
+    "value": 33881
   },
   {
     "metric": "posts",
-    "value": 5033
+    "value": 5533
   },
   {
     "metric": "comments",
-    "value": 22066
+    "value": 28348
   },
   {
     "metric": "selected_records",
@@ -53,30 +53,30 @@
   },
   {
     "metric": "unique_authors",
-    "value": 4405
+    "value": 4672
   },
   {
     "metric": "total_likes",
-    "value": 15432
+    "value": 15619
   },
   {
     "metric": "total_recasts",
-    "value": 1886
+    "value": 1932
   },
   {
     "metric": "total_replies",
-    "value": 16442
+    "value": 22020
   },
   {
     "metric": "top_cast_score",
-    "value": "8.71"
+    "value": "9.14"
   },
   {
     "metric": "top_cast_author",
-    "value": "@jacy"
+    "value": "@giuseppe"
   },
   {
     "metric": "top_cast_url",
-    "value": "https://farcaster.xyz/jacy/0x2c4f51cb"
+    "value": "https://farcaster.xyz/giuseppe/0x81653551"
   }
 ]
