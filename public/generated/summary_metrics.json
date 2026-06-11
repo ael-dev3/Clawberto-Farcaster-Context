@@ -9,7 +9,7 @@
   },
   {
     "metric": "generated_at_utc",
-    "value": "2026-06-11 11:00:07"
+    "value": "2026-06-11 16:29:50"
   },
   {
     "metric": "source",
@@ -29,43 +29,43 @@
   },
   {
     "metric": "window_start_utc",
-    "value": "2026-06-10 10:59:09"
+    "value": "2026-06-11 03:33:28"
   },
   {
     "metric": "window_end_utc",
-    "value": "2026-06-11 10:58:42"
+    "value": "2026-06-11 16:29:20"
   },
   {
     "metric": "total_records",
-    "value": 22941
+    "value": 11462
   },
   {
     "metric": "posts",
-    "value": 8089
+    "value": 3396
   },
   {
     "metric": "comments",
-    "value": 14852
+    "value": 8066
   },
   {
     "metric": "selected_records",
-    "value": 200
+    "value": 139
   },
   {
     "metric": "unique_authors",
-    "value": 6469
+    "value": 3604
   },
   {
     "metric": "total_likes",
-    "value": 15545
+    "value": 6270
   },
   {
     "metric": "total_recasts",
-    "value": 1597
+    "value": 646
   },
   {
     "metric": "total_replies",
-    "value": 8825
+    "value": 4851
   },
   {
     "metric": "top_cast_score",
@@ -73,10 +73,10 @@
   },
   {
     "metric": "top_cast_author",
-    "value": "@heavygweit"
+    "value": "@cassie"
   },
   {
     "metric": "top_cast_url",
-    "value": "https://farcaster.xyz/heavygweit/0x1223f899"
+    "value": "https://farcaster.xyz/cassie/0x98172312"
   }
 ]
