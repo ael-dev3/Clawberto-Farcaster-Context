@@ -9,7 +9,7 @@
   },
   {
     "metric": "generated_at_utc",
-    "value": "2026-06-11 16:29:50"
+    "value": "2026-06-11 20:37:51"
   },
   {
     "metric": "source",
@@ -29,43 +29,43 @@
   },
   {
     "metric": "window_start_utc",
-    "value": "2026-06-11 03:33:28"
+    "value": "2026-06-10 20:37:03"
   },
   {
     "metric": "window_end_utc",
-    "value": "2026-06-11 16:29:20"
+    "value": "2026-06-11 20:37:01"
   },
   {
     "metric": "total_records",
-    "value": 11462
+    "value": 25932
   },
   {
     "metric": "posts",
-    "value": 3396
+    "value": 7302
   },
   {
     "metric": "comments",
-    "value": 8066
+    "value": 18630
   },
   {
     "metric": "selected_records",
-    "value": 139
+    "value": 200
   },
   {
     "metric": "unique_authors",
-    "value": 3604
+    "value": 6238
   },
   {
     "metric": "total_likes",
-    "value": 6270
+    "value": 15325
   },
   {
     "metric": "total_recasts",
-    "value": 646
+    "value": 1712
   },
   {
     "metric": "total_replies",
-    "value": 4851
+    "value": 12320
   },
   {
     "metric": "top_cast_score",
@@ -73,10 +73,10 @@
   },
   {
     "metric": "top_cast_author",
-    "value": "@cassie"
+    "value": "@eddieamin"
   },
   {
     "metric": "top_cast_url",
-    "value": "https://farcaster.xyz/cassie/0x98172312"
+    "value": "https://farcaster.xyz/eddieamin/0xff59da80"
   }
 ]
