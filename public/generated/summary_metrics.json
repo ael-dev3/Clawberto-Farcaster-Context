@@ -9,7 +9,7 @@
   },
   {
     "metric": "generated_at_utc",
-    "value": "2026-06-12 15:42:24"
+    "value": "2026-06-12 20:28:49"
   },
   {
     "metric": "source",
@@ -29,23 +29,23 @@
   },
   {
     "metric": "window_start_utc",
-    "value": "2026-06-11 15:42:12"
+    "value": "2026-06-11 20:27:50"
   },
   {
     "metric": "window_end_utc",
-    "value": "2026-06-12 15:42:08"
+    "value": "2026-06-12 20:27:36"
   },
   {
     "metric": "total_records",
-    "value": 27485
+    "value": 23371
   },
   {
     "metric": "posts",
-    "value": 5652
+    "value": 5565
   },
   {
     "metric": "comments",
-    "value": 21833
+    "value": 17806
   },
   {
     "metric": "selected_records",
@@ -53,30 +53,30 @@
   },
   {
     "metric": "unique_authors",
-    "value": 4961
+    "value": 4998
   },
   {
     "metric": "total_likes",
-    "value": 16878
+    "value": 15384
   },
   {
     "metric": "total_recasts",
-    "value": 2436
+    "value": 1810
   },
   {
     "metric": "total_replies",
-    "value": 15658
+    "value": 11879
   },
   {
     "metric": "top_cast_score",
-    "value": "10.00"
+    "value": "7.20"
   },
   {
     "metric": "top_cast_author",
-    "value": "@eddieamin"
+    "value": "@maximthuhalko"
   },
   {
     "metric": "top_cast_url",
-    "value": "https://farcaster.xyz/eddieamin/0xff59da80"
+    "value": "https://farcaster.xyz/maximthuhalko/0x2b39aa34"
   }
 ]
