@@ -15,11 +15,11 @@ Static, cached Farcaster context from direct Hypersnap/Snapchain node scraping. 
 | Source | hypersnap |
 | Hub URL | http://54.157.62.17:3381 |
 | Readable shards | 1,2 |
-| Window UTC | 2026-06-11 10:40:48 → 2026-06-12 10:40:40 |
-| Total casts | 28577 |
-| Posts / comments | 5674 / 22903 |
-| Unique authors | 4885 |
-| Total likes / recasts / replies | 16862 / 2489 / 16769 |
+| Window UTC | 2026-06-11 15:42:12 → 2026-06-12 15:42:08 |
+| Total casts | 27485 |
+| Posts / comments | 5652 / 21833 |
+| Unique authors | 4961 |
+| Total likes / recasts / replies | 16878 / 2436 / 15658 |
 | Top cast author | @eddieamin |
 | Top cast | https://farcaster.xyz/eddieamin/0xff59da80 |
 
@@ -31,8 +31,8 @@ Static, cached Farcaster context from direct Hypersnap/Snapchain node scraping. 
 | theme_summary | `generated/theme_summary.csv` | 5 | [CSV](generated/theme_summary.csv) / [JSON](generated/theme_summary.json) |
 | authors | `generated/authors.csv` | 100 | [CSV](generated/authors.csv) / [JSON](generated/authors.json) |
 | top_casts | `generated/top_casts.csv` | 150 | [CSV](generated/top_casts.csv) / [JSON](generated/top_casts.json) |
-| posts | `generated/posts.csv` | 111 | [CSV](generated/posts.csv) / [JSON](generated/posts.json) |
-| comments | `generated/comments.csv` | 89 | [CSV](generated/comments.csv) / [JSON](generated/comments.json) |
+| posts | `generated/posts.csv` | 113 | [CSV](generated/posts.csv) / [JSON](generated/posts.json) |
+| comments | `generated/comments.csv` | 87 | [CSV](generated/comments.csv) / [JSON](generated/comments.json) |
 | agent_take | `generated/agent_take.csv` | 4 | [CSV](generated/agent_take.csv) / [JSON](generated/agent_take.json) |
 
 ## Data pipeline
