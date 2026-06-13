@@ -9,7 +9,7 @@
   },
   {
     "metric": "generated_at_utc",
-    "value": "2026-06-13 14:29:16"
+    "value": "2026-06-13 19:55:37"
   },
   {
     "metric": "source",
@@ -29,54 +29,54 @@
   },
   {
     "metric": "window_start_utc",
-    "value": "2026-06-12 14:28:34"
+    "value": "2026-06-12 19:55:20"
   },
   {
     "metric": "window_end_utc",
-    "value": "2026-06-13 14:28:32"
+    "value": "2026-06-13 19:55:04"
   },
   {
     "metric": "total_records",
-    "value": 18829
+    "value": 19441
   },
   {
     "metric": "posts",
-    "value": 6461
+    "value": 6999
   },
   {
     "metric": "comments",
-    "value": 12368
+    "value": 12442
   },
   {
     "metric": "selected_records",
-    "value": 191
+    "value": 190
   },
   {
     "metric": "unique_authors",
-    "value": 5426
+    "value": 5593
   },
   {
     "metric": "total_likes",
-    "value": 16070
+    "value": 16468
   },
   {
     "metric": "total_recasts",
-    "value": 1940
+    "value": 1780
   },
   {
     "metric": "total_replies",
-    "value": 6795
+    "value": 6859
   },
   {
     "metric": "top_cast_score",
-    "value": "9.07"
+    "value": "10.00"
   },
   {
     "metric": "top_cast_author",
-    "value": "@akela113"
+    "value": "@cryptoexploit"
   },
   {
     "metric": "top_cast_url",
-    "value": "https://farcaster.xyz/akela113/0x6fec7834"
+    "value": "https://farcaster.xyz/cryptoexploit/0x78b4f84a"
   }
 ]
