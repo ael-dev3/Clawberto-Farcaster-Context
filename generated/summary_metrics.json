@@ -9,7 +9,7 @@
   },
   {
     "metric": "generated_at_utc",
-    "value": "2026-06-14 09:57:10"
+    "value": "2026-06-14 14:30:50"
   },
   {
     "metric": "source",
@@ -29,54 +29,54 @@
   },
   {
     "metric": "window_start_utc",
-    "value": "2026-06-13 09:57:02"
+    "value": "2026-06-13 14:30:01"
   },
   {
     "metric": "window_end_utc",
-    "value": "2026-06-14 09:56:58"
+    "value": "2026-06-14 14:29:53"
   },
   {
     "metric": "total_records",
-    "value": 18674
+    "value": 17750
   },
   {
     "metric": "posts",
-    "value": 6465
+    "value": 5797
   },
   {
     "metric": "comments",
-    "value": 12209
+    "value": 11953
   },
   {
     "metric": "selected_records",
-    "value": 150
+    "value": 132
   },
   {
     "metric": "unique_authors",
-    "value": 5212
+    "value": 4733
   },
   {
     "metric": "total_likes",
-    "value": 15019
+    "value": 14974
   },
   {
     "metric": "total_recasts",
-    "value": 1376
+    "value": 1470
   },
   {
     "metric": "total_replies",
-    "value": 7134
+    "value": 7386
   },
   {
     "metric": "top_cast_score",
-    "value": "6.49"
+    "value": "10.00"
   },
   {
     "metric": "top_cast_author",
-    "value": "@maks-miks"
+    "value": "@cryptoexploit"
   },
   {
     "metric": "top_cast_url",
-    "value": "https://farcaster.xyz/maks-miks/0x270acbe3"
+    "value": "https://farcaster.xyz/cryptoexploit/0x6551eeec"
   }
 ]
