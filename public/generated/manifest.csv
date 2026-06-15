@@ -2,7 +2,7 @@ table,file,rows
 summary_metrics,generated/summary_metrics.csv,20
 theme_summary,generated/theme_summary.csv,5
 authors,generated/authors.csv,100
-top_casts,generated/top_casts.csv,140
-posts,generated/posts.csv,46
-comments,generated/comments.csv,94
+top_casts,generated/top_casts.csv,150
+posts,generated/posts.csv,53
+comments,generated/comments.csv,97
 agent_take,generated/agent_take.csv,4
