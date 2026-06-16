@@ -9,7 +9,7 @@
   },
   {
     "metric": "generated_at_utc",
-    "value": "2026-06-16 17:22:32"
+    "value": "2026-06-16 21:20:46"
   },
   {
     "metric": "source",
@@ -29,54 +29,54 @@
   },
   {
     "metric": "window_start_utc",
-    "value": "2026-06-15 17:22:30"
+    "value": "2026-06-15 21:20:40"
   },
   {
     "metric": "window_end_utc",
-    "value": "2026-06-16 17:22:17"
+    "value": "2026-06-16 21:20:31"
   },
   {
     "metric": "total_records",
-    "value": 15230
+    "value": 15922
   },
   {
     "metric": "posts",
-    "value": 5240
+    "value": 5542
   },
   {
     "metric": "comments",
-    "value": 9990
+    "value": 10380
   },
   {
     "metric": "selected_records",
-    "value": 187
+    "value": 193
   },
   {
     "metric": "unique_authors",
-    "value": 4452
+    "value": 4576
   },
   {
     "metric": "total_likes",
-    "value": 15680
+    "value": 15657
   },
   {
     "metric": "total_recasts",
-    "value": 1449
+    "value": 1429
   },
   {
     "metric": "total_replies",
-    "value": 5963
+    "value": 6164
   },
   {
     "metric": "top_cast_score",
-    "value": "9.20"
+    "value": "10.00"
   },
   {
     "metric": "top_cast_author",
-    "value": "@road"
+    "value": "@cryptoexploit"
   },
   {
     "metric": "top_cast_url",
-    "value": "https://farcaster.xyz/road/0xd5fdfbff"
+    "value": "https://farcaster.xyz/cryptoexploit/0x0e6376ef"
   }
 ]
