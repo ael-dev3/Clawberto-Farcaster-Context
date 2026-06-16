@@ -9,7 +9,7 @@
   },
   {
     "metric": "generated_at_utc",
-    "value": "2026-06-15 21:23:52"
+    "value": "2026-06-16 05:35:57"
   },
   {
     "metric": "source",
@@ -29,54 +29,54 @@
   },
   {
     "metric": "window_start_utc",
-    "value": "2026-06-14 21:24:01"
+    "value": "2026-06-15 05:35:49"
   },
   {
     "metric": "window_end_utc",
-    "value": "2026-06-15 21:23:27"
+    "value": "2026-06-16 05:35:41"
   },
   {
     "metric": "total_records",
-    "value": 16761
+    "value": 16875
   },
   {
     "metric": "posts",
-    "value": 6581
+    "value": 6579
   },
   {
     "metric": "comments",
-    "value": 10180
+    "value": 10296
   },
   {
     "metric": "selected_records",
-    "value": 160
+    "value": 166
   },
   {
     "metric": "unique_authors",
-    "value": 4917
+    "value": 5093
   },
   {
     "metric": "total_likes",
-    "value": 15917
+    "value": 16467
   },
   {
     "metric": "total_recasts",
-    "value": 1996
+    "value": 2192
   },
   {
     "metric": "total_replies",
-    "value": 6876
+    "value": 6765
   },
   {
     "metric": "top_cast_score",
-    "value": "10.00"
+    "value": "9.07"
   },
   {
     "metric": "top_cast_author",
-    "value": "@toadyhawk"
+    "value": "@1dolinski"
   },
   {
     "metric": "top_cast_url",
-    "value": "https://farcaster.xyz/toadyhawk/0xead26afc"
+    "value": "https://farcaster.xyz/1dolinski/0xa4f4069f"
   }
 ]
