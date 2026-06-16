@@ -9,7 +9,7 @@
   },
   {
     "metric": "generated_at_utc",
-    "value": "2026-06-16 11:36:02"
+    "value": "2026-06-16 17:22:32"
   },
   {
     "metric": "source",
@@ -29,54 +29,54 @@
   },
   {
     "metric": "window_start_utc",
-    "value": "2026-06-15 11:35:51"
+    "value": "2026-06-15 17:22:30"
   },
   {
     "metric": "window_end_utc",
-    "value": "2026-06-16 11:35:50"
+    "value": "2026-06-16 17:22:17"
   },
   {
     "metric": "total_records",
-    "value": 15986
+    "value": 15230
   },
   {
     "metric": "posts",
-    "value": 6067
+    "value": 5240
   },
   {
     "metric": "comments",
-    "value": 9919
+    "value": 9990
   },
   {
     "metric": "selected_records",
-    "value": 184
+    "value": 187
   },
   {
     "metric": "unique_authors",
-    "value": 4660
+    "value": 4452
   },
   {
     "metric": "total_likes",
-    "value": 16688
+    "value": 15680
   },
   {
     "metric": "total_recasts",
-    "value": 2058
+    "value": 1449
   },
   {
     "metric": "total_replies",
-    "value": 6023
+    "value": 5963
   },
   {
     "metric": "top_cast_score",
-    "value": "9.71"
+    "value": "9.20"
   },
   {
     "metric": "top_cast_author",
-    "value": "@1dolinski"
+    "value": "@road"
   },
   {
     "metric": "top_cast_url",
-    "value": "https://farcaster.xyz/1dolinski/0xa4f4069f"
+    "value": "https://farcaster.xyz/road/0xd5fdfbff"
   }
 ]
