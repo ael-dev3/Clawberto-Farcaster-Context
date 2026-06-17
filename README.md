@@ -15,11 +15,11 @@ Static, cached Farcaster context from direct Hypersnap/Snapchain node scraping. 
 | Source | hypersnap |
 | Hub URL | http://54.157.62.17:3381 |
 | Readable shards | 1,2 |
-| Window UTC | 2026-06-15 21:20:40 → 2026-06-16 21:20:31 |
-| Total casts | 15922 |
-| Posts / comments | 5542 / 10380 |
-| Unique authors | 4576 |
-| Total likes / recasts / replies | 15657 / 1429 / 6164 |
+| Window UTC | 2026-06-16 05:18:03 → 2026-06-17 05:17:50 |
+| Total casts | 16507 |
+| Posts / comments | 5730 / 10777 |
+| Unique authors | 4524 |
+| Total likes / recasts / replies | 15382 / 1458 / 6482 |
 | Top cast author | @cryptoexploit |
 | Top cast | https://farcaster.xyz/cryptoexploit/0x0e6376ef |
 
@@ -31,8 +31,8 @@ Static, cached Farcaster context from direct Hypersnap/Snapchain node scraping. 
 | theme_summary | `generated/theme_summary.csv` | 5 | [CSV](generated/theme_summary.csv) / [JSON](generated/theme_summary.json) |
 | authors | `generated/authors.csv` | 100 | [CSV](generated/authors.csv) / [JSON](generated/authors.json) |
 | top_casts | `generated/top_casts.csv` | 150 | [CSV](generated/top_casts.csv) / [JSON](generated/top_casts.json) |
-| posts | `generated/posts.csv` | 81 | [CSV](generated/posts.csv) / [JSON](generated/posts.json) |
-| comments | `generated/comments.csv` | 112 | [CSV](generated/comments.csv) / [JSON](generated/comments.json) |
+| posts | `generated/posts.csv` | 82 | [CSV](generated/posts.csv) / [JSON](generated/posts.json) |
+| comments | `generated/comments.csv` | 118 | [CSV](generated/comments.csv) / [JSON](generated/comments.json) |
 | agent_take | `generated/agent_take.csv` | 4 | [CSV](generated/agent_take.csv) / [JSON](generated/agent_take.json) |
 
 ## Data pipeline
