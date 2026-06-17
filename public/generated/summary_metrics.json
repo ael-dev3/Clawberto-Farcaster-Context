@@ -9,7 +9,7 @@
   },
   {
     "metric": "generated_at_utc",
-    "value": "2026-06-17 16:06:02"
+    "value": "2026-06-17 20:31:08"
   },
   {
     "metric": "source",
@@ -29,23 +29,23 @@
   },
   {
     "metric": "window_start_utc",
-    "value": "2026-06-16 16:05:59"
+    "value": "2026-06-16 20:31:03"
   },
   {
     "metric": "window_end_utc",
-    "value": "2026-06-17 16:05:49"
+    "value": "2026-06-17 20:30:52"
   },
   {
     "metric": "total_records",
-    "value": 18707
+    "value": 20811
   },
   {
     "metric": "posts",
-    "value": 5250
+    "value": 5365
   },
   {
     "metric": "comments",
-    "value": 13457
+    "value": 15446
   },
   {
     "metric": "selected_records",
@@ -53,30 +53,30 @@
   },
   {
     "metric": "unique_authors",
-    "value": 4508
+    "value": 4668
   },
   {
     "metric": "total_likes",
-    "value": 16404
+    "value": 16344
   },
   {
     "metric": "total_recasts",
-    "value": 1677
+    "value": 1800
   },
   {
     "metric": "total_replies",
-    "value": 9661
+    "value": 11797
   },
   {
     "metric": "top_cast_score",
-    "value": "10.00"
+    "value": "9.76"
   },
   {
     "metric": "top_cast_author",
-    "value": "@cryptoexploit"
+    "value": "@charmsai"
   },
   {
     "metric": "top_cast_url",
-    "value": "https://farcaster.xyz/cryptoexploit/0x0e6376ef"
+    "value": "https://farcaster.xyz/charmsai/0x0df034f3"
   }
 ]
