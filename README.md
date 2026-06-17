@@ -15,11 +15,11 @@ Static, cached Farcaster context from direct Hypersnap/Snapchain node scraping. 
 | Source | hypersnap |
 | Hub URL | http://54.157.62.17:3381 |
 | Readable shards | 1,2 |
-| Window UTC | 2026-06-16 05:18:03 → 2026-06-17 05:17:50 |
-| Total casts | 16507 |
-| Posts / comments | 5730 / 10777 |
-| Unique authors | 4524 |
-| Total likes / recasts / replies | 15382 / 1458 / 6482 |
+| Window UTC | 2026-06-16 11:18:14 → 2026-06-17 11:18:07 |
+| Total casts | 16457 |
+| Posts / comments | 5425 / 11032 |
+| Unique authors | 4270 |
+| Total likes / recasts / replies | 15868 / 1563 / 6842 |
 | Top cast author | @cryptoexploit |
 | Top cast | https://farcaster.xyz/cryptoexploit/0x0e6376ef |
 
