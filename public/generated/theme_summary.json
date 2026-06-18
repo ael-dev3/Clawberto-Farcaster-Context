@@ -1,52 +1,52 @@
 [
   {
     "theme": "Base Culture",
-    "casts": 109,
-    "posts": 66,
-    "comments": 43,
-    "likes": 271,
-    "avg_score": "2.72",
-    "top_author": "@eriks",
-    "top_cast_url": "https://farcaster.xyz/eriks/0xf0fc14bc"
-  },
-  {
-    "theme": "Apps/Games",
-    "casts": 30,
-    "posts": 10,
-    "comments": 20,
-    "likes": 187,
-    "avg_score": "3.69",
-    "top_author": "@kenny",
-    "top_cast_url": "https://farcaster.xyz/kenny/0xee19c243"
+    "casts": 95,
+    "posts": 61,
+    "comments": 34,
+    "likes": 202,
+    "avg_score": "2.75",
+    "top_author": "@rjrubel",
+    "top_cast_url": "https://farcaster.xyz/rjrubel/0x2acde755"
   },
   {
     "theme": "Security/Ops",
-    "casts": 30,
-    "posts": 12,
-    "comments": 18,
-    "likes": 26,
-    "avg_score": "1.96",
-    "top_author": "@nextleveldarko",
-    "top_cast_url": "https://farcaster.xyz/nextleveldarko/0x01e03080"
+    "casts": 41,
+    "posts": 17,
+    "comments": 24,
+    "likes": 10,
+    "avg_score": "1.36",
+    "top_author": "@jjuna",
+    "top_cast_url": "https://farcaster.xyz/jjuna/0xe22fcdab"
+  },
+  {
+    "theme": "Apps/Games",
+    "casts": 24,
+    "posts": 9,
+    "comments": 15,
+    "likes": 162,
+    "avg_score": "3.95",
+    "top_author": "@charmsai",
+    "top_cast_url": "https://farcaster.xyz/charmsai/0x0df034f3"
   },
   {
     "theme": "Protocol/Fork",
-    "casts": 21,
-    "posts": 8,
-    "comments": 13,
-    "likes": 162,
-    "avg_score": "3.64",
+    "casts": 24,
+    "posts": 13,
+    "comments": 11,
+    "likes": 151,
+    "avg_score": "3.09",
     "top_author": "@femmie",
     "top_cast_url": "https://farcaster.xyz/femmie/0x18dc342a"
   },
   {
     "theme": "Token/Promo",
-    "casts": 10,
-    "posts": 8,
-    "comments": 2,
-    "likes": 7,
-    "avg_score": "1.89",
-    "top_author": "@ghostlinkz",
-    "top_cast_url": "https://farcaster.xyz/ghostlinkz/0xdd811568"
+    "casts": 16,
+    "posts": 11,
+    "comments": 5,
+    "likes": 3,
+    "avg_score": "1.26",
+    "top_author": "@tufanur",
+    "top_cast_url": "https://farcaster.xyz/tufanur/0xb2fd33ee"
   }
 ]
