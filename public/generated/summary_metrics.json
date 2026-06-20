@@ -9,7 +9,7 @@
   },
   {
     "metric": "generated_at_utc",
-    "value": "2026-06-20 14:32:42"
+    "value": "2026-06-20 19:58:20"
   },
   {
     "metric": "source",
@@ -29,54 +29,54 @@
   },
   {
     "metric": "window_start_utc",
-    "value": "2026-06-19 14:32:28"
+    "value": "2026-06-19 19:58:07"
   },
   {
     "metric": "window_end_utc",
-    "value": "2026-06-20 14:32:19"
+    "value": "2026-06-20 19:58:05"
   },
   {
     "metric": "total_records",
-    "value": 14864
+    "value": 14393
   },
   {
     "metric": "posts",
-    "value": 4269
+    "value": 4212
   },
   {
     "metric": "comments",
-    "value": 10595
+    "value": 10181
   },
   {
     "metric": "selected_records",
-    "value": 159
+    "value": 153
   },
   {
     "metric": "unique_authors",
-    "value": 3989
+    "value": 3832
   },
   {
     "metric": "total_likes",
-    "value": 14841
+    "value": 13850
   },
   {
     "metric": "total_recasts",
-    "value": 1433
+    "value": 1314
   },
   {
     "metric": "total_replies",
-    "value": 6639
+    "value": 6518
   },
   {
     "metric": "top_cast_score",
-    "value": "10.00"
+    "value": "8.46"
   },
   {
     "metric": "top_cast_author",
-    "value": "@limone-eth"
+    "value": "@akela113"
   },
   {
     "metric": "top_cast_url",
-    "value": "https://farcaster.xyz/limone-eth/0xe879f752"
+    "value": "https://farcaster.xyz/akela113/0x00267278"
   }
 ]
