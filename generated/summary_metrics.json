@@ -9,7 +9,7 @@
   },
   {
     "metric": "generated_at_utc",
-    "value": "2026-06-22 12:27:16"
+    "value": "2026-06-22 21:14:13"
   },
   {
     "metric": "source",
@@ -29,43 +29,43 @@
   },
   {
     "metric": "window_start_utc",
-    "value": "2026-06-21 12:27:22"
+    "value": "2026-06-21 21:14:13"
   },
   {
     "metric": "window_end_utc",
-    "value": "2026-06-22 12:26:43"
+    "value": "2026-06-22 21:13:59"
   },
   {
     "metric": "total_records",
-    "value": 14631
+    "value": 15090
   },
   {
     "metric": "posts",
-    "value": 5110
+    "value": 5078
   },
   {
     "metric": "comments",
-    "value": 9521
+    "value": 10012
   },
   {
     "metric": "selected_records",
-    "value": 149
+    "value": 176
   },
   {
     "metric": "unique_authors",
-    "value": 4224
+    "value": 4304
   },
   {
     "metric": "total_likes",
-    "value": 12413
+    "value": 12746
   },
   {
     "metric": "total_recasts",
-    "value": 1405
+    "value": 1375
   },
   {
     "metric": "total_replies",
-    "value": 5312
+    "value": 5591
   },
   {
     "metric": "top_cast_score",
@@ -73,10 +73,10 @@
   },
   {
     "metric": "top_cast_author",
-    "value": "@kokocodes"
+    "value": "@kenny"
   },
   {
     "metric": "top_cast_url",
-    "value": "https://farcaster.xyz/kokocodes/0x2365f893"
+    "value": "https://farcaster.xyz/kenny/0xc9a70bee"
   }
 ]
