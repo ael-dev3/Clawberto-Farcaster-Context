@@ -9,7 +9,7 @@
   },
   {
     "metric": "generated_at_utc",
-    "value": "2026-06-22 21:14:13"
+    "value": "2026-06-23 04:31:20"
   },
   {
     "metric": "source",
@@ -29,23 +29,23 @@
   },
   {
     "metric": "window_start_utc",
-    "value": "2026-06-21 21:14:13"
+    "value": "2026-06-22 04:31:24"
   },
   {
     "metric": "window_end_utc",
-    "value": "2026-06-22 21:13:59"
+    "value": "2026-06-23 04:31:00"
   },
   {
     "metric": "total_records",
-    "value": 15090
+    "value": 15043
   },
   {
     "metric": "posts",
-    "value": 5078
+    "value": 4849
   },
   {
     "metric": "comments",
-    "value": 10012
+    "value": 10194
   },
   {
     "metric": "selected_records",
@@ -53,30 +53,30 @@
   },
   {
     "metric": "unique_authors",
-    "value": 4304
+    "value": 4241
   },
   {
     "metric": "total_likes",
-    "value": 12746
+    "value": 13245
   },
   {
     "metric": "total_recasts",
-    "value": 1375
+    "value": 1447
   },
   {
     "metric": "total_replies",
-    "value": 5591
+    "value": 6103
   },
   {
     "metric": "top_cast_score",
-    "value": "10.00"
+    "value": "7.74"
   },
   {
     "metric": "top_cast_author",
-    "value": "@kenny"
+    "value": "@basedcoin"
   },
   {
     "metric": "top_cast_url",
-    "value": "https://farcaster.xyz/kenny/0xc9a70bee"
+    "value": "https://farcaster.xyz/basedcoin/0x4ddd511e"
   }
 ]
