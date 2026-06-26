@@ -1,52 +1,52 @@
 [
   {
     "theme": "Base Culture",
-    "casts": 151,
-    "posts": 62,
-    "comments": 89,
-    "likes": 483,
-    "avg_score": "3.27",
-    "top_author": "@wake",
-    "top_cast_url": "https://farcaster.xyz/wake/0xe1614ed6"
+    "casts": 126,
+    "posts": 55,
+    "comments": 71,
+    "likes": 293,
+    "avg_score": "2.87",
+    "top_author": "@wellzy",
+    "top_cast_url": "https://farcaster.xyz/wellzy/0xe98efb5c"
   },
   {
     "theme": "Apps/Games",
-    "casts": 28,
-    "posts": 5,
-    "comments": 23,
-    "likes": 121,
-    "avg_score": "3.92",
+    "casts": 24,
+    "posts": 3,
+    "comments": 21,
+    "likes": 120,
+    "avg_score": "3.91",
     "top_author": "@farcaster",
     "top_cast_url": "https://farcaster.xyz/farcaster/0x4f37c2ef"
   },
   {
     "theme": "Security/Ops",
-    "casts": 13,
-    "posts": 5,
-    "comments": 8,
-    "likes": 174,
-    "avg_score": "4.31",
-    "top_author": "@farcaster",
-    "top_cast_url": "https://farcaster.xyz/farcaster/0x2f739987"
-  },
-  {
-    "theme": "Protocol/Fork",
-    "casts": 6,
-    "posts": 2,
-    "comments": 4,
-    "likes": 113,
-    "avg_score": "6.32",
-    "top_author": "@statuette",
-    "top_cast_url": "https://farcaster.xyz/statuette/0x40fa9359"
+    "casts": 18,
+    "posts": 4,
+    "comments": 14,
+    "likes": 94,
+    "avg_score": "3.33",
+    "top_author": "@alitiknazoglu",
+    "top_cast_url": "https://farcaster.xyz/alitiknazoglu/0xd89dd633"
   },
   {
     "theme": "Token/Promo",
-    "casts": 2,
+    "casts": 7,
+    "posts": 5,
+    "comments": 2,
+    "likes": 49,
+    "avg_score": "4.71",
+    "top_author": "@zahrash",
+    "top_cast_url": "https://farcaster.xyz/zahrash/0x2f1d3d6b"
+  },
+  {
+    "theme": "Protocol/Fork",
+    "casts": 5,
     "posts": 2,
-    "comments": 0,
-    "likes": 16,
-    "avg_score": "4.97",
-    "top_author": "@jubjub",
-    "top_cast_url": "https://farcaster.xyz/jubjub/0x7886b459"
+    "comments": 3,
+    "likes": 93,
+    "avg_score": "5.88",
+    "top_author": "@statuette",
+    "top_cast_url": "https://farcaster.xyz/statuette/0x40fa9359"
   }
 ]

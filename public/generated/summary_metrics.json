@@ -9,7 +9,7 @@
   },
   {
     "metric": "generated_at_utc",
-    "value": "2026-06-26 14:49:24"
+    "value": "2026-06-26 20:12:27"
   },
   {
     "metric": "source",
@@ -29,54 +29,54 @@
   },
   {
     "metric": "window_start_utc",
-    "value": "2026-06-25 14:48:28"
+    "value": "2026-06-25 20:11:35"
   },
   {
     "metric": "window_end_utc",
-    "value": "2026-06-26 14:48:15"
+    "value": "2026-06-26 20:11:27"
   },
   {
     "metric": "total_records",
-    "value": 14965
+    "value": 14001
   },
   {
     "metric": "posts",
-    "value": 4876
+    "value": 4475
   },
   {
     "metric": "comments",
-    "value": 10089
+    "value": 9526
   },
   {
     "metric": "selected_records",
-    "value": 200
+    "value": 180
   },
   {
     "metric": "unique_authors",
-    "value": 4442
+    "value": 4041
   },
   {
     "metric": "total_likes",
-    "value": 12375
+    "value": 12327
   },
   {
     "metric": "total_recasts",
-    "value": 1207
+    "value": 1388
   },
   {
     "metric": "total_replies",
-    "value": 5577
+    "value": 5835
   },
   {
     "metric": "top_cast_score",
-    "value": "10.00"
+    "value": "9.71"
   },
   {
     "metric": "top_cast_author",
-    "value": "@farcaster"
+    "value": "@alitiknazoglu"
   },
   {
     "metric": "top_cast_url",
-    "value": "https://farcaster.xyz/farcaster/0x2f739987"
+    "value": "https://farcaster.xyz/alitiknazoglu/0xd89dd633"
   }
 ]
