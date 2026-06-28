@@ -9,7 +9,7 @@
   },
   {
     "metric": "generated_at_utc",
-    "value": "2026-06-27 19:46:36"
+    "value": "2026-06-28 04:52:56"
   },
   {
     "metric": "source",
@@ -29,54 +29,54 @@
   },
   {
     "metric": "window_start_utc",
-    "value": "2026-06-26 19:46:17"
+    "value": "2026-06-27 04:52:37"
   },
   {
     "metric": "window_end_utc",
-    "value": "2026-06-27 19:46:00"
+    "value": "2026-06-28 04:52:34"
   },
   {
     "metric": "total_records",
-    "value": 13243
+    "value": 13514
   },
   {
     "metric": "posts",
-    "value": 3766
+    "value": 4040
   },
   {
     "metric": "comments",
-    "value": 9477
+    "value": 9474
   },
   {
     "metric": "selected_records",
-    "value": 158
+    "value": 150
   },
   {
     "metric": "unique_authors",
-    "value": 3483
+    "value": 3618
   },
   {
     "metric": "total_likes",
-    "value": 11210
+    "value": 10303
   },
   {
     "metric": "total_recasts",
-    "value": 1090
+    "value": 982
   },
   {
     "metric": "total_replies",
-    "value": 5888
+    "value": 5704
   },
   {
     "metric": "top_cast_score",
-    "value": "9.14"
+    "value": "8.54"
   },
   {
     "metric": "top_cast_author",
-    "value": "@basedcoin"
+    "value": "@akela113"
   },
   {
     "metric": "top_cast_url",
-    "value": "https://farcaster.xyz/basedcoin/0x68e154ce"
+    "value": "https://farcaster.xyz/akela113/0xbd00b058"
   }
 ]
