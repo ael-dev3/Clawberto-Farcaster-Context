@@ -9,7 +9,7 @@
   },
   {
     "metric": "generated_at_utc",
-    "value": "2026-06-28 09:34:12"
+    "value": "2026-06-28 14:17:30"
   },
   {
     "metric": "source",
@@ -29,54 +29,54 @@
   },
   {
     "metric": "window_start_utc",
-    "value": "2026-06-27 09:33:29"
+    "value": "2026-06-27 14:17:21"
   },
   {
     "metric": "window_end_utc",
-    "value": "2026-06-28 09:33:20"
+    "value": "2026-06-28 14:16:55"
   },
   {
     "metric": "total_records",
-    "value": 13651
+    "value": 15120
   },
   {
     "metric": "posts",
-    "value": 4154
+    "value": 4200
   },
   {
     "metric": "comments",
-    "value": 9497
+    "value": 10920
   },
   {
     "metric": "selected_records",
-    "value": 157
+    "value": 158
   },
   {
     "metric": "unique_authors",
-    "value": 3716
+    "value": 3765
   },
   {
     "metric": "total_likes",
-    "value": 10720
+    "value": 11258
   },
   {
     "metric": "total_recasts",
-    "value": 1043
+    "value": 1127
   },
   {
     "metric": "total_replies",
-    "value": 5520
+    "value": 7041
   },
   {
     "metric": "top_cast_score",
-    "value": "9.76"
+    "value": "8.54"
   },
   {
     "metric": "top_cast_author",
-    "value": "@daojoan"
+    "value": "@road"
   },
   {
     "metric": "top_cast_url",
-    "value": "https://farcaster.xyz/daojoan/0xd1b409d8"
+    "value": "https://farcaster.xyz/road/0x4d1ee1d8"
   }
 ]
