@@ -9,7 +9,7 @@
   },
   {
     "metric": "generated_at_utc",
-    "value": "2026-06-29 05:01:09"
+    "value": "2026-06-29 11:25:05"
   },
   {
     "metric": "source",
@@ -29,54 +29,54 @@
   },
   {
     "metric": "window_start_utc",
-    "value": "2026-06-28 05:00:36"
+    "value": "2026-06-28 11:24:18"
   },
   {
     "metric": "window_end_utc",
-    "value": "2026-06-29 05:00:24"
+    "value": "2026-06-29 11:24:11"
   },
   {
     "metric": "total_records",
-    "value": 15119
+    "value": 14678
   },
   {
     "metric": "posts",
-    "value": 4155
+    "value": 4273
   },
   {
     "metric": "comments",
-    "value": 10964
+    "value": 10405
   },
   {
     "metric": "selected_records",
-    "value": 137
+    "value": 151
   },
   {
     "metric": "unique_authors",
-    "value": 3901
+    "value": 3861
   },
   {
     "metric": "total_likes",
-    "value": 10650
+    "value": 11127
   },
   {
     "metric": "total_recasts",
-    "value": 1131
+    "value": 1064
   },
   {
     "metric": "total_replies",
-    "value": 6941
+    "value": 6242
   },
   {
     "metric": "top_cast_score",
-    "value": "10.00"
+    "value": "8.71"
   },
   {
     "metric": "top_cast_author",
-    "value": "@road"
+    "value": "@0xen"
   },
   {
     "metric": "top_cast_url",
-    "value": "https://farcaster.xyz/road/0x4d1ee1d8"
+    "value": "https://farcaster.xyz/0xen/0x80daa143"
   }
 ]

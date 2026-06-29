@@ -15,13 +15,13 @@ Static, cached Farcaster context from direct Hypersnap/Snapchain node scraping. 
 | Source | hypersnap |
 | Hub URL | http://54.157.62.17:3381 |
 | Readable shards | 1,2 |
-| Window UTC | 2026-06-28 05:00:36 → 2026-06-29 05:00:24 |
-| Total casts | 15119 |
-| Posts / comments | 4155 / 10964 |
-| Unique authors | 3901 |
-| Total likes / recasts / replies | 10650 / 1131 / 6941 |
-| Top cast author | @road |
-| Top cast | https://farcaster.xyz/road/0x4d1ee1d8 |
+| Window UTC | 2026-06-28 11:24:18 → 2026-06-29 11:24:11 |
+| Total casts | 14678 |
+| Posts / comments | 4273 / 10405 |
+| Unique authors | 3861 |
+| Total likes / recasts / replies | 11127 / 1064 / 6242 |
+| Top cast author | @0xen |
+| Top cast | https://farcaster.xyz/0xen/0x80daa143 |
 
 ## Published datasets
 
@@ -30,9 +30,9 @@ Static, cached Farcaster context from direct Hypersnap/Snapchain node scraping. 
 | summary_metrics | `generated/summary_metrics.csv` | 20 | [CSV](generated/summary_metrics.csv) / [JSON](generated/summary_metrics.json) |
 | theme_summary | `generated/theme_summary.csv` | 5 | [CSV](generated/theme_summary.csv) / [JSON](generated/theme_summary.json) |
 | authors | `generated/authors.csv` | 100 | [CSV](generated/authors.csv) / [JSON](generated/authors.json) |
-| top_casts | `generated/top_casts.csv` | 137 | [CSV](generated/top_casts.csv) / [JSON](generated/top_casts.json) |
-| posts | `generated/posts.csv` | 59 | [CSV](generated/posts.csv) / [JSON](generated/posts.json) |
-| comments | `generated/comments.csv` | 78 | [CSV](generated/comments.csv) / [JSON](generated/comments.json) |
+| top_casts | `generated/top_casts.csv` | 150 | [CSV](generated/top_casts.csv) / [JSON](generated/top_casts.json) |
+| posts | `generated/posts.csv` | 72 | [CSV](generated/posts.csv) / [JSON](generated/posts.json) |
+| comments | `generated/comments.csv` | 79 | [CSV](generated/comments.csv) / [JSON](generated/comments.json) |
 | agent_take | `generated/agent_take.csv` | 4 | [CSV](generated/agent_take.csv) / [JSON](generated/agent_take.json) |
 
 ## Data pipeline
