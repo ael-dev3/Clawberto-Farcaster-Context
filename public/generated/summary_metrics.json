@@ -9,7 +9,7 @@
   },
   {
     "metric": "generated_at_utc",
-    "value": "2026-06-29 16:12:49"
+    "value": "2026-06-29 20:16:52"
   },
   {
     "metric": "source",
@@ -29,23 +29,23 @@
   },
   {
     "metric": "window_start_utc",
-    "value": "2026-06-28 16:12:02"
+    "value": "2026-06-28 20:16:04"
   },
   {
     "metric": "window_end_utc",
-    "value": "2026-06-29 16:11:51"
+    "value": "2026-06-29 20:16:01"
   },
   {
     "metric": "total_records",
-    "value": 13616
+    "value": 14140
   },
   {
     "metric": "posts",
-    "value": 4361
+    "value": 4472
   },
   {
     "metric": "comments",
-    "value": 9255
+    "value": 9668
   },
   {
     "metric": "selected_records",
@@ -53,30 +53,30 @@
   },
   {
     "metric": "unique_authors",
-    "value": 3861
+    "value": 3896
   },
   {
     "metric": "total_likes",
-    "value": 11574
+    "value": 11815
   },
   {
     "metric": "total_recasts",
-    "value": 1138
+    "value": 1152
   },
   {
     "metric": "total_replies",
-    "value": 5152
+    "value": 5369
   },
   {
     "metric": "top_cast_score",
-    "value": "8.86"
+    "value": "10.00"
   },
   {
     "metric": "top_cast_author",
-    "value": "@0xen"
+    "value": "@mirzaliresadd"
   },
   {
     "metric": "top_cast_url",
-    "value": "https://farcaster.xyz/0xen/0x80daa143"
+    "value": "https://farcaster.xyz/mirzaliresadd/0xae158089"
   }
 ]
