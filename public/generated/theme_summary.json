@@ -1,11 +1,11 @@
 [
   {
     "theme": "Base Culture",
-    "casts": 102,
-    "posts": 55,
-    "comments": 47,
-    "likes": 221,
-    "avg_score": "2.73",
+    "casts": 120,
+    "posts": 65,
+    "comments": 55,
+    "likes": 231,
+    "avg_score": "2.66",
     "top_author": "@0xen",
     "top_cast_url": "https://farcaster.xyz/0xen/0x80daa143"
   },
@@ -14,30 +14,30 @@
     "casts": 27,
     "posts": 4,
     "comments": 23,
-    "likes": 89,
-    "avg_score": "3.81",
+    "likes": 98,
+    "avg_score": "3.96",
     "top_author": "@ds8",
     "top_cast_url": "https://farcaster.xyz/ds8/0x39866891"
   },
   {
     "theme": "Security/Ops",
     "casts": 12,
-    "posts": 6,
-    "comments": 6,
-    "likes": 13,
+    "posts": 4,
+    "comments": 8,
+    "likes": 15,
     "avg_score": "2.61",
-    "top_author": "@maxximillian",
-    "top_cast_url": "https://farcaster.xyz/maxximillian/0x997009f2"
+    "top_author": "@hellno",
+    "top_cast_url": "https://farcaster.xyz/hellno/0xda3179c8"
   },
   {
     "theme": "Token/Promo",
-    "casts": 8,
+    "casts": 11,
     "posts": 6,
-    "comments": 2,
-    "likes": 17,
-    "avg_score": "2.39",
-    "top_author": "@kender7",
-    "top_cast_url": "https://farcaster.xyz/kender7/0x89998981"
+    "comments": 5,
+    "likes": 46,
+    "avg_score": "3.74",
+    "top_author": "@miguelgarest-eth",
+    "top_cast_url": "https://farcaster.xyz/miguelgarest-eth/0x8496591b"
   },
   {
     "theme": "Protocol/Fork",
