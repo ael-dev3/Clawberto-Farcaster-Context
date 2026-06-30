@@ -9,7 +9,7 @@
   },
   {
     "metric": "generated_at_utc",
-    "value": "2026-06-30 10:03:12"
+    "value": "2026-06-30 14:45:05"
   },
   {
     "metric": "source",
@@ -29,54 +29,54 @@
   },
   {
     "metric": "window_start_utc",
-    "value": "2026-06-29 10:02:28"
+    "value": "2026-06-29 14:44:29"
   },
   {
     "metric": "window_end_utc",
-    "value": "2026-06-30 10:02:08"
+    "value": "2026-06-30 14:44:24"
   },
   {
     "metric": "total_records",
-    "value": 14647
+    "value": 14693
   },
   {
     "metric": "posts",
-    "value": 4763
+    "value": 4854
   },
   {
     "metric": "comments",
-    "value": 9884
+    "value": 9839
   },
   {
     "metric": "selected_records",
-    "value": 200
+    "value": 180
   },
   {
     "metric": "unique_authors",
-    "value": 3762
+    "value": 3752
   },
   {
     "metric": "total_likes",
-    "value": 12568
+    "value": 12200
   },
   {
     "metric": "total_recasts",
-    "value": 1193
+    "value": 1140
   },
   {
     "metric": "total_replies",
-    "value": 5969
+    "value": 5797
   },
   {
     "metric": "top_cast_score",
-    "value": "10.00"
+    "value": "8.54"
   },
   {
     "metric": "top_cast_author",
-    "value": "@mirzaliresadd"
+    "value": "@basedcoin"
   },
   {
     "metric": "top_cast_url",
-    "value": "https://farcaster.xyz/mirzaliresadd/0xae158089"
+    "value": "https://farcaster.xyz/basedcoin/0x1439a902"
   }
 ]
