@@ -1,31 +1,31 @@
 [
   {
     "theme": "Base Culture",
-    "casts": 117,
-    "posts": 50,
-    "comments": 67,
-    "likes": 321,
-    "avg_score": "2.75",
-    "top_author": "@statuette",
-    "top_cast_url": "https://farcaster.xyz/statuette/0x76fe9cab"
+    "casts": 118,
+    "posts": 48,
+    "comments": 70,
+    "likes": 298,
+    "avg_score": "2.55",
+    "top_author": "@kenny",
+    "top_cast_url": "https://farcaster.xyz/kenny/0x3aa53cf4"
   },
   {
     "theme": "Token/Promo",
-    "casts": 41,
-    "posts": 24,
-    "comments": 17,
-    "likes": 148,
-    "avg_score": "3.76",
+    "casts": 37,
+    "posts": 22,
+    "comments": 15,
+    "likes": 137,
+    "avg_score": "3.83",
     "top_author": "@littleanjel",
     "top_cast_url": "https://farcaster.xyz/littleanjel/0x545eff78"
   },
   {
     "theme": "Apps/Games",
-    "casts": 22,
-    "posts": 2,
-    "comments": 20,
-    "likes": 46,
-    "avg_score": "3.27",
+    "casts": 20,
+    "posts": 3,
+    "comments": 17,
+    "likes": 40,
+    "avg_score": "3.10",
     "top_author": "@sub",
     "top_cast_url": "https://farcaster.xyz/sub/0x0df6a2e8"
   },
@@ -35,18 +35,18 @@
     "posts": 6,
     "comments": 11,
     "likes": 38,
-    "avg_score": "2.98",
+    "avg_score": "2.80",
     "top_author": "@vgr",
     "top_cast_url": "https://farcaster.xyz/vgr/0x58244e8e"
   },
   {
     "theme": "Protocol/Fork",
     "casts": 3,
-    "posts": 3,
-    "comments": 0,
+    "posts": 2,
+    "comments": 1,
     "likes": 3,
     "avg_score": "2.59",
-    "top_author": "@snakeheadman042.base.eth",
-    "top_cast_url": "https://farcaster.xyz/snakeheadman042.base.eth/0x54fec8d6"
+    "top_author": "@gandhionchain",
+    "top_cast_url": "https://farcaster.xyz/gandhionchain/0x3ec0404c"
   }
 ]
