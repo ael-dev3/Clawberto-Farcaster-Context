@@ -7,27 +7,27 @@
   {
     "table": "theme_summary",
     "file": "generated/theme_summary.csv",
-    "rows": 5
+    "rows": 4
   },
   {
     "table": "authors",
     "file": "generated/authors.csv",
-    "rows": 100
+    "rows": 98
   },
   {
     "table": "top_casts",
     "file": "generated/top_casts.csv",
-    "rows": 131
+    "rows": 118
   },
   {
     "table": "posts",
     "file": "generated/posts.csv",
-    "rows": 49
+    "rows": 53
   },
   {
     "table": "comments",
     "file": "generated/comments.csv",
-    "rows": 82
+    "rows": 65
   },
   {
     "table": "agent_take",
