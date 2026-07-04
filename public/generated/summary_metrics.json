@@ -9,7 +9,7 @@
   },
   {
     "metric": "generated_at_utc",
-    "value": "2026-07-04 09:01:46"
+    "value": "2026-07-04 13:59:46"
   },
   {
     "metric": "source",
@@ -29,54 +29,54 @@
   },
   {
     "metric": "window_start_utc",
-    "value": "2026-07-03 09:01:36"
+    "value": "2026-07-03 13:59:40"
   },
   {
     "metric": "window_end_utc",
-    "value": "2026-07-04 09:01:32"
+    "value": "2026-07-04 13:59:35"
   },
   {
     "metric": "total_records",
-    "value": 13321
+    "value": 13812
   },
   {
     "metric": "posts",
-    "value": 3855
+    "value": 3962
   },
   {
     "metric": "comments",
-    "value": 9466
+    "value": 9850
   },
   {
     "metric": "selected_records",
-    "value": 130
+    "value": 131
   },
   {
     "metric": "unique_authors",
-    "value": 3550
+    "value": 3661
   },
   {
     "metric": "total_likes",
-    "value": 11373
+    "value": 11939
   },
   {
     "metric": "total_recasts",
-    "value": 911
+    "value": 990
   },
   {
     "metric": "total_replies",
-    "value": 5351
+    "value": 5621
   },
   {
     "metric": "top_cast_score",
-    "value": "9.71"
+    "value": "9.14"
   },
   {
     "metric": "top_cast_author",
-    "value": "@smshakil"
+    "value": "@akela113"
   },
   {
     "metric": "top_cast_url",
-    "value": "https://farcaster.xyz/smshakil/0x9a839bc4"
+    "value": "https://farcaster.xyz/akela113/0x77aeda79"
   }
 ]
