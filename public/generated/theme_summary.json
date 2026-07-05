@@ -1,52 +1,52 @@
 [
   {
     "theme": "Base Culture",
-    "casts": 89,
-    "posts": 37,
-    "comments": 52,
-    "likes": 183,
-    "avg_score": "2.73",
+    "casts": 54,
+    "posts": 26,
+    "comments": 28,
+    "likes": 114,
+    "avg_score": "2.76",
     "top_author": "@six",
     "top_cast_url": "https://farcaster.xyz/six/0x3eae003f"
   },
   {
     "theme": "Apps/Games",
-    "casts": 17,
-    "posts": 3,
-    "comments": 14,
-    "likes": 61,
-    "avg_score": "3.36",
+    "casts": 11,
+    "posts": 1,
+    "comments": 10,
+    "likes": 37,
+    "avg_score": "3.73",
     "top_author": "@nounishprof",
     "top_cast_url": "https://farcaster.xyz/nounishprof/0x94d88d89"
   },
   {
-    "theme": "Token/Promo",
-    "casts": 7,
-    "posts": 5,
-    "comments": 2,
-    "likes": 23,
-    "avg_score": "3.26",
-    "top_author": "@dtso",
-    "top_cast_url": "https://farcaster.xyz/dtso/0x4433b63e"
+    "theme": "Security/Ops",
+    "casts": 6,
+    "posts": 3,
+    "comments": 3,
+    "likes": 2,
+    "avg_score": "1.53",
+    "top_author": "@g4mer15",
+    "top_cast_url": "https://farcaster.xyz/g4mer15/0xab43df73"
   },
   {
-    "theme": "Security/Ops",
-    "casts": 7,
-    "posts": 5,
-    "comments": 2,
-    "likes": 9,
-    "avg_score": "2.57",
-    "top_author": "@jenna",
-    "top_cast_url": "https://farcaster.xyz/jenna/0xccdb804d"
+    "theme": "Token/Promo",
+    "casts": 3,
+    "posts": 2,
+    "comments": 1,
+    "likes": 8,
+    "avg_score": "3.45",
+    "top_author": "@paragraph",
+    "top_cast_url": "https://farcaster.xyz/paragraph/0x6429d1a0"
   },
   {
     "theme": "Protocol/Fork",
     "casts": 1,
-    "posts": 0,
-    "comments": 1,
+    "posts": 1,
+    "comments": 0,
     "likes": 1,
     "avg_score": "2.59",
-    "top_author": "@t1tan7",
-    "top_cast_url": "https://farcaster.xyz/t1tan7/0xe7395d45"
+    "top_author": "@adrijan",
+    "top_cast_url": "https://farcaster.xyz/adrijan/0xfeb51bba"
   }
 ]
