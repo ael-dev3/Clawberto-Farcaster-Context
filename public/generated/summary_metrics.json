@@ -9,7 +9,7 @@
   },
   {
     "metric": "generated_at_utc",
-    "value": "2026-07-06 20:15:51"
+    "value": "2026-07-07 04:17:47"
   },
   {
     "metric": "source",
@@ -29,54 +29,54 @@
   },
   {
     "metric": "window_start_utc",
-    "value": "2026-07-05 20:15:15"
+    "value": "2026-07-06 04:17:45"
   },
   {
     "metric": "window_end_utc",
-    "value": "2026-07-06 20:14:59"
+    "value": "2026-07-07 04:17:33"
   },
   {
     "metric": "total_records",
-    "value": 14820
+    "value": 14912
   },
   {
     "metric": "posts",
-    "value": 3925
+    "value": 3871
   },
   {
     "metric": "comments",
-    "value": 10895
+    "value": 11041
   },
   {
     "metric": "selected_records",
-    "value": 155
+    "value": 171
   },
   {
     "metric": "unique_authors",
-    "value": 3792
+    "value": 3914
   },
   {
     "metric": "total_likes",
-    "value": 12924
+    "value": 13339
   },
   {
     "metric": "total_recasts",
-    "value": 1168
+    "value": 1667
   },
   {
     "metric": "total_replies",
-    "value": 6590
+    "value": 7014
   },
   {
     "metric": "top_cast_score",
-    "value": "8.18"
+    "value": "8.46"
   },
   {
     "metric": "top_cast_author",
-    "value": "@jerry-d"
+    "value": "@maxdo"
   },
   {
     "metric": "top_cast_url",
-    "value": "https://farcaster.xyz/jerry-d/0xc06da49f"
+    "value": "https://farcaster.xyz/maxdo/0x35b20137"
   }
 ]
