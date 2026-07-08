@@ -9,7 +9,7 @@
   },
   {
     "metric": "generated_at_utc",
-    "value": "2026-07-08 03:46:12"
+    "value": "2026-07-08 08:45:12"
   },
   {
     "metric": "source",
@@ -29,54 +29,54 @@
   },
   {
     "metric": "window_start_utc",
-    "value": "2026-07-07 03:46:06"
+    "value": "2026-07-07 08:44:51"
   },
   {
     "metric": "window_end_utc",
-    "value": "2026-07-08 03:45:56"
+    "value": "2026-07-08 08:44:48"
   },
   {
     "metric": "total_records",
-    "value": 14261
+    "value": 14787
   },
   {
     "metric": "posts",
-    "value": 3536
+    "value": 3675
   },
   {
     "metric": "comments",
-    "value": 10725
+    "value": 11112
   },
   {
     "metric": "selected_records",
-    "value": 174
+    "value": 164
   },
   {
     "metric": "unique_authors",
-    "value": 3881
+    "value": 3945
   },
   {
     "metric": "total_likes",
-    "value": 13263
+    "value": 13780
   },
   {
     "metric": "total_recasts",
-    "value": 1209
+    "value": 1270
   },
   {
     "metric": "total_replies",
-    "value": 6198
+    "value": 6564
   },
   {
     "metric": "top_cast_score",
-    "value": "10.00"
+    "value": "9.14"
   },
   {
     "metric": "top_cast_author",
-    "value": "@cassie"
+    "value": "@0xen"
   },
   {
     "metric": "top_cast_url",
-    "value": "https://farcaster.xyz/cassie/0x0b3cd5f0"
+    "value": "https://farcaster.xyz/0xen/0x288c43b2"
   }
 ]
