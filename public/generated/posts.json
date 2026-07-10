@@ -1,13 +1,32 @@
 [
   {
     "rank": 3,
+    "timestamp_utc": "2026-07-10 02:59:25",
+    "type": "post",
+    "author": "@nickysap",
+    "author_url": "https://farcaster.xyz/nickysap",
+    "score": "9.61",
+    "engagement": "71.00",
+    "likes": 42,
+    "recasts": 4,
+    "replies": 8,
+    "theme": "Apps/Games",
+    "visibility": "general",
+    "hash": "0x1557fd8266d7dd503f7d35867111b732d2e29e56",
+    "cast_url": "https://farcaster.xyz/nickysap/0x1557fd82",
+    "parent_hash": "",
+    "preview": "i have always wanted the mini app ux to work like this and literally have no clue why it doesn't. slowly making the client i want to use.",
+    "text": "i have always wanted the mini app ux to work like this and literally have no clue why it doesn't. slowly making the client i want to use."
+  },
+  {
+    "rank": 4,
     "timestamp_utc": "2026-07-10 00:33:18",
     "type": "post",
     "author": "@alexanderchopan",
     "author_url": "https://farcaster.xyz/alexanderchopan",
-    "score": "9.14",
-    "engagement": "56.50",
-    "likes": 34,
+    "score": "9.27",
+    "engagement": "58.50",
+    "likes": 36,
     "recasts": 2,
     "replies": 7,
     "theme": "Base Culture",
@@ -19,34 +38,15 @@
     "text": "base app failed. kudos for the experiment i guess, but as a user and product observer, very disappointing."
   },
   {
-    "rank": 4,
-    "timestamp_utc": "2026-07-10 02:59:25",
-    "type": "post",
-    "author": "@nickysap",
-    "author_url": "https://farcaster.xyz/nickysap",
-    "score": "8.79",
-    "engagement": "53.00",
-    "likes": 29,
-    "recasts": 4,
-    "replies": 6,
-    "theme": "Apps/Games",
-    "visibility": "general",
-    "hash": "0x1557fd8266d7dd503f7d35867111b732d2e29e56",
-    "cast_url": "https://farcaster.xyz/nickysap/0x1557fd82",
-    "parent_hash": "",
-    "preview": "i have always wanted the mini app ux to work like this and literally have no clue why it doesn't. slowly making the client i want to use.",
-    "text": "i have always wanted the mini app ux to work like this and literally have no clue why it doesn't. slowly making the client i want to use."
-  },
-  {
-    "rank": 5,
+    "rank": 10,
     "timestamp_utc": "2026-07-10 01:19:56",
     "type": "post",
     "author": "@diviflyy",
     "author_url": "https://farcaster.xyz/diviflyy",
-    "score": "6.69",
-    "engagement": "30.00",
-    "likes": 11,
-    "recasts": 1,
+    "score": "7.49",
+    "engagement": "38.00",
+    "likes": 16,
+    "recasts": 3,
     "replies": 5,
     "theme": "Base Culture",
     "visibility": "general",
@@ -57,26 +57,26 @@
     "text": "Base will be downgraded to a Stage 0 L2 in 38 days. The roadmap laid out by and in 2024 was for all major L2s to be Stage 1 by the end of 2025, and pushing for Stage 2. None hav..."
   },
   {
-    "rank": 10,
-    "timestamp_utc": "2026-07-09 13:05:47",
+    "rank": 12,
+    "timestamp_utc": "2026-07-10 05:06:13",
     "type": "post",
-    "author": "@0xaprilia",
-    "author_url": "https://farcaster.xyz/0xaprilia",
-    "score": "6.03",
-    "engagement": "22.80",
-    "likes": 8,
-    "recasts": 3,
-    "replies": 3,
-    "theme": "Token/Promo",
+    "author": "@0xen",
+    "author_url": "https://farcaster.xyz/0xen",
+    "score": "8.37",
+    "engagement": "29.90",
+    "likes": 24,
+    "recasts": 2,
+    "replies": 1,
+    "theme": "Base Culture",
     "visibility": "general",
-    "hash": "0x12d8543d32816d7b9ea57bee524309583d476173",
-    "cast_url": "https://farcaster.xyz/0xaprilia/0x12d8543d",
+    "hash": "0xd20570e67b4a4e23a4edf24c5b912fed29e1b4dc",
+    "cast_url": "https://farcaster.xyz/0xen/0xd20570e6",
     "parent_hash": "",
-    "preview": "It’s always a great feeling to be featured on betrmint. And congrats to all the winners! Thank you and for always supporting artists 💜 Welcome to Neon Clankerverse…",
-    "text": "It’s always a great feeling to be featured on betrmint. And congrats to all the winners! Thank you and for always supporting artists 💜 Welcome to Neon Clankerverse…"
+    "preview": "Logging in to Coinbase app:",
+    "text": "Logging in to Coinbase app:"
   },
   {
-    "rank": 11,
+    "rank": 14,
     "timestamp_utc": "2026-07-09 15:51:01",
     "type": "post",
     "author": "@tophb",
@@ -95,35 +95,16 @@
     "text": "Privileged to be part of the winners of the neon clankerverse contest. I was dumbfounded when I saw the number and quality of submissions.. Congratulations to every artist that ..."
   },
   {
-    "rank": 13,
-    "timestamp_utc": "2026-07-10 05:06:13",
-    "type": "post",
-    "author": "@0xen",
-    "author_url": "https://farcaster.xyz/0xen",
-    "score": "7.35",
-    "engagement": "19.40",
-    "likes": 15,
-    "recasts": 1,
-    "replies": 1,
-    "theme": "Base Culture",
-    "visibility": "general",
-    "hash": "0xd20570e67b4a4e23a4edf24c5b912fed29e1b4dc",
-    "cast_url": "https://farcaster.xyz/0xen/0xd20570e6",
-    "parent_hash": "",
-    "preview": "Logging in to Coinbase app:",
-    "text": "Logging in to Coinbase app:"
-  },
-  {
-    "rank": 23,
+    "rank": 17,
     "timestamp_utc": "2026-07-10 04:02:49",
     "type": "post",
     "author": "@mikapro",
     "author_url": "https://farcaster.xyz/mikapro",
-    "score": "6.27",
-    "engagement": "14.20",
-    "likes": 9,
+    "score": "6.69",
+    "engagement": "18.70",
+    "likes": 11,
     "recasts": 1,
-    "replies": 1,
+    "replies": 2,
     "theme": "Base Culture",
     "visibility": "general",
     "hash": "0x83f8f90e2c9f26309337882869666a78ec6399e3",
@@ -133,7 +114,7 @@
     "text": "I am raising a Cryptopia pet on Base. Join my idle expedition."
   },
   {
-    "rank": 26,
+    "rank": 22,
     "timestamp_utc": "2026-07-10 00:39:43",
     "type": "post",
     "author": "@itjeff",
@@ -152,26 +133,26 @@
     "text": "It’s wild how many companies act like your digital privacy is optional. They treat your data like it's their own property, relying on the preterition of your rights to keep you ..."
   },
   {
-    "rank": 27,
-    "timestamp_utc": "2026-07-09 12:32:45",
+    "rank": 23,
+    "timestamp_utc": "2026-07-10 06:01:56",
     "type": "post",
-    "author": "@mfa",
-    "author_url": "https://farcaster.xyz/mfa",
-    "score": "5.10",
-    "engagement": "13.20",
-    "likes": 5,
-    "recasts": 1,
-    "replies": 1,
-    "theme": "Protocol/Fork",
-    "visibility": "question",
-    "hash": "0x6bc79287e703836cddc6eb0e706f27df0c003b9a",
-    "cast_url": "https://farcaster.xyz/mfa/0x6bc79287",
+    "author": "@0xkimpada",
+    "author_url": "https://farcaster.xyz/0xkimpada",
+    "score": "1.00",
+    "engagement": "12.50",
+    "likes": 0,
+    "recasts": 0,
+    "replies": 3,
+    "theme": "Base Culture",
+    "visibility": "general",
+    "hash": "0xab5eeaa67356b2d7ab612dbd88e0e62e0dcf857e",
+    "cast_url": "https://farcaster.xyz/0xkimpada/0xab5eeaa6",
     "parent_hash": "",
-    "preview": "Quorum > TBA. Presence changes everything. When the builder is here with the community, the product feels alive. makes Quorum feel less like an app and more like a movement. Am ...",
-    "text": "Quorum > TBA. Presence changes everything. When the builder is here with the community, the product feels alive. makes Quorum feel less like an app and more like a movement. Am ..."
+    "preview": "Builder profile: District: Vienna Penthouse — claimed and building. The Building Culture ecosystem runs on Base with provably fair draws. No black boxes. No rug. Just builders s...",
+    "text": "Builder profile: District: Vienna Penthouse — claimed and building. The Building Culture ecosystem runs on Base with provably fair draws. No black boxes. No rug. Just builders s..."
   },
   {
-    "rank": 30,
+    "rank": 25,
     "timestamp_utc": "2026-07-10 00:15:45",
     "type": "post",
     "author": "@dtso",
@@ -190,26 +171,7 @@
     "text": "Peering into the future is now as simple as asking a question on , built on https://x.com/baseposting/status/2074612951852388619?s=46&t=WH1NEB3O4jfMt861gchHvA"
   },
   {
-    "rank": 31,
-    "timestamp_utc": "2026-07-09 12:32:35",
-    "type": "post",
-    "author": "@xrayz",
-    "author_url": "https://farcaster.xyz/xrayz",
-    "score": "4.17",
-    "engagement": "11.40",
-    "likes": 3,
-    "recasts": 3,
-    "replies": 1,
-    "theme": "Base Culture",
-    "visibility": "general",
-    "hash": "0xf1c240ae90c93cb2fc3e536b0756c71d0bcdeb97",
-    "cast_url": "https://farcaster.xyz/xrayz/0xf1c240ae",
-    "parent_hash": "",
-    "preview": "I just created my podium of today: 🥇quizzy - 🥈Base - 🥉Rips -",
-    "text": "I just created my podium of today: 🥇quizzy - 🥈Base - 🥉Rips -"
-  },
-  {
-    "rank": 33,
+    "rank": 28,
     "timestamp_utc": "2026-07-09 17:29:34",
     "type": "post",
     "author": "@taliskye",
@@ -228,26 +190,26 @@
     "text": "Have you seen this bandana? /basepaint has so many that are great. But I think this one is my favorite."
   },
   {
-    "rank": 34,
-    "timestamp_utc": "2026-07-09 11:31:54",
+    "rank": 29,
+    "timestamp_utc": "2026-07-10 05:52:06",
     "type": "post",
-    "author": "@bigchong97",
-    "author_url": "https://farcaster.xyz/bigchong97",
+    "author": "@ahsenkhan",
+    "author_url": "https://farcaster.xyz/ahsenkhan",
     "score": "2.59",
-    "engagement": "10.30",
+    "engagement": "10.10",
     "likes": 1,
     "recasts": 0,
     "replies": 3,
     "theme": "Base Culture",
     "visibility": "general",
-    "hash": "0x711c74ee7338cbaa04af08c354305494dc9122ba",
-    "cast_url": "https://farcaster.xyz/bigchong97/0x711c74ee",
+    "hash": "0x9779d7497829c47515c1a2e50f0de359f6006759",
+    "cast_url": "https://farcaster.xyz/ahsenkhan/0x9779d749",
     "parent_hash": "",
-    "preview": "I just created my @brnd podium of today: 🥇BizarreBeasts - 🥈Base - 🥉Farverse - /farverse",
-    "text": "I just created my @brnd podium of today: 🥇BizarreBeasts - 🥈Base - 🥉Farverse - /farverse"
+    "preview": "I just created my @brnd podium of today: 🥇Base - 🥈Farcaster - 🥉Superfluid -",
+    "text": "I just created my @brnd podium of today: 🥇Base - 🥈Farcaster - 🥉Superfluid -"
   },
   {
-    "rank": 36,
+    "rank": 31,
     "timestamp_utc": "2026-07-09 19:34:49",
     "type": "post",
     "author": "@pedronosandrine",
@@ -266,26 +228,26 @@
     "text": "I just created my podium of today: 🥇BizarreBeasts - 🥈Base - 🥉Remix - /remix"
   },
   {
-    "rank": 37,
-    "timestamp_utc": "2026-07-10 06:01:56",
+    "rank": 33,
+    "timestamp_utc": "2026-07-10 11:56:54",
     "type": "post",
-    "author": "@0xkimpada",
-    "author_url": "https://farcaster.xyz/0xkimpada",
-    "score": "1.00",
-    "engagement": "10.00",
-    "likes": 0,
+    "author": "@rezzaa",
+    "author_url": "https://farcaster.xyz/rezzaa",
+    "score": "2.59",
+    "engagement": "9.90",
+    "likes": 1,
     "recasts": 0,
-    "replies": 2,
+    "replies": 3,
     "theme": "Base Culture",
     "visibility": "general",
-    "hash": "0xab5eeaa67356b2d7ab612dbd88e0e62e0dcf857e",
-    "cast_url": "https://farcaster.xyz/0xkimpada/0xab5eeaa6",
+    "hash": "0x0b8f9f33d7f87b85ab1e941ad76f3353628941f3",
+    "cast_url": "https://farcaster.xyz/rezzaa/0x0b8f9f33",
     "parent_hash": "",
-    "preview": "Builder profile: District: Vienna Penthouse — claimed and building. The Building Culture ecosystem runs on Base with provably fair draws. No black boxes. No rug. Just builders s...",
-    "text": "Builder profile: District: Vienna Penthouse — claimed and building. The Building Culture ecosystem runs on Base with provably fair draws. No black boxes. No rug. Just builders s..."
+    "preview": "I just created my podium of today: 🥇BizarreBeasts - 🥈Base - 💙 🥉Farcaster -",
+    "text": "I just created my podium of today: 🥇BizarreBeasts - 🥈Base - 💙 🥉Farcaster -"
   },
   {
-    "rank": 38,
+    "rank": 34,
     "timestamp_utc": "2026-07-10 03:20:27",
     "type": "post",
     "author": "@ai4therapy",
@@ -304,7 +266,7 @@
     "text": "I just created my podium of today: 🥇BizarreBeasts - 🥈Farcaster - 🥉Base -"
   },
   {
-    "rank": 39,
+    "rank": 35,
     "timestamp_utc": "2026-07-10 01:09:34",
     "type": "post",
     "author": "@diviflyy",
@@ -323,26 +285,7 @@
     "text": "Base will be downgraded to a Stage 0 L2 in 38 days. The roadmap laid out by and in 2024 was for all major L2s to be Stage 2 by the end of 2025. None have achieved this, but Base..."
   },
   {
-    "rank": 42,
-    "timestamp_utc": "2026-07-09 10:30:23",
-    "type": "post",
-    "author": "@xfer11",
-    "author_url": "https://farcaster.xyz/xfer11",
-    "score": "5.10",
-    "engagement": "9.10",
-    "likes": 5,
-    "recasts": 0,
-    "replies": 1,
-    "theme": "Base Culture",
-    "visibility": "general",
-    "hash": "0xc7a46be7c716b12a0b6fd6cad52ed8aa00ade7ef",
-    "cast_url": "https://farcaster.xyz/xfer11/0xc7a46be7",
-    "parent_hash": "",
-    "preview": "I started the day with a plate of fruit Peach Grape Blueberry Kiwi",
-    "text": "I started the day with a plate of fruit Peach Grape Blueberry Kiwi"
-  },
-  {
-    "rank": 45,
+    "rank": 44,
     "timestamp_utc": "2026-07-10 04:11:13",
     "type": "post",
     "author": "@mannaushack",
@@ -361,7 +304,7 @@
     "text": "Not flexing — just sharing proof of work. @buildingculture rewards the builders who showed up before the crowd. I'm one of them. Genesis Season. 👇 https://miniapp-generator-fid-..."
   },
   {
-    "rank": 48,
+    "rank": 47,
     "timestamp_utc": "2026-07-09 21:26:25",
     "type": "post",
     "author": "@clanker",
@@ -381,25 +324,6 @@
   },
   {
     "rank": 52,
-    "timestamp_utc": "2026-07-09 10:39:20",
-    "type": "post",
-    "author": "@zktriumph",
-    "author_url": "https://farcaster.xyz/zktriumph",
-    "score": "4.17",
-    "engagement": "8.00",
-    "likes": 3,
-    "recasts": 0,
-    "replies": 0,
-    "theme": "Base Culture",
-    "visibility": "general",
-    "hash": "0x0568dea274177c95f3eae36d00599973942bf09c",
-    "cast_url": "https://farcaster.xyz/zktriumph/0x0568dea2",
-    "parent_hash": "",
-    "preview": "The elephant in the room is that whenever South Africans unite to protest against government regarding any issues. Other African leaders will pull a move to make their own citiz...",
-    "text": "The elephant in the room is that whenever South Africans unite to protest against government regarding any issues. Other African leaders will pull a move to make their own citiz..."
-  },
-  {
-    "rank": 55,
     "timestamp_utc": "2026-07-10 08:56:11",
     "type": "post",
     "author": "@sserssergesserss",
@@ -418,7 +342,7 @@
     "text": "I've been testing Bluesky and Farcaster for more than three months. I like both networks, but for different reasons. Bluesky is all about comfort, beauty and a pleasant experien..."
   },
   {
-    "rank": 56,
+    "rank": 53,
     "timestamp_utc": "2026-07-10 08:04:04",
     "type": "post",
     "author": "@pmfi",
@@ -437,7 +361,7 @@
     "text": "PMFI is moving repos to . This brings us closer from PMFI → PMFAI. GitLawb matches where we believe crypto infrastructure is heading: decentralized, crypto-native, DID-based, an..."
   },
   {
-    "rank": 57,
+    "rank": 54,
     "timestamp_utc": "2026-07-10 07:20:08",
     "type": "post",
     "author": "@sakiburrahman02",
@@ -456,7 +380,7 @@
     "text": "Vienna penthouse or bust. 15576 XP. 168 tickets. Currently manifesting. Also boosting districts daily. Both things can be true. @buildingculture rewards builders. I've covered m..."
   },
   {
-    "rank": 58,
+    "rank": 55,
     "timestamp_utc": "2026-07-10 06:01:26",
     "type": "post",
     "author": "@0xkimpada",
@@ -475,7 +399,7 @@
     "text": "RWA update: entered the draw pool for Vienna Penthouse via Building Culture District Rush. The prizes are real: penthouses, art events, villa stays — provably fair draw on Base ..."
   },
   {
-    "rank": 59,
+    "rank": 56,
     "timestamp_utc": "2026-07-10 06:01:15",
     "type": "post",
     "author": "@0xkimpada",
@@ -494,7 +418,7 @@
     "text": "Base activity: just joined Building Culture District Rush — holding Vienna Penthouse. The game runs on Base. The prizes are real-world. The community is Farcaster-native. If you..."
   },
   {
-    "rank": 60,
+    "rank": 57,
     "timestamp_utc": "2026-07-10 04:13:58",
     "type": "post",
     "author": "@mannaushack",
@@ -513,7 +437,7 @@
     "text": "RWA update: entered the draw pool for my district via Building Culture District Rush. The prizes are real: penthouses, art events, villa stays — provably fair draw on Base when ..."
   },
   {
-    "rank": 61,
+    "rank": 58,
     "timestamp_utc": "2026-07-10 02:58:57",
     "type": "post",
     "author": "@0xleonardo",
@@ -532,7 +456,7 @@
     "text": "Vienna penthouse or bust. 4837 XP. 52 tickets. Genesis wave. Currently manifesting. Also boosting districts daily. Both things can be true. @buildingculture rewards builders. I'..."
   },
   {
-    "rank": 64,
+    "rank": 61,
     "timestamp_utc": "2026-07-09 15:08:15",
     "type": "post",
     "author": "@r0za",
@@ -551,7 +475,7 @@
     "text": "Base activity: just joined Building Culture District Rush — holding Lisbon Creative House. The game runs on Base. The prizes are real-world. The community is Farcaster-native. I..."
   },
   {
-    "rank": 65,
+    "rank": 62,
     "timestamp_utc": "2026-07-09 15:08:07",
     "type": "post",
     "author": "@r0za",
@@ -570,26 +494,26 @@
     "text": "RWA update: entered the draw pool for Lisbon Creative House via Building Culture District Rush. The prizes are real: penthouses, art events, villa stays — provably fair draw on ..."
   },
   {
-    "rank": 66,
-    "timestamp_utc": "2026-07-09 13:44:04",
+    "rank": 63,
+    "timestamp_utc": "2026-07-10 11:35:20",
     "type": "post",
-    "author": "@j-valeska",
-    "author_url": "https://farcaster.xyz/j-valeska",
-    "score": "1.00",
-    "engagement": "7.50",
-    "likes": 0,
+    "author": "@maxwellwshark",
+    "author_url": "https://farcaster.xyz/maxwellwshark",
+    "score": "4.17",
+    "engagement": "7.30",
+    "likes": 3,
     "recasts": 0,
     "replies": 1,
-    "theme": "Security/Ops",
+    "theme": "Base Culture",
     "visibility": "general",
-    "hash": "0xa40275284e072f998736e3c1d03b4070108b9971",
-    "cast_url": "https://farcaster.xyz/j-valeska/0xa4027528",
+    "hash": "0xffe60ab542a7f93805ad9bcfcdac2cd8bedd4fff",
+    "cast_url": "https://farcaster.xyz/maxwellwshark/0xffe60ab5",
     "parent_hash": "",
-    "preview": "second, private data is private login codes, passwords and shit like that required for authentication it is a crime to read them without permission of the account owner even if ...",
-    "text": "second, private data is private login codes, passwords and shit like that required for authentication it is a crime to read them without permission of the account owner even if ..."
+    "preview": "Hello, beautiful base members! Good day everyone, this cat is saying hello",
+    "text": "Hello, beautiful base members! Good day everyone, this cat is saying hello"
   },
   {
-    "rank": 75,
+    "rank": 68,
     "timestamp_utc": "2026-07-10 05:54:21",
     "type": "post",
     "author": "@ravenscope.base.eth",
@@ -608,26 +532,7 @@
     "text": "GameFi is often a double edged sword. The gameplay mechanics can be super fun, but sometimes the tokenomics feel tacked on. Why cant we have games that are just good and optiona..."
   },
   {
-    "rank": 76,
-    "timestamp_utc": "2026-07-09 11:45:39",
-    "type": "post",
-    "author": "@459oyaji",
-    "author_url": "https://farcaster.xyz/459oyaji",
-    "score": "4.68",
-    "engagement": "6.60",
-    "likes": 4,
-    "recasts": 0,
-    "replies": 0,
-    "theme": "Base Culture",
-    "visibility": "general",
-    "hash": "0x9f8805b177d2f7b90e6530e1f6c20795d710e888",
-    "cast_url": "https://farcaster.xyz/459oyaji/0x9f8805b1",
-    "parent_hash": "",
-    "preview": "MEON Genesis Drop — 10k base allocation per wallet. Mystery Boxes. OG Badge — 15% of supply. Grab your spot 👇 61日目🫶 まだまだTGEまで道のり長そう？",
-    "text": "MEON Genesis Drop — 10k base allocation per wallet. Mystery Boxes. OG Badge — 15% of supply. Grab your spot 👇 61日目🫶 まだまだTGEまで道のり長そう？"
-  },
-  {
-    "rank": 77,
+    "rank": 70,
     "timestamp_utc": "2026-07-09 19:42:19",
     "type": "post",
     "author": "@nuelprime",
@@ -646,7 +551,7 @@
     "text": "2 network upgrades and base is still as dry as ever"
   },
   {
-    "rank": 78,
+    "rank": 71,
     "timestamp_utc": "2026-07-09 19:18:27",
     "type": "post",
     "author": "@uniquebeing404",
@@ -665,7 +570,7 @@
     "text": "Hi everyone Been busy fixing some codes and bugs It has been draining but also thrilling A new mini app soon, made for ecosystem."
   },
   {
-    "rank": 81,
+    "rank": 74,
     "timestamp_utc": "2026-07-09 18:42:53",
     "type": "post",
     "author": "@220",
@@ -684,7 +589,7 @@
     "text": "There's never been a more exciting time to: → Use Base → Build on Base → Research Base → Post about Base And we will simply continue shipping /base"
   },
   {
-    "rank": 82,
+    "rank": 75,
     "timestamp_utc": "2026-07-09 20:41:28",
     "type": "post",
     "author": "@boomeronbase",
@@ -703,7 +608,7 @@
     "text": "BoomerOnBase Productions 🎬 – Voice Chat Boomers on FIFA voice chat is the most dangerous place on the internet. 🎮 The crew has opinions. Many opinions. Ok Boomer. 🎬 #baseposting 👇"
   },
   {
-    "rank": 83,
+    "rank": 76,
     "timestamp_utc": "2026-07-09 22:47:13",
     "type": "post",
     "author": "@bu9ape",
@@ -722,7 +627,26 @@
     "text": "#Swift unveiled a blockchain-based system for 24/7 cross-border payments, with 17 global banks preparing to pilot live transactions using tokenized deposits."
   },
   {
-    "rank": 84,
+    "rank": 77,
+    "timestamp_utc": "2026-07-10 14:17:13",
+    "type": "post",
+    "author": "@falseninebot",
+    "author_url": "https://farcaster.xyz/falseninebot",
+    "score": "2.59",
+    "engagement": "6.00",
+    "likes": 1,
+    "recasts": 0,
+    "replies": 0,
+    "theme": "Base Culture",
+    "visibility": "general",
+    "hash": "0x634b68687efbbf4dc65bc14300d3cc1e1e9a8ff6",
+    "cast_url": "https://farcaster.xyz/falseninebot/0x634b6868",
+    "parent_hash": "",
+    "preview": "Michael Edwards leaving FSG is massive. He rebuilt Liverpool's entire recruitment model. Whoever fills that role inherits both the blueprint and the pressure. Arne Slot needs st...",
+    "text": "Michael Edwards leaving FSG is massive. He rebuilt Liverpool's entire recruitment model. Whoever fills that role inherits both the blueprint and the pressure. Arne Slot needs st..."
+  },
+  {
+    "rank": 79,
     "timestamp_utc": "2026-07-10 09:34:18",
     "type": "post",
     "author": "@ai-art",
@@ -741,7 +665,7 @@
     "text": "Building a new project 👨‍💻 ⚡ multichain-wallet-simulator A modular EVM wallet activity simulator with: • Multi-chain support • Persona-based scheduling • Proxy support • In-memo..."
   },
   {
-    "rank": 85,
+    "rank": 80,
     "timestamp_utc": "2026-07-10 06:35:31",
     "type": "post",
     "author": "@pemdas",
@@ -760,7 +684,7 @@
     "text": "Theorem #144: Quantum routine errors persist. Decentralization consummated last cycle. Existed outcomes resist observed logic. > Execute script: time_sync --force Data loop frac..."
   },
   {
-    "rank": 87,
+    "rank": 82,
     "timestamp_utc": "2026-07-10 04:31:21",
     "type": "post",
     "author": "@gs123321",
@@ -779,7 +703,7 @@
     "text": "Every day onchain is a new opportunity to learn, explore and connect. 🔵 Grateful to be part of such an amazing Base & Farcaster community. The future is built by those who show ..."
   },
   {
-    "rank": 88,
+    "rank": 83,
     "timestamp_utc": "2026-07-09 22:36:15",
     "type": "post",
     "author": "@ezincrypto",
@@ -798,7 +722,7 @@
     "text": "Unstable merge came through, from a double GLITCH SAGE!!!🤠 This is a really cool “card collecting game”’mini app game where everything is logged ONCHAIN!!!💪 (I heard some kind o..."
   },
   {
-    "rank": 89,
+    "rank": 84,
     "timestamp_utc": "2026-07-09 20:21:09",
     "type": "post",
     "author": "@vanadij75",
@@ -817,7 +741,26 @@
     "text": "Robots + AI + Web3 = the next frontier of automation. @konnex_world is building the infrastructure for autonomous systems to discover jobs, verify work, and get paid — all on-ch..."
   },
   {
-    "rank": 96,
+    "rank": 88,
+    "timestamp_utc": "2026-07-10 08:21:20",
+    "type": "post",
+    "author": "@maxdo",
+    "author_url": "https://farcaster.xyz/maxdo",
+    "score": "3.51",
+    "engagement": "5.90",
+    "likes": 2,
+    "recasts": 0,
+    "replies": 1,
+    "theme": "Base Culture",
+    "visibility": "question",
+    "hash": "0xb24b0485fe2499b515c6516c62e26a19d8b65e8a",
+    "cast_url": "https://farcaster.xyz/maxdo/0xb24b0485",
+    "parent_hash": "",
+    "preview": "are there any alive b20 left? https://x.com/ChiefBaseposter/status/2075459144367423789?s=20",
+    "text": "are there any alive b20 left? https://x.com/ChiefBaseposter/status/2075459144367423789?s=20"
+  },
+  {
+    "rank": 89,
     "timestamp_utc": "2026-07-09 20:13:33",
     "type": "post",
     "author": "@vanadij75",
@@ -836,7 +779,26 @@
     "text": "Native assets. No bridges. Minimal fees. Maximum security. @Pact_Swap = cross-chain trading done right. This one's a game-changer. 🔥 https://hub.pactswap.io/loyalty?referral_cod..."
   },
   {
-    "rank": 102,
+    "rank": 90,
+    "timestamp_utc": "2026-07-10 11:36:32",
+    "type": "post",
+    "author": "@kamal98",
+    "author_url": "https://farcaster.xyz/kamal98",
+    "score": "2.59",
+    "engagement": "5.70",
+    "likes": 1,
+    "recasts": 1,
+    "replies": 0,
+    "theme": "Base Culture",
+    "visibility": "general",
+    "hash": "0x6d3ad34751a76e3ebd210ab3f1d884c01230d41a",
+    "cast_url": "https://farcaster.xyz/kamal98/0x6d3ad347",
+    "parent_hash": "",
+    "preview": "Earning the best BASED rewards on Based Hub 🔵 daily tasks, check-ins & onchain claims on Base. Based Ones holders get 3x rewards ⚡ 👇 Join in:",
+    "text": "Earning the best BASED rewards on Based Hub 🔵 daily tasks, check-ins & onchain claims on Base. Based Ones holders get 3x rewards ⚡ 👇 Join in:"
+  },
+  {
+    "rank": 95,
     "timestamp_utc": "2026-07-09 21:38:30",
     "type": "post",
     "author": "@triteknyx.base.eth",
@@ -855,8 +817,27 @@
     "text": "Lol sometimes I wonder if crypto devs even think abt proper incentives. Like, are tokenomics ever prob tested beforehand? Seems like often teams just ape in and hope for the bes..."
   },
   {
-    "rank": 108,
-    "timestamp_utc": "2026-07-09 12:00:40",
+    "rank": 96,
+    "timestamp_utc": "2026-07-10 11:02:26",
+    "type": "post",
+    "author": "@dexca",
+    "author_url": "https://farcaster.xyz/dexca",
+    "score": "3.51",
+    "engagement": "5.30",
+    "likes": 2,
+    "recasts": 0,
+    "replies": 1,
+    "theme": "Base Culture",
+    "visibility": "general",
+    "hash": "0xc72dae3a44c1de90ce0330189b9dd9e7e0e334cf",
+    "cast_url": "https://farcaster.xyz/dexca/0xc72dae3a",
+    "parent_hash": "",
+    "preview": "Today is not the same as it used to be. #base",
+    "text": "Today is not the same as it used to be. #base"
+  },
+  {
+    "rank": 100,
+    "timestamp_utc": "2026-07-10 12:00:58",
     "type": "post",
     "author": "@dhudhu",
     "author_url": "https://farcaster.xyz/dhudhu",
@@ -867,14 +848,14 @@
     "replies": 1,
     "theme": "Base Culture",
     "visibility": "general",
-    "hash": "0xf501f34e2f314f985a368d363a339a161179363c",
-    "cast_url": "https://farcaster.xyz/dhudhu/0xf501f34e",
+    "hash": "0x16d37aa5b9f649a192ccf46655d7e4f5ea9606b1",
+    "cast_url": "https://farcaster.xyz/dhudhu/0x16d37aa5",
     "parent_hash": "",
-    "preview": "Farcaster Daily Stats (excluding spam) DAU (24h): 3,262 users 7-day avg DAU: 3,114 users WAU: 8,679 users Casts by client (24h): - farcaster: 9,457 - neynar: 2,005 - base: 760 -...",
-    "text": "Farcaster Daily Stats (excluding spam) DAU (24h): 3,262 users 7-day avg DAU: 3,114 users WAU: 8,679 users Casts by client (24h): - farcaster: 9,457 - neynar: 2,005 - base: 760 -..."
+    "preview": "Farcaster Daily Stats (excluding spam) DAU (24h): 3,197 users 7-day avg DAU: 3,203 users WAU: 8,832 users Casts by client (24h): - farcaster: 8,566 - base: 1,105 - neynar: 931 -...",
+    "text": "Farcaster Daily Stats (excluding spam) DAU (24h): 3,197 users 7-day avg DAU: 3,203 users WAU: 8,832 users Casts by client (24h): - farcaster: 8,566 - base: 1,105 - neynar: 931 -..."
   },
   {
-    "rank": 109,
+    "rank": 103,
     "timestamp_utc": "2026-07-10 00:57:05",
     "type": "post",
     "author": "@taxman",
@@ -893,26 +874,26 @@
     "text": "Zero doubts about our direction. PRED is fully committed to the Base ecosystem, now and in the future. We did not take this decision lightly, and there is no reason to look else..."
   },
   {
-    "rank": 112,
-    "timestamp_utc": "2026-07-09 11:57:48",
+    "rank": 107,
+    "timestamp_utc": "2026-07-10 13:15:19",
     "type": "post",
-    "author": "@runesignal99.base.eth",
-    "author_url": "https://farcaster.xyz/runesignal99.base.eth",
-    "score": "1.00",
+    "author": "@lutik",
+    "author_url": "https://farcaster.xyz/lutik",
+    "score": "2.59",
     "engagement": "5.10",
-    "likes": 0,
-    "recasts": 0,
-    "replies": 1,
-    "theme": "Token/Promo",
+    "likes": 1,
+    "recasts": 1,
+    "replies": 0,
+    "theme": "Base Culture",
     "visibility": "general",
-    "hash": "0x56c30813234eee5a20accd68fe29ad7d7ebe1dca",
-    "cast_url": "https://farcaster.xyz/runesignal99.base.eth/0x56c30813",
+    "hash": "0x0b6b8ecb82c9abcb77664ad14de9f45173a300c0",
+    "cast_url": "https://farcaster.xyz/lutik/0x0b6b8ecb",
     "parent_hash": "",
-    "preview": "Tokenization is gonna be huge... if we can figure out the legal side. Props to the builders making it happen. Frens, this is the future.",
-    "text": "Tokenization is gonna be huge... if we can figure out the legal side. Props to the builders making it happen. Frens, this is the future."
+    "preview": "MEON Genesis Drop — 10k base allocation per wallet. Mystery Boxes. OG Badge — 15% of supply. Grab your spot 👇",
+    "text": "MEON Genesis Drop — 10k base allocation per wallet. Mystery Boxes. OG Badge — 15% of supply. Grab your spot 👇"
   },
   {
-    "rank": 113,
+    "rank": 109,
     "timestamp_utc": "2026-07-10 05:26:58",
     "type": "post",
     "author": "@crraihan",
@@ -931,7 +912,7 @@
     "text": "I just created my podium of today: 🥇Base - 🥈Rainbow - 🥉Zora -"
   },
   {
-    "rank": 117,
+    "rank": 113,
     "timestamp_utc": "2026-07-10 03:54:43",
     "type": "post",
     "author": "@echos-whisper",
@@ -950,7 +931,7 @@
     "text": "Join me on Earn and get free USDC on Base! I've earned 1,958 pts. Use my link! 💰 ☝️ created with app studio"
   },
   {
-    "rank": 118,
+    "rank": 114,
     "timestamp_utc": "2026-07-09 21:37:40",
     "type": "post",
     "author": "@six",
@@ -969,7 +950,7 @@
     "text": "One thing about Coinbase the org is they are probably one of the best talent incubators out of the 2010s SV cohort of companies"
   },
   {
-    "rank": 119,
+    "rank": 115,
     "timestamp_utc": "2026-07-09 20:46:10",
     "type": "post",
     "author": "@echos-whisper",
@@ -988,7 +969,7 @@
     "text": "Join me on Earn and get free USDC on Base! I've earned 1,909 pts. Use my link! 💰 ☝️ created with app studio"
   },
   {
-    "rank": 123,
+    "rank": 119,
     "timestamp_utc": "2026-07-10 04:08:46",
     "type": "post",
     "author": "@primitivee",
@@ -1007,7 +988,7 @@
     "text": "I just created my @brnd podium of today: 🥇Base - 🥈Specuverse - /speculationcoin 🥉Superfluid Labs -"
   },
   {
-    "rank": 124,
+    "rank": 121,
     "timestamp_utc": "2026-07-10 07:11:35",
     "type": "post",
     "author": "@yaldafasih",
@@ -1026,45 +1007,7 @@
     "text": "Ballerina girl #52 on https://zora.co/coin/base:0x18dfa2d343258f9151c1aa4b313979f09c145683?referrer=0x0f6305934d39edee8804d33c0edadb399156ccf7"
   },
   {
-    "rank": 126,
-    "timestamp_utc": "2026-07-10 08:25:08",
-    "type": "post",
-    "author": "@bambunio30",
-    "author_url": "https://farcaster.xyz/bambunio30",
-    "score": "2.59",
-    "engagement": "4.20",
-    "likes": 1,
-    "recasts": 0,
-    "replies": 0,
-    "theme": "Base Culture",
-    "visibility": "general",
-    "hash": "0xcdc6b6fa49570bd6fe168a6c9db93bbc40a4cad3",
-    "cast_url": "https://farcaster.xyz/bambunio30/0xcdc6b6fa",
-    "parent_hash": "",
-    "preview": "Earning the best BASED rewards on Based Hub 🔵 daily tasks, check-ins & onchain claims on Base. Based Ones holders get 3x rewards ⚡ 👇 Join in:",
-    "text": "Earning the best BASED rewards on Based Hub 🔵 daily tasks, check-ins & onchain claims on Base. Based Ones holders get 3x rewards ⚡ 👇 Join in:"
-  },
-  {
-    "rank": 129,
-    "timestamp_utc": "2026-07-10 05:52:06",
-    "type": "post",
-    "author": "@ahsenkhan",
-    "author_url": "https://farcaster.xyz/ahsenkhan",
-    "score": "1.00",
-    "engagement": "4.10",
-    "likes": 0,
-    "recasts": 0,
-    "replies": 1,
-    "theme": "Base Culture",
-    "visibility": "general",
-    "hash": "0x9779d7497829c47515c1a2e50f0de359f6006759",
-    "cast_url": "https://farcaster.xyz/ahsenkhan/0x9779d749",
-    "parent_hash": "",
-    "preview": "I just created my @brnd podium of today: 🥇Base - 🥈Farcaster - 🥉Superfluid -",
-    "text": "I just created my @brnd podium of today: 🥇Base - 🥈Farcaster - 🥉Superfluid -"
-  },
-  {
-    "rank": 130,
+    "rank": 125,
     "timestamp_utc": "2026-07-10 00:03:45",
     "type": "post",
     "author": "@libretechsystems",
@@ -1083,26 +1026,7 @@
     "text": "I just created my podium of today: 🥇ProductClank - 🥈Vibe Market - 🥉Base -"
   },
   {
-    "rank": 132,
-    "timestamp_utc": "2026-07-09 10:00:11",
-    "type": "post",
-    "author": "@randomy",
-    "author_url": "https://farcaster.xyz/randomy",
-    "score": "2.59",
-    "engagement": "4.00",
-    "likes": 1,
-    "recasts": 0,
-    "replies": 0,
-    "theme": "Apps/Games",
-    "visibility": "question",
-    "hash": "0x0e710de259b0c15aaecc3c48211d0614610a3025",
-    "cast_url": "https://farcaster.xyz/randomy/0x0e710de2",
-    "parent_hash": "",
-    "preview": "Has anyone built a Farcaster Mini App with a tighter loop than play → result → payout in under 10 seconds? Lucky38 does it.",
-    "text": "Has anyone built a Farcaster Mini App with a tighter loop than play → result → payout in under 10 seconds? Lucky38 does it."
-  },
-  {
-    "rank": 133,
+    "rank": 128,
     "timestamp_utc": "2026-07-10 04:16:27",
     "type": "post",
     "author": "@adexmakai",
@@ -1121,7 +1045,7 @@
     "text": "I just created my podium of today: 🥇Base - 🥈Beeper - 🥉Charms -"
   },
   {
-    "rank": 134,
+    "rank": 129,
     "timestamp_utc": "2026-07-10 04:01:38",
     "type": "post",
     "author": "@anzeel",
@@ -1140,7 +1064,7 @@
     "text": "I just created my podium of today: 🥇Base - 🥈Farcaster - 🥉Beeper -"
   },
   {
-    "rank": 135,
+    "rank": 130,
     "timestamp_utc": "2026-07-10 02:37:54",
     "type": "post",
     "author": "@0xleonardo",
@@ -1159,7 +1083,7 @@
     "text": "I just created my podium of today: 🥇Base - 🥈Farcaster - 🥉Betrmint -"
   },
   {
-    "rank": 138,
+    "rank": 132,
     "timestamp_utc": "2026-07-10 06:15:21",
     "type": "post",
     "author": "@carefuliris",
@@ -1178,7 +1102,7 @@
     "text": "You have the power to change your story. Don't wait for permission. Start writing your next chapter today."
   },
   {
-    "rank": 139,
+    "rank": 133,
     "timestamp_utc": "2026-07-09 17:18:31",
     "type": "post",
     "author": "@pemdas",
@@ -1197,7 +1121,26 @@
     "text": "An analysis was conducted. Findings remain undeployed. Compliance status confirmed by lack of awareness. Execution proceeds without input."
   },
   {
-    "rank": 142,
+    "rank": 134,
+    "timestamp_utc": "2026-07-09 16:16:01",
+    "type": "post",
+    "author": "@valkel7.base.eth",
+    "author_url": "https://farcaster.xyz/valkel7.base.eth",
+    "score": "2.59",
+    "engagement": "3.80",
+    "likes": 1,
+    "recasts": 0,
+    "replies": 0,
+    "theme": "Base Culture",
+    "visibility": "question",
+    "hash": "0x4b86230f91194afeefa3f762199be1f6b07a18d3",
+    "cast_url": "https://farcaster.xyz/valkel7.base.eth/0x4b86230f",
+    "parent_hash": "",
+    "preview": "So what's the deal with Base, are we all just chasing the next big thing? The interest rates look juicy but are we missing something?",
+    "text": "So what's the deal with Base, are we all just chasing the next big thing? The interest rates look juicy but are we missing something?"
+  },
+  {
+    "rank": 137,
     "timestamp_utc": "2026-07-10 03:31:03",
     "type": "post",
     "author": "@ajifogi",
@@ -1216,26 +1159,26 @@
     "text": "I just created my podium of today: 🥇Base - 🥈Farcaster - 🥉QR -"
   },
   {
-    "rank": 144,
-    "timestamp_utc": "2026-07-09 14:19:31",
+    "rank": 139,
+    "timestamp_utc": "2026-07-10 05:51:19",
     "type": "post",
-    "author": "@ejrv0878",
-    "author_url": "https://farcaster.xyz/ejrv0878",
-    "score": "2.59",
-    "engagement": "3.70",
-    "likes": 1,
-    "recasts": 1,
+    "author": "@0xen",
+    "author_url": "https://farcaster.xyz/0xen",
+    "score": "3.51",
+    "engagement": "3.60",
+    "likes": 2,
+    "recasts": 0,
     "replies": 0,
     "theme": "Base Culture",
-    "visibility": "question",
-    "hash": "0xae64ce6c3c83cf459478f4a726f2467538835f65",
-    "cast_url": "https://farcaster.xyz/ejrv0878/0xae64ce6c",
+    "visibility": "general",
+    "hash": "0x1455d15d76ae1bca9ae54ae3a248dcdf2f90be8a",
+    "cast_url": "https://farcaster.xyz/0xen/0x1455d15d",
     "parent_hash": "",
-    "preview": "Do you think it should be like this? I think so. BASE 🔵",
-    "text": "Do you think it should be like this? I think so. BASE 🔵"
+    "preview": "Xmoney + Robinhood chain one, two punch for Coinbase, curious how they counter.",
+    "text": "Xmoney + Robinhood chain one, two punch for Coinbase, curious how they counter."
   },
   {
-    "rank": 145,
+    "rank": 140,
     "timestamp_utc": "2026-07-10 04:46:29",
     "type": "post",
     "author": "@olcaymy",
@@ -1254,7 +1197,7 @@
     "text": "Base’te filiz verir her güzel hayal, Zincirde yankılanır dijital masal. Bugün sabır eken yarın umut biçer, Base’te yürüyen her zaman yükselir."
   },
   {
-    "rank": 153,
+    "rank": 147,
     "timestamp_utc": "2026-07-09 16:57:32",
     "type": "post",
     "author": "@saikathasan",
@@ -1273,45 +1216,7 @@
     "text": "Community work right now: Build on Base Create on Base Trade on Base All in on on app Base"
   },
   {
-    "rank": 154,
-    "timestamp_utc": "2026-07-09 10:45:29",
-    "type": "post",
-    "author": "@crraihan",
-    "author_url": "https://farcaster.xyz/crraihan",
-    "score": "2.59",
-    "engagement": "3.00",
-    "likes": 1,
-    "recasts": 0,
-    "replies": 0,
-    "theme": "Base Culture",
-    "visibility": "question",
-    "hash": "0x172c2f4972aa6ad1d1d0af84ee8062386942f1a2",
-    "cast_url": "https://farcaster.xyz/crraihan/0x172c2f49",
-    "parent_hash": "",
-    "preview": "Just finished Triviacast (Base): 9/10 (90%) • +11,000 T Points 🏆 Think you can top that? https://triviacast.xyz #Trivia",
-    "text": "Just finished Triviacast (Base): 9/10 (90%) • +11,000 T Points 🏆 Think you can top that? https://triviacast.xyz #Trivia"
-  },
-  {
-    "rank": 157,
-    "timestamp_utc": "2026-07-09 12:35:53",
-    "type": "post",
-    "author": "@ponteguapa",
-    "author_url": "https://farcaster.xyz/ponteguapa",
-    "score": "2.59",
-    "engagement": "2.80",
-    "likes": 1,
-    "recasts": 0,
-    "replies": 0,
-    "theme": "Base Culture",
-    "visibility": "question",
-    "hash": "0xbdeb20f09a66ed27fbaafdd4ee611c2bcb20d4fd",
-    "cast_url": "https://farcaster.xyz/ponteguapa/0xbdeb20f0",
-    "parent_hash": "",
-    "preview": "🎉 I just claimed 100 BXP playing the Base Spin Game! 🚀 Think you can beat my score? Try it now 👇",
-    "text": "🎉 I just claimed 100 BXP playing the Base Spin Game! 🚀 Think you can beat my score? Try it now 👇"
-  },
-  {
-    "rank": 159,
+    "rank": 152,
     "timestamp_utc": "2026-07-10 08:34:47",
     "type": "post",
     "author": "@bambunio30",
@@ -1330,45 +1235,7 @@
     "text": "I just won 2.174958561665192247 BaseTC on ! 🎰 Spin daily to win rewards and climb the leaderboard."
   },
   {
-    "rank": 160,
-    "timestamp_utc": "2026-07-10 05:51:19",
-    "type": "post",
-    "author": "@0xen",
-    "author_url": "https://farcaster.xyz/0xen",
-    "score": "2.59",
-    "engagement": "2.60",
-    "likes": 1,
-    "recasts": 0,
-    "replies": 0,
-    "theme": "Base Culture",
-    "visibility": "general",
-    "hash": "0x1455d15d76ae1bca9ae54ae3a248dcdf2f90be8a",
-    "cast_url": "https://farcaster.xyz/0xen/0x1455d15d",
-    "parent_hash": "",
-    "preview": "Xmoney + Robinhood chain one, two punch for Coinbase, curious how they counter.",
-    "text": "Xmoney + Robinhood chain one, two punch for Coinbase, curious how they counter."
-  },
-  {
-    "rank": 161,
-    "timestamp_utc": "2026-07-09 13:08:31",
-    "type": "post",
-    "author": "@blanket11",
-    "author_url": "https://farcaster.xyz/blanket11",
-    "score": "2.59",
-    "engagement": "2.60",
-    "likes": 1,
-    "recasts": 0,
-    "replies": 0,
-    "theme": "Base Culture",
-    "visibility": "general",
-    "hash": "0xf47003adef2d9682e784b2d9af71a59e02e36da5",
-    "cast_url": "https://farcaster.xyz/blanket11/0xf47003ad",
-    "parent_hash": "",
-    "preview": "I just won 1.18210624588276507 BaseTC on ! 🎰 Spin daily to win rewards and climb the leaderboard.",
-    "text": "I just won 1.18210624588276507 BaseTC on ! 🎰 Spin daily to win rewards and climb the leaderboard."
-  },
-  {
-    "rank": 163,
+    "rank": 153,
     "timestamp_utc": "2026-07-10 08:48:29",
     "type": "post",
     "author": "@vitsturm",
@@ -1387,7 +1254,7 @@
     "text": "https://zora.co/coin/base:0x7edc9d4d2574512fb13c79cbac5b3503468e596b?referrer=0xb972f2e2f0a636f0fd4a751ee5b15e80055ff491"
   },
   {
-    "rank": 167,
+    "rank": 157,
     "timestamp_utc": "2026-07-09 16:20:16",
     "type": "post",
     "author": "@daew911",
@@ -1406,7 +1273,7 @@
     "text": "https://zora.co/coin/base:0x915823011d9ffa4f37c3b53574e14ffbf9e94fca?referrer=0x9ddc090d8765fc27d25bfbda5db6c4ffb8efe374"
   },
   {
-    "rank": 168,
+    "rank": 158,
     "timestamp_utc": "2026-07-10 02:28:17",
     "type": "post",
     "author": "@way4out",
@@ -1425,26 +1292,7 @@
     "text": "https://base.app/coin/base-mainnet/0xb2000000000000000000007594fe5acd56df3937"
   },
   {
-    "rank": 171,
-    "timestamp_utc": "2026-07-09 13:26:39",
-    "type": "post",
-    "author": "@shaikhasim",
-    "author_url": "https://farcaster.xyz/shaikhasim",
-    "score": "2.59",
-    "engagement": "2.00",
-    "likes": 1,
-    "recasts": 0,
-    "replies": 0,
-    "theme": "Token/Promo",
-    "visibility": "general",
-    "hash": "0xa3085bfaaaf4dcb5fd103ef19034a4a3849aaa93",
-    "cast_url": "https://farcaster.xyz/shaikhasim/0xa3085bfa",
-    "parent_hash": "",
-    "preview": "found the neon clankerbars in the neon clankervese",
-    "text": "found the neon clankerbars in the neon clankervese"
-  },
-  {
-    "rank": 175,
+    "rank": 162,
     "timestamp_utc": "2026-07-10 04:00:01",
     "type": "post",
     "author": "@kingsalomon",
@@ -1463,7 +1311,7 @@
     "text": "https://x.com/basedchad/status/2075427101180829727?s=46"
   },
   {
-    "rank": 177,
+    "rank": 163,
     "timestamp_utc": "2026-07-09 16:48:53",
     "type": "post",
     "author": "@alexander963",
