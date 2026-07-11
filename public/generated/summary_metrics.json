@@ -9,7 +9,7 @@
   },
   {
     "metric": "generated_at_utc",
-    "value": "2026-07-11 08:15:52"
+    "value": "2026-07-11 13:56:11"
   },
   {
     "metric": "source",
@@ -29,54 +29,54 @@
   },
   {
     "metric": "window_start_utc",
-    "value": "2026-07-10 08:15:09"
+    "value": "2026-07-10 13:56:07"
   },
   {
     "metric": "window_end_utc",
-    "value": "2026-07-11 08:15:04"
+    "value": "2026-07-11 13:55:45"
   },
   {
     "metric": "total_records",
-    "value": 13443
+    "value": 14073
   },
   {
     "metric": "posts",
-    "value": 3877
+    "value": 4706
   },
   {
     "metric": "comments",
-    "value": 9566
+    "value": 9367
   },
   {
     "metric": "selected_records",
-    "value": 147
+    "value": 155
   },
   {
     "metric": "unique_authors",
-    "value": 3448
+    "value": 3971
   },
   {
     "metric": "total_likes",
-    "value": 11791
+    "value": 11867
   },
   {
     "metric": "total_recasts",
-    "value": 1395
+    "value": 1431
   },
   {
     "metric": "total_replies",
-    "value": 5842
+    "value": 5724
   },
   {
     "metric": "top_cast_score",
-    "value": "7.62"
+    "value": "7.35"
   },
   {
     "metric": "top_cast_author",
-    "value": "@captian-canada"
+    "value": "@voodoonemesi"
   },
   {
     "metric": "top_cast_url",
-    "value": "https://farcaster.xyz/captian-canada/0x9bba0501"
+    "value": "https://farcaster.xyz/voodoonemesi/0x386f07b6"
   }
 ]
