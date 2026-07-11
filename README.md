@@ -15,11 +15,11 @@ Static, cached Farcaster context from direct Hypersnap/Snapchain node scraping. 
 | Source | hypersnap |
 | Hub URL | http://54.157.62.17:3381 |
 | Readable shards | 1,2 |
-| Window UTC | 2026-07-09 19:53:03 → 2026-07-10 19:53:00 |
-| Total casts | 15182 |
-| Posts / comments | 4555 / 10627 |
-| Unique authors | 3968 |
-| Total likes / recasts / replies | 12567 / 1298 / 6207 |
+| Window UTC | 2026-07-10 03:44:14 → 2026-07-11 03:44:00 |
+| Total casts | 14247 |
+| Posts / comments | 4129 / 10118 |
+| Unique authors | 3656 |
+| Total likes / recasts / replies | 11731 / 1295 / 6054 |
 | Top cast author | @captian-canada |
 | Top cast | https://farcaster.xyz/captian-canada/0x9bba0501 |
 
@@ -31,8 +31,8 @@ Static, cached Farcaster context from direct Hypersnap/Snapchain node scraping. 
 | theme_summary | `generated/theme_summary.csv` | 5 | [CSV](generated/theme_summary.csv) / [JSON](generated/theme_summary.json) |
 | authors | `generated/authors.csv` | 100 | [CSV](generated/authors.csv) / [JSON](generated/authors.json) |
 | top_casts | `generated/top_casts.csv` | 150 | [CSV](generated/top_casts.csv) / [JSON](generated/top_casts.json) |
-| posts | `generated/posts.csv` | 68 | [CSV](generated/posts.csv) / [JSON](generated/posts.json) |
-| comments | `generated/comments.csv` | 95 | [CSV](generated/comments.csv) / [JSON](generated/comments.json) |
+| posts | `generated/posts.csv` | 60 | [CSV](generated/posts.csv) / [JSON](generated/posts.json) |
+| comments | `generated/comments.csv` | 100 | [CSV](generated/comments.csv) / [JSON](generated/comments.json) |
 | agent_take | `generated/agent_take.csv` | 4 | [CSV](generated/agent_take.csv) / [JSON](generated/agent_take.json) |
 
 ## Data pipeline
