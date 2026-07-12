@@ -9,7 +9,7 @@
   },
   {
     "metric": "generated_at_utc",
-    "value": "2026-07-12 03:59:08"
+    "value": "2026-07-12 08:32:15"
   },
   {
     "metric": "source",
@@ -29,54 +29,54 @@
   },
   {
     "metric": "window_start_utc",
-    "value": "2026-07-11 03:59:02"
+    "value": "2026-07-11 08:31:59"
   },
   {
     "metric": "window_end_utc",
-    "value": "2026-07-12 03:58:43"
+    "value": "2026-07-12 08:31:36"
   },
   {
     "metric": "total_records",
-    "value": 13906
+    "value": 13997
   },
   {
     "metric": "posts",
-    "value": 4757
+    "value": 4820
   },
   {
     "metric": "comments",
-    "value": 9149
+    "value": 9177
   },
   {
     "metric": "selected_records",
-    "value": 161
+    "value": 158
   },
   {
     "metric": "unique_authors",
-    "value": 3934
+    "value": 3935
   },
   {
     "metric": "total_likes",
-    "value": 10217
+    "value": 10726
   },
   {
     "metric": "total_recasts",
-    "value": 1080
+    "value": 1014
   },
   {
     "metric": "total_replies",
-    "value": 5472
+    "value": 5495
   },
   {
     "metric": "top_cast_score",
-    "value": "8.18"
+    "value": "8.86"
   },
   {
     "metric": "top_cast_author",
-    "value": "@voodoonemesi"
+    "value": "@arjantupan"
   },
   {
     "metric": "top_cast_url",
-    "value": "https://farcaster.xyz/voodoonemesi/0x386f07b6"
+    "value": "https://farcaster.xyz/arjantupan/0xaa99459f"
   }
 ]
