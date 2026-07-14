@@ -9,7 +9,7 @@
   },
   {
     "metric": "generated_at_utc",
-    "value": "2026-07-14 14:15:05"
+    "value": "2026-07-14 19:44:30"
   },
   {
     "metric": "source",
@@ -29,54 +29,54 @@
   },
   {
     "metric": "window_start_utc",
-    "value": "2026-07-13 14:14:50"
+    "value": "2026-07-13 19:44:22"
   },
   {
     "metric": "window_end_utc",
-    "value": "2026-07-14 14:14:39"
+    "value": "2026-07-14 19:44:17"
   },
   {
     "metric": "total_records",
-    "value": 14323
+    "value": 14260
   },
   {
     "metric": "posts",
-    "value": 3979
+    "value": 3920
   },
   {
     "metric": "comments",
-    "value": 10344
+    "value": 10340
   },
   {
     "metric": "selected_records",
-    "value": 180
+    "value": 168
   },
   {
     "metric": "unique_authors",
-    "value": 3277
+    "value": 3465
   },
   {
     "metric": "total_likes",
-    "value": 13656
+    "value": 13308
   },
   {
     "metric": "total_recasts",
-    "value": 995
+    "value": 1314
   },
   {
     "metric": "total_replies",
-    "value": 6757
+    "value": 6624
   },
   {
     "metric": "top_cast_score",
-    "value": "9.44"
+    "value": "10.00"
   },
   {
     "metric": "top_cast_author",
-    "value": "@jake"
+    "value": "@cryptoexploit"
   },
   {
     "metric": "top_cast_url",
-    "value": "https://farcaster.xyz/jake/0x8dfa322d"
+    "value": "https://farcaster.xyz/cryptoexploit/0x1295f4bd"
   }
 ]
