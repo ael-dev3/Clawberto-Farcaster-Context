@@ -9,7 +9,7 @@
   },
   {
     "metric": "generated_at_utc",
-    "value": "2026-07-14 03:36:44"
+    "value": "2026-07-14 08:29:18"
   },
   {
     "metric": "source",
@@ -29,54 +29,54 @@
   },
   {
     "metric": "window_start_utc",
-    "value": "2026-07-13 03:35:55"
+    "value": "2026-07-13 08:28:31"
   },
   {
     "metric": "window_end_utc",
-    "value": "2026-07-14 03:35:50"
+    "value": "2026-07-14 08:28:19"
   },
   {
     "metric": "total_records",
-    "value": 14159
+    "value": 14347
   },
   {
     "metric": "posts",
-    "value": 3774
+    "value": 3830
   },
   {
     "metric": "comments",
-    "value": 10385
+    "value": 10517
   },
   {
     "metric": "selected_records",
-    "value": 185
+    "value": 193
   },
   {
     "metric": "unique_authors",
-    "value": 3148
+    "value": 3217
   },
   {
     "metric": "total_likes",
-    "value": 13552
+    "value": 14078
   },
   {
     "metric": "total_recasts",
-    "value": 1188
+    "value": 1138
   },
   {
     "metric": "total_replies",
-    "value": 7152
+    "value": 7264
   },
   {
     "metric": "top_cast_score",
-    "value": "7.49"
+    "value": "9.00"
   },
   {
     "metric": "top_cast_author",
-    "value": "@mypokerofff"
+    "value": "@jacek"
   },
   {
     "metric": "top_cast_url",
-    "value": "https://farcaster.xyz/mypokerofff/0x507ac440"
+    "value": "https://farcaster.xyz/jacek/0x8906ace5"
   }
 ]
