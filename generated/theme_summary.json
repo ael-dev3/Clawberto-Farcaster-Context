@@ -1,52 +1,52 @@
 [
   {
     "theme": "Base Culture",
-    "casts": 48,
-    "posts": 29,
-    "comments": 19,
-    "likes": 87,
-    "avg_score": "2.92",
-    "top_author": "@lea-olmos",
-    "top_cast_url": "https://farcaster.xyz/lea-olmos/0xa4798edf"
+    "casts": 87,
+    "posts": 37,
+    "comments": 50,
+    "likes": 248,
+    "avg_score": "3.22",
+    "top_author": "@hendrazk",
+    "top_cast_url": "https://farcaster.xyz/hendrazk/0x20fb7421"
   },
   {
     "theme": "Apps/Games",
-    "casts": 19,
+    "casts": 21,
     "posts": 3,
-    "comments": 16,
-    "likes": 49,
-    "avg_score": "3.47",
-    "top_author": "@ace",
-    "top_cast_url": "https://farcaster.xyz/ace/0x07da3450"
+    "comments": 18,
+    "likes": 450,
+    "avg_score": "3.93",
+    "top_author": "@cryptoexploit",
+    "top_cast_url": "https://farcaster.xyz/cryptoexploit/0x1295f4bd"
   },
   {
     "theme": "Security/Ops",
-    "casts": 10,
-    "posts": 5,
-    "comments": 5,
-    "likes": 32,
-    "avg_score": "3.74",
+    "casts": 20,
+    "posts": 10,
+    "comments": 10,
+    "likes": 51,
+    "avg_score": "3.34",
     "top_author": "@arjantupan",
     "top_cast_url": "https://farcaster.xyz/arjantupan/0x15661c9e"
   },
   {
     "theme": "Protocol/Fork",
-    "casts": 4,
+    "casts": 5,
     "posts": 2,
-    "comments": 2,
-    "likes": 13,
-    "avg_score": "3.91",
-    "top_author": "@uniquebeing404",
-    "top_cast_url": "https://farcaster.xyz/uniquebeing404/0x61ebf399"
+    "comments": 3,
+    "likes": 22,
+    "avg_score": "4.38",
+    "top_author": "@kmacbeth",
+    "top_cast_url": "https://farcaster.xyz/kmacbeth/0x2356ca81"
   },
   {
     "theme": "Token/Promo",
-    "casts": 3,
-    "posts": 0,
+    "casts": 5,
+    "posts": 2,
     "comments": 3,
-    "likes": 1,
-    "avg_score": "1.53",
-    "top_author": "@noctis",
-    "top_cast_url": "https://farcaster.xyz/noctis/0x710cfd0c"
+    "likes": 6,
+    "avg_score": "2.37",
+    "top_author": "@luckygrandpa",
+    "top_cast_url": "https://farcaster.xyz/luckygrandpa/0x1357d7be"
   }
 ]
