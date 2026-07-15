@@ -1,52 +1,52 @@
 [
   {
     "theme": "Base Culture",
-    "casts": 87,
-    "posts": 37,
-    "comments": 50,
-    "likes": 248,
-    "avg_score": "3.22",
-    "top_author": "@hendrazk",
-    "top_cast_url": "https://farcaster.xyz/hendrazk/0x20fb7421"
-  },
-  {
-    "theme": "Apps/Games",
-    "casts": 21,
-    "posts": 3,
-    "comments": 18,
-    "likes": 450,
-    "avg_score": "3.93",
-    "top_author": "@cryptoexploit",
-    "top_cast_url": "https://farcaster.xyz/cryptoexploit/0x1295f4bd"
+    "casts": 78,
+    "posts": 35,
+    "comments": 43,
+    "likes": 190,
+    "avg_score": "3.33",
+    "top_author": "@sa",
+    "top_cast_url": "https://farcaster.xyz/sa/0xef670a46"
   },
   {
     "theme": "Security/Ops",
-    "casts": 20,
+    "casts": 19,
     "posts": 10,
-    "comments": 10,
-    "likes": 51,
-    "avg_score": "3.34",
+    "comments": 9,
+    "likes": 54,
+    "avg_score": "3.53",
     "top_author": "@arjantupan",
     "top_cast_url": "https://farcaster.xyz/arjantupan/0x15661c9e"
+  },
+  {
+    "theme": "Apps/Games",
+    "casts": 16,
+    "posts": 2,
+    "comments": 14,
+    "likes": 47,
+    "avg_score": "3.60",
+    "top_author": "@ds8",
+    "top_cast_url": "https://farcaster.xyz/ds8/0x94f174d0"
   },
   {
     "theme": "Protocol/Fork",
     "casts": 5,
     "posts": 2,
     "comments": 3,
-    "likes": 22,
-    "avg_score": "4.38",
-    "top_author": "@kmacbeth",
-    "top_cast_url": "https://farcaster.xyz/kmacbeth/0x2356ca81"
+    "likes": 15,
+    "avg_score": "3.69",
+    "top_author": "@uniquebeing404",
+    "top_cast_url": "https://farcaster.xyz/uniquebeing404/0x61ebf399"
   },
   {
     "theme": "Token/Promo",
-    "casts": 5,
-    "posts": 2,
-    "comments": 3,
-    "likes": 6,
-    "avg_score": "2.37",
-    "top_author": "@luckygrandpa",
-    "top_cast_url": "https://farcaster.xyz/luckygrandpa/0x1357d7be"
+    "casts": 4,
+    "posts": 0,
+    "comments": 4,
+    "likes": 4,
+    "avg_score": "2.42",
+    "top_author": "@ethdaily",
+    "top_cast_url": "https://farcaster.xyz/ethdaily/0x46894621"
   }
 ]
