@@ -1,52 +1,52 @@
 [
   {
     "theme": "Base Culture",
-    "casts": 109,
-    "posts": 46,
-    "comments": 63,
-    "likes": 213,
-    "avg_score": "2.84",
-    "top_author": "@hendrazk",
-    "top_cast_url": "https://farcaster.xyz/hendrazk/0x20fb7421"
+    "casts": 48,
+    "posts": 29,
+    "comments": 19,
+    "likes": 87,
+    "avg_score": "2.92",
+    "top_author": "@lea-olmos",
+    "top_cast_url": "https://farcaster.xyz/lea-olmos/0xa4798edf"
   },
   {
     "theme": "Apps/Games",
-    "casts": 24,
-    "posts": 4,
-    "comments": 20,
-    "likes": 433,
-    "avg_score": "4.19",
-    "top_author": "@cryptoexploit",
-    "top_cast_url": "https://farcaster.xyz/cryptoexploit/0x1295f4bd"
+    "casts": 19,
+    "posts": 3,
+    "comments": 16,
+    "likes": 49,
+    "avg_score": "3.47",
+    "top_author": "@ace",
+    "top_cast_url": "https://farcaster.xyz/ace/0x07da3450"
   },
   {
     "theme": "Security/Ops",
-    "casts": 21,
-    "posts": 10,
-    "comments": 11,
-    "likes": 55,
-    "avg_score": "3.35",
-    "top_author": "@kazani",
-    "top_cast_url": "https://farcaster.xyz/kazani/0x310cd3c9"
-  },
-  {
-    "theme": "Token/Promo",
-    "casts": 5,
-    "posts": 3,
-    "comments": 2,
-    "likes": 4,
-    "avg_score": "2.14",
-    "top_author": "@luckygrandpa",
-    "top_cast_url": "https://farcaster.xyz/luckygrandpa/0x1357d7be"
+    "casts": 10,
+    "posts": 5,
+    "comments": 5,
+    "likes": 32,
+    "avg_score": "3.74",
+    "top_author": "@arjantupan",
+    "top_cast_url": "https://farcaster.xyz/arjantupan/0x15661c9e"
   },
   {
     "theme": "Protocol/Fork",
     "casts": 4,
     "posts": 2,
     "comments": 2,
-    "likes": 18,
-    "avg_score": "4.63",
+    "likes": 13,
+    "avg_score": "3.91",
     "top_author": "@uniquebeing404",
     "top_cast_url": "https://farcaster.xyz/uniquebeing404/0x61ebf399"
+  },
+  {
+    "theme": "Token/Promo",
+    "casts": 3,
+    "posts": 0,
+    "comments": 3,
+    "likes": 1,
+    "avg_score": "1.53",
+    "top_author": "@noctis",
+    "top_cast_url": "https://farcaster.xyz/noctis/0x710cfd0c"
   }
 ]
