@@ -9,7 +9,7 @@
   },
   {
     "metric": "generated_at_utc",
-    "value": "2026-07-16 19:35:10"
+    "value": "2026-07-17 03:39:58"
   },
   {
     "metric": "source",
@@ -29,54 +29,54 @@
   },
   {
     "metric": "window_start_utc",
-    "value": "2026-07-15 19:34:34"
+    "value": "2026-07-16 03:39:19"
   },
   {
     "metric": "window_end_utc",
-    "value": "2026-07-16 19:34:17"
+    "value": "2026-07-17 03:39:15"
   },
   {
     "metric": "total_records",
-    "value": 13641
+    "value": 13379
   },
   {
     "metric": "posts",
-    "value": 3516
+    "value": 3596
   },
   {
     "metric": "comments",
-    "value": 10125
+    "value": 9783
   },
   {
     "metric": "selected_records",
-    "value": 149
+    "value": 153
   },
   {
     "metric": "unique_authors",
-    "value": 3010
+    "value": 3145
   },
   {
     "metric": "total_likes",
-    "value": 13962
+    "value": 12815
   },
   {
     "metric": "total_recasts",
-    "value": 1111
+    "value": 1413
   },
   {
     "metric": "total_replies",
-    "value": 5128
+    "value": 4939
   },
   {
     "metric": "top_cast_score",
-    "value": "7.86"
+    "value": "10.00"
   },
   {
     "metric": "top_cast_author",
-    "value": "@maxdo"
+    "value": "@cryptoexploit"
   },
   {
     "metric": "top_cast_url",
-    "value": "https://farcaster.xyz/maxdo/0xa50c80b8"
+    "value": "https://farcaster.xyz/cryptoexploit/0xe199e9f2"
   }
 ]
