@@ -7,7 +7,7 @@
   {
     "table": "theme_summary",
     "file": "generated/theme_summary.csv",
-    "rows": 5
+    "rows": 4
   },
   {
     "table": "authors",
@@ -17,17 +17,17 @@
   {
     "table": "top_casts",
     "file": "generated/top_casts.csv",
-    "rows": 138
+    "rows": 139
   },
   {
     "table": "posts",
     "file": "generated/posts.csv",
-    "rows": 50
+    "rows": 52
   },
   {
     "table": "comments",
     "file": "generated/comments.csv",
-    "rows": 88
+    "rows": 87
   },
   {
     "table": "agent_take",
