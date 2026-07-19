@@ -1,41 +1,41 @@
 [
   {
     "theme": "Base Culture",
-    "casts": 89,
-    "posts": 44,
-    "comments": 45,
-    "likes": 320,
-    "avg_score": "3.58",
-    "top_author": "@bitfloorsghost",
-    "top_cast_url": "https://farcaster.xyz/bitfloorsghost/0x4b923f0d"
+    "casts": 82,
+    "posts": 39,
+    "comments": 43,
+    "likes": 213,
+    "avg_score": "3.20",
+    "top_author": "@basedcoin",
+    "top_cast_url": "https://farcaster.xyz/basedcoin/0xbcee75ce"
   },
   {
     "theme": "Apps/Games",
-    "casts": 30,
-    "posts": 3,
-    "comments": 27,
-    "likes": 106,
-    "avg_score": "4.08",
-    "top_author": "@ruburi",
-    "top_cast_url": "https://farcaster.xyz/ruburi/0xf33157fb"
+    "casts": 24,
+    "posts": 2,
+    "comments": 22,
+    "likes": 97,
+    "avg_score": "4.31",
+    "top_author": "@nikolaiii",
+    "top_cast_url": "https://farcaster.xyz/nikolaiii/0x2d3beaec"
   },
   {
     "theme": "Security/Ops",
-    "casts": 10,
-    "posts": 3,
-    "comments": 7,
-    "likes": 26,
-    "avg_score": "3.22",
-    "top_author": "@kazani",
-    "top_cast_url": "https://farcaster.xyz/kazani/0x5d665a13"
-  },
-  {
-    "theme": "Token/Promo",
     "casts": 7,
     "posts": 3,
     "comments": 4,
+    "likes": 12,
+    "avg_score": "2.98",
+    "top_author": "@qt",
+    "top_cast_url": "https://farcaster.xyz/qt/0x02acca1e"
+  },
+  {
+    "theme": "Token/Promo",
+    "casts": 6,
+    "posts": 2,
+    "comments": 4,
     "likes": 33,
-    "avg_score": "3.77",
+    "avg_score": "3.87",
     "top_author": "@kmacbeth",
     "top_cast_url": "https://farcaster.xyz/kmacbeth/0x8af4ced5"
   }
