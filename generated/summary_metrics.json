@@ -9,7 +9,7 @@
   },
   {
     "metric": "generated_at_utc",
-    "value": "2026-07-20 14:33:58"
+    "value": "2026-07-20 19:57:36"
   },
   {
     "metric": "source",
@@ -29,54 +29,54 @@
   },
   {
     "metric": "window_start_utc",
-    "value": "2026-07-19 14:33:57"
+    "value": "2026-07-19 19:57:37"
   },
   {
     "metric": "window_end_utc",
-    "value": "2026-07-20 14:33:43"
+    "value": "2026-07-20 19:57:25"
   },
   {
     "metric": "total_records",
-    "value": 12185
+    "value": 12067
   },
   {
     "metric": "posts",
-    "value": 3359
+    "value": 3336
   },
   {
     "metric": "comments",
-    "value": 8826
+    "value": 8731
   },
   {
     "metric": "selected_records",
-    "value": 122
+    "value": 131
   },
   {
     "metric": "unique_authors",
-    "value": 2939
+    "value": 2985
   },
   {
     "metric": "total_likes",
-    "value": 12254
+    "value": 12094
   },
   {
     "metric": "total_recasts",
-    "value": 1134
+    "value": 1143
   },
   {
     "metric": "total_replies",
-    "value": 4459
+    "value": 4335
   },
   {
     "metric": "top_cast_score",
-    "value": "8.63"
+    "value": "10.00"
   },
   {
     "metric": "top_cast_author",
-    "value": "@akela113"
+    "value": "@altagers"
   },
   {
     "metric": "top_cast_url",
-    "value": "https://farcaster.xyz/akela113/0x9a146431"
+    "value": "https://farcaster.xyz/altagers/0xf450bcdb"
   }
 ]
