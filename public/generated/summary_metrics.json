@@ -9,7 +9,7 @@
   },
   {
     "metric": "generated_at_utc",
-    "value": "2026-07-24 08:44:42"
+    "value": "2026-07-24 14:15:12"
   },
   {
     "metric": "source",
@@ -29,54 +29,54 @@
   },
   {
     "metric": "window_start_utc",
-    "value": "2026-07-23 08:43:59"
+    "value": "2026-07-23 14:14:26"
   },
   {
     "metric": "window_end_utc",
-    "value": "2026-07-24 08:43:55"
+    "value": "2026-07-24 14:14:09"
   },
   {
     "metric": "total_records",
-    "value": 13500
+    "value": 13594
   },
   {
     "metric": "posts",
-    "value": 4277
+    "value": 4449
   },
   {
     "metric": "comments",
-    "value": 9223
+    "value": 9145
   },
   {
     "metric": "selected_records",
-    "value": 128
+    "value": 141
   },
   {
     "metric": "unique_authors",
-    "value": 3285
+    "value": 3284
   },
   {
     "metric": "total_likes",
-    "value": 11649
+    "value": 11513
   },
   {
     "metric": "total_recasts",
-    "value": 1284
+    "value": 1271
   },
   {
     "metric": "total_replies",
-    "value": 4301
+    "value": 4025
   },
   {
     "metric": "top_cast_score",
-    "value": "9.91"
+    "value": "10.00"
   },
   {
     "metric": "top_cast_author",
-    "value": "@kenny"
+    "value": "@cryptoexploit"
   },
   {
     "metric": "top_cast_url",
-    "value": "https://farcaster.xyz/kenny/0x9e6c4c2f"
+    "value": "https://farcaster.xyz/cryptoexploit/0x391598ad"
   }
 ]
