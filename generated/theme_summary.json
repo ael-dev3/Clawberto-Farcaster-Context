@@ -1,21 +1,21 @@
 [
   {
     "theme": "Base Culture",
-    "casts": 103,
-    "posts": 48,
-    "comments": 55,
-    "likes": 441,
-    "avg_score": "3.25",
-    "top_author": "@altagers",
-    "top_cast_url": "https://farcaster.xyz/altagers/0x5743616b"
+    "casts": 105,
+    "posts": 38,
+    "comments": 67,
+    "likes": 261,
+    "avg_score": "3.00",
+    "top_author": "@jake",
+    "top_cast_url": "https://farcaster.xyz/jake/0x48cff1a9"
   },
   {
     "theme": "Apps/Games",
-    "casts": 29,
-    "posts": 5,
-    "comments": 24,
-    "likes": 81,
-    "avg_score": "3.43",
+    "casts": 36,
+    "posts": 9,
+    "comments": 27,
+    "likes": 128,
+    "avg_score": "3.62",
     "top_author": "@jake",
     "top_cast_url": "https://farcaster.xyz/jake/0x01bc1489"
   },
@@ -24,29 +24,29 @@
     "casts": 19,
     "posts": 7,
     "comments": 12,
-    "likes": 139,
-    "avg_score": "3.86",
-    "top_author": "@zaal",
-    "top_cast_url": "https://farcaster.xyz/zaal/0x807e1d6e"
+    "likes": 151,
+    "avg_score": "3.66",
+    "top_author": "@eoghan",
+    "top_cast_url": "https://farcaster.xyz/eoghan/0xd8c20f7a"
   },
   {
     "theme": "Token/Promo",
-    "casts": 3,
+    "casts": 4,
     "posts": 3,
-    "comments": 0,
-    "likes": 10,
-    "avg_score": "4.26",
+    "comments": 1,
+    "likes": 13,
+    "avg_score": "4.13",
     "top_author": "@web3pro",
     "top_cast_url": "https://farcaster.xyz/web3pro/0x83f7082e"
   },
   {
     "theme": "Protocol/Fork",
-    "casts": 2,
+    "casts": 3,
     "posts": 0,
-    "comments": 2,
-    "likes": 2,
+    "comments": 3,
+    "likes": 3,
     "avg_score": "2.59",
-    "top_author": "@cassie",
-    "top_cast_url": "https://farcaster.xyz/cassie/0x158476a3"
+    "top_author": "@patrion",
+    "top_cast_url": "https://farcaster.xyz/patrion/0x3b08b6e6"
   }
 ]
