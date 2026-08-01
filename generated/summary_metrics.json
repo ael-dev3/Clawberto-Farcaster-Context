@@ -9,7 +9,7 @@
   },
   {
     "metric": "generated_at_utc",
-    "value": "2026-08-01 03:52:45"
+    "value": "2026-08-01 08:34:37"
   },
   {
     "metric": "source",
@@ -29,54 +29,54 @@
   },
   {
     "metric": "window_start_utc",
-    "value": "2026-07-31 03:52:14"
+    "value": "2026-07-31 08:34:31"
   },
   {
     "metric": "window_end_utc",
-    "value": "2026-08-01 03:51:11"
+    "value": "2026-08-01 08:34:21"
   },
   {
     "metric": "total_records",
-    "value": 10861
+    "value": 10685
   },
   {
     "metric": "posts",
-    "value": 2925
+    "value": 2868
   },
   {
     "metric": "comments",
-    "value": 7936
+    "value": 7817
   },
   {
     "metric": "selected_records",
-    "value": 134
+    "value": 128
   },
   {
     "metric": "unique_authors",
-    "value": 2741
+    "value": 2689
   },
   {
     "metric": "total_likes",
-    "value": 10326
+    "value": 10435
   },
   {
     "metric": "total_recasts",
-    "value": 1276
+    "value": 1189
   },
   {
     "metric": "total_replies",
-    "value": 3717
+    "value": 3634
   },
   {
     "metric": "top_cast_score",
-    "value": "8.08"
+    "value": "7.49"
   },
   {
     "metric": "top_cast_author",
-    "value": "@basedcoin"
+    "value": "@maximthuhalko"
   },
   {
     "metric": "top_cast_url",
-    "value": "https://farcaster.xyz/basedcoin/0xa92568e6"
+    "value": "https://farcaster.xyz/maximthuhalko/0x0f8aefed"
   }
 ]
