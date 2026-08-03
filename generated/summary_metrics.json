@@ -9,7 +9,7 @@
   },
   {
     "metric": "generated_at_utc",
-    "value": "2026-08-03 10:06:46"
+    "value": "2026-08-03 15:17:47"
   },
   {
     "metric": "source",
@@ -29,54 +29,54 @@
   },
   {
     "metric": "window_start_utc",
-    "value": "2026-08-02 10:06:34"
+    "value": "2026-08-02 15:17:47"
   },
   {
     "metric": "window_end_utc",
-    "value": "2026-08-03 10:06:21"
+    "value": "2026-08-03 15:17:31"
   },
   {
     "metric": "total_records",
-    "value": 10579
+    "value": 10690
   },
   {
     "metric": "posts",
-    "value": 3014
+    "value": 2994
   },
   {
     "metric": "comments",
-    "value": 7565
+    "value": 7696
   },
   {
     "metric": "selected_records",
-    "value": 123
+    "value": 119
   },
   {
     "metric": "unique_authors",
-    "value": 2885
+    "value": 2882
   },
   {
     "metric": "total_likes",
-    "value": 10078
+    "value": 10529
   },
   {
     "metric": "total_recasts",
-    "value": 1270
+    "value": 1493
   },
   {
     "metric": "total_replies",
-    "value": 3639
+    "value": 3778
   },
   {
     "metric": "top_cast_score",
-    "value": "10.00"
+    "value": "8.54"
   },
   {
     "metric": "top_cast_author",
-    "value": "@altagers"
+    "value": "@adrienne"
   },
   {
     "metric": "top_cast_url",
-    "value": "https://farcaster.xyz/altagers/0xd3f2e4ae"
+    "value": "https://farcaster.xyz/adrienne/0xbe98dcc2"
   }
 ]
