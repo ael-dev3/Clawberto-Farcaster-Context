@@ -9,7 +9,7 @@
   },
   {
     "metric": "generated_at_utc",
-    "value": "2026-08-04 09:10:18"
+    "value": "2026-08-04 14:40:10"
   },
   {
     "metric": "source",
@@ -29,43 +29,43 @@
   },
   {
     "metric": "window_start_utc",
-    "value": "2026-08-03 09:09:35"
+    "value": "2026-08-03 14:40:05"
   },
   {
     "metric": "window_end_utc",
-    "value": "2026-08-04 09:09:32"
+    "value": "2026-08-04 14:39:52"
   },
   {
     "metric": "total_records",
-    "value": 11343
+    "value": 11200
   },
   {
     "metric": "posts",
-    "value": 3190
+    "value": 3158
   },
   {
     "metric": "comments",
-    "value": 8153
+    "value": 8042
   },
   {
     "metric": "selected_records",
-    "value": 111
+    "value": 130
   },
   {
     "metric": "unique_authors",
-    "value": 2781
+    "value": 2783
   },
   {
     "metric": "total_likes",
-    "value": 10912
+    "value": 11074
   },
   {
     "metric": "total_recasts",
-    "value": 1296
+    "value": 1308
   },
   {
     "metric": "total_replies",
-    "value": 3738
+    "value": 3658
   },
   {
     "metric": "top_cast_score",
@@ -73,10 +73,10 @@
   },
   {
     "metric": "top_cast_author",
-    "value": "@adrienne"
+    "value": "@ael-dev"
   },
   {
     "metric": "top_cast_url",
-    "value": "https://farcaster.xyz/adrienne/0xbe98dcc2"
+    "value": "https://farcaster.xyz/ael-dev/0x844438d6"
   }
 ]
