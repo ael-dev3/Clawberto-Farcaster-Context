@@ -9,7 +9,7 @@
   },
   {
     "metric": "generated_at_utc",
-    "value": "2026-08-05 09:07:29"
+    "value": "2026-08-05 14:34:32"
   },
   {
     "metric": "source",
@@ -29,43 +29,43 @@
   },
   {
     "metric": "window_start_utc",
-    "value": "2026-08-04 09:07:06"
+    "value": "2026-08-04 14:34:04"
   },
   {
     "metric": "window_end_utc",
-    "value": "2026-08-05 09:06:35"
+    "value": "2026-08-05 14:33:59"
   },
   {
     "metric": "total_records",
-    "value": 10839
+    "value": 10787
   },
   {
     "metric": "posts",
-    "value": 2801
+    "value": 2810
   },
   {
     "metric": "comments",
-    "value": 8038
+    "value": 7977
   },
   {
     "metric": "selected_records",
-    "value": 116
+    "value": 122
   },
   {
     "metric": "unique_authors",
-    "value": 2906
+    "value": 2892
   },
   {
     "metric": "total_likes",
-    "value": 10865
+    "value": 10573
   },
   {
     "metric": "total_recasts",
-    "value": 1476
+    "value": 1358
   },
   {
     "metric": "total_replies",
-    "value": 3515
+    "value": 3498
   },
   {
     "metric": "top_cast_score",
@@ -73,10 +73,10 @@
   },
   {
     "metric": "top_cast_author",
-    "value": "@ael-dev"
+    "value": "@icetoad"
   },
   {
     "metric": "top_cast_url",
-    "value": "https://farcaster.xyz/ael-dev/0x844438d6"
+    "value": "https://farcaster.xyz/icetoad/0x361bf4d0"
   }
 ]
