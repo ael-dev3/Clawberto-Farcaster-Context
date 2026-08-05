@@ -7,7 +7,7 @@
   {
     "table": "theme_summary",
     "file": "generated/theme_summary.csv",
-    "rows": 4
+    "rows": 5
   },
   {
     "table": "authors",
@@ -17,12 +17,12 @@
   {
     "table": "top_casts",
     "file": "generated/top_casts.csv",
-    "rows": 122
+    "rows": 125
   },
   {
     "table": "posts",
     "file": "generated/posts.csv",
-    "rows": 43
+    "rows": 46
   },
   {
     "table": "comments",
