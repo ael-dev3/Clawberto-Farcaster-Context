@@ -1,21 +1,21 @@
 [
   {
     "theme": "Base Culture",
-    "casts": 75,
-    "posts": 34,
-    "comments": 41,
-    "likes": 154,
-    "avg_score": "3.06",
+    "casts": 71,
+    "posts": 32,
+    "comments": 39,
+    "likes": 196,
+    "avg_score": "3.15",
     "top_author": "@icetoad",
     "top_cast_url": "https://farcaster.xyz/icetoad/0x361bf4d0"
   },
   {
     "theme": "Apps/Games",
-    "casts": 32,
-    "posts": 8,
-    "comments": 24,
-    "likes": 354,
-    "avg_score": "4.06",
+    "casts": 26,
+    "posts": 4,
+    "comments": 22,
+    "likes": 267,
+    "avg_score": "4.11",
     "top_author": "@ael-dev",
     "top_cast_url": "https://farcaster.xyz/ael-dev/0x844438d6"
   },
@@ -24,19 +24,19 @@
     "casts": 16,
     "posts": 8,
     "comments": 8,
-    "likes": 21,
-    "avg_score": "2.69",
+    "likes": 23,
+    "avg_score": "2.78",
     "top_author": "@paragraph",
     "top_cast_url": "https://farcaster.xyz/paragraph/0x3d9c7954"
   },
   {
     "theme": "Token/Promo",
     "casts": 1,
-    "posts": 0,
-    "comments": 1,
-    "likes": 9,
-    "avg_score": "6.27",
-    "top_author": "@ethdaily",
-    "top_cast_url": "https://farcaster.xyz/ethdaily/0x9df2ae2b"
+    "posts": 1,
+    "comments": 0,
+    "likes": 0,
+    "avg_score": "1.00",
+    "top_author": "@noxfonos",
+    "top_cast_url": "https://farcaster.xyz/noxfonos/0x8e1f041f"
   }
 ]
