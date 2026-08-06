@@ -9,7 +9,7 @@
   },
   {
     "metric": "generated_at_utc",
-    "value": "2026-08-05 19:56:38"
+    "value": "2026-08-06 03:41:19"
   },
   {
     "metric": "source",
@@ -29,54 +29,54 @@
   },
   {
     "metric": "window_start_utc",
-    "value": "2026-08-04 19:56:13"
+    "value": "2026-08-05 03:40:36"
   },
   {
     "metric": "window_end_utc",
-    "value": "2026-08-05 19:55:45"
+    "value": "2026-08-06 03:40:25"
   },
   {
     "metric": "total_records",
-    "value": 10759
+    "value": 10573
   },
   {
     "metric": "posts",
-    "value": 2767
+    "value": 2760
   },
   {
     "metric": "comments",
-    "value": 7992
+    "value": 7813
   },
   {
     "metric": "selected_records",
-    "value": 125
+    "value": 122
   },
   {
     "metric": "unique_authors",
-    "value": 2884
+    "value": 2732
   },
   {
     "metric": "total_likes",
-    "value": 9902
+    "value": 10200
   },
   {
     "metric": "total_recasts",
-    "value": 1188
+    "value": 1305
   },
   {
     "metric": "total_replies",
-    "value": 3502
+    "value": 3498
   },
   {
     "metric": "top_cast_score",
-    "value": "7.74"
+    "value": "10.00"
   },
   {
     "metric": "top_cast_author",
-    "value": "@shadowwalki"
+    "value": "@farcaster"
   },
   {
     "metric": "top_cast_url",
-    "value": "https://farcaster.xyz/shadowwalki/0xbb73d72f"
+    "value": "https://farcaster.xyz/farcaster/0xeea14f1d"
   }
 ]
