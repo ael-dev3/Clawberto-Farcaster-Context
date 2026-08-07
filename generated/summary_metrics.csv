@@ -1,21 +1,21 @@
 metric,value
 site_url,https://ael-dev3.github.io/Clawberto-Farcaster-Context/
 repo_url,https://github.com/ael-dev3/Clawberto-Farcaster-Context
-generated_at_utc,2026-08-07 07:43:07
+generated_at_utc,2026-08-07 13:40:32
 source,hypersnap
 hub_url,http://54.157.62.17:3381
 snapchain_shards,"1,2"
 collect_last_hours,24
-window_start_utc,2026-08-06 07:42:57
-window_end_utc,2026-08-07 07:42:40
-total_records,10789
-posts,2798
-comments,7991
-selected_records,158
-unique_authors,2770
-total_likes,10679
-total_recasts,1328
-total_replies,3773
-top_cast_score,6.69
+window_start_utc,2026-08-06 13:40:28
+window_end_utc,2026-08-07 13:40:23
+total_records,11015
+posts,2846
+comments,8169
+selected_records,164
+unique_authors,2744
+total_likes,11795
+total_recasts,1529
+total_replies,4019
+top_cast_score,7.62
 top_cast_author,@basedcoin
 top_cast_url,https://farcaster.xyz/basedcoin/0x747f9f89
