@@ -9,7 +9,7 @@
   },
   {
     "metric": "generated_at_utc",
-    "value": "2026-08-09 02:30:41"
+    "value": "2026-08-09 07:18:06"
   },
   {
     "metric": "source",
@@ -29,54 +29,54 @@
   },
   {
     "metric": "window_start_utc",
-    "value": "2026-08-08 02:30:02"
+    "value": "2026-08-08 07:17:33"
   },
   {
     "metric": "window_end_utc",
-    "value": "2026-08-09 02:29:57"
+    "value": "2026-08-09 07:17:15"
   },
   {
     "metric": "total_records",
-    "value": 10064
+    "value": 10045
   },
   {
     "metric": "posts",
-    "value": 2538
+    "value": 2500
   },
   {
     "metric": "comments",
-    "value": 7526
+    "value": 7545
   },
   {
     "metric": "selected_records",
-    "value": 128
+    "value": 125
   },
   {
     "metric": "unique_authors",
-    "value": 2714
+    "value": 2706
   },
   {
     "metric": "total_likes",
-    "value": 9368
+    "value": 9891
   },
   {
     "metric": "total_recasts",
-    "value": 1424
+    "value": 1357
   },
   {
     "metric": "total_replies",
-    "value": 3510
+    "value": 3592
   },
   {
     "metric": "top_cast_score",
-    "value": "8.54"
+    "value": "8.79"
   },
   {
     "metric": "top_cast_author",
-    "value": "@akela113"
+    "value": "@nounishprof"
   },
   {
     "metric": "top_cast_url",
-    "value": "https://farcaster.xyz/akela113/0xc079fb81"
+    "value": "https://farcaster.xyz/nounishprof/0x5bed6a99"
   }
 ]
