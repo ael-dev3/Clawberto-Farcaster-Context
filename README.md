@@ -15,11 +15,11 @@ Static, cached Farcaster context from direct Hypersnap/Snapchain node scraping. 
 | Source | hypersnap |
 | Hub URL | http://54.157.62.17:3381 |
 | Readable shards | 1,2 |
-| Window UTC | 2026-08-08 19:02:27 → 2026-08-09 19:02:17 |
-| Total casts | 9263 |
-| Posts / comments | 2273 / 6990 |
-| Unique authors | 2444 |
-| Total likes / recasts / replies | 9099 / 926 / 2968 |
+| Window UTC | 2026-08-09 02:35:24 → 2026-08-10 02:35:17 |
+| Total casts | 9665 |
+| Posts / comments | 2597 / 7068 |
+| Unique authors | 2644 |
+| Total likes / recasts / replies | 9056 / 971 / 3046 |
 | Top cast author | @nounishprof |
 | Top cast | https://farcaster.xyz/nounishprof/0x5bed6a99 |
 
@@ -30,8 +30,8 @@ Static, cached Farcaster context from direct Hypersnap/Snapchain node scraping. 
 | summary_metrics | `generated/summary_metrics.csv` | 20 | [CSV](generated/summary_metrics.csv) / [JSON](generated/summary_metrics.json) |
 | theme_summary | `generated/theme_summary.csv` | 5 | [CSV](generated/theme_summary.csv) / [JSON](generated/theme_summary.json) |
 | authors | `generated/authors.csv` | 100 | [CSV](generated/authors.csv) / [JSON](generated/authors.json) |
-| top_casts | `generated/top_casts.csv` | 128 | [CSV](generated/top_casts.csv) / [JSON](generated/top_casts.json) |
-| posts | `generated/posts.csv` | 59 | [CSV](generated/posts.csv) / [JSON](generated/posts.json) |
+| top_casts | `generated/top_casts.csv` | 123 | [CSV](generated/top_casts.csv) / [JSON](generated/top_casts.json) |
+| posts | `generated/posts.csv` | 54 | [CSV](generated/posts.csv) / [JSON](generated/posts.json) |
 | comments | `generated/comments.csv` | 69 | [CSV](generated/comments.csv) / [JSON](generated/comments.json) |
 | agent_take | `generated/agent_take.csv` | 4 | [CSV](generated/agent_take.csv) / [JSON](generated/agent_take.json) |
 
