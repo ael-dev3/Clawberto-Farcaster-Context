@@ -9,7 +9,7 @@
   },
   {
     "metric": "generated_at_utc",
-    "value": "2026-08-12 07:53:52"
+    "value": "2026-08-12 13:48:52"
   },
   {
     "metric": "source",
@@ -29,54 +29,54 @@
   },
   {
     "metric": "window_start_utc",
-    "value": "2026-08-11 07:53:43"
+    "value": "2026-08-11 13:48:43"
   },
   {
     "metric": "window_end_utc",
-    "value": "2026-08-12 07:53:22"
+    "value": "2026-08-12 13:48:36"
   },
   {
     "metric": "total_records",
-    "value": 10419
+    "value": 11114
   },
   {
     "metric": "posts",
-    "value": 2673
+    "value": 2748
   },
   {
     "metric": "comments",
-    "value": 7746
+    "value": 8366
   },
   {
     "metric": "selected_records",
-    "value": 128
+    "value": 137
   },
   {
     "metric": "unique_authors",
-    "value": 2720
+    "value": 2845
   },
   {
     "metric": "total_likes",
-    "value": 10013
+    "value": 10993
   },
   {
     "metric": "total_recasts",
-    "value": 1017
+    "value": 1433
   },
   {
     "metric": "total_replies",
-    "value": 3483
+    "value": 4096
   },
   {
     "metric": "top_cast_score",
-    "value": "10.00"
+    "value": "7.86"
   },
   {
     "metric": "top_cast_author",
-    "value": "@tldr"
+    "value": "@papusiek1111"
   },
   {
     "metric": "top_cast_url",
-    "value": "https://farcaster.xyz/tldr/0x1cf6298d"
+    "value": "https://farcaster.xyz/papusiek1111/0x6237b9a9"
   }
 ]
