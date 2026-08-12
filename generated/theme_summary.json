@@ -1,42 +1,42 @@
 [
   {
     "theme": "Base Culture",
-    "casts": 61,
-    "posts": 31,
-    "comments": 30,
-    "likes": 172,
-    "avg_score": "3.19",
+    "casts": 79,
+    "posts": 38,
+    "comments": 41,
+    "likes": 210,
+    "avg_score": "3.08",
     "top_author": "@tldr",
     "top_cast_url": "https://farcaster.xyz/tldr/0x1cf6298d"
   },
   {
     "theme": "Apps/Games",
-    "casts": 23,
+    "casts": 21,
     "posts": 1,
-    "comments": 22,
-    "likes": 83,
-    "avg_score": "3.88",
+    "comments": 20,
+    "likes": 94,
+    "avg_score": "4.02",
     "top_author": "@ruburi",
     "top_cast_url": "https://farcaster.xyz/ruburi/0x73e0c326"
   },
   {
     "theme": "Security/Ops",
-    "casts": 19,
-    "posts": 7,
-    "comments": 12,
-    "likes": 113,
-    "avg_score": "3.43",
-    "top_author": "@pichi",
-    "top_cast_url": "https://farcaster.xyz/pichi/0x2e33d3b5"
+    "casts": 20,
+    "posts": 5,
+    "comments": 15,
+    "likes": 49,
+    "avg_score": "3.13",
+    "top_author": "@alexanderchopan",
+    "top_cast_url": "https://farcaster.xyz/alexanderchopan/0xd2cb8b3e"
   },
   {
     "theme": "Token/Promo",
-    "casts": 6,
-    "posts": 2,
-    "comments": 4,
-    "likes": 10,
-    "avg_score": "2.69",
-    "top_author": "@brixbounty",
-    "top_cast_url": "https://farcaster.xyz/brixbounty/0x6323d684"
+    "casts": 3,
+    "posts": 3,
+    "comments": 0,
+    "likes": 19,
+    "avg_score": "4.54",
+    "top_author": "@sayangel",
+    "top_cast_url": "https://farcaster.xyz/sayangel/0x06fcc098"
   }
 ]
