@@ -9,7 +9,7 @@
   },
   {
     "metric": "generated_at_utc",
-    "value": "2026-08-13 13:49:51"
+    "value": "2026-08-13 19:26:35"
   },
   {
     "metric": "source",
@@ -29,43 +29,43 @@
   },
   {
     "metric": "window_start_utc",
-    "value": "2026-08-12 13:49:27"
+    "value": "2026-08-12 19:26:24"
   },
   {
     "metric": "window_end_utc",
-    "value": "2026-08-13 13:49:08"
+    "value": "2026-08-13 19:26:15"
   },
   {
     "metric": "total_records",
-    "value": 10042
+    "value": 9868
   },
   {
     "metric": "posts",
-    "value": 3025
+    "value": 2956
   },
   {
     "metric": "comments",
-    "value": 7017
+    "value": 6912
   },
   {
     "metric": "selected_records",
-    "value": 124
+    "value": 132
   },
   {
     "metric": "unique_authors",
-    "value": 2249
+    "value": 2060
   },
   {
     "metric": "total_likes",
-    "value": 10804
+    "value": 10316
   },
   {
     "metric": "total_recasts",
-    "value": 1099
+    "value": 1109
   },
   {
     "metric": "total_replies",
-    "value": 3397
+    "value": 3535
   },
   {
     "metric": "top_cast_score",
@@ -73,10 +73,10 @@
   },
   {
     "metric": "top_cast_author",
-    "value": "@sayangel"
+    "value": "@ael-dev"
   },
   {
     "metric": "top_cast_url",
-    "value": "https://farcaster.xyz/sayangel/0xd9e2630b"
+    "value": "https://farcaster.xyz/ael-dev/0x9c1d86b6"
   }
 ]
