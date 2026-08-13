@@ -1,31 +1,31 @@
 [
   {
     "theme": "Base Culture",
-    "casts": 92,
-    "posts": 47,
-    "comments": 45,
-    "likes": 232,
-    "avg_score": "3.08",
+    "casts": 87,
+    "posts": 45,
+    "comments": 42,
+    "likes": 274,
+    "avg_score": "3.22",
     "top_author": "@sayangel",
     "top_cast_url": "https://farcaster.xyz/sayangel/0xd9e2630b"
   },
   {
     "theme": "Apps/Games",
-    "casts": 27,
-    "posts": 9,
-    "comments": 18,
-    "likes": 64,
-    "avg_score": "3.16",
+    "casts": 20,
+    "posts": 7,
+    "comments": 13,
+    "likes": 27,
+    "avg_score": "2.63",
     "top_author": "@ds8",
-    "top_cast_url": "https://farcaster.xyz/ds8/0x276a6feb"
+    "top_cast_url": "https://farcaster.xyz/ds8/0xcad3d33c"
   },
   {
     "theme": "Security/Ops",
     "casts": 11,
     "posts": 4,
     "comments": 7,
-    "likes": 25,
-    "avg_score": "3.23",
+    "likes": 34,
+    "avg_score": "3.22",
     "top_author": "@papusiek1111",
     "top_cast_url": "https://farcaster.xyz/papusiek1111/0x8ae46f4c"
   },
@@ -34,18 +34,18 @@
     "casts": 4,
     "posts": 3,
     "comments": 1,
-    "likes": 5,
-    "avg_score": "2.82",
-    "top_author": "@tempetechie",
-    "top_cast_url": "https://farcaster.xyz/tempetechie/0xbae41bd0"
+    "likes": 4,
+    "avg_score": "2.59",
+    "top_author": "@diggitaly",
+    "top_cast_url": "https://farcaster.xyz/diggitaly/0x2509f11e"
   },
   {
     "theme": "Protocol/Fork",
     "casts": 2,
-    "posts": 2,
-    "comments": 0,
-    "likes": 9,
-    "avg_score": "4.63",
+    "posts": 1,
+    "comments": 1,
+    "likes": 8,
+    "avg_score": "4.17",
     "top_author": "@frdysk",
     "top_cast_url": "https://farcaster.xyz/frdysk/0x4f3c7987"
   }
