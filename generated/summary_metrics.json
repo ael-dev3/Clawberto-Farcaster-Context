@@ -9,7 +9,7 @@
   },
   {
     "metric": "generated_at_utc",
-    "value": "2026-08-14 19:15:00"
+    "value": "2026-08-15 01:51:12"
   },
   {
     "metric": "source",
@@ -29,54 +29,54 @@
   },
   {
     "metric": "window_start_utc",
-    "value": "2026-08-13 19:14:59"
+    "value": "2026-08-14 01:50:36"
   },
   {
     "metric": "window_end_utc",
-    "value": "2026-08-14 19:14:46"
+    "value": "2026-08-15 01:50:24"
   },
   {
     "metric": "total_records",
-    "value": 9984
+    "value": 9864
   },
   {
     "metric": "posts",
-    "value": 2719
+    "value": 2912
   },
   {
     "metric": "comments",
-    "value": 7265
+    "value": 6952
   },
   {
     "metric": "selected_records",
-    "value": 124
+    "value": 111
   },
   {
     "metric": "unique_authors",
-    "value": 2064
+    "value": 2007
   },
   {
     "metric": "total_likes",
-    "value": 11558
+    "value": 10466
   },
   {
     "metric": "total_recasts",
-    "value": 1272
+    "value": 1074
   },
   {
     "metric": "total_replies",
-    "value": 3776
+    "value": 3465
   },
   {
     "metric": "top_cast_score",
-    "value": "10.00"
+    "value": "8.71"
   },
   {
     "metric": "top_cast_author",
-    "value": "@brixbounty"
+    "value": "@mikapro"
   },
   {
     "metric": "top_cast_url",
-    "value": "https://farcaster.xyz/brixbounty/0x316b319e"
+    "value": "https://farcaster.xyz/mikapro/0x9d2be958"
   }
 ]
