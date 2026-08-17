@@ -1,51 +1,51 @@
 [
   {
     "theme": "Base Culture",
-    "casts": 82,
-    "posts": 50,
-    "comments": 32,
-    "likes": 162,
-    "avg_score": "3.08",
-    "top_author": "@basedcoin",
-    "top_cast_url": "https://farcaster.xyz/basedcoin/0x29925eb9"
+    "casts": 98,
+    "posts": 56,
+    "comments": 42,
+    "likes": 205,
+    "avg_score": "3.05",
+    "top_author": "@arjantupan",
+    "top_cast_url": "https://farcaster.xyz/arjantupan/0x233a20c0"
   },
   {
     "theme": "Apps/Games",
-    "casts": 24,
-    "posts": 6,
-    "comments": 18,
-    "likes": 60,
-    "avg_score": "3.53",
+    "casts": 21,
+    "posts": 5,
+    "comments": 16,
+    "likes": 71,
+    "avg_score": "3.96",
     "top_author": "@ds8",
     "top_cast_url": "https://farcaster.xyz/ds8/0x6528eb81"
   },
   {
     "theme": "Security/Ops",
-    "casts": 17,
-    "posts": 8,
+    "casts": 13,
+    "posts": 4,
     "comments": 9,
-    "likes": 30,
-    "avg_score": "2.75",
-    "top_author": "@paragraph",
-    "top_cast_url": "https://farcaster.xyz/paragraph/0xd418cc3d"
+    "likes": 16,
+    "avg_score": "2.48",
+    "top_author": "@oblessedking",
+    "top_cast_url": "https://farcaster.xyz/oblessedking/0x20352153"
   },
   {
     "theme": "Protocol/Fork",
     "casts": 4,
     "posts": 1,
     "comments": 3,
-    "likes": 84,
-    "avg_score": "5.36",
+    "likes": 104,
+    "avg_score": "5.59",
     "top_author": "@cassie",
     "top_cast_url": "https://farcaster.xyz/cassie/0xb5da8075"
   },
   {
     "theme": "Token/Promo",
-    "casts": 4,
-    "posts": 2,
-    "comments": 2,
-    "likes": 3,
-    "avg_score": "2.19",
+    "casts": 2,
+    "posts": 1,
+    "comments": 1,
+    "likes": 1,
+    "avg_score": "1.79",
     "top_author": "@mbarto",
     "top_cast_url": "https://farcaster.xyz/mbarto/0x44f713cd"
   }
