@@ -9,7 +9,7 @@
   },
   {
     "metric": "generated_at_utc",
-    "value": "2026-08-21 07:09:09"
+    "value": "2026-08-21 13:12:35"
   },
   {
     "metric": "source",
@@ -29,27 +29,27 @@
   },
   {
     "metric": "window_start_utc",
-    "value": "2026-08-20 07:08:26"
+    "value": "2026-08-20 13:11:57"
   },
   {
     "metric": "window_end_utc",
-    "value": "2026-08-21 07:07:33"
+    "value": "2026-08-21 13:11:34"
   },
   {
     "metric": "total_records",
-    "value": 11226
+    "value": 11243
   },
   {
     "metric": "posts",
-    "value": 3488
+    "value": 3352
   },
   {
     "metric": "comments",
-    "value": 7738
+    "value": 7891
   },
   {
     "metric": "selected_records",
-    "value": 133
+    "value": 147
   },
   {
     "metric": "unique_authors",
@@ -57,26 +57,26 @@
   },
   {
     "metric": "total_likes",
-    "value": 13983
+    "value": 14617
   },
   {
     "metric": "total_recasts",
-    "value": 1664
+    "value": 1825
   },
   {
     "metric": "total_replies",
-    "value": 4055
+    "value": 4393
   },
   {
     "metric": "top_cast_score",
-    "value": "9.20"
+    "value": "10.00"
   },
   {
     "metric": "top_cast_author",
-    "value": "@mintclub"
+    "value": "@jacek"
   },
   {
     "metric": "top_cast_url",
-    "value": "https://farcaster.xyz/mintclub/0x24d69135"
+    "value": "https://farcaster.xyz/jacek/0x89115800"
   }
 ]
