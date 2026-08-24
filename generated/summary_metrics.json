@@ -9,7 +9,7 @@
   },
   {
     "metric": "generated_at_utc",
-    "value": "2026-08-23 18:49:05"
+    "value": "2026-08-24 01:58:43"
   },
   {
     "metric": "source",
@@ -29,54 +29,54 @@
   },
   {
     "metric": "window_start_utc",
-    "value": "2026-08-22 18:48:55"
+    "value": "2026-08-23 01:58:43"
   },
   {
     "metric": "window_end_utc",
-    "value": "2026-08-23 18:48:53"
+    "value": "2026-08-24 01:58:10"
   },
   {
     "metric": "total_records",
-    "value": 9805
+    "value": 10040
   },
   {
     "metric": "posts",
-    "value": 3087
+    "value": 3196
   },
   {
     "metric": "comments",
-    "value": 6718
+    "value": 6844
   },
   {
     "metric": "selected_records",
-    "value": 121
+    "value": 147
   },
   {
     "metric": "unique_authors",
-    "value": 2247
+    "value": 2181
   },
   {
     "metric": "total_likes",
-    "value": 9601
+    "value": 9634
   },
   {
     "metric": "total_recasts",
-    "value": 976
+    "value": 955
   },
   {
     "metric": "total_replies",
-    "value": 3775
+    "value": 5864
   },
   {
     "metric": "top_cast_score",
-    "value": "8.93"
+    "value": "9.00"
   },
   {
     "metric": "top_cast_author",
-    "value": "@road"
+    "value": "@kenny"
   },
   {
     "metric": "top_cast_url",
-    "value": "https://farcaster.xyz/road/0x8ef398b4"
+    "value": "https://farcaster.xyz/kenny/0x792547e8"
   }
 ]
