@@ -9,7 +9,7 @@
   },
   {
     "metric": "generated_at_utc",
-    "value": "2026-08-26 13:17:35"
+    "value": "2026-08-26 20:03:22"
   },
   {
     "metric": "source",
@@ -29,54 +29,54 @@
   },
   {
     "metric": "window_start_utc",
-    "value": "2026-08-25 13:17:37"
+    "value": "2026-08-25 20:03:16"
   },
   {
     "metric": "window_end_utc",
-    "value": "2026-08-26 13:17:20"
+    "value": "2026-08-26 20:03:04"
   },
   {
     "metric": "total_records",
-    "value": 10872
+    "value": 11116
   },
   {
     "metric": "posts",
-    "value": 3300
+    "value": 3312
   },
   {
     "metric": "comments",
-    "value": 7572
+    "value": 7804
   },
   {
     "metric": "selected_records",
-    "value": 143
+    "value": 125
   },
   {
     "metric": "unique_authors",
-    "value": 2042
+    "value": 2046
   },
   {
     "metric": "total_likes",
-    "value": 13822
+    "value": 13624
   },
   {
     "metric": "total_recasts",
-    "value": 1818
+    "value": 1842
   },
   {
     "metric": "total_replies",
-    "value": 3711
+    "value": 4098
   },
   {
     "metric": "top_cast_score",
-    "value": "9.27"
+    "value": "9.66"
   },
   {
     "metric": "top_cast_author",
-    "value": "@kmacbeth"
+    "value": "@mxjxn"
   },
   {
     "metric": "top_cast_url",
-    "value": "https://farcaster.xyz/kmacbeth/0x5090ca7f"
+    "value": "https://farcaster.xyz/mxjxn/0x0ea68bb5"
   }
 ]
