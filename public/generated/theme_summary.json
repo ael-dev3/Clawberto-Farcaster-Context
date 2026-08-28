@@ -1,52 +1,52 @@
 [
   {
     "theme": "Base Culture",
-    "casts": 93,
-    "posts": 44,
-    "comments": 49,
-    "likes": 235,
-    "avg_score": "3.14",
-    "top_author": "@nikolaiii",
-    "top_cast_url": "https://farcaster.xyz/nikolaiii/0xb4cc30d3"
+    "casts": 36,
+    "posts": 12,
+    "comments": 24,
+    "likes": 83,
+    "avg_score": "3.22",
+    "top_author": "@mershad",
+    "top_cast_url": "https://farcaster.xyz/mershad/0x6fb14c81"
   },
   {
     "theme": "Apps/Games",
-    "casts": 34,
-    "posts": 6,
-    "comments": 28,
-    "likes": 109,
-    "avg_score": "3.79",
-    "top_author": "@10xchris",
-    "top_cast_url": "https://farcaster.xyz/10xchris/0xafa100fd"
+    "casts": 17,
+    "posts": 3,
+    "comments": 14,
+    "likes": 54,
+    "avg_score": "3.76",
+    "top_author": "@ds8",
+    "top_cast_url": "https://farcaster.xyz/ds8/0x6bf63b4c"
   },
   {
     "theme": "Security/Ops",
-    "casts": 12,
-    "posts": 8,
-    "comments": 4,
-    "likes": 40,
-    "avg_score": "3.57",
-    "top_author": "@adrienne",
-    "top_cast_url": "https://farcaster.xyz/adrienne/0x7b97bd0e"
-  },
-  {
-    "theme": "Protocol/Fork",
-    "casts": 10,
-    "posts": 2,
-    "comments": 8,
-    "likes": 182,
-    "avg_score": "5.46",
-    "top_author": "@cassie",
-    "top_cast_url": "https://farcaster.xyz/cassie/0x72e1f7ae"
+    "casts": 9,
+    "posts": 3,
+    "comments": 6,
+    "likes": 44,
+    "avg_score": "2.92",
+    "top_author": "@alitiknazoglu",
+    "top_cast_url": "https://farcaster.xyz/alitiknazoglu/0x0339c609"
   },
   {
     "theme": "Token/Promo",
-    "casts": 3,
-    "posts": 1,
+    "casts": 2,
+    "posts": 0,
     "comments": 2,
-    "likes": 19,
-    "avg_score": "4.91",
-    "top_author": "@temhemc",
-    "top_cast_url": "https://farcaster.xyz/temhemc/0x7eab45a1"
+    "likes": 7,
+    "avg_score": "4.30",
+    "top_author": "@mintclub",
+    "top_cast_url": "https://farcaster.xyz/mintclub/0xfd42208f"
+  },
+  {
+    "theme": "Protocol/Fork",
+    "casts": 1,
+    "posts": 0,
+    "comments": 1,
+    "likes": 0,
+    "avg_score": "1.00",
+    "top_author": "@cassie",
+    "top_cast_url": "https://farcaster.xyz/cassie/0xe9414ae8"
   }
 ]
