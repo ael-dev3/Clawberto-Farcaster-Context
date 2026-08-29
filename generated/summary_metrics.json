@@ -9,7 +9,7 @@
   },
   {
     "metric": "generated_at_utc",
-    "value": "2026-08-29 07:07:19"
+    "value": "2026-08-29 16:44:40"
   },
   {
     "metric": "source",
@@ -29,54 +29,54 @@
   },
   {
     "metric": "window_start_utc",
-    "value": "2026-08-28 07:07:14"
+    "value": "2026-08-28 16:44:18"
   },
   {
     "metric": "window_end_utc",
-    "value": "2026-08-29 07:06:33"
+    "value": "2026-08-29 16:44:07"
   },
   {
     "metric": "total_records",
-    "value": 10611
+    "value": 10185
   },
   {
     "metric": "posts",
-    "value": 3197
+    "value": 3072
   },
   {
     "metric": "comments",
-    "value": 7414
+    "value": 7113
   },
   {
     "metric": "selected_records",
-    "value": 118
+    "value": 129
   },
   {
     "metric": "unique_authors",
-    "value": 2003
+    "value": 1927
   },
   {
     "metric": "total_likes",
-    "value": 12496
+    "value": 11246
   },
   {
     "metric": "total_recasts",
-    "value": 1613
+    "value": 1542
   },
   {
     "metric": "total_replies",
-    "value": 3973
+    "value": 3868
   },
   {
     "metric": "top_cast_score",
-    "value": "10.00"
+    "value": "8.93"
   },
   {
     "metric": "top_cast_author",
-    "value": "@alitiknazoglu"
+    "value": "@voodoonemesi"
   },
   {
     "metric": "top_cast_url",
-    "value": "https://farcaster.xyz/alitiknazoglu/0x0339c609"
+    "value": "https://farcaster.xyz/voodoonemesi/0xaf09b7a8"
   }
 ]
