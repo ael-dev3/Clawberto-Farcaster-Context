@@ -9,7 +9,7 @@
   },
   {
     "metric": "generated_at_utc",
-    "value": "2026-08-29 20:57:04"
+    "value": "2026-08-30 05:27:13"
   },
   {
     "metric": "source",
@@ -29,54 +29,54 @@
   },
   {
     "metric": "window_start_utc",
-    "value": "2026-08-28 20:56:36"
+    "value": "2026-08-29 05:27:03"
   },
   {
     "metric": "window_end_utc",
-    "value": "2026-08-29 20:56:30"
+    "value": "2026-08-30 05:26:04"
   },
   {
     "metric": "total_records",
-    "value": 10171
+    "value": 9970
   },
   {
     "metric": "posts",
-    "value": 2957
+    "value": 2965
   },
   {
     "metric": "comments",
-    "value": 7214
+    "value": 7005
   },
   {
     "metric": "selected_records",
-    "value": 131
+    "value": 127
   },
   {
     "metric": "unique_authors",
-    "value": 1852
+    "value": 1805
   },
   {
     "metric": "total_likes",
-    "value": 11126
+    "value": 10372
   },
   {
     "metric": "total_recasts",
-    "value": 1470
+    "value": 1254
   },
   {
     "metric": "total_replies",
-    "value": 4027
+    "value": 3843
   },
   {
     "metric": "top_cast_score",
-    "value": "9.07"
+    "value": "8.79"
   },
   {
     "metric": "top_cast_author",
-    "value": "@voodoonemesi"
+    "value": "@basedcoin"
   },
   {
     "metric": "top_cast_url",
-    "value": "https://farcaster.xyz/voodoonemesi/0xaf09b7a8"
+    "value": "https://farcaster.xyz/basedcoin/0x01462257"
   }
 ]
