@@ -9,7 +9,7 @@
   },
   {
     "metric": "generated_at_utc",
-    "value": "2026-08-31 05:39:29"
+    "value": "2026-08-31 13:55:45"
   },
   {
     "metric": "source",
@@ -29,54 +29,54 @@
   },
   {
     "metric": "window_start_utc",
-    "value": "2026-08-30 05:39:00"
+    "value": "2026-08-30 13:55:24"
   },
   {
     "metric": "window_end_utc",
-    "value": "2026-08-31 05:38:42"
+    "value": "2026-08-31 13:55:13"
   },
   {
     "metric": "total_records",
-    "value": 10372
+    "value": 10448
   },
   {
     "metric": "posts",
-    "value": 3263
+    "value": 3247
   },
   {
     "metric": "comments",
-    "value": 7109
+    "value": 7201
   },
   {
     "metric": "selected_records",
-    "value": 102
+    "value": 103
   },
   {
     "metric": "unique_authors",
-    "value": 1827
+    "value": 1843
   },
   {
     "metric": "total_likes",
-    "value": 10428
+    "value": 11331
   },
   {
     "metric": "total_recasts",
-    "value": 1352
+    "value": 1465
   },
   {
     "metric": "total_replies",
-    "value": 3679
+    "value": 3558
   },
   {
     "metric": "top_cast_score",
-    "value": "8.79"
+    "value": "9.86"
   },
   {
     "metric": "top_cast_author",
-    "value": "@j-valeska"
+    "value": "@kenny"
   },
   {
     "metric": "top_cast_url",
-    "value": "https://farcaster.xyz/j-valeska/0x6a79126d"
+    "value": "https://farcaster.xyz/kenny/0xe0039e90"
   }
 ]
