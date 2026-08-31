@@ -9,7 +9,7 @@
   },
   {
     "metric": "generated_at_utc",
-    "value": "2026-08-30 21:08:39"
+    "value": "2026-08-31 05:39:29"
   },
   {
     "metric": "source",
@@ -29,54 +29,54 @@
   },
   {
     "metric": "window_start_utc",
-    "value": "2026-08-29 21:08:52"
+    "value": "2026-08-30 05:39:00"
   },
   {
     "metric": "window_end_utc",
-    "value": "2026-08-30 21:08:14"
+    "value": "2026-08-31 05:38:42"
   },
   {
     "metric": "total_records",
-    "value": 10024
+    "value": 10372
   },
   {
     "metric": "posts",
-    "value": 3072
+    "value": 3263
   },
   {
     "metric": "comments",
-    "value": 6952
+    "value": 7109
   },
   {
     "metric": "selected_records",
-    "value": 119
+    "value": 102
   },
   {
     "metric": "unique_authors",
-    "value": 1828
+    "value": 1827
   },
   {
     "metric": "total_likes",
-    "value": 11185
+    "value": 10428
   },
   {
     "metric": "total_recasts",
-    "value": 1450
+    "value": 1352
   },
   {
     "metric": "total_replies",
-    "value": 3637
+    "value": 3679
   },
   {
     "metric": "top_cast_score",
-    "value": "9.91"
+    "value": "8.79"
   },
   {
     "metric": "top_cast_author",
-    "value": "@kambizasadzadeh"
+    "value": "@j-valeska"
   },
   {
     "metric": "top_cast_url",
-    "value": "https://farcaster.xyz/kambizasadzadeh/0xafce1960"
+    "value": "https://farcaster.xyz/j-valeska/0x6a79126d"
   }
 ]
