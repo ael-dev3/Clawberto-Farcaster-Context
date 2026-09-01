@@ -15,13 +15,13 @@ Static, cached Farcaster context from direct Hypersnap/Snapchain node scraping. 
 | Source | hypersnap |
 | Hub URL | http://54.157.62.17:3381 |
 | Readable shards | 1,2 |
-| Window UTC | 2026-08-31 05:13:03 → 2026-09-01 05:12:50 |
-| Total casts | 11004 |
-| Posts / comments | 3334 / 7670 |
-| Unique authors | 2038 |
-| Total likes / recasts / replies | 12082 / 1631 / 3831 |
-| Top cast author | @j-valeska |
-| Top cast | https://farcaster.xyz/j-valeska/0xcf0b71a8 |
+| Window UTC | 2026-08-31 11:41:30 → 2026-09-01 11:41:14 |
+| Total casts | 10985 |
+| Posts / comments | 3341 / 7644 |
+| Unique authors | 1991 |
+| Total likes / recasts / replies | 12353 / 1495 / 3900 |
+| Top cast author | @cassie |
+| Top cast | https://farcaster.xyz/cassie/0x54bc4543 |
 
 ## Published datasets
 
@@ -30,9 +30,9 @@ Static, cached Farcaster context from direct Hypersnap/Snapchain node scraping. 
 | summary_metrics | `generated/summary_metrics.csv` | 20 | [CSV](generated/summary_metrics.csv) / [JSON](generated/summary_metrics.json) |
 | theme_summary | `generated/theme_summary.csv` | 5 | [CSV](generated/theme_summary.csv) / [JSON](generated/theme_summary.json) |
 | authors | `generated/authors.csv` | 100 | [CSV](generated/authors.csv) / [JSON](generated/authors.json) |
-| top_casts | `generated/top_casts.csv` | 135 | [CSV](generated/top_casts.csv) / [JSON](generated/top_casts.json) |
-| posts | `generated/posts.csv` | 60 | [CSV](generated/posts.csv) / [JSON](generated/posts.json) |
-| comments | `generated/comments.csv` | 75 | [CSV](generated/comments.csv) / [JSON](generated/comments.json) |
+| top_casts | `generated/top_casts.csv` | 139 | [CSV](generated/top_casts.csv) / [JSON](generated/top_casts.json) |
+| posts | `generated/posts.csv` | 54 | [CSV](generated/posts.csv) / [JSON](generated/posts.json) |
+| comments | `generated/comments.csv` | 85 | [CSV](generated/comments.csv) / [JSON](generated/comments.json) |
 | agent_take | `generated/agent_take.csv` | 4 | [CSV](generated/agent_take.csv) / [JSON](generated/agent_take.json) |
 
 ## Data pipeline
