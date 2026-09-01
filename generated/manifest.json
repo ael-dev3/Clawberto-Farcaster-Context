@@ -17,17 +17,17 @@
   {
     "table": "top_casts",
     "file": "generated/top_casts.csv",
-    "rows": 141
+    "rows": 130
   },
   {
     "table": "posts",
     "file": "generated/posts.csv",
-    "rows": 54
+    "rows": 52
   },
   {
     "table": "comments",
     "file": "generated/comments.csv",
-    "rows": 87
+    "rows": 78
   },
   {
     "table": "agent_take",
