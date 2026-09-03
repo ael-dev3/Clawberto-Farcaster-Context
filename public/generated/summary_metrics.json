@@ -9,7 +9,7 @@
   },
   {
     "metric": "generated_at_utc",
-    "value": "2026-09-03 11:17:48"
+    "value": "2026-09-03 16:27:49"
   },
   {
     "metric": "source",
@@ -29,54 +29,54 @@
   },
   {
     "metric": "window_start_utc",
-    "value": "2026-09-02 11:17:44"
+    "value": "2026-09-02 16:27:17"
   },
   {
     "metric": "window_end_utc",
-    "value": "2026-09-03 11:17:33"
+    "value": "2026-09-03 16:27:10"
   },
   {
     "metric": "total_records",
-    "value": 9891
+    "value": 9893
   },
   {
     "metric": "posts",
-    "value": 2849
+    "value": 2813
   },
   {
     "metric": "comments",
-    "value": 7042
+    "value": 7080
   },
   {
     "metric": "selected_records",
-    "value": 123
+    "value": 118
   },
   {
     "metric": "unique_authors",
-    "value": 2055
+    "value": 2044
   },
   {
     "metric": "total_likes",
-    "value": 9671
+    "value": 9179
   },
   {
     "metric": "total_recasts",
-    "value": 1119
+    "value": 1033
   },
   {
     "metric": "total_replies",
-    "value": 3155
+    "value": 3015
   },
   {
     "metric": "top_cast_score",
-    "value": "9.44"
+    "value": "10.00"
   },
   {
     "metric": "top_cast_author",
-    "value": "@kambizasadzadeh"
+    "value": "@jacek"
   },
   {
     "metric": "top_cast_url",
-    "value": "https://farcaster.xyz/kambizasadzadeh/0xe1017f8a"
+    "value": "https://farcaster.xyz/jacek/0xf016fef2"
   }
 ]
