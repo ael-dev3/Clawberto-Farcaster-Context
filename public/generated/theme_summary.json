@@ -1,41 +1,41 @@
 [
   {
     "theme": "Base Culture",
-    "casts": 83,
+    "casts": 81,
     "posts": 32,
-    "comments": 51,
-    "likes": 361,
-    "avg_score": "3.37",
-    "top_author": "@jacek",
-    "top_cast_url": "https://farcaster.xyz/jacek/0x44c6e439"
-  },
-  {
-    "theme": "Apps/Games",
-    "casts": 18,
-    "posts": 3,
-    "comments": 15,
-    "likes": 69,
-    "avg_score": "3.74",
-    "top_author": "@ds8",
-    "top_cast_url": "https://farcaster.xyz/ds8/0x92105f99"
+    "comments": 49,
+    "likes": 292,
+    "avg_score": "3.31",
+    "top_author": "@luciano",
+    "top_cast_url": "https://farcaster.xyz/luciano/0xf88e6025"
   },
   {
     "theme": "Security/Ops",
-    "casts": 14,
-    "posts": 4,
-    "comments": 10,
-    "likes": 39,
-    "avg_score": "3.19",
+    "casts": 17,
+    "posts": 5,
+    "comments": 12,
+    "likes": 34,
+    "avg_score": "2.71",
     "top_author": "@hich",
     "top_cast_url": "https://farcaster.xyz/hich/0x76cec891"
+  },
+  {
+    "theme": "Apps/Games",
+    "casts": 13,
+    "posts": 1,
+    "comments": 12,
+    "likes": 53,
+    "avg_score": "3.82",
+    "top_author": "@ds8",
+    "top_cast_url": "https://farcaster.xyz/ds8/0x92105f99"
   },
   {
     "theme": "Token/Promo",
     "casts": 4,
     "posts": 1,
     "comments": 3,
-    "likes": 4,
-    "avg_score": "2.19",
+    "likes": 9,
+    "avg_score": "2.98",
     "top_author": "@temhemc",
     "top_cast_url": "https://farcaster.xyz/temhemc/0xaac96b77"
   },
