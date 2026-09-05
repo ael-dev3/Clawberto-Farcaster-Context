@@ -1,21 +1,21 @@
 metric,value
 site_url,https://ael-dev3.github.io/Clawberto-Farcaster-Context/
 repo_url,https://github.com/ael-dev3/Clawberto-Farcaster-Context
-generated_at_utc,2026-09-05 10:38:11
+generated_at_utc,2026-09-05 15:17:10
 source,hypersnap
 hub_url,http://54.157.62.17:3381
 snapchain_shards,"1,2"
 collect_last_hours,24
-window_start_utc,2026-09-04 10:38:06
-window_end_utc,2026-09-05 10:37:51
-total_records,10756
-posts,3073
-comments,7683
-selected_records,121
-unique_authors,1871
-total_likes,10560
-total_recasts,1592
-total_replies,3856
-top_cast_score,7.35
+window_start_utc,2026-09-04 15:16:28
+window_end_utc,2026-09-05 15:16:15
+total_records,10760
+posts,3055
+comments,7705
+selected_records,115
+unique_authors,1876
+total_likes,10047
+total_recasts,1507
+total_replies,3721
+top_cast_score,8.18
 top_cast_author,@akela113
 top_cast_url,https://farcaster.xyz/akela113/0x43c5e07f
