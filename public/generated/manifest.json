@@ -12,22 +12,22 @@
   {
     "table": "authors",
     "file": "generated/authors.csv",
-    "rows": 82
+    "rows": 79
   },
   {
     "table": "top_casts",
     "file": "generated/top_casts.csv",
-    "rows": 118
+    "rows": 113
   },
   {
     "table": "posts",
     "file": "generated/posts.csv",
-    "rows": 48
+    "rows": 42
   },
   {
     "table": "comments",
     "file": "generated/comments.csv",
-    "rows": 70
+    "rows": 71
   },
   {
     "table": "agent_take",
