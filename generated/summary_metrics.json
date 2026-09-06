@@ -9,7 +9,7 @@
   },
   {
     "metric": "generated_at_utc",
-    "value": "2026-09-06 11:00:57"
+    "value": "2026-09-06 15:30:02"
   },
   {
     "metric": "source",
@@ -29,54 +29,54 @@
   },
   {
     "metric": "window_start_utc",
-    "value": "2026-09-05 11:00:19"
+    "value": "2026-09-05 15:29:40"
   },
   {
     "metric": "window_end_utc",
-    "value": "2026-09-06 11:00:11"
+    "value": "2026-09-06 15:29:10"
   },
   {
     "metric": "total_records",
-    "value": 9898
+    "value": 9946
   },
   {
     "metric": "posts",
-    "value": 2834
+    "value": 2798
   },
   {
     "metric": "comments",
-    "value": 7064
+    "value": 7148
   },
   {
     "metric": "selected_records",
-    "value": 121
+    "value": 115
   },
   {
     "metric": "unique_authors",
-    "value": 1787
+    "value": 1739
   },
   {
     "metric": "total_likes",
-    "value": 8840
+    "value": 9283
   },
   {
     "metric": "total_recasts",
-    "value": 1288
+    "value": 1313
   },
   {
     "metric": "total_replies",
-    "value": 3065
+    "value": 3175
   },
   {
     "metric": "top_cast_score",
-    "value": "7.04"
+    "value": "9.07"
   },
   {
     "metric": "top_cast_author",
-    "value": "@maks-miks"
+    "value": "@vbuterin"
   },
   {
     "metric": "top_cast_url",
-    "value": "https://farcaster.xyz/maks-miks/0xa03e69f1"
+    "value": "https://farcaster.xyz/vbuterin/0x0421efa4"
   }
 ]
