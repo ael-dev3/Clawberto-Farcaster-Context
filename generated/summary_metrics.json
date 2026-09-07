@@ -9,7 +9,7 @@
   },
   {
     "metric": "generated_at_utc",
-    "value": "2026-09-07 12:37:52"
+    "value": "2026-09-07 21:32:44"
   },
   {
     "metric": "source",
@@ -29,54 +29,54 @@
   },
   {
     "metric": "window_start_utc",
-    "value": "2026-09-06 12:37:33"
+    "value": "2026-09-06 21:32:51"
   },
   {
     "metric": "window_end_utc",
-    "value": "2026-09-07 12:37:16"
+    "value": "2026-09-07 21:32:04"
   },
   {
     "metric": "total_records",
-    "value": 9683
+    "value": 9455
   },
   {
     "metric": "posts",
-    "value": 2984
+    "value": 2953
   },
   {
     "metric": "comments",
-    "value": 6699
+    "value": 6502
   },
   {
     "metric": "selected_records",
-    "value": 94
+    "value": 106
   },
   {
     "metric": "unique_authors",
-    "value": 1825
+    "value": 1869
   },
   {
     "metric": "total_likes",
-    "value": 10220
+    "value": 9176
   },
   {
     "metric": "total_recasts",
-    "value": 1735
+    "value": 1403
   },
   {
     "metric": "total_replies",
-    "value": 3208
+    "value": 3166
   },
   {
     "metric": "top_cast_score",
-    "value": "10.00"
+    "value": "8.37"
   },
   {
     "metric": "top_cast_author",
-    "value": "@vbuterin"
+    "value": "@akela113"
   },
   {
     "metric": "top_cast_url",
-    "value": "https://farcaster.xyz/vbuterin/0x0421efa4"
+    "value": "https://farcaster.xyz/akela113/0x176a9023"
   }
 ]
