@@ -9,7 +9,7 @@
   },
   {
     "metric": "generated_at_utc",
-    "value": "2026-09-08 11:22:55"
+    "value": "2026-09-08 16:39:56"
   },
   {
     "metric": "source",
@@ -29,54 +29,54 @@
   },
   {
     "metric": "window_start_utc",
-    "value": "2026-09-07 11:22:16"
+    "value": "2026-09-07 16:39:48"
   },
   {
     "metric": "window_end_utc",
-    "value": "2026-09-08 11:21:39"
+    "value": "2026-09-08 16:39:20"
   },
   {
     "metric": "total_records",
-    "value": 9318
+    "value": 9109
   },
   {
     "metric": "posts",
-    "value": 2853
+    "value": 2914
   },
   {
     "metric": "comments",
-    "value": 6465
+    "value": 6195
   },
   {
     "metric": "selected_records",
-    "value": 119
+    "value": 110
   },
   {
     "metric": "unique_authors",
-    "value": 1811
+    "value": 1832
   },
   {
     "metric": "total_likes",
-    "value": 8990
+    "value": 8893
   },
   {
     "metric": "total_recasts",
-    "value": 1256
+    "value": 1288
   },
   {
     "metric": "total_replies",
-    "value": 3144
+    "value": 3039
   },
   {
     "metric": "top_cast_score",
-    "value": "9.39"
+    "value": "9.71"
   },
   {
     "metric": "top_cast_author",
-    "value": "@mohosin"
+    "value": "@miladtik2"
   },
   {
     "metric": "top_cast_url",
-    "value": "https://farcaster.xyz/mohosin/0xeba7406f"
+    "value": "https://farcaster.xyz/miladtik2/0x62e58be7"
   }
 ]
