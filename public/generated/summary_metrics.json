@@ -9,7 +9,7 @@
   },
   {
     "metric": "generated_at_utc",
-    "value": "2026-09-09 04:46:11"
+    "value": "2026-09-09 11:26:51"
   },
   {
     "metric": "source",
@@ -29,54 +29,54 @@
   },
   {
     "metric": "window_start_utc",
-    "value": "2026-09-08 04:45:48"
+    "value": "2026-09-08 11:26:33"
   },
   {
     "metric": "window_end_utc",
-    "value": "2026-09-09 04:45:02"
+    "value": "2026-09-09 11:26:26"
   },
   {
     "metric": "total_records",
-    "value": 9553
+    "value": 9871
   },
   {
     "metric": "posts",
-    "value": 3013
+    "value": 2998
   },
   {
     "metric": "comments",
-    "value": 6540
+    "value": 6873
   },
   {
     "metric": "selected_records",
-    "value": 128
+    "value": 118
   },
   {
     "metric": "unique_authors",
-    "value": 1844
+    "value": 1885
   },
   {
     "metric": "total_likes",
-    "value": 10041
+    "value": 10348
   },
   {
     "metric": "total_recasts",
-    "value": 1297
+    "value": 1474
   },
   {
     "metric": "total_replies",
-    "value": 3329
+    "value": 3476
   },
   {
     "metric": "top_cast_score",
-    "value": "10.00"
+    "value": "9.56"
   },
   {
     "metric": "top_cast_author",
-    "value": "@miladtik2"
+    "value": "@road"
   },
   {
     "metric": "top_cast_url",
-    "value": "https://farcaster.xyz/miladtik2/0x62e58be7"
+    "value": "https://farcaster.xyz/road/0xe4ae5aec"
   }
 ]
