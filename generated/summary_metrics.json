@@ -9,7 +9,7 @@
   },
   {
     "metric": "generated_at_utc",
-    "value": "2026-09-09 16:40:58"
+    "value": "2026-09-09 20:58:03"
   },
   {
     "metric": "source",
@@ -29,54 +29,54 @@
   },
   {
     "metric": "window_start_utc",
-    "value": "2026-09-08 16:40:28"
+    "value": "2026-09-08 20:57:48"
   },
   {
     "metric": "window_end_utc",
-    "value": "2026-09-09 16:40:21"
+    "value": "2026-09-09 20:57:18"
   },
   {
     "metric": "total_records",
-    "value": 9913
+    "value": 9846
   },
   {
     "metric": "posts",
-    "value": 2917
+    "value": 2936
   },
   {
     "metric": "comments",
-    "value": 6996
+    "value": 6910
   },
   {
     "metric": "selected_records",
-    "value": 121
+    "value": 114
   },
   {
     "metric": "unique_authors",
-    "value": 1892
+    "value": 1853
   },
   {
     "metric": "total_likes",
-    "value": 10139
+    "value": 9799
   },
   {
     "metric": "total_recasts",
-    "value": 1396
+    "value": 1335
   },
   {
     "metric": "total_replies",
-    "value": 3597
+    "value": 3591
   },
   {
     "metric": "top_cast_score",
-    "value": "8.71"
+    "value": "8.18"
   },
   {
     "metric": "top_cast_author",
-    "value": "@alexanderchopan"
+    "value": "@4050"
   },
   {
     "metric": "top_cast_url",
-    "value": "https://farcaster.xyz/alexanderchopan/0xd3c2b193"
+    "value": "https://farcaster.xyz/4050/0xb2fd44d8"
   }
 ]
