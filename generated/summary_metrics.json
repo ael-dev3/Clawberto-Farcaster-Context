@@ -9,7 +9,7 @@
   },
   {
     "metric": "generated_at_utc",
-    "value": "2026-09-10 20:54:30"
+    "value": "2026-09-11 04:44:15"
   },
   {
     "metric": "source",
@@ -29,54 +29,54 @@
   },
   {
     "metric": "window_start_utc",
-    "value": "2026-09-09 20:53:57"
+    "value": "2026-09-10 04:44:03"
   },
   {
     "metric": "window_end_utc",
-    "value": "2026-09-10 20:53:15"
+    "value": "2026-09-11 04:43:53"
   },
   {
     "metric": "total_records",
-    "value": 9260
+    "value": 9457
   },
   {
     "metric": "posts",
-    "value": 3000
+    "value": 2864
   },
   {
     "metric": "comments",
-    "value": 6260
+    "value": 6593
   },
   {
     "metric": "selected_records",
-    "value": 104
+    "value": 124
   },
   {
     "metric": "unique_authors",
-    "value": 1880
+    "value": 1852
   },
   {
     "metric": "total_likes",
-    "value": 8795
+    "value": 8980
   },
   {
     "metric": "total_recasts",
-    "value": 1122
+    "value": 1093
   },
   {
     "metric": "total_replies",
-    "value": 3069
+    "value": 3225
   },
   {
     "metric": "top_cast_score",
-    "value": "10.00"
+    "value": "9.61"
   },
   {
     "metric": "top_cast_author",
-    "value": "@kenny"
+    "value": "@nounishprof"
   },
   {
     "metric": "top_cast_url",
-    "value": "https://farcaster.xyz/kenny/0x79157226"
+    "value": "https://farcaster.xyz/nounishprof/0x053b44c1"
   }
 ]
