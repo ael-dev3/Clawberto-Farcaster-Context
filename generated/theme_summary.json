@@ -1,21 +1,21 @@
 [
   {
     "theme": "Base Culture",
-    "casts": 40,
-    "posts": 17,
-    "comments": 23,
-    "likes": 92,
+    "casts": 48,
+    "posts": 19,
+    "comments": 29,
+    "likes": 187,
     "avg_score": "3.06",
-    "top_author": "@cameron",
-    "top_cast_url": "https://farcaster.xyz/cameron/0xa11f81f2"
+    "top_author": "@zaal",
+    "top_cast_url": "https://farcaster.xyz/zaal/0x4c13fdc8"
   },
   {
     "theme": "Apps/Games",
-    "casts": 22,
-    "posts": 6,
-    "comments": 16,
-    "likes": 108,
-    "avg_score": "4.10",
+    "casts": 18,
+    "posts": 5,
+    "comments": 13,
+    "likes": 87,
+    "avg_score": "4.02",
     "top_author": "@5050",
     "top_cast_url": "https://farcaster.xyz/5050/0x8569a487"
   },
@@ -28,15 +28,5 @@
     "avg_score": "3.02",
     "top_author": "@henrycavill",
     "top_cast_url": "https://farcaster.xyz/henrycavill/0x7d73bd2b"
-  },
-  {
-    "theme": "Token/Promo",
-    "casts": 1,
-    "posts": 1,
-    "comments": 0,
-    "likes": 5,
-    "avg_score": "5.10",
-    "top_author": "@warpcast-com",
-    "top_cast_url": "https://farcaster.xyz/warpcast-com/0xcc901ae3"
   }
 ]
