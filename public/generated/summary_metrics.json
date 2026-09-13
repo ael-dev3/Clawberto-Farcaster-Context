@@ -9,7 +9,7 @@
   },
   {
     "metric": "generated_at_utc",
-    "value": "2026-09-13 04:52:09"
+    "value": "2026-09-13 11:56:16"
   },
   {
     "metric": "source",
@@ -29,54 +29,54 @@
   },
   {
     "metric": "window_start_utc",
-    "value": "2026-09-12 04:52:06"
+    "value": "2026-09-12 11:55:44"
   },
   {
     "metric": "window_end_utc",
-    "value": "2026-09-13 04:50:57"
+    "value": "2026-09-13 11:55:24"
   },
   {
     "metric": "total_records",
-    "value": 8534
+    "value": 8460
   },
   {
     "metric": "posts",
-    "value": 2617
+    "value": 2535
   },
   {
     "metric": "comments",
-    "value": 5917
+    "value": 5925
   },
   {
     "metric": "selected_records",
-    "value": 80
+    "value": 77
   },
   {
     "metric": "unique_authors",
-    "value": 1699
+    "value": 1654
   },
   {
     "metric": "total_likes",
-    "value": 7905
+    "value": 8180
   },
   {
     "metric": "total_recasts",
-    "value": 1137
+    "value": 1082
   },
   {
     "metric": "total_replies",
-    "value": 3057
+    "value": 2898
   },
   {
     "metric": "top_cast_score",
-    "value": "8.54"
+    "value": "9.50"
   },
   {
     "metric": "top_cast_author",
-    "value": "@akela113"
+    "value": "@arjantupan"
   },
   {
     "metric": "top_cast_url",
-    "value": "https://farcaster.xyz/akela113/0xecfea256"
+    "value": "https://farcaster.xyz/arjantupan/0x3bd9ba8e"
   }
 ]

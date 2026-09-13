@@ -15,24 +15,24 @@ Static, cached Farcaster context from direct Hypersnap/Snapchain node scraping. 
 | Source | hypersnap |
 | Hub URL | http://54.157.62.17:3381 |
 | Readable shards | 1,2 |
-| Window UTC | 2026-09-12 04:52:06 → 2026-09-13 04:50:57 |
-| Total casts | 8534 |
-| Posts / comments | 2617 / 5917 |
-| Unique authors | 1699 |
-| Total likes / recasts / replies | 7905 / 1137 / 3057 |
-| Top cast author | @akela113 |
-| Top cast | https://farcaster.xyz/akela113/0xecfea256 |
+| Window UTC | 2026-09-12 11:55:44 → 2026-09-13 11:55:24 |
+| Total casts | 8460 |
+| Posts / comments | 2535 / 5925 |
+| Unique authors | 1654 |
+| Total likes / recasts / replies | 8180 / 1082 / 2898 |
+| Top cast author | @arjantupan |
+| Top cast | https://farcaster.xyz/arjantupan/0x3bd9ba8e |
 
 ## Published datasets
 
 | Table | CSV path | Rows | Downloads |
 | --- | --- | --- | --- |
 | summary_metrics | `generated/summary_metrics.csv` | 20 | [CSV](generated/summary_metrics.csv) / [JSON](generated/summary_metrics.json) |
-| theme_summary | `generated/theme_summary.csv` | 5 | [CSV](generated/theme_summary.csv) / [JSON](generated/theme_summary.json) |
-| authors | `generated/authors.csv` | 69 | [CSV](generated/authors.csv) / [JSON](generated/authors.json) |
-| top_casts | `generated/top_casts.csv` | 80 | [CSV](generated/top_casts.csv) / [JSON](generated/top_casts.json) |
-| posts | `generated/posts.csv` | 24 | [CSV](generated/posts.csv) / [JSON](generated/posts.json) |
-| comments | `generated/comments.csv` | 56 | [CSV](generated/comments.csv) / [JSON](generated/comments.json) |
+| theme_summary | `generated/theme_summary.csv` | 4 | [CSV](generated/theme_summary.csv) / [JSON](generated/theme_summary.json) |
+| authors | `generated/authors.csv` | 70 | [CSV](generated/authors.csv) / [JSON](generated/authors.json) |
+| top_casts | `generated/top_casts.csv` | 77 | [CSV](generated/top_casts.csv) / [JSON](generated/top_casts.json) |
+| posts | `generated/posts.csv` | 26 | [CSV](generated/posts.csv) / [JSON](generated/posts.json) |
+| comments | `generated/comments.csv` | 51 | [CSV](generated/comments.csv) / [JSON](generated/comments.json) |
 | agent_take | `generated/agent_take.csv` | 4 | [CSV](generated/agent_take.csv) / [JSON](generated/agent_take.json) |
 
 ## Data pipeline
