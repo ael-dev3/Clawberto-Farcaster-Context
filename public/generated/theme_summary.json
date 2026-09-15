@@ -1,52 +1,42 @@
 [
   {
     "theme": "Base Culture",
-    "casts": 55,
-    "posts": 20,
-    "comments": 35,
-    "likes": 262,
-    "avg_score": "3.60",
+    "casts": 60,
+    "posts": 23,
+    "comments": 37,
+    "likes": 339,
+    "avg_score": "3.70",
     "top_author": "@4050",
     "top_cast_url": "https://farcaster.xyz/4050/0xea80791a"
   },
   {
     "theme": "Security/Ops",
-    "casts": 29,
-    "posts": 6,
-    "comments": 23,
-    "likes": 102,
-    "avg_score": "3.52",
+    "casts": 31,
+    "posts": 4,
+    "comments": 27,
+    "likes": 118,
+    "avg_score": "3.59",
     "top_author": "@luciano",
     "top_cast_url": "https://farcaster.xyz/luciano/0xfc168146"
   },
   {
     "theme": "Apps/Games",
     "casts": 22,
-    "posts": 4,
-    "comments": 18,
-    "likes": 57,
-    "avg_score": "3.52",
+    "posts": 5,
+    "comments": 17,
+    "likes": 67,
+    "avg_score": "3.77",
     "top_author": "@ds8",
     "top_cast_url": "https://farcaster.xyz/ds8/0x057ead42"
   },
   {
     "theme": "Token/Promo",
-    "casts": 5,
-    "posts": 3,
-    "comments": 2,
-    "likes": 49,
-    "avg_score": "4.88",
-    "top_author": "@road",
-    "top_cast_url": "https://farcaster.xyz/road/0x2ebea604"
-  },
-  {
-    "theme": "Protocol/Fork",
-    "casts": 1,
-    "posts": 1,
+    "casts": 4,
+    "posts": 4,
     "comments": 0,
-    "likes": 105,
-    "avg_score": "10.00",
-    "top_author": "@cassie",
-    "top_cast_url": "https://farcaster.xyz/cassie/0x134ab2db"
+    "likes": 14,
+    "avg_score": "3.79",
+    "top_author": "@jubjub",
+    "top_cast_url": "https://farcaster.xyz/jubjub/0xa8fe388e"
   }
 ]
