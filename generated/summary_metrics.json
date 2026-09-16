@@ -9,7 +9,7 @@
   },
   {
     "metric": "generated_at_utc",
-    "value": "2026-09-16 11:38:42"
+    "value": "2026-09-16 17:00:43"
   },
   {
     "metric": "source",
@@ -29,54 +29,54 @@
   },
   {
     "metric": "window_start_utc",
-    "value": "2026-09-15 11:38:28"
+    "value": "2026-09-15 17:00:13"
   },
   {
     "metric": "window_end_utc",
-    "value": "2026-09-16 11:38:18"
+    "value": "2026-09-16 17:00:03"
   },
   {
     "metric": "total_records",
-    "value": 9053
+    "value": 8930
   },
   {
     "metric": "posts",
-    "value": 2788
+    "value": 2734
   },
   {
     "metric": "comments",
-    "value": 6265
+    "value": 6196
   },
   {
     "metric": "selected_records",
-    "value": 87
+    "value": 83
   },
   {
     "metric": "unique_authors",
-    "value": 1952
+    "value": 1914
   },
   {
     "metric": "total_likes",
-    "value": 9102
+    "value": 8425
   },
   {
     "metric": "total_recasts",
-    "value": 1436
+    "value": 1074
   },
   {
     "metric": "total_replies",
-    "value": 3152
+    "value": 2806
   },
   {
     "metric": "top_cast_score",
-    "value": "10.00"
+    "value": "9.91"
   },
   {
     "metric": "top_cast_author",
-    "value": "@luciano"
+    "value": "@arjantupan"
   },
   {
     "metric": "top_cast_url",
-    "value": "https://farcaster.xyz/luciano/0x002780cc"
+    "value": "https://farcaster.xyz/arjantupan/0x7a0ab9e9"
   }
 ]
