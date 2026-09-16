@@ -1,43 +1,43 @@
 [
   {
     "theme": "Base Culture",
-    "casts": 54,
+    "casts": 53,
     "posts": 18,
-    "comments": 36,
-    "likes": 272,
-    "avg_score": "3.55",
+    "comments": 35,
+    "likes": 245,
+    "avg_score": "3.42",
     "top_author": "@luciano",
     "top_cast_url": "https://farcaster.xyz/luciano/0x002780cc"
   },
   {
     "theme": "Apps/Games",
     "casts": 20,
-    "posts": 5,
-    "comments": 15,
-    "likes": 70,
-    "avg_score": "4.01",
+    "posts": 3,
+    "comments": 17,
+    "likes": 60,
+    "avg_score": "3.82",
     "top_author": "@ds8",
-    "top_cast_url": "https://farcaster.xyz/ds8/0x057ead42"
+    "top_cast_url": "https://farcaster.xyz/ds8/0xbbd0b74c"
   },
   {
     "theme": "Security/Ops",
-    "casts": 12,
-    "posts": 2,
-    "comments": 10,
-    "likes": 77,
-    "avg_score": "4.01",
-    "top_author": "@luciano",
-    "top_cast_url": "https://farcaster.xyz/luciano/0xfc168146"
+    "casts": 8,
+    "posts": 1,
+    "comments": 7,
+    "likes": 35,
+    "avg_score": "3.79",
+    "top_author": "@aviationdoctor",
+    "top_cast_url": "https://farcaster.xyz/aviationdoctor/0x5620dd7b"
   },
   {
     "theme": "Token/Promo",
-    "casts": 3,
-    "posts": 3,
-    "comments": 0,
-    "likes": 2,
-    "avg_score": "2.06",
-    "top_author": "@dabos",
-    "top_cast_url": "https://farcaster.xyz/dabos/0x1ee3c808"
+    "casts": 5,
+    "posts": 4,
+    "comments": 1,
+    "likes": 5,
+    "avg_score": "2.59",
+    "top_author": "@jubjub",
+    "top_cast_url": "https://farcaster.xyz/jubjub/0x16211c01"
   },
   {
     "theme": "Protocol/Fork",
