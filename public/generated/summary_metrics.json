@@ -9,7 +9,7 @@
   },
   {
     "metric": "generated_at_utc",
-    "value": "2026-09-17 04:55:52"
+    "value": "2026-09-17 11:45:03"
   },
   {
     "metric": "source",
@@ -29,43 +29,43 @@
   },
   {
     "metric": "window_start_utc",
-    "value": "2026-09-16 04:55:46"
+    "value": "2026-09-16 11:44:55"
   },
   {
     "metric": "window_end_utc",
-    "value": "2026-09-17 04:55:23"
+    "value": "2026-09-17 11:44:52"
   },
   {
     "metric": "total_records",
-    "value": 8715
+    "value": 8518
   },
   {
     "metric": "posts",
-    "value": 2734
+    "value": 2660
   },
   {
     "metric": "comments",
-    "value": 5981
+    "value": 5858
   },
   {
     "metric": "selected_records",
-    "value": 92
+    "value": 91
   },
   {
     "metric": "unique_authors",
-    "value": 1747
+    "value": 1763
   },
   {
     "metric": "total_likes",
-    "value": 8290
+    "value": 8219
   },
   {
     "metric": "total_recasts",
-    "value": 966
+    "value": 886
   },
   {
     "metric": "total_replies",
-    "value": 2884
+    "value": 2763
   },
   {
     "metric": "top_cast_score",
@@ -73,10 +73,10 @@
   },
   {
     "metric": "top_cast_author",
-    "value": "@arjantupan"
+    "value": "@adrienne"
   },
   {
     "metric": "top_cast_url",
-    "value": "https://farcaster.xyz/arjantupan/0x7a0ab9e9"
+    "value": "https://farcaster.xyz/adrienne/0x3fb86d34"
   }
 ]
