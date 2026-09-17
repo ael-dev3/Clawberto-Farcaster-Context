@@ -4,49 +4,39 @@
     "casts": 51,
     "posts": 22,
     "comments": 29,
-    "likes": 279,
-    "avg_score": "3.41",
+    "likes": 296,
+    "avg_score": "3.37",
     "top_author": "@cassie",
     "top_cast_url": "https://farcaster.xyz/cassie/0x1c415c12"
   },
   {
     "theme": "Apps/Games",
-    "casts": 28,
+    "casts": 27,
     "posts": 3,
-    "comments": 25,
-    "likes": 60,
-    "avg_score": "3.17",
+    "comments": 24,
+    "likes": 64,
+    "avg_score": "3.34",
     "top_author": "@ds8",
     "top_cast_url": "https://farcaster.xyz/ds8/0xbe389eb0"
   },
   {
     "theme": "Security/Ops",
-    "casts": 8,
+    "casts": 11,
     "posts": 4,
-    "comments": 4,
+    "comments": 7,
     "likes": 27,
-    "avg_score": "3.30",
-    "top_author": "@maretus",
-    "top_cast_url": "https://farcaster.xyz/maretus/0x4d0c695b"
+    "avg_score": "3.05",
+    "top_author": "@quotient",
+    "top_cast_url": "https://farcaster.xyz/quotient/0x31595051"
   },
   {
     "theme": "Token/Promo",
-    "casts": 3,
+    "casts": 2,
     "posts": 0,
-    "comments": 3,
-    "likes": 3,
-    "avg_score": "2.37",
-    "top_author": "@rachael1760",
-    "top_cast_url": "https://farcaster.xyz/rachael1760/0x176d8cde"
-  },
-  {
-    "theme": "Protocol/Fork",
-    "casts": 1,
-    "posts": 1,
-    "comments": 0,
-    "likes": 2,
-    "avg_score": "3.51",
-    "top_author": "@mfa",
-    "top_cast_url": "https://farcaster.xyz/mfa/0x1fac3faa"
+    "comments": 2,
+    "likes": 5,
+    "avg_score": "3.84",
+    "top_author": "@alitiknazoglu",
+    "top_cast_url": "https://farcaster.xyz/alitiknazoglu/0xffa4f196"
   }
 ]
