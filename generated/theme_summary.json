@@ -1,52 +1,52 @@
 [
   {
     "theme": "Base Culture",
-    "casts": 52,
-    "posts": 28,
+    "casts": 59,
+    "posts": 35,
     "comments": 24,
-    "likes": 144,
-    "avg_score": "3.05",
+    "likes": 220,
+    "avg_score": "3.31",
     "top_author": "@captian-canada",
     "top_cast_url": "https://farcaster.xyz/captian-canada/0x642f1772"
   },
   {
     "theme": "Apps/Games",
     "casts": 22,
-    "posts": 9,
-    "comments": 13,
-    "likes": 50,
-    "avg_score": "3.23",
+    "posts": 5,
+    "comments": 17,
+    "likes": 68,
+    "avg_score": "3.91",
     "top_author": "@ds8",
-    "top_cast_url": "https://farcaster.xyz/ds8/0x9ee4ebfd"
+    "top_cast_url": "https://farcaster.xyz/ds8/0x805af1cf"
   },
   {
     "theme": "Security/Ops",
     "casts": 9,
-    "posts": 1,
-    "comments": 8,
-    "likes": 14,
-    "avg_score": "2.69",
-    "top_author": "@chukwukaosakwe",
-    "top_cast_url": "https://farcaster.xyz/chukwukaosakwe/0xc851694f"
-  },
-  {
-    "theme": "Token/Promo",
-    "casts": 3,
-    "posts": 2,
-    "comments": 1,
-    "likes": 5,
-    "avg_score": "3.20",
-    "top_author": "@dasjoy135790",
-    "top_cast_url": "https://farcaster.xyz/dasjoy135790/0xa7129081"
+    "posts": 3,
+    "comments": 6,
+    "likes": 59,
+    "avg_score": "4.37",
+    "top_author": "@statuette",
+    "top_cast_url": "https://farcaster.xyz/statuette/0xa273eda4"
   },
   {
     "theme": "Protocol/Fork",
-    "casts": 1,
-    "posts": 0,
-    "comments": 1,
-    "likes": 0,
-    "avg_score": "1.00",
-    "top_author": "@mxjxn",
-    "top_cast_url": "https://farcaster.xyz/mxjxn/0x84f62b6f"
+    "casts": 4,
+    "posts": 1,
+    "comments": 3,
+    "likes": 25,
+    "avg_score": "3.24",
+    "top_author": "@vbuterin",
+    "top_cast_url": "https://farcaster.xyz/vbuterin/0x17ca809b"
+  },
+  {
+    "theme": "Token/Promo",
+    "casts": 4,
+    "posts": 1,
+    "comments": 3,
+    "likes": 13,
+    "avg_score": "4.20",
+    "top_author": "@jachian",
+    "top_cast_url": "https://farcaster.xyz/jachian/0x3773347a"
   }
 ]
