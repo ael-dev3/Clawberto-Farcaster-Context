@@ -9,7 +9,7 @@
   },
   {
     "metric": "generated_at_utc",
-    "value": "2026-09-21 04:59:05"
+    "value": "2026-09-21 12:52:46"
   },
   {
     "metric": "source",
@@ -29,54 +29,54 @@
   },
   {
     "metric": "window_start_utc",
-    "value": "2026-09-20 04:59:08"
+    "value": "2026-09-20 12:52:24"
   },
   {
     "metric": "window_end_utc",
-    "value": "2026-09-21 04:58:47"
+    "value": "2026-09-21 12:52:12"
   },
   {
     "metric": "total_records",
-    "value": 8472
+    "value": 8764
   },
   {
     "metric": "posts",
-    "value": 2806
+    "value": 2864
   },
   {
     "metric": "comments",
-    "value": 5666
+    "value": 5900
   },
   {
     "metric": "selected_records",
-    "value": 80
+    "value": 87
   },
   {
     "metric": "unique_authors",
-    "value": 1780
+    "value": 1787
   },
   {
     "metric": "total_likes",
-    "value": 7519
+    "value": 7594
   },
   {
     "metric": "total_recasts",
-    "value": 903
+    "value": 1073
   },
   {
     "metric": "total_replies",
-    "value": 2818
+    "value": 3014
   },
   {
     "metric": "top_cast_score",
-    "value": "4.17"
+    "value": "8.27"
   },
   {
     "metric": "top_cast_author",
-    "value": "@garywilbanks2"
+    "value": "@captian-canada"
   },
   {
     "metric": "top_cast_url",
-    "value": "https://farcaster.xyz/garywilbanks2/0x54b4e3db"
+    "value": "https://farcaster.xyz/captian-canada/0x642f1772"
   }
 ]
