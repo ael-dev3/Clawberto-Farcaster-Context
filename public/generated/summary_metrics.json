@@ -9,7 +9,7 @@
   },
   {
     "metric": "generated_at_utc",
-    "value": "2026-09-20 20:51:07"
+    "value": "2026-09-21 04:59:05"
   },
   {
     "metric": "source",
@@ -29,54 +29,54 @@
   },
   {
     "metric": "window_start_utc",
-    "value": "2026-09-19 20:51:03"
+    "value": "2026-09-20 04:59:08"
   },
   {
     "metric": "window_end_utc",
-    "value": "2026-09-20 20:50:49"
+    "value": "2026-09-21 04:58:47"
   },
   {
     "metric": "total_records",
-    "value": 8322
+    "value": 8472
   },
   {
     "metric": "posts",
-    "value": 2823
+    "value": 2806
   },
   {
     "metric": "comments",
-    "value": 5499
+    "value": 5666
   },
   {
     "metric": "selected_records",
-    "value": 78
+    "value": 80
   },
   {
     "metric": "unique_authors",
-    "value": 1762
+    "value": 1780
   },
   {
     "metric": "total_likes",
-    "value": 7636
+    "value": 7519
   },
   {
     "metric": "total_recasts",
-    "value": 863
+    "value": 903
   },
   {
     "metric": "total_replies",
-    "value": 2698
+    "value": 2818
   },
   {
     "metric": "top_cast_score",
-    "value": "6.69"
+    "value": "4.17"
   },
   {
     "metric": "top_cast_author",
-    "value": "@peykan57"
+    "value": "@garywilbanks2"
   },
   {
     "metric": "top_cast_url",
-    "value": "https://farcaster.xyz/peykan57/0x2d8cebf7"
+    "value": "https://farcaster.xyz/garywilbanks2/0x54b4e3db"
   }
 ]
