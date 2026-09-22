@@ -15,13 +15,13 @@ Static, cached Farcaster context from direct Hypersnap/Snapchain node scraping. 
 | Source | hypersnap |
 | Hub URL | http://54.157.62.17:3381 |
 | Readable shards | 1,2 |
-| Window UTC | 2026-09-21 16:59:05 → 2026-09-22 16:58:37 |
-| Total casts | 9571 |
-| Posts / comments | 3203 / 6368 |
-| Unique authors | 1963 |
-| Total likes / recasts / replies | 9279 / 1011 / 3014 |
-| Top cast author | @vbuterin |
-| Top cast | https://farcaster.xyz/vbuterin/0x17ca809b |
+| Window UTC | 2026-09-21 21:21:39 → 2026-09-22 21:21:16 |
+| Total casts | 9560 |
+| Posts / comments | 3239 / 6321 |
+| Unique authors | 1961 |
+| Total likes / recasts / replies | 9065 / 1067 / 3014 |
+| Top cast author | @dexwhale |
+| Top cast | https://farcaster.xyz/dexwhale/0x94c976eb |
 
 ## Published datasets
 
@@ -29,10 +29,10 @@ Static, cached Farcaster context from direct Hypersnap/Snapchain node scraping. 
 | --- | --- | --- | --- |
 | summary_metrics | `generated/summary_metrics.csv` | 20 | [CSV](generated/summary_metrics.csv) / [JSON](generated/summary_metrics.json) |
 | theme_summary | `generated/theme_summary.csv` | 5 | [CSV](generated/theme_summary.csv) / [JSON](generated/theme_summary.json) |
-| authors | `generated/authors.csv` | 82 | [CSV](generated/authors.csv) / [JSON](generated/authors.json) |
-| top_casts | `generated/top_casts.csv` | 100 | [CSV](generated/top_casts.csv) / [JSON](generated/top_casts.json) |
-| posts | `generated/posts.csv` | 42 | [CSV](generated/posts.csv) / [JSON](generated/posts.json) |
-| comments | `generated/comments.csv` | 58 | [CSV](generated/comments.csv) / [JSON](generated/comments.json) |
+| authors | `generated/authors.csv` | 80 | [CSV](generated/authors.csv) / [JSON](generated/authors.json) |
+| top_casts | `generated/top_casts.csv` | 105 | [CSV](generated/top_casts.csv) / [JSON](generated/top_casts.json) |
+| posts | `generated/posts.csv` | 43 | [CSV](generated/posts.csv) / [JSON](generated/posts.json) |
+| comments | `generated/comments.csv` | 62 | [CSV](generated/comments.csv) / [JSON](generated/comments.json) |
 | agent_take | `generated/agent_take.csv` | 4 | [CSV](generated/agent_take.csv) / [JSON](generated/agent_take.json) |
 
 ## Data pipeline
