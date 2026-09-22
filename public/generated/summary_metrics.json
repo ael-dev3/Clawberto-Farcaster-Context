@@ -9,7 +9,7 @@
   },
   {
     "metric": "generated_at_utc",
-    "value": "2026-09-21 22:00:12"
+    "value": "2026-09-22 05:00:36"
   },
   {
     "metric": "source",
@@ -29,23 +29,23 @@
   },
   {
     "metric": "window_start_utc",
-    "value": "2026-09-20 22:00:09"
+    "value": "2026-09-21 05:00:36"
   },
   {
     "metric": "window_end_utc",
-    "value": "2026-09-21 21:59:49"
+    "value": "2026-09-22 04:59:59"
   },
   {
     "metric": "total_records",
-    "value": 9049
+    "value": 9629
   },
   {
     "metric": "posts",
-    "value": 2999
+    "value": 3189
   },
   {
     "metric": "comments",
-    "value": 6050
+    "value": 6440
   },
   {
     "metric": "selected_records",
@@ -53,30 +53,30 @@
   },
   {
     "metric": "unique_authors",
-    "value": 1879
+    "value": 1990
   },
   {
     "metric": "total_likes",
-    "value": 8647
+    "value": 9302
   },
   {
     "metric": "total_recasts",
-    "value": 1081
+    "value": 1146
   },
   {
     "metric": "total_replies",
-    "value": 3195
+    "value": 3215
   },
   {
     "metric": "top_cast_score",
-    "value": "8.93"
+    "value": "10.00"
   },
   {
     "metric": "top_cast_author",
-    "value": "@captian-canada"
+    "value": "@vbuterin"
   },
   {
     "metric": "top_cast_url",
-    "value": "https://farcaster.xyz/captian-canada/0x642f1772"
+    "value": "https://farcaster.xyz/vbuterin/0x17ca809b"
   }
 ]
