@@ -9,7 +9,7 @@
   },
   {
     "metric": "generated_at_utc",
-    "value": "2026-09-24 21:33:06"
+    "value": "2026-09-25 05:01:06"
   },
   {
     "metric": "source",
@@ -29,54 +29,54 @@
   },
   {
     "metric": "window_start_utc",
-    "value": "2026-09-23 21:32:42"
+    "value": "2026-09-24 05:00:38"
   },
   {
     "metric": "window_end_utc",
-    "value": "2026-09-24 21:32:29"
+    "value": "2026-09-25 05:00:01"
   },
   {
     "metric": "total_records",
-    "value": 8511
+    "value": 8534
   },
   {
     "metric": "posts",
-    "value": 2560
+    "value": 2458
   },
   {
     "metric": "comments",
-    "value": 5951
+    "value": 6076
   },
   {
     "metric": "selected_records",
-    "value": 92
+    "value": 99
   },
   {
     "metric": "unique_authors",
-    "value": 1892
+    "value": 1785
   },
   {
     "metric": "total_likes",
-    "value": 8146
+    "value": 8490
   },
   {
     "metric": "total_recasts",
-    "value": 968
+    "value": 1057
   },
   {
     "metric": "total_replies",
-    "value": 2741
+    "value": 2820
   },
   {
     "metric": "top_cast_score",
-    "value": "9.00"
+    "value": "8.27"
   },
   {
     "metric": "top_cast_author",
-    "value": "@six"
+    "value": "@kenny"
   },
   {
     "metric": "top_cast_url",
-    "value": "https://farcaster.xyz/six/0x35743bf7"
+    "value": "https://farcaster.xyz/kenny/0x3bf2e58f"
   }
 ]
