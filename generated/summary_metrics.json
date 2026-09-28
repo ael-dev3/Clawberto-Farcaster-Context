@@ -9,7 +9,7 @@
   },
   {
     "metric": "generated_at_utc",
-    "value": "2026-09-27 21:23:24"
+    "value": "2026-09-28 05:27:37"
   },
   {
     "metric": "source",
@@ -29,54 +29,54 @@
   },
   {
     "metric": "window_start_utc",
-    "value": "2026-09-26 21:23:10"
+    "value": "2026-09-27 05:27:23"
   },
   {
     "metric": "window_end_utc",
-    "value": "2026-09-27 21:22:27"
+    "value": "2026-09-28 05:26:56"
   },
   {
     "metric": "total_records",
-    "value": 8145
+    "value": 8113
   },
   {
     "metric": "posts",
-    "value": 2131
+    "value": 2122
   },
   {
     "metric": "comments",
-    "value": 6014
+    "value": 5991
   },
   {
     "metric": "selected_records",
-    "value": 77
+    "value": 81
   },
   {
     "metric": "unique_authors",
-    "value": 1804
+    "value": 1857
   },
   {
     "metric": "total_likes",
-    "value": 8248
+    "value": 7785
   },
   {
     "metric": "total_recasts",
-    "value": 1060
+    "value": 1016
   },
   {
     "metric": "total_replies",
-    "value": 2943
+    "value": 2931
   },
   {
     "metric": "top_cast_score",
-    "value": "8.71"
+    "value": "6.49"
   },
   {
     "metric": "top_cast_author",
-    "value": "@luciano"
+    "value": "@plabon"
   },
   {
     "metric": "top_cast_url",
-    "value": "https://farcaster.xyz/luciano/0x95443627"
+    "value": "https://farcaster.xyz/plabon/0xaee73183"
   }
 ]
