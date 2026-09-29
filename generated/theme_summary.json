@@ -1,41 +1,41 @@
 [
   {
     "theme": "Base Culture",
-    "casts": 63,
-    "posts": 29,
-    "comments": 34,
-    "likes": 196,
-    "avg_score": "3.16",
-    "top_author": "@luciano",
-    "top_cast_url": "https://farcaster.xyz/luciano/0x9f81eb96"
+    "casts": 58,
+    "posts": 28,
+    "comments": 30,
+    "likes": 110,
+    "avg_score": "2.94",
+    "top_author": "@bayardo",
+    "top_cast_url": "https://farcaster.xyz/bayardo/0xfc8aca20"
   },
   {
     "theme": "Apps/Games",
     "casts": 19,
-    "posts": 5,
-    "comments": 14,
-    "likes": 44,
-    "avg_score": "3.53",
+    "posts": 2,
+    "comments": 17,
+    "likes": 55,
+    "avg_score": "3.80",
     "top_author": "@ds8",
     "top_cast_url": "https://farcaster.xyz/ds8/0xfdcc29e8"
   },
   {
     "theme": "Security/Ops",
-    "casts": 14,
-    "posts": 5,
-    "comments": 9,
-    "likes": 22,
-    "avg_score": "2.80",
-    "top_author": "@midao",
-    "top_cast_url": "https://farcaster.xyz/midao/0x23916deb"
+    "casts": 11,
+    "posts": 4,
+    "comments": 7,
+    "likes": 20,
+    "avg_score": "3.09",
+    "top_author": "@icetoad",
+    "top_cast_url": "https://farcaster.xyz/icetoad/0xbebf1f62"
   },
   {
     "theme": "Token/Promo",
-    "casts": 4,
-    "posts": 2,
-    "comments": 2,
-    "likes": 7,
-    "avg_score": "3.11",
+    "casts": 2,
+    "posts": 1,
+    "comments": 1,
+    "likes": 9,
+    "avg_score": "4.31",
     "top_author": "@mdnbin",
     "top_cast_url": "https://farcaster.xyz/mdnbin/0x408f7cdb"
   }
