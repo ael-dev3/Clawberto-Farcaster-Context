@@ -15,11 +15,11 @@ Static, cached Farcaster context from direct Hypersnap/Snapchain node scraping. 
 | Source | hypersnap |
 | Hub URL | http://54.157.62.17:3381 |
 | Readable shards | 1,2 |
-| Window UTC | 2026-09-28 22:17:56 → 2026-09-29 22:17:48 |
-| Total casts | 8545 |
-| Posts / comments | 2382 / 6163 |
-| Unique authors | 1818 |
-| Total likes / recasts / replies | 8305 / 1258 / 2944 |
+| Window UTC | 2026-09-29 05:36:06 → 2026-09-30 05:35:36 |
+| Total casts | 8083 |
+| Posts / comments | 2291 / 5792 |
+| Unique authors | 1813 |
+| Total likes / recasts / replies | 7798 / 1270 / 2899 |
 | Top cast author | @smshakil |
 | Top cast | https://farcaster.xyz/smshakil/0x5b621e24 |
 
@@ -29,10 +29,10 @@ Static, cached Farcaster context from direct Hypersnap/Snapchain node scraping. 
 | --- | --- | --- | --- |
 | summary_metrics | `generated/summary_metrics.csv` | 20 | [CSV](generated/summary_metrics.csv) / [JSON](generated/summary_metrics.json) |
 | theme_summary | `generated/theme_summary.csv` | 4 | [CSV](generated/theme_summary.csv) / [JSON](generated/theme_summary.json) |
-| authors | `generated/authors.csv` | 74 | [CSV](generated/authors.csv) / [JSON](generated/authors.json) |
-| top_casts | `generated/top_casts.csv` | 86 | [CSV](generated/top_casts.csv) / [JSON](generated/top_casts.json) |
+| authors | `generated/authors.csv` | 71 | [CSV](generated/authors.csv) / [JSON](generated/authors.json) |
+| top_casts | `generated/top_casts.csv` | 82 | [CSV](generated/top_casts.csv) / [JSON](generated/top_casts.json) |
 | posts | `generated/posts.csv` | 27 | [CSV](generated/posts.csv) / [JSON](generated/posts.json) |
-| comments | `generated/comments.csv` | 59 | [CSV](generated/comments.csv) / [JSON](generated/comments.json) |
+| comments | `generated/comments.csv` | 55 | [CSV](generated/comments.csv) / [JSON](generated/comments.json) |
 | agent_take | `generated/agent_take.csv` | 4 | [CSV](generated/agent_take.csv) / [JSON](generated/agent_take.json) |
 
 ## Data pipeline
