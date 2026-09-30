@@ -9,7 +9,7 @@
   },
   {
     "metric": "generated_at_utc",
-    "value": "2026-09-30 12:38:51"
+    "value": "2026-09-30 22:18:44"
   },
   {
     "metric": "source",
@@ -29,54 +29,54 @@
   },
   {
     "metric": "window_start_utc",
-    "value": "2026-09-29 12:38:31"
+    "value": "2026-09-29 22:18:40"
   },
   {
     "metric": "window_end_utc",
-    "value": "2026-09-30 12:38:07"
+    "value": "2026-09-30 22:18:05"
   },
   {
     "metric": "total_records",
-    "value": 8381
+    "value": 8366
   },
   {
     "metric": "posts",
-    "value": 2234
+    "value": 2190
   },
   {
     "metric": "comments",
-    "value": 6147
+    "value": 6176
   },
   {
     "metric": "selected_records",
-    "value": 97
+    "value": 98
   },
   {
     "metric": "unique_authors",
-    "value": 1851
+    "value": 1748
   },
   {
     "metric": "total_likes",
-    "value": 8781
+    "value": 8674
   },
   {
     "metric": "total_recasts",
-    "value": 1471
+    "value": 1147
   },
   {
     "metric": "total_replies",
-    "value": 3209
+    "value": 3050
   },
   {
     "metric": "top_cast_score",
-    "value": "6.69"
+    "value": "8.71"
   },
   {
     "metric": "top_cast_author",
-    "value": "@himmamari"
+    "value": "@5050"
   },
   {
     "metric": "top_cast_url",
-    "value": "https://farcaster.xyz/himmamari/0x907255fc"
+    "value": "https://farcaster.xyz/5050/0x9224b3ba"
   }
 ]
