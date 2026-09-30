@@ -9,7 +9,7 @@
   },
   {
     "metric": "generated_at_utc",
-    "value": "2026-09-30 05:36:31"
+    "value": "2026-09-30 12:38:51"
   },
   {
     "metric": "source",
@@ -29,54 +29,54 @@
   },
   {
     "metric": "window_start_utc",
-    "value": "2026-09-29 05:36:06"
+    "value": "2026-09-29 12:38:31"
   },
   {
     "metric": "window_end_utc",
-    "value": "2026-09-30 05:35:36"
+    "value": "2026-09-30 12:38:07"
   },
   {
     "metric": "total_records",
-    "value": 8083
+    "value": 8381
   },
   {
     "metric": "posts",
-    "value": 2291
+    "value": 2234
   },
   {
     "metric": "comments",
-    "value": 5792
+    "value": 6147
   },
   {
     "metric": "selected_records",
-    "value": 82
+    "value": 97
   },
   {
     "metric": "unique_authors",
-    "value": 1813
+    "value": 1851
   },
   {
     "metric": "total_likes",
-    "value": 7798
+    "value": 8781
   },
   {
     "metric": "total_recasts",
-    "value": 1270
+    "value": 1471
   },
   {
     "metric": "total_replies",
-    "value": 2899
+    "value": 3209
   },
   {
     "metric": "top_cast_score",
-    "value": "8.37"
+    "value": "6.69"
   },
   {
     "metric": "top_cast_author",
-    "value": "@smshakil"
+    "value": "@himmamari"
   },
   {
     "metric": "top_cast_url",
-    "value": "https://farcaster.xyz/smshakil/0x5b621e24"
+    "value": "https://farcaster.xyz/himmamari/0x907255fc"
   }
 ]
