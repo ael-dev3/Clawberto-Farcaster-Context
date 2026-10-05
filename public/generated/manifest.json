@@ -12,17 +12,17 @@
   {
     "table": "authors",
     "file": "generated/authors.csv",
-    "rows": 70
+    "rows": 71
   },
   {
     "table": "top_casts",
     "file": "generated/top_casts.csv",
-    "rows": 85
+    "rows": 84
   },
   {
     "table": "posts",
     "file": "generated/posts.csv",
-    "rows": 37
+    "rows": 36
   },
   {
     "table": "comments",
