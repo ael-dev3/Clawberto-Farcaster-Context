@@ -9,7 +9,7 @@
   },
   {
     "metric": "generated_at_utc",
-    "value": "2026-10-06 00:05:14"
+    "value": "2026-10-06 06:24:50"
   },
   {
     "metric": "source",
@@ -29,54 +29,54 @@
   },
   {
     "metric": "window_start_utc",
-    "value": "2026-10-05 00:04:56"
+    "value": "2026-10-05 06:25:18"
   },
   {
     "metric": "window_end_utc",
-    "value": "2026-10-06 00:04:53"
+    "value": "2026-10-06 06:24:11"
   },
   {
     "metric": "total_records",
-    "value": 7362
+    "value": 7681
   },
   {
     "metric": "posts",
-    "value": 1746
+    "value": 1779
   },
   {
     "metric": "comments",
-    "value": 5616
+    "value": 5902
   },
   {
     "metric": "selected_records",
-    "value": 100
+    "value": 97
   },
   {
     "metric": "unique_authors",
-    "value": 1637
+    "value": 1744
   },
   {
     "metric": "total_likes",
-    "value": 6511
+    "value": 6210
   },
   {
     "metric": "total_recasts",
-    "value": 927
+    "value": 932
   },
   {
     "metric": "total_replies",
-    "value": 2829
+    "value": 2983
   },
   {
     "metric": "top_cast_score",
-    "value": "8.37"
+    "value": "7.35"
   },
   {
     "metric": "top_cast_author",
-    "value": "@akela113"
+    "value": "@mypokerofff"
   },
   {
     "metric": "top_cast_url",
-    "value": "https://farcaster.xyz/akela113/0xe63de873"
+    "value": "https://farcaster.xyz/mypokerofff/0x05fe9222"
   }
 ]
