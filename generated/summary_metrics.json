@@ -9,7 +9,7 @@
   },
   {
     "metric": "generated_at_utc",
-    "value": "2026-10-07 13:28:25"
+    "value": "2026-10-07 23:07:08"
   },
   {
     "metric": "source",
@@ -29,54 +29,54 @@
   },
   {
     "metric": "window_start_utc",
-    "value": "2026-10-06 13:28:16"
+    "value": "2026-10-06 23:07:13"
   },
   {
     "metric": "window_end_utc",
-    "value": "2026-10-07 13:27:45"
+    "value": "2026-10-07 23:06:37"
   },
   {
     "metric": "total_records",
-    "value": 6656
+    "value": 6869
   },
   {
     "metric": "posts",
-    "value": 1791
+    "value": 1957
   },
   {
     "metric": "comments",
-    "value": 4865
+    "value": 4912
   },
   {
     "metric": "selected_records",
-    "value": 127
+    "value": 115
   },
   {
     "metric": "unique_authors",
-    "value": 1637
+    "value": 1601
   },
   {
     "metric": "total_likes",
-    "value": 7983
+    "value": 6818
   },
   {
     "metric": "total_recasts",
-    "value": 1481
+    "value": 956
   },
   {
     "metric": "total_replies",
-    "value": 2327
+    "value": 2449
   },
   {
     "metric": "top_cast_score",
-    "value": "10.00"
+    "value": "8.46"
   },
   {
     "metric": "top_cast_author",
-    "value": "@drakhonen"
+    "value": "@kenny"
   },
   {
     "metric": "top_cast_url",
-    "value": "https://farcaster.xyz/drakhonen/0x4fe3002b"
+    "value": "https://farcaster.xyz/kenny/0x6ddbc2de"
   }
 ]
