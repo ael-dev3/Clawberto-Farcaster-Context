@@ -9,7 +9,7 @@
   },
   {
     "metric": "generated_at_utc",
-    "value": "2026-10-10 05:56:00"
+    "value": "2026-10-10 12:35:29"
   },
   {
     "metric": "source",
@@ -29,54 +29,54 @@
   },
   {
     "metric": "window_start_utc",
-    "value": "2026-10-09 05:55:58"
+    "value": "2026-10-09 12:36:02"
   },
   {
     "metric": "window_end_utc",
-    "value": "2026-10-10 05:55:45"
+    "value": "2026-10-10 12:35:18"
   },
   {
     "metric": "total_records",
-    "value": 6913
+    "value": 6834
   },
   {
     "metric": "posts",
-    "value": 1813
+    "value": 1721
   },
   {
     "metric": "comments",
-    "value": 5100
+    "value": 5113
   },
   {
     "metric": "selected_records",
-    "value": 86
+    "value": 106
   },
   {
     "metric": "unique_authors",
-    "value": 1431
+    "value": 1348
   },
   {
     "metric": "total_likes",
-    "value": 6711
+    "value": 6567
   },
   {
     "metric": "total_recasts",
-    "value": 836
+    "value": 840
   },
   {
     "metric": "total_replies",
-    "value": 2735
+    "value": 2742
   },
   {
     "metric": "top_cast_score",
-    "value": "6.69"
+    "value": "7.35"
   },
   {
     "metric": "top_cast_author",
-    "value": "@maximthuhalko"
+    "value": "@akela113"
   },
   {
     "metric": "top_cast_url",
-    "value": "https://farcaster.xyz/maximthuhalko/0xd80ad0df"
+    "value": "https://farcaster.xyz/akela113/0xd8c03451"
   }
 ]
