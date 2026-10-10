@@ -22,12 +22,12 @@
   {
     "table": "posts",
     "file": "generated/posts.csv",
-    "rows": 37
+    "rows": 42
   },
   {
     "table": "comments",
     "file": "generated/comments.csv",
-    "rows": 69
+    "rows": 64
   },
   {
     "table": "agent_take",
