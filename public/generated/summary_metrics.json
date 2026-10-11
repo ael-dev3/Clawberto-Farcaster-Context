@@ -9,7 +9,7 @@
   },
   {
     "metric": "generated_at_utc",
-    "value": "2026-10-11 12:54:37"
+    "value": "2026-10-11 22:00:51"
   },
   {
     "metric": "source",
@@ -29,54 +29,54 @@
   },
   {
     "metric": "window_start_utc",
-    "value": "2026-10-10 12:54:08"
+    "value": "2026-10-10 22:00:26"
   },
   {
     "metric": "window_end_utc",
-    "value": "2026-10-11 12:53:39"
+    "value": "2026-10-11 22:00:09"
   },
   {
     "metric": "total_records",
-    "value": 6086
+    "value": 5751
   },
   {
     "metric": "posts",
-    "value": 1688
+    "value": 1683
   },
   {
     "metric": "comments",
-    "value": 4398
+    "value": 4068
   },
   {
     "metric": "selected_records",
-    "value": 90
+    "value": 80
   },
   {
     "metric": "unique_authors",
-    "value": 1357
+    "value": 1381
   },
   {
     "metric": "total_likes",
-    "value": 6034
+    "value": 5172
   },
   {
     "metric": "total_recasts",
-    "value": 753
+    "value": 639
   },
   {
     "metric": "total_replies",
-    "value": 2133
+    "value": 1847
   },
   {
     "metric": "top_cast_score",
-    "value": "7.74"
+    "value": "6.69"
   },
   {
     "metric": "top_cast_author",
-    "value": "@uniquebeing404"
+    "value": "@jaberkho"
   },
   {
     "metric": "top_cast_url",
-    "value": "https://farcaster.xyz/uniquebeing404/0x9dc255a3"
+    "value": "https://farcaster.xyz/jaberkho/0xc800e8bf"
   }
 ]

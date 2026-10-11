@@ -1,42 +1,32 @@
 [
   {
     "theme": "Base Culture",
-    "casts": 61,
-    "posts": 31,
-    "comments": 30,
-    "likes": 172,
-    "avg_score": "3.48",
-    "top_author": "@uniquebeing404",
-    "top_cast_url": "https://farcaster.xyz/uniquebeing404/0x9dc255a3"
+    "casts": 51,
+    "posts": 27,
+    "comments": 24,
+    "likes": 112,
+    "avg_score": "3.19",
+    "top_author": "@olivebranch",
+    "top_cast_url": "https://farcaster.xyz/olivebranch/0xf9da61fd"
   },
   {
     "theme": "Apps/Games",
-    "casts": 22,
-    "posts": 6,
-    "comments": 16,
-    "likes": 68,
-    "avg_score": "3.84",
-    "top_author": "@ds8",
-    "top_cast_url": "https://farcaster.xyz/ds8/0x00ebe1ee"
+    "casts": 21,
+    "posts": 3,
+    "comments": 18,
+    "likes": 47,
+    "avg_score": "3.39",
+    "top_author": "@sub",
+    "top_cast_url": "https://farcaster.xyz/sub/0x747e5254"
   },
   {
     "theme": "Security/Ops",
-    "casts": 6,
-    "posts": 1,
-    "comments": 5,
-    "likes": 6,
-    "avg_score": "2.48",
-    "top_author": "@mdr",
-    "top_cast_url": "https://farcaster.xyz/mdr/0x231f16d9"
-  },
-  {
-    "theme": "Token/Promo",
-    "casts": 1,
+    "casts": 8,
     "posts": 0,
-    "comments": 1,
-    "likes": 1,
-    "avg_score": "2.59",
-    "top_author": "@meexworks",
-    "top_cast_url": "https://farcaster.xyz/meexworks/0x52cfdc41"
+    "comments": 8,
+    "likes": 18,
+    "avg_score": "2.96",
+    "top_author": "@zaal",
+    "top_cast_url": "https://farcaster.xyz/zaal/0xa07afa94"
   }
 ]
