@@ -9,7 +9,7 @@
   },
   {
     "metric": "generated_at_utc",
-    "value": "2026-10-13 00:43:44"
+    "value": "2026-10-13 14:15:29"
   },
   {
     "metric": "source",
@@ -29,54 +29,54 @@
   },
   {
     "metric": "window_start_utc",
-    "value": "2026-10-12 00:43:46"
+    "value": "2026-10-12 14:15:35"
   },
   {
     "metric": "window_end_utc",
-    "value": "2026-10-13 00:43:22"
+    "value": "2026-10-13 14:15:07"
   },
   {
     "metric": "total_records",
-    "value": 6375
+    "value": 6437
   },
   {
     "metric": "posts",
-    "value": 1784
+    "value": 1755
   },
   {
     "metric": "comments",
-    "value": 4591
+    "value": 4682
   },
   {
     "metric": "selected_records",
-    "value": 95
+    "value": 106
   },
   {
     "metric": "unique_authors",
-    "value": 1493
+    "value": 1475
   },
   {
     "metric": "total_likes",
-    "value": 6731
+    "value": 6335
   },
   {
     "metric": "total_recasts",
-    "value": 928
+    "value": 786
   },
   {
     "metric": "total_replies",
-    "value": 2309
+    "value": 2273
   },
   {
     "metric": "top_cast_score",
-    "value": "8.63"
+    "value": "9.91"
   },
   {
     "metric": "top_cast_author",
-    "value": "@0xleonardo"
+    "value": "@icetoad"
   },
   {
     "metric": "top_cast_url",
-    "value": "https://farcaster.xyz/0xleonardo/0xe196f003"
+    "value": "https://farcaster.xyz/icetoad/0x5e19f66f"
   }
 ]
