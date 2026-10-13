@@ -9,7 +9,7 @@
   },
   {
     "metric": "generated_at_utc",
-    "value": "2026-10-13 14:15:29"
+    "value": "2026-10-13 22:47:37"
   },
   {
     "metric": "source",
@@ -29,54 +29,54 @@
   },
   {
     "metric": "window_start_utc",
-    "value": "2026-10-12 14:15:35"
+    "value": "2026-10-12 22:47:17"
   },
   {
     "metric": "window_end_utc",
-    "value": "2026-10-13 14:15:07"
+    "value": "2026-10-13 22:46:48"
   },
   {
     "metric": "total_records",
-    "value": 6437
+    "value": 6566
   },
   {
     "metric": "posts",
-    "value": 1755
+    "value": 1766
   },
   {
     "metric": "comments",
-    "value": 4682
+    "value": 4800
   },
   {
     "metric": "selected_records",
-    "value": 106
+    "value": 116
   },
   {
     "metric": "unique_authors",
-    "value": 1475
+    "value": 1599
   },
   {
     "metric": "total_likes",
-    "value": 6335
+    "value": 6394
   },
   {
     "metric": "total_recasts",
-    "value": 786
+    "value": 847
   },
   {
     "metric": "total_replies",
-    "value": 2273
+    "value": 2410
   },
   {
     "metric": "top_cast_score",
-    "value": "9.91"
+    "value": "10.00"
   },
   {
     "metric": "top_cast_author",
-    "value": "@icetoad"
+    "value": "@smshakil"
   },
   {
     "metric": "top_cast_url",
-    "value": "https://farcaster.xyz/icetoad/0x5e19f66f"
+    "value": "https://farcaster.xyz/smshakil/0xd48ea116"
   }
 ]
