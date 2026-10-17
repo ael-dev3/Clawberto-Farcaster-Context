@@ -9,7 +9,7 @@
   },
   {
     "metric": "generated_at_utc",
-    "value": "2026-10-17 10:48:23"
+    "value": "2026-10-17 15:38:57"
   },
   {
     "metric": "source",
@@ -29,54 +29,54 @@
   },
   {
     "metric": "window_start_utc",
-    "value": "2026-10-16 10:47:33"
+    "value": "2026-10-16 15:37:56"
   },
   {
     "metric": "window_end_utc",
-    "value": "2026-10-17 10:47:03"
+    "value": "2026-10-17 15:37:54"
   },
   {
     "metric": "total_records",
-    "value": 15434
+    "value": 13376
   },
   {
     "metric": "posts",
-    "value": 10584
+    "value": 8538
   },
   {
     "metric": "comments",
-    "value": 4850
+    "value": 4838
   },
   {
     "metric": "selected_records",
-    "value": 143
+    "value": 144
   },
   {
     "metric": "unique_authors",
-    "value": 9864
+    "value": 8002
   },
   {
     "metric": "total_likes",
-    "value": 11961
+    "value": 10756
   },
   {
     "metric": "total_recasts",
-    "value": 948
+    "value": 899
   },
   {
     "metric": "total_replies",
-    "value": 2665
+    "value": 2580
   },
   {
     "metric": "top_cast_score",
-    "value": "10.00"
+    "value": "9.66"
   },
   {
     "metric": "top_cast_author",
-    "value": "@jessepollak"
+    "value": "@catra"
   },
   {
     "metric": "top_cast_url",
-    "value": "https://farcaster.xyz/jessepollak/0xb9726b0f"
+    "value": "https://farcaster.xyz/catra/0x4fef93e2"
   }
 ]
