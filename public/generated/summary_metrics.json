@@ -9,7 +9,7 @@
   },
   {
     "metric": "generated_at_utc",
-    "value": "2026-10-17 20:38:29"
+    "value": "2026-10-18 04:37:53"
   },
   {
     "metric": "source",
@@ -29,54 +29,54 @@
   },
   {
     "metric": "window_start_utc",
-    "value": "2026-10-16 20:38:41"
+    "value": "2026-10-17 04:37:19"
   },
   {
     "metric": "window_end_utc",
-    "value": "2026-10-17 20:38:13"
+    "value": "2026-10-18 04:36:52"
   },
   {
     "metric": "total_records",
-    "value": 11108
+    "value": 9600
   },
   {
     "metric": "posts",
-    "value": 6360
+    "value": 5011
   },
   {
     "metric": "comments",
-    "value": 4748
+    "value": 4589
   },
   {
     "metric": "selected_records",
-    "value": 157
+    "value": 159
   },
   {
     "metric": "unique_authors",
-    "value": 5948
+    "value": 4712
   },
   {
     "metric": "total_likes",
-    "value": 9432
+    "value": 8734
   },
   {
     "metric": "total_recasts",
-    "value": 900
+    "value": 792
   },
   {
     "metric": "total_replies",
-    "value": 2610
+    "value": 2464
   },
   {
     "metric": "top_cast_score",
-    "value": "9.76"
+    "value": "9.50"
   },
   {
     "metric": "top_cast_author",
-    "value": "@catra"
+    "value": "@frdysk"
   },
   {
     "metric": "top_cast_url",
-    "value": "https://farcaster.xyz/catra/0x4fef93e2"
+    "value": "https://farcaster.xyz/frdysk/0x5c33f6bd"
   }
 ]
