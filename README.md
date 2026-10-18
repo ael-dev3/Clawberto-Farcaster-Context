@@ -15,13 +15,13 @@ Static, cached Farcaster context from direct Hypersnap/Snapchain node scraping. 
 | Source | hypersnap |
 | Hub URL | http://54.157.62.17:3381 |
 | Readable shards | 1,2 |
-| Window UTC | 2026-10-17 04:37:19 → 2026-10-18 04:36:52 |
-| Total casts | 9600 |
-| Posts / comments | 5011 / 4589 |
-| Unique authors | 4712 |
-| Total likes / recasts / replies | 8734 / 792 / 2464 |
-| Top cast author | @frdysk |
-| Top cast | https://farcaster.xyz/frdysk/0x5c33f6bd |
+| Window UTC | 2026-10-17 11:10:31 → 2026-10-18 11:10:27 |
+| Total casts | 8213 |
+| Posts / comments | 3766 / 4447 |
+| Unique authors | 3498 |
+| Total likes / recasts / replies | 9020 / 781 / 2630 |
+| Top cast author | @darrylyeo |
+| Top cast | https://farcaster.xyz/darrylyeo/0xa7c5f470 |
 
 ## Published datasets
 
@@ -30,9 +30,9 @@ Static, cached Farcaster context from direct Hypersnap/Snapchain node scraping. 
 | summary_metrics | `generated/summary_metrics.csv` | 20 | [CSV](generated/summary_metrics.csv) / [JSON](generated/summary_metrics.json) |
 | theme_summary | `generated/theme_summary.csv` | 5 | [CSV](generated/theme_summary.csv) / [JSON](generated/theme_summary.json) |
 | authors | `generated/authors.csv` | 100 | [CSV](generated/authors.csv) / [JSON](generated/authors.json) |
-| top_casts | `generated/top_casts.csv` | 150 | [CSV](generated/top_casts.csv) / [JSON](generated/top_casts.json) |
-| posts | `generated/posts.csv` | 75 | [CSV](generated/posts.csv) / [JSON](generated/posts.json) |
-| comments | `generated/comments.csv` | 84 | [CSV](generated/comments.csv) / [JSON](generated/comments.json) |
+| top_casts | `generated/top_casts.csv` | 145 | [CSV](generated/top_casts.csv) / [JSON](generated/top_casts.json) |
+| posts | `generated/posts.csv` | 60 | [CSV](generated/posts.csv) / [JSON](generated/posts.json) |
+| comments | `generated/comments.csv` | 85 | [CSV](generated/comments.csv) / [JSON](generated/comments.json) |
 | agent_take | `generated/agent_take.csv` | 4 | [CSV](generated/agent_take.csv) / [JSON](generated/agent_take.json) |
 
 ## Data pipeline

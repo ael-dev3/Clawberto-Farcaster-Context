@@ -9,7 +9,7 @@
   },
   {
     "metric": "generated_at_utc",
-    "value": "2026-10-18 04:37:53"
+    "value": "2026-10-18 11:10:48"
   },
   {
     "metric": "source",
@@ -29,54 +29,54 @@
   },
   {
     "metric": "window_start_utc",
-    "value": "2026-10-17 04:37:19"
+    "value": "2026-10-17 11:10:31"
   },
   {
     "metric": "window_end_utc",
-    "value": "2026-10-18 04:36:52"
+    "value": "2026-10-18 11:10:27"
   },
   {
     "metric": "total_records",
-    "value": 9600
+    "value": 8213
   },
   {
     "metric": "posts",
-    "value": 5011
+    "value": 3766
   },
   {
     "metric": "comments",
-    "value": 4589
+    "value": 4447
   },
   {
     "metric": "selected_records",
-    "value": 159
+    "value": 145
   },
   {
     "metric": "unique_authors",
-    "value": 4712
+    "value": 3498
   },
   {
     "metric": "total_likes",
-    "value": 8734
+    "value": 9020
   },
   {
     "metric": "total_recasts",
-    "value": 792
+    "value": 781
   },
   {
     "metric": "total_replies",
-    "value": 2464
+    "value": 2630
   },
   {
     "metric": "top_cast_score",
-    "value": "9.50"
+    "value": "10.00"
   },
   {
     "metric": "top_cast_author",
-    "value": "@frdysk"
+    "value": "@darrylyeo"
   },
   {
     "metric": "top_cast_url",
-    "value": "https://farcaster.xyz/frdysk/0x5c33f6bd"
+    "value": "https://farcaster.xyz/darrylyeo/0xa7c5f470"
   }
 ]
