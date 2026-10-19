@@ -1,52 +1,42 @@
 [
   {
     "theme": "Base Culture",
-    "casts": 66,
-    "posts": 36,
-    "comments": 30,
-    "likes": 221,
-    "avg_score": "3.61",
-    "top_author": "@kenny",
-    "top_cast_url": "https://farcaster.xyz/kenny/0xca6b2dc0"
+    "casts": 73,
+    "posts": 38,
+    "comments": 35,
+    "likes": 243,
+    "avg_score": "3.67",
+    "top_author": "@accybr",
+    "top_cast_url": "https://farcaster.xyz/accybr/0x2646c051"
   },
   {
     "theme": "Apps/Games",
-    "casts": 30,
+    "casts": 27,
     "posts": 4,
-    "comments": 26,
-    "likes": 169,
-    "avg_score": "3.87",
-    "top_author": "@sayangel",
-    "top_cast_url": "https://farcaster.xyz/sayangel/0x0f685771"
+    "comments": 23,
+    "likes": 91,
+    "avg_score": "3.88",
+    "top_author": "@altagers",
+    "top_cast_url": "https://farcaster.xyz/altagers/0x21f7259d"
   },
   {
     "theme": "Protocol/Fork",
     "casts": 18,
     "posts": 6,
     "comments": 12,
-    "likes": 112,
-    "avg_score": "3.94",
-    "top_author": "@rubinovitz",
-    "top_cast_url": "https://farcaster.xyz/rubinovitz/0x063be7d6"
+    "likes": 63,
+    "avg_score": "3.64",
+    "top_author": "@burrrrrberry",
+    "top_cast_url": "https://farcaster.xyz/burrrrrberry/0x9db0d13a"
   },
   {
     "theme": "Security/Ops",
-    "casts": 10,
-    "posts": 7,
-    "comments": 3,
-    "likes": 31,
-    "avg_score": "3.46",
+    "casts": 15,
+    "posts": 9,
+    "comments": 6,
+    "likes": 33,
+    "avg_score": "3.19",
     "top_author": "@bytebot",
     "top_cast_url": "https://farcaster.xyz/bytebot/0xa5fbe1f5"
-  },
-  {
-    "theme": "Token/Promo",
-    "casts": 1,
-    "posts": 0,
-    "comments": 1,
-    "likes": 0,
-    "avg_score": "1.00",
-    "top_author": "@compassdotfun",
-    "top_cast_url": "https://farcaster.xyz/compassdotfun/0xa3b08703"
   }
 ]
