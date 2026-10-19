@@ -9,7 +9,7 @@
   },
   {
     "metric": "generated_at_utc",
-    "value": "2026-10-18 20:47:01"
+    "value": "2026-10-19 04:44:14"
   },
   {
     "metric": "source",
@@ -29,43 +29,43 @@
   },
   {
     "metric": "window_start_utc",
-    "value": "2026-10-17 20:47:18"
+    "value": "2026-10-18 04:44:14"
   },
   {
     "metric": "window_end_utc",
-    "value": "2026-10-18 20:46:44"
+    "value": "2026-10-19 04:43:39"
   },
   {
     "metric": "total_records",
-    "value": 7262
+    "value": 7358
   },
   {
     "metric": "posts",
-    "value": 2981
+    "value": 3129
   },
   {
     "metric": "comments",
-    "value": 4281
+    "value": 4229
   },
   {
     "metric": "selected_records",
-    "value": 114
+    "value": 113
   },
   {
     "metric": "unique_authors",
-    "value": 2631
+    "value": 2702
   },
   {
     "metric": "total_likes",
-    "value": 9087
+    "value": 8899
   },
   {
     "metric": "total_recasts",
-    "value": 701
+    "value": 736
   },
   {
     "metric": "total_replies",
-    "value": 2563
+    "value": 2463
   },
   {
     "metric": "top_cast_score",
@@ -73,10 +73,10 @@
   },
   {
     "metric": "top_cast_author",
-    "value": "@darrylyeo"
+    "value": "@sayangel"
   },
   {
     "metric": "top_cast_url",
-    "value": "https://farcaster.xyz/darrylyeo/0xa7c5f470"
+    "value": "https://farcaster.xyz/sayangel/0x0f685771"
   }
 ]
