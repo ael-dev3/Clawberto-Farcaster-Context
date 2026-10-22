@@ -9,7 +9,7 @@
   },
   {
     "metric": "generated_at_utc",
-    "value": "2026-10-21 21:45:20"
+    "value": "2026-10-22 04:52:09"
   },
   {
     "metric": "source",
@@ -29,54 +29,54 @@
   },
   {
     "metric": "window_start_utc",
-    "value": "2026-10-20 21:44:45"
+    "value": "2026-10-21 04:51:53"
   },
   {
     "metric": "window_end_utc",
-    "value": "2026-10-21 21:43:38"
+    "value": "2026-10-22 04:51:18"
   },
   {
     "metric": "total_records",
-    "value": 6966
+    "value": 7117
   },
   {
     "metric": "posts",
-    "value": 2389
+    "value": 2406
   },
   {
     "metric": "comments",
-    "value": 4577
+    "value": 4711
   },
   {
     "metric": "selected_records",
-    "value": 155
+    "value": 151
   },
   {
     "metric": "unique_authors",
-    "value": 1863
+    "value": 1933
   },
   {
     "metric": "total_likes",
-    "value": 8654
+    "value": 8743
   },
   {
     "metric": "total_recasts",
-    "value": 646
+    "value": 715
   },
   {
     "metric": "total_replies",
-    "value": 2592
+    "value": 2670
   },
   {
     "metric": "top_cast_score",
-    "value": "9.20"
+    "value": "10.00"
   },
   {
     "metric": "top_cast_author",
-    "value": "@eoghan"
+    "value": "@luciano"
   },
   {
     "metric": "top_cast_url",
-    "value": "https://farcaster.xyz/eoghan/0xefbb2b95"
+    "value": "https://farcaster.xyz/luciano/0x107dbb6f"
   }
 ]
