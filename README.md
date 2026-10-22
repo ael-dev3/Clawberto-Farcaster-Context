@@ -15,11 +15,11 @@ Static, cached Farcaster context from direct Hypersnap/Snapchain node scraping. 
 | Source | hypersnap |
 | Hub URL | http://54.157.62.17:3381 |
 | Readable shards | 1,2 |
-| Window UTC | 2026-10-21 04:51:53 → 2026-10-22 04:51:18 |
-| Total casts | 7117 |
-| Posts / comments | 2406 / 4711 |
-| Unique authors | 1933 |
-| Total likes / recasts / replies | 8743 / 715 / 2670 |
+| Window UTC | 2026-10-21 11:56:42 → 2026-10-22 11:56:32 |
+| Total casts | 7198 |
+| Posts / comments | 2368 / 4830 |
+| Unique authors | 1895 |
+| Total likes / recasts / replies | 9256 / 972 / 2805 |
 | Top cast author | @luciano |
 | Top cast | https://farcaster.xyz/luciano/0x107dbb6f |
 
@@ -31,8 +31,8 @@ Static, cached Farcaster context from direct Hypersnap/Snapchain node scraping. 
 | theme_summary | `generated/theme_summary.csv` | 5 | [CSV](generated/theme_summary.csv) / [JSON](generated/theme_summary.json) |
 | authors | `generated/authors.csv` | 100 | [CSV](generated/authors.csv) / [JSON](generated/authors.json) |
 | top_casts | `generated/top_casts.csv` | 150 | [CSV](generated/top_casts.csv) / [JSON](generated/top_casts.json) |
-| posts | `generated/posts.csv` | 64 | [CSV](generated/posts.csv) / [JSON](generated/posts.json) |
-| comments | `generated/comments.csv` | 87 | [CSV](generated/comments.csv) / [JSON](generated/comments.json) |
+| posts | `generated/posts.csv` | 54 | [CSV](generated/posts.csv) / [JSON](generated/posts.json) |
+| comments | `generated/comments.csv` | 102 | [CSV](generated/comments.csv) / [JSON](generated/comments.json) |
 | agent_take | `generated/agent_take.csv` | 4 | [CSV](generated/agent_take.csv) / [JSON](generated/agent_take.json) |
 
 ## Data pipeline
