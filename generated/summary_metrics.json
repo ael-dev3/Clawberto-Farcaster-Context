@@ -9,7 +9,7 @@
   },
   {
     "metric": "generated_at_utc",
-    "value": "2026-10-23 04:54:14"
+    "value": "2026-10-23 11:43:13"
   },
   {
     "metric": "source",
@@ -29,54 +29,54 @@
   },
   {
     "metric": "window_start_utc",
-    "value": "2026-10-22 04:54:12"
+    "value": "2026-10-22 11:43:22"
   },
   {
     "metric": "window_end_utc",
-    "value": "2026-10-23 04:53:47"
+    "value": "2026-10-23 11:42:36"
   },
   {
     "metric": "total_records",
-    "value": 6826
+    "value": 6616
   },
   {
     "metric": "posts",
-    "value": 2284
+    "value": 2257
   },
   {
     "metric": "comments",
-    "value": 4542
+    "value": 4359
   },
   {
     "metric": "selected_records",
-    "value": 171
+    "value": 175
   },
   {
     "metric": "unique_authors",
-    "value": 1810
+    "value": 1788
   },
   {
     "metric": "total_likes",
-    "value": 7714
+    "value": 7927
   },
   {
     "metric": "total_recasts",
-    "value": 779
+    "value": 807
   },
   {
     "metric": "total_replies",
-    "value": 2312
+    "value": 2392
   },
   {
     "metric": "top_cast_score",
-    "value": "10.00"
+    "value": "9.14"
   },
   {
     "metric": "top_cast_author",
-    "value": "@ahn"
+    "value": "@adrienne"
   },
   {
     "metric": "top_cast_url",
-    "value": "https://farcaster.xyz/ahn/0xcdc66a6e"
+    "value": "https://farcaster.xyz/adrienne/0xf86104e6"
   }
 ]
