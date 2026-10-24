@@ -9,7 +9,7 @@
   },
   {
     "metric": "generated_at_utc",
-    "value": "2026-10-23 21:26:28"
+    "value": "2026-10-24 04:40:47"
   },
   {
     "metric": "source",
@@ -29,54 +29,54 @@
   },
   {
     "metric": "window_start_utc",
-    "value": "2026-10-22 21:26:39"
+    "value": "2026-10-23 04:40:27"
   },
   {
     "metric": "window_end_utc",
-    "value": "2026-10-23 21:24:55"
+    "value": "2026-10-24 04:40:02"
   },
   {
     "metric": "total_records",
-    "value": 6560
+    "value": 6390
   },
   {
     "metric": "posts",
-    "value": 2123
+    "value": 2095
   },
   {
     "metric": "comments",
-    "value": 4437
+    "value": 4295
   },
   {
     "metric": "selected_records",
-    "value": 160
+    "value": 161
   },
   {
     "metric": "unique_authors",
-    "value": 1719
+    "value": 1716
   },
   {
     "metric": "total_likes",
-    "value": 7771
+    "value": 7688
   },
   {
     "metric": "total_recasts",
-    "value": 711
+    "value": 714
   },
   {
     "metric": "total_replies",
-    "value": 2324
+    "value": 2243
   },
   {
     "metric": "top_cast_score",
-    "value": "9.76"
+    "value": "8.63"
   },
   {
     "metric": "top_cast_author",
-    "value": "@adrienne"
+    "value": "@nounishprof"
   },
   {
     "metric": "top_cast_url",
-    "value": "https://farcaster.xyz/adrienne/0xf86104e6"
+    "value": "https://farcaster.xyz/nounishprof/0x0ed9208d"
   }
 ]
