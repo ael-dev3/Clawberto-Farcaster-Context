@@ -9,7 +9,7 @@
   },
   {
     "metric": "generated_at_utc",
-    "value": "2026-10-24 04:40:47"
+    "value": "2026-10-24 11:05:13"
   },
   {
     "metric": "source",
@@ -29,47 +29,47 @@
   },
   {
     "metric": "window_start_utc",
-    "value": "2026-10-23 04:40:27"
+    "value": "2026-10-23 11:05:07"
   },
   {
     "metric": "window_end_utc",
-    "value": "2026-10-24 04:40:02"
+    "value": "2026-10-24 11:04:35"
   },
   {
     "metric": "total_records",
-    "value": 6390
+    "value": 6258
   },
   {
     "metric": "posts",
-    "value": 2095
+    "value": 2032
   },
   {
     "metric": "comments",
-    "value": 4295
+    "value": 4226
   },
   {
     "metric": "selected_records",
-    "value": 161
+    "value": 154
   },
   {
     "metric": "unique_authors",
-    "value": 1716
+    "value": 1669
   },
   {
     "metric": "total_likes",
-    "value": 7688
+    "value": 7873
   },
   {
     "metric": "total_recasts",
-    "value": 714
+    "value": 735
   },
   {
     "metric": "total_replies",
-    "value": 2243
+    "value": 2197
   },
   {
     "metric": "top_cast_score",
-    "value": "8.63"
+    "value": "8.08"
   },
   {
     "metric": "top_cast_author",
@@ -77,6 +77,6 @@
   },
   {
     "metric": "top_cast_url",
-    "value": "https://farcaster.xyz/nounishprof/0x0ed9208d"
+    "value": "https://farcaster.xyz/nounishprof/0xeb7d6c1c"
   }
 ]
