@@ -1,51 +1,51 @@
 [
   {
     "theme": "Base Culture",
-    "casts": 81,
-    "posts": 32,
-    "comments": 49,
-    "likes": 222,
-    "avg_score": "3.66",
+    "casts": 77,
+    "posts": 33,
+    "comments": 44,
+    "likes": 213,
+    "avg_score": "3.60",
     "top_author": "@namrufretep",
     "top_cast_url": "https://farcaster.xyz/namrufretep/0x66104e9a"
   },
   {
     "theme": "Apps/Games",
-    "casts": 18,
+    "casts": 20,
     "posts": 3,
-    "comments": 15,
-    "likes": 100,
-    "avg_score": "4.23",
+    "comments": 17,
+    "likes": 130,
+    "avg_score": "4.45",
     "top_author": "@farcaster",
     "top_cast_url": "https://farcaster.xyz/farcaster/0x26caca18"
   },
   {
     "theme": "Security/Ops",
-    "casts": 16,
-    "posts": 11,
-    "comments": 5,
-    "likes": 78,
-    "avg_score": "4.27",
-    "top_author": "@lea-olmos",
-    "top_cast_url": "https://farcaster.xyz/lea-olmos/0x31892d60"
+    "casts": 14,
+    "posts": 8,
+    "comments": 6,
+    "likes": 51,
+    "avg_score": "4.06",
+    "top_author": "@ivc",
+    "top_cast_url": "https://farcaster.xyz/ivc/0xf3c146fe"
   },
   {
     "theme": "Protocol/Fork",
-    "casts": 11,
-    "posts": 4,
-    "comments": 7,
-    "likes": 71,
-    "avg_score": "4.68",
-    "top_author": "@nounishprof",
-    "top_cast_url": "https://farcaster.xyz/nounishprof/0xeb7d6c1c"
+    "casts": 9,
+    "posts": 3,
+    "comments": 6,
+    "likes": 32,
+    "avg_score": "3.42",
+    "top_author": "@based-karma",
+    "top_cast_url": "https://farcaster.xyz/based-karma/0xa107f344"
   },
   {
     "theme": "Token/Promo",
-    "casts": 4,
+    "casts": 3,
     "posts": 3,
-    "comments": 1,
-    "likes": 60,
-    "avg_score": "6.79",
+    "comments": 0,
+    "likes": 61,
+    "avg_score": "6.65",
     "top_author": "@alitiknazoglu",
     "top_cast_url": "https://farcaster.xyz/alitiknazoglu/0x20ccb473"
   }
