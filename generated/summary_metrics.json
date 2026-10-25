@@ -9,7 +9,7 @@
   },
   {
     "metric": "generated_at_utc",
-    "value": "2026-10-25 11:34:54"
+    "value": "2026-10-25 16:25:29"
   },
   {
     "metric": "source",
@@ -29,54 +29,54 @@
   },
   {
     "metric": "window_start_utc",
-    "value": "2026-10-24 11:34:44"
+    "value": "2026-10-24 16:25:09"
   },
   {
     "metric": "window_end_utc",
-    "value": "2026-10-25 11:34:37"
+    "value": "2026-10-25 16:24:57"
   },
   {
     "metric": "total_records",
-    "value": 5673
+    "value": 5724
   },
   {
     "metric": "posts",
-    "value": 1841
+    "value": 1802
   },
   {
     "metric": "comments",
-    "value": 3832
+    "value": 3922
   },
   {
     "metric": "selected_records",
-    "value": 111
+    "value": 101
   },
   {
     "metric": "unique_authors",
-    "value": 1522
+    "value": 1494
   },
   {
     "metric": "total_likes",
-    "value": 6255
+    "value": 6187
   },
   {
     "metric": "total_recasts",
-    "value": 524
+    "value": 481
   },
   {
     "metric": "total_replies",
-    "value": 2004
+    "value": 1866
   },
   {
     "metric": "top_cast_score",
-    "value": "7.35"
+    "value": "10.00"
   },
   {
     "metric": "top_cast_author",
-    "value": "@altagers"
+    "value": "@alitiknazoglu"
   },
   {
     "metric": "top_cast_url",
-    "value": "https://farcaster.xyz/altagers/0x10d19daa"
+    "value": "https://farcaster.xyz/alitiknazoglu/0xb8e61ffe"
   }
 ]
