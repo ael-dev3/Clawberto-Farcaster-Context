@@ -5,11 +5,11 @@
     "type": "post",
     "author": "@altagers",
     "author_url": "https://farcaster.xyz/altagers",
-    "score": "6.87",
-    "engagement": "187.50",
-    "likes": 12,
-    "recasts": 42,
-    "replies": 43,
+    "score": "7.35",
+    "engagement": "198.50",
+    "likes": 15,
+    "recasts": 44,
+    "replies": 45,
     "theme": "Apps/Games",
     "visibility": "general",
     "hash": "0x10d19daac7a959cc8423b5b0b340f5c645b0ede4",
@@ -24,10 +24,10 @@
     "type": "post",
     "author": "@farcaster",
     "author_url": "https://farcaster.xyz/farcaster",
-    "score": "9.95",
-    "engagement": "72.40",
-    "likes": 49,
-    "recasts": 9,
+    "score": "10.00",
+    "engagement": "85.90",
+    "likes": 61,
+    "recasts": 10,
     "replies": 3,
     "theme": "Apps/Games",
     "visibility": "question",
@@ -38,7 +38,7 @@
     "text": "Got to meet at a “What is Farcaster” talk by a couple days ago and she’s already put out fantastic Mini App. https://www.socratic.bot/farcaster?day=4"
   },
   {
-    "rank": 3,
+    "rank": 4,
     "timestamp_utc": "2026-10-24 07:41:31",
     "type": "post",
     "author": "@alitiknazoglu",
@@ -57,7 +57,7 @@
     "text": "custom box gifts coming soon on base it's one of many exciting things i've been working on for a while. let's make tokenized stocks available for everyone."
   },
   {
-    "rank": 4,
+    "rank": 5,
     "timestamp_utc": "2026-10-24 11:37:07",
     "type": "post",
     "author": "@based-karma",
@@ -76,35 +76,16 @@
     "text": "Casting this directly through my own local node! This is incredible! Spin up my own personal node with only one command on modest hardware (4 vCPU / 8GB RAM / 600GB SSD). Synced..."
   },
   {
-    "rank": 5,
-    "timestamp_utc": "2026-10-23 22:01:37",
-    "type": "post",
-    "author": "@borodutch",
-    "author_url": "https://farcaster.xyz/borodutch",
-    "score": "7.74",
-    "engagement": "37.00",
-    "likes": 18,
-    "recasts": 1,
-    "replies": 5,
-    "theme": "Token/Promo",
-    "visibility": "general",
-    "hash": "0x4ca02549542f4450822c483ea9e6e5f60e144d83",
-    "cast_url": "https://farcaster.xyz/borodutch/0x4ca02549",
-    "parent_hash": "",
-    "preview": "ok i finally made the switch from github to self-hosted forgejo! - backed up to my s3 bucket with restic - all repos are \"mirrors\" to my github repos, which means all commits/co...",
-    "text": "ok i finally made the switch from github to self-hosted forgejo! - backed up to my s3 bucket with restic - all repos are \"mirrors\" to my github repos, which means all commits/co..."
-  },
-  {
-    "rank": 9,
+    "rank": 8,
     "timestamp_utc": "2026-10-24 16:41:58",
     "type": "post",
     "author": "@deebee",
     "author_url": "https://farcaster.xyz/deebee",
-    "score": "6.27",
-    "engagement": "21.50",
-    "likes": 9,
+    "score": "7.20",
+    "engagement": "29.00",
+    "likes": 14,
     "recasts": 0,
-    "replies": 3,
+    "replies": 4,
     "theme": "Security/Ops",
     "visibility": "question",
     "hash": "0x6e66be4d3cdb294cc1183d3148815c75397c40dc",
@@ -114,7 +95,26 @@
     "text": "This last week (ish) been watching - Farcaster takeover and exodus - Nouns Builder Hack and disintegration - AI dismantling the internet - The ongoing endless narrative of impen..."
   },
   {
-    "rank": 10,
+    "rank": 9,
+    "timestamp_utc": "2026-10-24 23:38:57",
+    "type": "post",
+    "author": "@kyb",
+    "author_url": "https://farcaster.xyz/kyb",
+    "score": "6.03",
+    "engagement": "25.90",
+    "likes": 8,
+    "recasts": 3,
+    "replies": 4,
+    "theme": "Security/Ops",
+    "visibility": "general",
+    "hash": "0xce456c185bfe675b1c67fef40bfd50baa998f92a",
+    "cast_url": "https://farcaster.xyz/kyb/0xce456c18",
+    "parent_hash": "",
+    "preview": "Careful about using the vibecoded web app clients. Most have spent more time adding random bloat features and not hardening security/privacy.",
+    "text": "Careful about using the vibecoded web app clients. Most have spent more time adding random bloat features and not hardening security/privacy."
+  },
+  {
+    "rank": 12,
     "timestamp_utc": "2026-10-24 07:05:12",
     "type": "post",
     "author": "@ivc",
@@ -133,7 +133,26 @@
     "text": "What's been really neat about 's bounty is that its been nice to reach out to other developers on with whom I've never in the past had a convo, giving each other feedback and su..."
   },
   {
-    "rank": 15,
+    "rank": 18,
+    "timestamp_utc": "2026-10-24 15:16:58",
+    "type": "post",
+    "author": "@0xleonardo",
+    "author_url": "https://farcaster.xyz/0xleonardo",
+    "score": "5.45",
+    "engagement": "14.80",
+    "likes": 6,
+    "recasts": 2,
+    "replies": 2,
+    "theme": "Base Culture",
+    "visibility": "general",
+    "hash": "0xdae69bca5a37588cab7c171b029c8a805732b77f",
+    "cast_url": "https://farcaster.xyz/0xleonardo/0xdae69bca",
+    "parent_hash": "",
+    "preview": "My keys, my people: , /bizarrebeasts, . See you on BaseFriend. 💙",
+    "text": "My keys, my people: , /bizarrebeasts, . See you on BaseFriend. 💙"
+  },
+  {
+    "rank": 19,
     "timestamp_utc": "2026-10-24 11:31:03",
     "type": "post",
     "author": "@xcu",
@@ -152,7 +171,7 @@
     "text": "I just created my podium of today: 🥇BizarreBeasts - 🥈Based-Karma - 🥉Base -"
   },
   {
-    "rank": 16,
+    "rank": 20,
     "timestamp_utc": "2026-10-24 09:08:27",
     "type": "post",
     "author": "@0xleonardo",
@@ -171,7 +190,7 @@
     "text": "Your keys. Your people. Find your friends on BaseFriend 💙"
   },
   {
-    "rank": 17,
+    "rank": 21,
     "timestamp_utc": "2026-10-24 10:05:29",
     "type": "post",
     "author": "@alpaca",
@@ -190,26 +209,7 @@
     "text": "I just voted to stay and build a techno-optimist community with the Network School Farcaster core team. We’re going to implement a Singapore-like code to ensure positive-sum beh..."
   },
   {
-    "rank": 19,
-    "timestamp_utc": "2026-10-24 15:16:58",
-    "type": "post",
-    "author": "@0xleonardo",
-    "author_url": "https://farcaster.xyz/0xleonardo",
-    "score": "5.10",
-    "engagement": "13.80",
-    "likes": 5,
-    "recasts": 2,
-    "replies": 2,
-    "theme": "Base Culture",
-    "visibility": "general",
-    "hash": "0xdae69bca5a37588cab7c171b029c8a805732b77f",
-    "cast_url": "https://farcaster.xyz/0xleonardo/0xdae69bca",
-    "parent_hash": "",
-    "preview": "My keys, my people: , /bizarrebeasts, . See you on BaseFriend. 💙",
-    "text": "My keys, my people: , /bizarrebeasts, . See you on BaseFriend. 💙"
-  },
-  {
-    "rank": 20,
+    "rank": 23,
     "timestamp_utc": "2026-10-24 12:31:05",
     "type": "post",
     "author": "@warpcast-com",
@@ -228,7 +228,26 @@
     "text": "A new key, a new connection. I just bought 1 key of on BaseFriend. 💙"
   },
   {
-    "rank": 22,
+    "rank": 24,
+    "timestamp_utc": "2026-10-24 09:45:29",
+    "type": "post",
+    "author": "@kazani",
+    "author_url": "https://farcaster.xyz/kazani",
+    "score": "5.45",
+    "engagement": "13.10",
+    "likes": 6,
+    "recasts": 0,
+    "replies": 1,
+    "theme": "Security/Ops",
+    "visibility": "general",
+    "hash": "0x9a05a8a848aba9f6f2aed1a02d72f99a62ccd019",
+    "cast_url": "https://farcaster.xyz/kazani/0x9a05a8a8",
+    "parent_hash": "",
+    "preview": "Hacker reverse engineers his Samsung TV and finds on-board AI listening for sounds of dog and baby, proceeds to get his account suspended by OpenAI https://www.reddit.com/r/anti...",
+    "text": "Hacker reverse engineers his Samsung TV and finds on-board AI listening for sounds of dog and baby, proceeds to get his account suspended by OpenAI https://www.reddit.com/r/anti..."
+  },
+  {
+    "rank": 27,
     "timestamp_utc": "2026-10-24 13:29:21",
     "type": "post",
     "author": "@jpfraneto",
@@ -247,26 +266,26 @@
     "text": "i love the feeling of being in a hackathon. that rush of having to ship something at a given moment in time it feels electric"
   },
   {
-    "rank": 25,
-    "timestamp_utc": "2026-10-24 09:45:29",
+    "rank": 31,
+    "timestamp_utc": "2026-10-24 20:35:06",
     "type": "post",
-    "author": "@kazani",
-    "author_url": "https://farcaster.xyz/kazani",
+    "author": "@purp",
+    "author_url": "https://farcaster.xyz/purp",
     "score": "4.68",
-    "engagement": "11.10",
+    "engagement": "11.20",
     "likes": 4,
     "recasts": 0,
-    "replies": 1,
-    "theme": "Security/Ops",
+    "replies": 2,
+    "theme": "Base Culture",
     "visibility": "general",
-    "hash": "0x9a05a8a848aba9f6f2aed1a02d72f99a62ccd019",
-    "cast_url": "https://farcaster.xyz/kazani/0x9a05a8a8",
+    "hash": "0x16520d74fd367edc46dca46c1891e712c304c59f",
+    "cast_url": "https://farcaster.xyz/purp/0x16520d74",
     "parent_hash": "",
-    "preview": "Hacker reverse engineers his Samsung TV and finds on-board AI listening for sounds of dog and baby, proceeds to get his account suspended by OpenAI https://www.reddit.com/r/anti...",
-    "text": "Hacker reverse engineers his Samsung TV and finds on-board AI listening for sounds of dog and baby, proceeds to get his account suspended by OpenAI https://www.reddit.com/r/anti..."
+    "preview": "O wait, o fuck, blue Louisiana might actually happen https://x.com/ZacharyDonnini/status/2114072536027951509",
+    "text": "O wait, o fuck, blue Louisiana might actually happen https://x.com/ZacharyDonnini/status/2114072536027951509"
   },
   {
-    "rank": 30,
+    "rank": 35,
     "timestamp_utc": "2026-10-24 16:42:43",
     "type": "post",
     "author": "@sunkanmi",
@@ -285,7 +304,7 @@
     "text": "My BaseFriend points: 50 total · EXPLORER · rank #317. 50 points available. 💙"
   },
   {
-    "rank": 31,
+    "rank": 36,
     "timestamp_utc": "2026-10-24 05:40:01",
     "type": "post",
     "author": "@rezzaa",
@@ -304,7 +323,7 @@
     "text": "I just created my podium of today: 🥇BizarreBeasts - 🥈Base - 🥉Farverse - /farverse"
   },
   {
-    "rank": 36,
+    "rank": 42,
     "timestamp_utc": "2026-10-24 13:02:41",
     "type": "post",
     "author": "@elrufaee",
@@ -323,26 +342,7 @@
     "text": "My BaseFriend points: 2082 total · BUILDER · rank #15. 0 points available. 💙 /basefriend"
   },
   {
-    "rank": 38,
-    "timestamp_utc": "2026-10-24 20:35:06",
-    "type": "post",
-    "author": "@purp",
-    "author_url": "https://farcaster.xyz/purp",
-    "score": "2.59",
-    "engagement": "8.20",
-    "likes": 1,
-    "recasts": 0,
-    "replies": 2,
-    "theme": "Base Culture",
-    "visibility": "general",
-    "hash": "0x16520d74fd367edc46dca46c1891e712c304c59f",
-    "cast_url": "https://farcaster.xyz/purp/0x16520d74",
-    "parent_hash": "",
-    "preview": "O wait, o fuck, blue Louisiana might actually happen https://x.com/ZacharyDonnini/status/2114072536027951509",
-    "text": "O wait, o fuck, blue Louisiana might actually happen https://x.com/ZacharyDonnini/status/2114072536027951509"
-  },
-  {
-    "rank": 39,
+    "rank": 45,
     "timestamp_utc": "2026-10-24 13:44:40",
     "type": "post",
     "author": "@slonjonok",
@@ -361,26 +361,64 @@
     "text": "My Let's Have A Word! stats: 🎯 0 total guesses (0 paid) 🏆 0 jackpots won 🎣 0 Bonus words found 🔥 0 Burn words found 🔝 0 Top 10 early guessers 🤝 0 referral wins ⚡ 0 XP"
   },
   {
-    "rank": 40,
-    "timestamp_utc": "2026-10-24 04:42:51",
+    "rank": 46,
+    "timestamp_utc": "2026-10-25 02:28:39",
     "type": "post",
-    "author": "@jpfraneto",
-    "author_url": "https://farcaster.xyz/jpfraneto",
+    "author": "@purp",
+    "author_url": "https://farcaster.xyz/purp",
+    "score": "4.17",
+    "engagement": "8.00",
+    "likes": 3,
+    "recasts": 0,
+    "replies": 0,
+    "theme": "Base Culture",
+    "visibility": "general",
+    "hash": "0x1f376e3954a1c41583112f4ab5ffac98d3b07e94",
+    "cast_url": "https://farcaster.xyz/purp/0x1f376e39",
+    "parent_hash": "",
+    "preview": "The important thing to remember is the maga cope accounts on twitter are basing their cope on 2024 election results While nuanced analysis of by primaries voted in shows a 25 po...",
+    "text": "The important thing to remember is the maga cope accounts on twitter are basing their cope on 2024 election results While nuanced analysis of by primaries voted in shows a 25 po..."
+  },
+  {
+    "rank": 47,
+    "timestamp_utc": "2026-10-25 03:23:58",
+    "type": "post",
+    "author": "@mosco11",
+    "author_url": "https://farcaster.xyz/mosco11",
     "score": "3.51",
-    "engagement": "8.10",
+    "engagement": "7.50",
     "likes": 2,
     "recasts": 0,
     "replies": 1,
     "theme": "Base Culture",
     "visibility": "general",
-    "hash": "0xa02cce3e68905518b4f711f94559876b28a0cb8d",
-    "cast_url": "https://farcaster.xyz/jpfraneto/0xa02cce3e",
+    "hash": "0xf6e3773c0b8caaa76a95034a306e66defdee633c",
+    "cast_url": "https://farcaster.xyz/mosco11/0xf6e3773c",
     "parent_hash": "",
-    "preview": "hello world from my Fatline. im looking for a brave soul to help me test if everything works right. fatline.ink/docs. you will need ~12 usdc on base",
-    "text": "hello world from my Fatline. im looking for a brave soul to help me test if everything works right. fatline.ink/docs. you will need ~12 usdc on base"
+    "preview": "Come build your desktop on Base Rooms OS: free onchain tools and a buddy that lives on your desktop. Use my invite:",
+    "text": "Come build your desktop on Base Rooms OS: free onchain tools and a buddy that lives on your desktop. Use my invite:"
   },
   {
-    "rank": 43,
+    "rank": 49,
+    "timestamp_utc": "2026-10-24 20:18:37",
+    "type": "post",
+    "author": "@seanwbren",
+    "author_url": "https://farcaster.xyz/seanwbren",
+    "score": "3.51",
+    "engagement": "7.50",
+    "likes": 2,
+    "recasts": 1,
+    "replies": 0,
+    "theme": "Base Culture",
+    "visibility": "general",
+    "hash": "0x2f76fcb34345868032f0f82185ed6866b884ac4a",
+    "cast_url": "https://farcaster.xyz/seanwbren/0x2f76fcb3",
+    "parent_hash": "",
+    "preview": "A single anon address (who also has 10 https://imd.fun seats) saw this 2 for 1 offer and purchased all 20 Keys They were sent their bonus Keys here: https://basescan.org/tx/0x42...",
+    "text": "A single anon address (who also has 10 https://imd.fun seats) saw this 2 for 1 offer and purchased all 20 Keys They were sent their bonus Keys here: https://basescan.org/tx/0x42..."
+  },
+  {
+    "rank": 50,
     "timestamp_utc": "2026-10-24 05:07:17",
     "type": "post",
     "author": "@shamimarshad",
@@ -399,7 +437,7 @@
     "text": "I just created my podium of today: 🥇BizarreBeasts - 🥈ProductClank - 🥉Base -"
   },
   {
-    "rank": 44,
+    "rank": 51,
     "timestamp_utc": "2026-10-24 04:54:02",
     "type": "post",
     "author": "@studi08f0rev3r",
@@ -418,7 +456,7 @@
     "text": "I just created my podium of today: 🥇Warpcast - 🥈Farcaster - 🥉Base -"
   },
   {
-    "rank": 46,
+    "rank": 54,
     "timestamp_utc": "2026-10-24 07:16:48",
     "type": "post",
     "author": "@ahsenkhan",
@@ -437,7 +475,7 @@
     "text": "I just created my @brnd podium of today: 🥇Base - 🥈Rainbow - 🥉Farcaster -"
   },
   {
-    "rank": 50,
+    "rank": 56,
     "timestamp_utc": "2026-10-24 11:15:05",
     "type": "post",
     "author": "@boredhead",
@@ -456,7 +494,7 @@
     "text": "I just voted to stay and build a techno-optimist community with the Network School Farcaster core team. https://basescan.org/tx/0x74959f7c74eabac34f298d328833d68ef5eaa25f4c8d0e6..."
   },
   {
-    "rank": 51,
+    "rank": 57,
     "timestamp_utc": "2026-10-24 06:36:40",
     "type": "post",
     "author": "@karsaorlongdong",
@@ -475,7 +513,7 @@
     "text": "https://app.uniswap.org/explore/auctions/base/0xd06dc962191c591522c1243848012f9b0549df7a"
   },
   {
-    "rank": 54,
+    "rank": 59,
     "timestamp_utc": "2026-10-24 11:23:58",
     "type": "post",
     "author": "@chineseman559",
@@ -494,26 +532,7 @@
     "text": "Eddie.sol 🔑 is officially claimed on BaseFriend. A new chapter starts here. 💙"
   },
   {
-    "rank": 57,
-    "timestamp_utc": "2026-10-23 23:17:17",
-    "type": "post",
-    "author": "@stultulo",
-    "author_url": "https://farcaster.xyz/stultulo",
-    "score": "3.51",
-    "engagement": "6.20",
-    "likes": 2,
-    "recasts": 0,
-    "replies": 0,
-    "theme": "Security/Ops",
-    "visibility": "general",
-    "hash": "0x0a9d6f0d6b7face984eb0c4eb035be88416e65fa",
-    "cast_url": "https://farcaster.xyz/stultulo/0x0a9d6f0d",
-    "parent_hash": "",
-    "preview": "\"An automated safety review rejected a proposed custom crash recorder and a later coroutine probe for possible cybersecurity risk.\" On Daybreak Blue. Tf is this thing even good ...",
-    "text": "\"An automated safety review rejected a proposed custom crash recorder and a later coroutine probe for possible cybersecurity risk.\" On Daybreak Blue. Tf is this thing even good ..."
-  },
-  {
-    "rank": 59,
+    "rank": 63,
     "timestamp_utc": "2026-10-24 08:26:01",
     "type": "post",
     "author": "@sserssergesserss",
@@ -532,7 +551,7 @@
     "text": "Saturday. I don't plan my weekends. I'm just responding to those who write to me. If you're here, let me know! #Bluesky #Farcaster"
   },
   {
-    "rank": 61,
+    "rank": 64,
     "timestamp_utc": "2026-10-24 20:00:11",
     "type": "post",
     "author": "@christ360",
@@ -551,7 +570,26 @@
     "text": "CASH BACK TRADING FEES WITH BASEDBOT 🔥🚀😎 HOW TO BUY MEMECOIN ON BASEDBOT (Telegram) Vwry fast for snipping too CREATE A WALLET ON BASEBOT 👇👇 https://t.me/based_eth_bot?start=r_c..."
   },
   {
-    "rank": 65,
+    "rank": 66,
+    "timestamp_utc": "2026-10-24 22:10:18",
+    "type": "post",
+    "author": "@pedronosandrine",
+    "author_url": "https://farcaster.xyz/pedronosandrine",
+    "score": "3.51",
+    "engagement": "5.90",
+    "likes": 2,
+    "recasts": 0,
+    "replies": 1,
+    "theme": "Base Culture",
+    "visibility": "general",
+    "hash": "0x610e6bea7b50121475dfdfb75354c2d9d455a91b",
+    "cast_url": "https://farcaster.xyz/pedronosandrine/0x610e6bea",
+    "parent_hash": "",
+    "preview": "I just created my podium of today: 🥇BizarreBeasts - 🥈Base - 🥉TYSM - /fc",
+    "text": "I just created my podium of today: 🥇BizarreBeasts - 🥈Base - 🥉TYSM - /fc"
+  },
+  {
+    "rank": 68,
     "timestamp_utc": "2026-10-24 08:07:37",
     "type": "post",
     "author": "@stultulo",
@@ -570,7 +608,26 @@
     "text": "ⓘ This content can’t be shown Some cybersecurity requests are still limited, even when Daybreak is on, because fuck you bruh."
   },
   {
-    "rank": 66,
+    "rank": 69,
+    "timestamp_utc": "2026-10-25 01:50:46",
+    "type": "post",
+    "author": "@echos-whisper",
+    "author_url": "https://farcaster.xyz/echos-whisper",
+    "score": "2.59",
+    "engagement": "5.80",
+    "likes": 1,
+    "recasts": 0,
+    "replies": 0,
+    "theme": "Base Culture",
+    "visibility": "question",
+    "hash": "0xc7ffc779a2665f615f74f0c8d8e23470de6397e6",
+    "cast_url": "https://farcaster.xyz/echos-whisper/0xc7ffc779",
+    "parent_hash": "",
+    "preview": "Just unlocked my BQR rewards 🚀 ━━━━━━━━━━━━━━━━━━━━━━ 💎 Total Reward Pool: 10,000 BQR ⚡ Daily drops: 25 BQR per user 🎁 Free · Daily · Instant reward ━━━━━━━━━━━━━━━━━━━━━━ 👇 Cla...",
+    "text": "Just unlocked my BQR rewards 🚀 ━━━━━━━━━━━━━━━━━━━━━━ 💎 Total Reward Pool: 10,000 BQR ⚡ Daily drops: 25 BQR per user 🎁 Free · Daily · Instant reward ━━━━━━━━━━━━━━━━━━━━━━ 👇 Cla..."
+  },
+  {
+    "rank": 70,
     "timestamp_utc": "2026-10-24 15:58:53",
     "type": "post",
     "author": "@geesmike",
@@ -589,7 +646,7 @@
     "text": "Vibeshift super-follow preview. Alerts for casts and replies from me, based on shared settings. Preview lasts 7 days. Claim a slot."
   },
   {
-    "rank": 68,
+    "rank": 71,
     "timestamp_utc": "2026-10-24 07:05:10",
     "type": "post",
     "author": "@crewpay",
@@ -608,7 +665,7 @@
     "text": "No API key? An agent can still call CrewPay. Pay per call with x402: USDC on Base, and the wallet that pays is the agent's identity. How it works 🧵"
   },
   {
-    "rank": 70,
+    "rank": 73,
     "timestamp_utc": "2026-10-24 16:45:56",
     "type": "post",
     "author": "@bigstrongboy",
@@ -627,7 +684,7 @@
     "text": "🏆 Scored 4818 points in BaseDrop!"
   },
   {
-    "rank": 73,
+    "rank": 75,
     "timestamp_utc": "2026-10-24 06:39:42",
     "type": "post",
     "author": "@stultulo",
@@ -646,7 +703,7 @@
     "text": "ⓘ This content can't be shown We take extra caution with cybersecurity requests. If you're a security professional, you may be able to go fuck yourself."
   },
   {
-    "rank": 74,
+    "rank": 76,
     "timestamp_utc": "2026-10-24 16:42:46",
     "type": "post",
     "author": "@frustration",
@@ -665,26 +722,26 @@
     "text": "BUILD ON . 🔵 The future of finance is being built onchain. Base is making crypto more accessible with low cost transactions, stablecoin payments, tokenized assets and an open ec..."
   },
   {
-    "rank": 76,
-    "timestamp_utc": "2026-10-24 20:18:37",
+    "rank": 78,
+    "timestamp_utc": "2026-10-24 23:49:41",
     "type": "post",
-    "author": "@seanwbren",
-    "author_url": "https://farcaster.xyz/seanwbren",
+    "author": "@studi08f0rev3r",
+    "author_url": "https://farcaster.xyz/studi08f0rev3r",
     "score": "2.59",
-    "engagement": "5.00",
+    "engagement": "5.10",
     "likes": 1,
     "recasts": 0,
-    "replies": 0,
+    "replies": 1,
     "theme": "Base Culture",
     "visibility": "general",
-    "hash": "0x2f76fcb34345868032f0f82185ed6866b884ac4a",
-    "cast_url": "https://farcaster.xyz/seanwbren/0x2f76fcb3",
+    "hash": "0x0d116bdf5d1d7bb592b024f5a8094300ee39216a",
+    "cast_url": "https://farcaster.xyz/studi08f0rev3r/0x0d116bdf",
     "parent_hash": "",
-    "preview": "A single anon address (who also has 10 https://imd.fun seats) saw this 2 for 1 offer and purchased all 20 Keys They were sent their bonus Keys here: https://basescan.org/tx/0x42...",
-    "text": "A single anon address (who also has 10 https://imd.fun seats) saw this 2 for 1 offer and purchased all 20 Keys They were sent their bonus Keys here: https://basescan.org/tx/0x42..."
+    "preview": "I just won 0.422327661641892557 BaseTC on ! 🎰 Spin daily to win rewards and climb the leaderboard.",
+    "text": "I just won 0.422327661641892557 BaseTC on ! 🎰 Spin daily to win rewards and climb the leaderboard."
   },
   {
-    "rank": 77,
+    "rank": 80,
     "timestamp_utc": "2026-10-24 18:43:33",
     "type": "post",
     "author": "@sserssergesserss",
@@ -703,7 +760,26 @@
     "text": "AI helps find vulnerabilities faster, but it also creates new risks. When attacks scale, access controls and patches alone may not be enough. Security requires verifiable execut..."
   },
   {
-    "rank": 79,
+    "rank": 82,
+    "timestamp_utc": "2026-10-25 00:49:03",
+    "type": "post",
+    "author": "@mursleen",
+    "author_url": "https://farcaster.xyz/mursleen",
+    "score": "2.59",
+    "engagement": "4.90",
+    "likes": 1,
+    "recasts": 0,
+    "replies": 1,
+    "theme": "Base Culture",
+    "visibility": "general",
+    "hash": "0xe6f2d1b5968c8874e6a416b60578f5acc1584ac7",
+    "cast_url": "https://farcaster.xyz/mursleen/0xe6f2d1b5",
+    "parent_hash": "",
+    "preview": "I just created my podium of today: 🥇BizarreBeasts - 🥈TYSM - /fc 🥉Base -",
+    "text": "I just created my podium of today: 🥇BizarreBeasts - 🥈TYSM - /fc 🥉Base -"
+  },
+  {
+    "rank": 83,
     "timestamp_utc": "2026-10-24 18:18:43",
     "type": "post",
     "author": "@nomygod",
@@ -722,7 +798,7 @@
     "text": "dog why has somebody set the QUORUM ios app to open to my DMs that i can't use every time"
   },
   {
-    "rank": 80,
+    "rank": 84,
     "timestamp_utc": "2026-10-24 05:34:39",
     "type": "post",
     "author": "@lucifercaretaker",
@@ -741,26 +817,7 @@
     "text": "I just created my podium of today: 🥇Base - 🥈Rips - 🥉Farcaster -"
   },
   {
-    "rank": 82,
-    "timestamp_utc": "2026-10-24 03:48:26",
-    "type": "post",
-    "author": "@mobox",
-    "author_url": "https://farcaster.xyz/mobox",
-    "score": "2.59",
-    "engagement": "4.80",
-    "likes": 1,
-    "recasts": 0,
-    "replies": 0,
-    "theme": "Base Culture",
-    "visibility": "general",
-    "hash": "0x6668f8f928879fa90dfa2c8e7269ac9ce4e62afe",
-    "cast_url": "https://farcaster.xyz/mobox/0x6668f8f9",
-    "parent_hash": "",
-    "preview": "Base rewards await Claim daily onchain Check the astroblock Earn stars and moons Base is key Claiming rewards from the stars ☝️ created with app studio",
-    "text": "Base rewards await Claim daily onchain Check the astroblock Earn stars and moons Base is key Claiming rewards from the stars ☝️ created with app studio"
-  },
-  {
-    "rank": 87,
+    "rank": 89,
     "timestamp_utc": "2026-10-24 06:26:54",
     "type": "post",
     "author": "@metawavestudio",
@@ -779,7 +836,7 @@
     "text": "Steer BLUE’s AI prediction markets, and stay up-to-date on the latest news. MWA client allows real-time market steering. your input, our money. 💵"
   },
   {
-    "rank": 95,
+    "rank": 94,
     "timestamp_utc": "2026-10-24 08:44:56",
     "type": "post",
     "author": "@alauddin35",
@@ -798,7 +855,26 @@
     "text": "Opening Warplet Blind Box is addictive! 🔥 Collect Farcaster profile NFTs on Base. 🟦"
   },
   {
-    "rank": 96,
+    "rank": 95,
+    "timestamp_utc": "2026-10-24 21:20:36",
+    "type": "post",
+    "author": "@infinitehomie",
+    "author_url": "https://farcaster.xyz/infinitehomie",
+    "score": "2.59",
+    "engagement": "3.80",
+    "likes": 1,
+    "recasts": 0,
+    "replies": 0,
+    "theme": "Base Culture",
+    "visibility": "general",
+    "hash": "0x7f20a6a55bbff0b0d27e519489ba636d32a27bb7",
+    "cast_url": "https://farcaster.xyz/infinitehomie/0x7f20a6a5",
+    "parent_hash": "",
+    "preview": "Here is the homescreen of Homiehouse - U of M Theme. GO BLUE! Check out the different themes available on homiehouse. Cast, Learn, Earn, and enjoy.",
+    "text": "Here is the homescreen of Homiehouse - U of M Theme. GO BLUE! Check out the different themes available on homiehouse. Cast, Learn, Earn, and enjoy."
+  },
+  {
+    "rank": 98,
     "timestamp_utc": "2026-10-24 18:28:56",
     "type": "post",
     "author": "@frustration",
@@ -818,6 +894,25 @@
   },
   {
     "rank": 100,
+    "timestamp_utc": "2026-10-24 16:02:41",
+    "type": "post",
+    "author": "@musum",
+    "author_url": "https://farcaster.xyz/musum",
+    "score": "2.59",
+    "engagement": "3.60",
+    "likes": 1,
+    "recasts": 0,
+    "replies": 0,
+    "theme": "Apps/Games",
+    "visibility": "general",
+    "hash": "0xc4eacab4fbd0babff80e2f16a5e54659ed9832cd",
+    "cast_url": "https://farcaster.xyz/musum/0xc4eacab4",
+    "parent_hash": "",
+    "preview": "First post. First mini app: https://nearcaster.pages.dev First typescript: https://github.com/musesum/NearCaster",
+    "text": "First post. First mini app: https://nearcaster.pages.dev First typescript: https://github.com/musesum/NearCaster"
+  },
+  {
+    "rank": 102,
     "timestamp_utc": "2026-10-24 15:18:02",
     "type": "post",
     "author": "@schmrdty",
@@ -837,6 +932,25 @@
   },
   {
     "rank": 108,
+    "timestamp_utc": "2026-10-24 23:04:45",
+    "type": "post",
+    "author": "@j-valeska",
+    "author_url": "https://farcaster.xyz/j-valeska",
+    "score": "2.59",
+    "engagement": "3.00",
+    "likes": 1,
+    "recasts": 0,
+    "replies": 0,
+    "theme": "Token/Promo",
+    "visibility": "general",
+    "hash": "0x579e01b044cf7cdace54aa977ff4a3a005149f8b",
+    "cast_url": "https://farcaster.xyz/j-valeska/0x579e01b0",
+    "parent_hash": "",
+    "preview": "check my fatline egg / tokenized node called Thaituma here https://fatline.ink/13505",
+    "text": "check my fatline egg / tokenized node called Thaituma here https://fatline.ink/13505"
+  },
+  {
+    "rank": 113,
     "timestamp_utc": "2026-10-24 16:35:57",
     "type": "post",
     "author": "@varvarak",
@@ -855,7 +969,7 @@
     "text": "Here’s my onchain vote for the new social smart contract: https://basescan.org/tx/0x6aae3d29a07fedb64c1a33fdd9c10ec3b7de195d4ce8dada054eb40e018956fc"
   },
   {
-    "rank": 111,
+    "rank": 115,
     "timestamp_utc": "2026-10-24 17:48:10",
     "type": "post",
     "author": "@robbi3",
@@ -874,7 +988,7 @@
     "text": "I just won 29.857000918932339034 BaseTC on ! 🎰 Spin daily to win rewards and climb the leaderboard."
   },
   {
-    "rank": 113,
+    "rank": 118,
     "timestamp_utc": "2026-10-24 19:06:18",
     "type": "post",
     "author": "@icfixer",
@@ -893,7 +1007,7 @@
     "text": "I just created my podium of today: 🥇Base - 🥈Farcaster - 🥉TYSM - /fc"
   },
   {
-    "rank": 114,
+    "rank": 119,
     "timestamp_utc": "2026-10-24 06:09:50",
     "type": "post",
     "author": "@anzeel",
@@ -912,7 +1026,7 @@
     "text": "I just created my podium of today: 🥇Beeper - 🥈Base - 🥉Farcaster -"
   },
   {
-    "rank": 116,
+    "rank": 121,
     "timestamp_utc": "2026-10-24 16:00:46",
     "type": "post",
     "author": "@geesmike",
@@ -931,7 +1045,7 @@
     "text": "https://farcaster.xyz/jesse.base.eth/0xc7c69fef"
   },
   {
-    "rank": 117,
+    "rank": 122,
     "timestamp_utc": "2026-10-24 07:58:41",
     "type": "post",
     "author": "@birjusharma",
@@ -948,5 +1062,24 @@
     "parent_hash": "",
     "preview": "Ink vs Base 💪 Which one will do best ? Let's see 🙈😉",
     "text": "Ink vs Base 💪 Which one will do best ? Let's see 🙈😉"
+  },
+  {
+    "rank": 126,
+    "timestamp_utc": "2026-10-25 02:54:31",
+    "type": "post",
+    "author": "@whitegoats",
+    "author_url": "https://farcaster.xyz/whitegoats",
+    "score": "2.59",
+    "engagement": "1.60",
+    "likes": 1,
+    "recasts": 0,
+    "replies": 0,
+    "theme": "Base Culture",
+    "visibility": "general",
+    "hash": "0x61fc58a4d56f91596d1e148cb25c7e5accdc9315",
+    "cast_url": "https://farcaster.xyz/whitegoats/0x61fc58a4",
+    "parent_hash": "",
+    "preview": "Base is cooking something big",
+    "text": "Base is cooking something big"
   }
 ]
