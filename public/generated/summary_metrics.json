@@ -9,7 +9,7 @@
   },
   {
     "metric": "generated_at_utc",
-    "value": "2026-10-25 16:25:29"
+    "value": "2026-10-25 20:53:24"
   },
   {
     "metric": "source",
@@ -29,54 +29,54 @@
   },
   {
     "metric": "window_start_utc",
-    "value": "2026-10-24 16:25:09"
+    "value": "2026-10-24 20:53:19"
   },
   {
     "metric": "window_end_utc",
-    "value": "2026-10-25 16:24:57"
+    "value": "2026-10-25 20:52:26"
   },
   {
     "metric": "total_records",
-    "value": 5724
+    "value": 5330
   },
   {
     "metric": "posts",
-    "value": 1802
+    "value": 1724
   },
   {
     "metric": "comments",
-    "value": 3922
+    "value": 3606
   },
   {
     "metric": "selected_records",
-    "value": 101
+    "value": 86
   },
   {
     "metric": "unique_authors",
-    "value": 1494
+    "value": 1403
   },
   {
     "metric": "total_likes",
-    "value": 6187
+    "value": 5767
   },
   {
     "metric": "total_recasts",
-    "value": 481
+    "value": 511
   },
   {
     "metric": "total_replies",
-    "value": 1866
+    "value": 1778
   },
   {
     "metric": "top_cast_score",
-    "value": "10.00"
+    "value": "6.87"
   },
   {
     "metric": "top_cast_author",
-    "value": "@alitiknazoglu"
+    "value": "@arsalang75523"
   },
   {
     "metric": "top_cast_url",
-    "value": "https://farcaster.xyz/alitiknazoglu/0xb8e61ffe"
+    "value": "https://farcaster.xyz/arsalang75523/0xb6091a59"
   }
 ]
