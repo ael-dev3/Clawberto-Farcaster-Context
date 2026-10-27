@@ -9,7 +9,7 @@
   },
   {
     "metric": "generated_at_utc",
-    "value": "2026-10-27 05:09:34"
+    "value": "2026-10-27 12:16:18"
   },
   {
     "metric": "source",
@@ -29,54 +29,54 @@
   },
   {
     "metric": "window_start_utc",
-    "value": "2026-10-26 05:09:40"
+    "value": "2026-10-26 12:16:06"
   },
   {
     "metric": "window_end_utc",
-    "value": "2026-10-27 05:09:19"
+    "value": "2026-10-27 12:15:39"
   },
   {
     "metric": "total_records",
-    "value": 5849
+    "value": 6053
   },
   {
     "metric": "posts",
-    "value": 1877
+    "value": 1952
   },
   {
     "metric": "comments",
-    "value": 3972
+    "value": 4101
   },
   {
     "metric": "selected_records",
-    "value": 96
+    "value": 86
   },
   {
     "metric": "unique_authors",
-    "value": 1464
+    "value": 1482
   },
   {
     "metric": "total_likes",
-    "value": 6334
+    "value": 6999
   },
   {
     "metric": "total_recasts",
-    "value": 477
+    "value": 478
   },
   {
     "metric": "total_replies",
-    "value": 1973
+    "value": 1971
   },
   {
     "metric": "top_cast_score",
-    "value": "5.76"
+    "value": "7.86"
   },
   {
     "metric": "top_cast_author",
-    "value": "@degenking1"
+    "value": "@nikolaiii"
   },
   {
     "metric": "top_cast_url",
-    "value": "https://farcaster.xyz/degenking1/0x81656030"
+    "value": "https://farcaster.xyz/nikolaiii/0xff3c5ce5"
   }
 ]
