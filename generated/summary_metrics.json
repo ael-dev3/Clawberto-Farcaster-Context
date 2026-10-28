@@ -9,7 +9,7 @@
   },
   {
     "metric": "generated_at_utc",
-    "value": "2026-10-27 22:16:58"
+    "value": "2026-10-28 05:45:56"
   },
   {
     "metric": "source",
@@ -29,54 +29,54 @@
   },
   {
     "metric": "window_start_utc",
-    "value": "2026-10-26 22:16:28"
+    "value": "2026-10-27 05:45:37"
   },
   {
     "metric": "window_end_utc",
-    "value": "2026-10-27 22:15:19"
+    "value": "2026-10-28 05:45:25"
   },
   {
     "metric": "total_records",
-    "value": 6079
+    "value": 5947
   },
   {
     "metric": "posts",
-    "value": 1906
+    "value": 1804
   },
   {
     "metric": "comments",
-    "value": 4173
+    "value": 4143
   },
   {
     "metric": "selected_records",
-    "value": 83
+    "value": 86
   },
   {
     "metric": "unique_authors",
-    "value": 1453
+    "value": 1401
   },
   {
     "metric": "total_likes",
-    "value": 6888
+    "value": 6458
   },
   {
     "metric": "total_recasts",
-    "value": 437
+    "value": 422
   },
   {
     "metric": "total_replies",
-    "value": 1998
+    "value": 1989
   },
   {
     "metric": "top_cast_score",
-    "value": "8.27"
+    "value": "6.69"
   },
   {
     "metric": "top_cast_author",
-    "value": "@nikolaiii"
+    "value": "@basedcoin"
   },
   {
     "metric": "top_cast_url",
-    "value": "https://farcaster.xyz/nikolaiii/0xff3c5ce5"
+    "value": "https://farcaster.xyz/basedcoin/0x28b9ac30"
   }
 ]
