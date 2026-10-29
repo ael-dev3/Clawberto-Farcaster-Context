@@ -9,7 +9,7 @@
   },
   {
     "metric": "generated_at_utc",
-    "value": "2026-10-29 13:05:50"
+    "value": "2026-10-29 22:46:42"
   },
   {
     "metric": "source",
@@ -29,54 +29,54 @@
   },
   {
     "metric": "window_start_utc",
-    "value": "2026-10-28 13:05:46"
+    "value": "2026-10-28 22:46:46"
   },
   {
     "metric": "window_end_utc",
-    "value": "2026-10-29 13:05:43"
+    "value": "2026-10-29 22:46:35"
   },
   {
     "metric": "total_records",
-    "value": 5430
+    "value": 5358
   },
   {
     "metric": "posts",
-    "value": 1786
+    "value": 1759
   },
   {
     "metric": "comments",
-    "value": 3644
+    "value": 3599
   },
   {
     "metric": "selected_records",
-    "value": 74
+    "value": 96
   },
   {
     "metric": "unique_authors",
-    "value": 1331
+    "value": 1332
   },
   {
     "metric": "total_likes",
-    "value": 6267
+    "value": 5500
   },
   {
     "metric": "total_recasts",
-    "value": 446
+    "value": 429
   },
   {
     "metric": "total_replies",
-    "value": 1906
+    "value": 1830
   },
   {
     "metric": "top_cast_score",
-    "value": "9.61"
+    "value": "7.49"
   },
   {
     "metric": "top_cast_author",
-    "value": "@kambizasadzadeh"
+    "value": "@kenny"
   },
   {
     "metric": "top_cast_url",
-    "value": "https://farcaster.xyz/kambizasadzadeh/0x1c8ed24b"
+    "value": "https://farcaster.xyz/kenny/0x8c9851f2"
   }
 ]

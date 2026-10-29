@@ -1,52 +1,52 @@
 [
   {
     "theme": "Base Culture",
-    "casts": 43,
-    "posts": 23,
-    "comments": 20,
-    "likes": 124,
-    "avg_score": "3.59",
-    "top_author": "@namrufretep",
-    "top_cast_url": "https://farcaster.xyz/namrufretep/0xbca5d2c7"
-  },
-  {
-    "theme": "Apps/Games",
-    "casts": 11,
-    "posts": 0,
-    "comments": 11,
-    "likes": 38,
-    "avg_score": "4.06",
-    "top_author": "@ds8",
-    "top_cast_url": "https://farcaster.xyz/ds8/0x5f61acf7"
-  },
-  {
-    "theme": "Protocol/Fork",
-    "casts": 8,
-    "posts": 2,
-    "comments": 6,
-    "likes": 55,
-    "avg_score": "3.96",
-    "top_author": "@kambizasadzadeh",
-    "top_cast_url": "https://farcaster.xyz/kambizasadzadeh/0x1c8ed24b"
+    "casts": 47,
+    "posts": 24,
+    "comments": 23,
+    "likes": 123,
+    "avg_score": "3.46",
+    "top_author": "@kenny",
+    "top_cast_url": "https://farcaster.xyz/kenny/0x8c9851f2"
   },
   {
     "theme": "Security/Ops",
-    "casts": 8,
+    "casts": 19,
+    "posts": 13,
+    "comments": 6,
+    "likes": 35,
+    "avg_score": "3.10",
+    "top_author": "@rezaisgoat",
+    "top_cast_url": "https://farcaster.xyz/rezaisgoat/0x306e445b"
+  },
+  {
+    "theme": "Apps/Games",
+    "casts": 15,
     "posts": 3,
-    "comments": 5,
-    "likes": 17,
-    "avg_score": "3.53",
-    "top_author": "@jpfraneto",
-    "top_cast_url": "https://farcaster.xyz/jpfraneto/0x95fb0b2d"
+    "comments": 12,
+    "likes": 41,
+    "avg_score": "3.78",
+    "top_author": "@ogerpon",
+    "top_cast_url": "https://farcaster.xyz/ogerpon/0xa19db947"
+  },
+  {
+    "theme": "Protocol/Fork",
+    "casts": 13,
+    "posts": 3,
+    "comments": 10,
+    "likes": 24,
+    "avg_score": "3.09",
+    "top_author": "@tracyit",
+    "top_cast_url": "https://farcaster.xyz/tracyit/0xb57c0da1"
   },
   {
     "theme": "Token/Promo",
-    "casts": 4,
-    "posts": 3,
+    "casts": 2,
+    "posts": 1,
     "comments": 1,
-    "likes": 6,
-    "avg_score": "2.98",
-    "top_author": "@alitiknazoglu",
-    "top_cast_url": "https://farcaster.xyz/alitiknazoglu/0x1f6c4ec8"
+    "likes": 2,
+    "avg_score": "2.59",
+    "top_author": "@edimaragomes",
+    "top_cast_url": "https://farcaster.xyz/edimaragomes/0x88b545c8"
   }
 ]
