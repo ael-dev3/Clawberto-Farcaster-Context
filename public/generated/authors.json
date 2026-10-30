@@ -1,29 +1,42 @@
 [
   {
+    "author": "@bytebot",
+    "author_url": "https://farcaster.xyz/bytebot",
+    "casts": 3,
+    "posts": 3,
+    "comments": 0,
+    "likes": 46,
+    "recasts": 1,
+    "replies": 4,
+    "best_score": "9.66",
+    "top_cast_url": "https://farcaster.xyz/bytebot/0x40a244e8",
+    "avg_score": "5.25"
+  },
+  {
     "author": "@kenny",
     "author_url": "https://farcaster.xyz/kenny",
     "casts": 2,
     "posts": 2,
     "comments": 0,
-    "likes": 24,
-    "recasts": 7,
-    "replies": 5,
-    "best_score": "7.97",
+    "likes": 28,
+    "recasts": 8,
+    "replies": 6,
+    "best_score": "8.18",
     "top_cast_url": "https://farcaster.xyz/kenny/0x8c9851f2",
-    "avg_score": "6.32"
+    "avg_score": "6.81"
   },
   {
     "author": "@arsalang75523",
     "author_url": "https://farcaster.xyz/arsalang75523",
-    "casts": 2,
+    "casts": 5,
     "posts": 0,
-    "comments": 2,
-    "likes": 16,
-    "recasts": 4,
-    "replies": 4,
-    "best_score": "7.35",
+    "comments": 5,
+    "likes": 26,
+    "recasts": 6,
+    "replies": 6,
+    "best_score": "8.18",
     "top_cast_url": "https://farcaster.xyz/arsalang75523/0xaa0125a0",
-    "avg_score": "4.97"
+    "avg_score": "3.57"
   },
   {
     "author": "@nounishprof",
@@ -31,25 +44,25 @@
     "casts": 2,
     "posts": 2,
     "comments": 0,
-    "likes": 16,
-    "recasts": 2,
-    "replies": 4,
-    "best_score": "7.04",
+    "likes": 23,
+    "recasts": 4,
+    "replies": 5,
+    "best_score": "7.74",
     "top_cast_url": "https://farcaster.xyz/nounishprof/0x7210980a",
-    "avg_score": "5.61"
+    "avg_score": "6.42"
   },
   {
-    "author": "@ds8",
-    "author_url": "https://farcaster.xyz/ds8",
+    "author": "@shahbazbaaz",
+    "author_url": "https://farcaster.xyz/shahbazbaaz",
     "casts": 3,
     "posts": 0,
     "comments": 3,
-    "likes": 11,
-    "recasts": 0,
+    "likes": 17,
+    "recasts": 1,
     "replies": 3,
-    "best_score": "4.68",
-    "top_cast_url": "https://farcaster.xyz/ds8/0x4aede42a",
-    "avg_score": "4.51"
+    "best_score": "6.69",
+    "top_cast_url": "https://farcaster.xyz/shahbazbaaz/0x61ed0431",
+    "avg_score": "4.96"
   },
   {
     "author": "@burrrrrberry",
@@ -57,51 +70,12 @@
     "casts": 1,
     "posts": 0,
     "comments": 1,
-    "likes": 10,
-    "recasts": 0,
-    "replies": 8,
-    "best_score": "6.49",
-    "top_cast_url": "https://farcaster.xyz/burrrrrberry/0xfab22399",
-    "avg_score": "6.49"
-  },
-  {
-    "author": "@bytebot",
-    "author_url": "https://farcaster.xyz/bytebot",
-    "casts": 2,
-    "posts": 2,
-    "comments": 0,
-    "likes": 10,
+    "likes": 13,
     "recasts": 1,
-    "replies": 4,
-    "best_score": "6.27",
-    "top_cast_url": "https://farcaster.xyz/bytebot/0x40a244e8",
-    "avg_score": "4.43"
-  },
-  {
-    "author": "@tracyit",
-    "author_url": "https://farcaster.xyz/tracyit",
-    "casts": 2,
-    "posts": 1,
-    "comments": 1,
-    "likes": 10,
-    "recasts": 2,
-    "replies": 1,
-    "best_score": "5.76",
-    "top_cast_url": "https://farcaster.xyz/tracyit/0xb57c0da1",
-    "avg_score": "4.96"
-  },
-  {
-    "author": "@crypticpoet",
-    "author_url": "https://farcaster.xyz/crypticpoet",
-    "casts": 3,
-    "posts": 2,
-    "comments": 1,
-    "likes": 10,
-    "recasts": 0,
-    "replies": 3,
-    "best_score": "4.68",
-    "top_cast_url": "https://farcaster.xyz/crypticpoet/0x1c1c145f",
-    "avg_score": "4.34"
+    "replies": 9,
+    "best_score": "7.04",
+    "top_cast_url": "https://farcaster.xyz/burrrrrberry/0xfab22399",
+    "avg_score": "7.04"
   },
   {
     "author": "@namrufretep",
@@ -109,12 +83,90 @@
     "casts": 2,
     "posts": 0,
     "comments": 2,
-    "likes": 9,
+    "likes": 13,
     "recasts": 2,
     "replies": 1,
-    "best_score": "6.03",
+    "best_score": "6.87",
     "top_cast_url": "https://farcaster.xyz/namrufretep/0x2e70a5ef",
-    "avg_score": "4.31"
+    "avg_score": "4.73"
+  },
+  {
+    "author": "@crimsonking",
+    "author_url": "https://farcaster.xyz/crimsonking",
+    "casts": 1,
+    "posts": 1,
+    "comments": 0,
+    "likes": 12,
+    "recasts": 0,
+    "replies": 3,
+    "best_score": "6.87",
+    "top_cast_url": "https://farcaster.xyz/crimsonking/0x41bd90c4",
+    "avg_score": "6.87"
+  },
+  {
+    "author": "@tracyit",
+    "author_url": "https://farcaster.xyz/tracyit",
+    "casts": 2,
+    "posts": 1,
+    "comments": 1,
+    "likes": 11,
+    "recasts": 3,
+    "replies": 1,
+    "best_score": "6.03",
+    "top_cast_url": "https://farcaster.xyz/tracyit/0xb57c0da1",
+    "avg_score": "5.10"
+  },
+  {
+    "author": "@ds8",
+    "author_url": "https://farcaster.xyz/ds8",
+    "casts": 2,
+    "posts": 0,
+    "comments": 2,
+    "likes": 11,
+    "recasts": 0,
+    "replies": 2,
+    "best_score": "5.76",
+    "top_cast_url": "https://farcaster.xyz/ds8/0x5b87734a",
+    "avg_score": "5.22"
+  },
+  {
+    "author": "@crypticpoet",
+    "author_url": "https://farcaster.xyz/crypticpoet",
+    "casts": 3,
+    "posts": 2,
+    "comments": 1,
+    "likes": 11,
+    "recasts": 0,
+    "replies": 4,
+    "best_score": "4.68",
+    "top_cast_url": "https://farcaster.xyz/crypticpoet/0x1c1c145f",
+    "avg_score": "4.51"
+  },
+  {
+    "author": "@sub",
+    "author_url": "https://farcaster.xyz/sub",
+    "casts": 3,
+    "posts": 0,
+    "comments": 3,
+    "likes": 10,
+    "recasts": 2,
+    "replies": 1,
+    "best_score": "5.10",
+    "top_cast_url": "https://farcaster.xyz/sub/0x2b9dbec2",
+    "avg_score": "4.12"
+  },
+  {
+    "author": "@rezaisgoat",
+    "author_url": "https://farcaster.xyz/rezaisgoat",
+    "casts": 2,
+    "posts": 1,
+    "comments": 1,
+    "likes": 9,
+    "recasts": 0,
+    "replies": 3,
+    "best_score": "6.27",
+    "top_cast_url": "https://farcaster.xyz/rezaisgoat/0x306e445b",
+    "avg_score": "3.63"
   },
   {
     "author": "@mxjxn",
@@ -128,45 +180,6 @@
     "best_score": "5.45",
     "top_cast_url": "https://farcaster.xyz/mxjxn/0x2789e04c",
     "avg_score": "3.54"
-  },
-  {
-    "author": "@shahbazbaaz",
-    "author_url": "https://farcaster.xyz/shahbazbaaz",
-    "casts": 3,
-    "posts": 0,
-    "comments": 3,
-    "likes": 9,
-    "recasts": 0,
-    "replies": 2,
-    "best_score": "5.10",
-    "top_cast_url": "https://farcaster.xyz/shahbazbaaz/0x61ed0431",
-    "avg_score": "3.95"
-  },
-  {
-    "author": "@sub",
-    "author_url": "https://farcaster.xyz/sub",
-    "casts": 2,
-    "posts": 0,
-    "comments": 2,
-    "likes": 9,
-    "recasts": 0,
-    "replies": 2,
-    "best_score": "5.10",
-    "top_cast_url": "https://farcaster.xyz/sub/0xce4dfca3",
-    "avg_score": "4.89"
-  },
-  {
-    "author": "@rezaisgoat",
-    "author_url": "https://farcaster.xyz/rezaisgoat",
-    "casts": 2,
-    "posts": 1,
-    "comments": 1,
-    "likes": 8,
-    "recasts": 0,
-    "replies": 3,
-    "best_score": "6.03",
-    "top_cast_url": "https://farcaster.xyz/rezaisgoat/0x306e445b",
-    "avg_score": "3.52"
   },
   {
     "author": "@alkohlmist",
@@ -187,25 +200,51 @@
     "casts": 2,
     "posts": 1,
     "comments": 1,
-    "likes": 7,
-    "recasts": 1,
+    "likes": 8,
+    "recasts": 2,
     "replies": 2,
-    "best_score": "5.10",
+    "best_score": "5.45",
     "top_cast_url": "https://farcaster.xyz/borodutch/0x84ceb1e7",
-    "avg_score": "4.30"
+    "avg_score": "4.48"
   },
   {
-    "author": "@teberen",
-    "author_url": "https://farcaster.xyz/teberen",
-    "casts": 1,
-    "posts": 1,
-    "comments": 0,
-    "likes": 5,
-    "recasts": 1,
+    "author": "@ogerpon",
+    "author_url": "https://farcaster.xyz/ogerpon",
+    "casts": 2,
+    "posts": 0,
+    "comments": 2,
+    "likes": 8,
+    "recasts": 0,
+    "replies": 3,
+    "best_score": "4.68",
+    "top_cast_url": "https://farcaster.xyz/ogerpon/0x93e864a9",
+    "avg_score": "4.68"
+  },
+  {
+    "author": "@j-valeska",
+    "author_url": "https://farcaster.xyz/j-valeska",
+    "casts": 4,
+    "posts": 3,
+    "comments": 1,
+    "likes": 6,
+    "recasts": 0,
     "replies": 1,
-    "best_score": "5.10",
-    "top_cast_url": "https://farcaster.xyz/teberen/0x70d4a344",
-    "avg_score": "5.10"
+    "best_score": "4.17",
+    "top_cast_url": "https://farcaster.xyz/j-valeska/0xe27da2c7",
+    "avg_score": "2.98"
+  },
+  {
+    "author": "@icetoad",
+    "author_url": "https://farcaster.xyz/icetoad",
+    "casts": 5,
+    "posts": 1,
+    "comments": 4,
+    "likes": 6,
+    "recasts": 0,
+    "replies": 7,
+    "best_score": "3.51",
+    "top_cast_url": "https://farcaster.xyz/icetoad/0x6ac24e58",
+    "avg_score": "2.64"
   },
   {
     "author": "@adexmakai",
@@ -215,9 +254,48 @@
     "comments": 1,
     "likes": 5,
     "recasts": 0,
-    "replies": 1,
+    "replies": 2,
     "best_score": "5.10",
     "top_cast_url": "https://farcaster.xyz/adexmakai/0x58c53ff1",
+    "avg_score": "5.10"
+  },
+  {
+    "author": "@cassie",
+    "author_url": "https://farcaster.xyz/cassie",
+    "casts": 1,
+    "posts": 0,
+    "comments": 1,
+    "likes": 5,
+    "recasts": 0,
+    "replies": 1,
+    "best_score": "5.10",
+    "top_cast_url": "https://farcaster.xyz/cassie/0x2e7b5028",
+    "avg_score": "5.10"
+  },
+  {
+    "author": "@joeblau",
+    "author_url": "https://farcaster.xyz/joeblau",
+    "casts": 1,
+    "posts": 1,
+    "comments": 0,
+    "likes": 5,
+    "recasts": 0,
+    "replies": 1,
+    "best_score": "5.10",
+    "top_cast_url": "https://farcaster.xyz/joeblau/0x1538a0eb",
+    "avg_score": "5.10"
+  },
+  {
+    "author": "@smshakil",
+    "author_url": "https://farcaster.xyz/smshakil",
+    "casts": 1,
+    "posts": 1,
+    "comments": 0,
+    "likes": 5,
+    "recasts": 0,
+    "replies": 0,
+    "best_score": "5.10",
+    "top_cast_url": "https://farcaster.xyz/smshakil/0x19000b3f",
     "avg_score": "5.10"
   },
   {
@@ -234,19 +312,6 @@
     "avg_score": "2.76"
   },
   {
-    "author": "@frustration",
-    "author_url": "https://farcaster.xyz/frustration",
-    "casts": 2,
-    "posts": 2,
-    "comments": 0,
-    "likes": 5,
-    "recasts": 0,
-    "replies": 0,
-    "best_score": "4.68",
-    "top_cast_url": "https://farcaster.xyz/frustration/0x6b3e9a5b",
-    "avg_score": "3.63"
-  },
-  {
     "author": "@nawnaw",
     "author_url": "https://farcaster.xyz/nawnaw",
     "casts": 3,
@@ -260,17 +325,17 @@
     "avg_score": "3.12"
   },
   {
-    "author": "@icetoad",
-    "author_url": "https://farcaster.xyz/icetoad",
-    "casts": 5,
-    "posts": 1,
-    "comments": 4,
+    "author": "@badadvicehq",
+    "author_url": "https://farcaster.xyz/badadvicehq",
+    "casts": 2,
+    "posts": 0,
+    "comments": 2,
     "likes": 5,
     "recasts": 0,
-    "replies": 7,
-    "best_score": "3.51",
-    "top_cast_url": "https://farcaster.xyz/icetoad/0x6ac24e58",
-    "avg_score": "2.46"
+    "replies": 1,
+    "best_score": "4.17",
+    "top_cast_url": "https://farcaster.xyz/badadvicehq/0x6f07a28b",
+    "avg_score": "3.84"
   },
   {
     "author": "@psydeffects",
@@ -299,8 +364,8 @@
     "avg_score": "2.84"
   },
   {
-    "author": "@crimsonking",
-    "author_url": "https://farcaster.xyz/crimsonking",
+    "author": "@tokenpocket",
+    "author_url": "https://farcaster.xyz/tokenpocket",
     "casts": 1,
     "posts": 1,
     "comments": 0,
@@ -308,21 +373,47 @@
     "recasts": 0,
     "replies": 2,
     "best_score": "4.68",
-    "top_cast_url": "https://farcaster.xyz/crimsonking/0x41bd90c4",
+    "top_cast_url": "https://farcaster.xyz/tokenpocket/0x266cd30a",
     "avg_score": "4.68"
   },
   {
-    "author": "@avi-t",
-    "author_url": "https://farcaster.xyz/avi-t",
+    "author": "@denizakar",
+    "author_url": "https://farcaster.xyz/denizakar",
     "casts": 1,
-    "posts": 0,
-    "comments": 1,
+    "posts": 1,
+    "comments": 0,
     "likes": 4,
     "recasts": 1,
     "replies": 1,
     "best_score": "4.68",
-    "top_cast_url": "https://farcaster.xyz/avi-t/0x95b05f76",
+    "top_cast_url": "https://farcaster.xyz/denizakar/0xd29c5a3e",
     "avg_score": "4.68"
+  },
+  {
+    "author": "@maximthuhalko",
+    "author_url": "https://farcaster.xyz/maximthuhalko",
+    "casts": 2,
+    "posts": 0,
+    "comments": 2,
+    "likes": 4,
+    "recasts": 3,
+    "replies": 3,
+    "best_score": "4.17",
+    "top_cast_url": "https://farcaster.xyz/maximthuhalko/0xa9e4fc7a",
+    "avg_score": "3.38"
+  },
+  {
+    "author": "@krtashin",
+    "author_url": "https://farcaster.xyz/krtashin",
+    "casts": 2,
+    "posts": 0,
+    "comments": 2,
+    "likes": 4,
+    "recasts": 1,
+    "replies": 0,
+    "best_score": "4.17",
+    "top_cast_url": "https://farcaster.xyz/krtashin/0x552b3042",
+    "avg_score": "3.38"
   },
   {
     "author": "@hamud",
@@ -335,6 +426,19 @@
     "replies": 2,
     "best_score": "4.17",
     "top_cast_url": "https://farcaster.xyz/hamud/0xfc196c35",
+    "avg_score": "4.17"
+  },
+  {
+    "author": "@frustration",
+    "author_url": "https://farcaster.xyz/frustration",
+    "casts": 1,
+    "posts": 1,
+    "comments": 0,
+    "likes": 3,
+    "recasts": 1,
+    "replies": 0,
+    "best_score": "4.17",
+    "top_cast_url": "https://farcaster.xyz/frustration/0x81262320",
     "avg_score": "4.17"
   },
   {
@@ -351,30 +455,56 @@
     "avg_score": "4.17"
   },
   {
-    "author": "@joeblau",
-    "author_url": "https://farcaster.xyz/joeblau",
+    "author": "@bbthrntn",
+    "author_url": "https://farcaster.xyz/bbthrntn",
     "casts": 1,
-    "posts": 1,
-    "comments": 0,
-    "likes": 3,
-    "recasts": 0,
-    "replies": 1,
-    "best_score": "4.17",
-    "top_cast_url": "https://farcaster.xyz/joeblau/0x1538a0eb",
-    "avg_score": "4.17"
-  },
-  {
-    "author": "@smshakil",
-    "author_url": "https://farcaster.xyz/smshakil",
-    "casts": 1,
-    "posts": 1,
-    "comments": 0,
+    "posts": 0,
+    "comments": 1,
     "likes": 3,
     "recasts": 0,
     "replies": 0,
     "best_score": "4.17",
-    "top_cast_url": "https://farcaster.xyz/smshakil/0x19000b3f",
+    "top_cast_url": "https://farcaster.xyz/bbthrntn/0x72146cbe",
     "avg_score": "4.17"
+  },
+  {
+    "author": "@cryptoconsuela",
+    "author_url": "https://farcaster.xyz/cryptoconsuela",
+    "casts": 1,
+    "posts": 0,
+    "comments": 1,
+    "likes": 3,
+    "recasts": 0,
+    "replies": 0,
+    "best_score": "4.17",
+    "top_cast_url": "https://farcaster.xyz/cryptoconsuela/0x6adeda20",
+    "avg_score": "4.17"
+  },
+  {
+    "author": "@and42",
+    "author_url": "https://farcaster.xyz/and42",
+    "casts": 1,
+    "posts": 0,
+    "comments": 1,
+    "likes": 3,
+    "recasts": 0,
+    "replies": 0,
+    "best_score": "4.17",
+    "top_cast_url": "https://farcaster.xyz/and42/0x1988f303",
+    "avg_score": "4.17"
+  },
+  {
+    "author": "@sqweez10",
+    "author_url": "https://farcaster.xyz/sqweez10",
+    "casts": 2,
+    "posts": 0,
+    "comments": 2,
+    "likes": 3,
+    "recasts": 1,
+    "replies": 2,
+    "best_score": "3.51",
+    "top_cast_url": "https://farcaster.xyz/sqweez10/0xbd437428",
+    "avg_score": "3.05"
   },
   {
     "author": "@lamat",
@@ -387,6 +517,19 @@
     "replies": 2,
     "best_score": "3.51",
     "top_cast_url": "https://farcaster.xyz/lamat/0x623b18c2",
+    "avg_score": "3.51"
+  },
+  {
+    "author": "@aviationdoctor",
+    "author_url": "https://farcaster.xyz/aviationdoctor",
+    "casts": 1,
+    "posts": 0,
+    "comments": 1,
+    "likes": 2,
+    "recasts": 0,
+    "replies": 1,
+    "best_score": "3.51",
+    "top_cast_url": "https://farcaster.xyz/aviationdoctor/0xc70166f9",
     "avg_score": "3.51"
   },
   {
@@ -429,19 +572,6 @@
     "avg_score": "3.51"
   },
   {
-    "author": "@rezzaa",
-    "author_url": "https://farcaster.xyz/rezzaa",
-    "casts": 1,
-    "posts": 1,
-    "comments": 0,
-    "likes": 2,
-    "recasts": 0,
-    "replies": 2,
-    "best_score": "3.51",
-    "top_cast_url": "https://farcaster.xyz/rezzaa/0x0277db3c",
-    "avg_score": "3.51"
-  },
-  {
     "author": "@thec1",
     "author_url": "https://farcaster.xyz/thec1",
     "casts": 1,
@@ -468,6 +598,19 @@
     "avg_score": "3.51"
   },
   {
+    "author": "@vanadij75",
+    "author_url": "https://farcaster.xyz/vanadij75",
+    "casts": 1,
+    "posts": 1,
+    "comments": 0,
+    "likes": 2,
+    "recasts": 0,
+    "replies": 0,
+    "best_score": "3.51",
+    "top_cast_url": "https://farcaster.xyz/vanadij75/0x5c4b8ff2",
+    "avg_score": "3.51"
+  },
+  {
     "author": "@cryptowenmoon",
     "author_url": "https://farcaster.xyz/cryptowenmoon",
     "casts": 1,
@@ -478,32 +621,6 @@
     "replies": 0,
     "best_score": "3.51",
     "top_cast_url": "https://farcaster.xyz/cryptowenmoon/0xb33abd63",
-    "avg_score": "3.51"
-  },
-  {
-    "author": "@badadvicehq",
-    "author_url": "https://farcaster.xyz/badadvicehq",
-    "casts": 1,
-    "posts": 0,
-    "comments": 1,
-    "likes": 2,
-    "recasts": 0,
-    "replies": 1,
-    "best_score": "3.51",
-    "top_cast_url": "https://farcaster.xyz/badadvicehq/0x6f07a28b",
-    "avg_score": "3.51"
-  },
-  {
-    "author": "@robinsonc",
-    "author_url": "https://farcaster.xyz/robinsonc",
-    "casts": 1,
-    "posts": 1,
-    "comments": 0,
-    "likes": 2,
-    "recasts": 0,
-    "replies": 0,
-    "best_score": "3.51",
-    "top_cast_url": "https://farcaster.xyz/robinsonc/0x15fdecf7",
     "avg_score": "3.51"
   },
   {
@@ -520,19 +637,6 @@
     "avg_score": "3.51"
   },
   {
-    "author": "@eliasvm",
-    "author_url": "https://farcaster.xyz/eliasvm",
-    "casts": 1,
-    "posts": 0,
-    "comments": 1,
-    "likes": 2,
-    "recasts": 0,
-    "replies": 0,
-    "best_score": "3.51",
-    "top_cast_url": "https://farcaster.xyz/eliasvm/0x7c1b9ed4",
-    "avg_score": "3.51"
-  },
-  {
     "author": "@links",
     "author_url": "https://farcaster.xyz/links",
     "casts": 1,
@@ -543,58 +647,6 @@
     "replies": 0,
     "best_score": "3.51",
     "top_cast_url": "https://farcaster.xyz/links/0xd8585254",
-    "avg_score": "3.51"
-  },
-  {
-    "author": "@0xbernard",
-    "author_url": "https://farcaster.xyz/0xbernard",
-    "casts": 1,
-    "posts": 0,
-    "comments": 1,
-    "likes": 2,
-    "recasts": 0,
-    "replies": 0,
-    "best_score": "3.51",
-    "top_cast_url": "https://farcaster.xyz/0xbernard/0x0508fe27",
-    "avg_score": "3.51"
-  },
-  {
-    "author": "@ahsenkhan",
-    "author_url": "https://farcaster.xyz/ahsenkhan",
-    "casts": 1,
-    "posts": 1,
-    "comments": 0,
-    "likes": 2,
-    "recasts": 0,
-    "replies": 0,
-    "best_score": "3.51",
-    "top_cast_url": "https://farcaster.xyz/ahsenkhan/0x17dcf417",
-    "avg_score": "3.51"
-  },
-  {
-    "author": "@tokenpocket",
-    "author_url": "https://farcaster.xyz/tokenpocket",
-    "casts": 1,
-    "posts": 1,
-    "comments": 0,
-    "likes": 2,
-    "recasts": 0,
-    "replies": 0,
-    "best_score": "3.51",
-    "top_cast_url": "https://farcaster.xyz/tokenpocket/0x266cd30a",
-    "avg_score": "3.51"
-  },
-  {
-    "author": "@cryptoconsuela",
-    "author_url": "https://farcaster.xyz/cryptoconsuela",
-    "casts": 1,
-    "posts": 0,
-    "comments": 1,
-    "likes": 2,
-    "recasts": 0,
-    "replies": 0,
-    "best_score": "3.51",
-    "top_cast_url": "https://farcaster.xyz/cryptoconsuela/0x6adeda20",
     "avg_score": "3.51"
   },
   {
@@ -624,30 +676,17 @@
     "avg_score": "2.59"
   },
   {
-    "author": "@ogerpon",
-    "author_url": "https://farcaster.xyz/ogerpon",
+    "author": "@webthethird",
+    "author_url": "https://farcaster.xyz/webthethird",
     "casts": 2,
-    "posts": 0,
-    "comments": 2,
-    "likes": 2,
+    "posts": 2,
+    "comments": 0,
+    "likes": 1,
     "recasts": 0,
-    "replies": 2,
+    "replies": 1,
     "best_score": "2.59",
-    "top_cast_url": "https://farcaster.xyz/ogerpon/0x93e864a9",
-    "avg_score": "2.59"
-  },
-  {
-    "author": "@j-valeska",
-    "author_url": "https://farcaster.xyz/j-valeska",
-    "casts": 2,
-    "posts": 1,
-    "comments": 1,
-    "likes": 2,
-    "recasts": 0,
-    "replies": 0,
-    "best_score": "2.59",
-    "top_cast_url": "https://farcaster.xyz/j-valeska/0x2a8b84b2",
-    "avg_score": "2.59"
+    "top_cast_url": "https://farcaster.xyz/webthethird/0x82588d6a",
+    "avg_score": "1.79"
   },
   {
     "author": "@epicdylan",
@@ -663,8 +702,8 @@
     "avg_score": "2.59"
   },
   {
-    "author": "@aviationdoctor",
-    "author_url": "https://farcaster.xyz/aviationdoctor",
+    "author": "@rz1",
+    "author_url": "https://farcaster.xyz/rz1",
     "casts": 1,
     "posts": 0,
     "comments": 1,
@@ -672,7 +711,72 @@
     "recasts": 0,
     "replies": 1,
     "best_score": "2.59",
-    "top_cast_url": "https://farcaster.xyz/aviationdoctor/0xc70166f9",
+    "top_cast_url": "https://farcaster.xyz/rz1/0x5a2d4cf8",
+    "avg_score": "2.59"
+  },
+  {
+    "author": "@ariyoosu",
+    "author_url": "https://farcaster.xyz/ariyoosu",
+    "casts": 1,
+    "posts": 1,
+    "comments": 0,
+    "likes": 1,
+    "recasts": 0,
+    "replies": 1,
+    "best_score": "2.59",
+    "top_cast_url": "https://farcaster.xyz/ariyoosu/0x36caba8c",
+    "avg_score": "2.59"
+  },
+  {
+    "author": "@yes2crypto",
+    "author_url": "https://farcaster.xyz/yes2crypto",
+    "casts": 1,
+    "posts": 0,
+    "comments": 1,
+    "likes": 1,
+    "recasts": 0,
+    "replies": 1,
+    "best_score": "2.59",
+    "top_cast_url": "https://farcaster.xyz/yes2crypto/0xef5f54d0",
+    "avg_score": "2.59"
+  },
+  {
+    "author": "@tobuff",
+    "author_url": "https://farcaster.xyz/tobuff",
+    "casts": 1,
+    "posts": 0,
+    "comments": 1,
+    "likes": 1,
+    "recasts": 0,
+    "replies": 1,
+    "best_score": "2.59",
+    "top_cast_url": "https://farcaster.xyz/tobuff/0xd10ea2d3",
+    "avg_score": "2.59"
+  },
+  {
+    "author": "@guneyone",
+    "author_url": "https://farcaster.xyz/guneyone",
+    "casts": 1,
+    "posts": 1,
+    "comments": 0,
+    "likes": 1,
+    "recasts": 1,
+    "replies": 1,
+    "best_score": "2.59",
+    "top_cast_url": "https://farcaster.xyz/guneyone/0x5478e9ab",
+    "avg_score": "2.59"
+  },
+  {
+    "author": "@graceville",
+    "author_url": "https://farcaster.xyz/graceville",
+    "casts": 1,
+    "posts": 1,
+    "comments": 0,
+    "likes": 1,
+    "recasts": 0,
+    "replies": 2,
+    "best_score": "2.59",
+    "top_cast_url": "https://farcaster.xyz/graceville/0xcb819c7e",
     "avg_score": "2.59"
   },
   {
@@ -728,6 +832,32 @@
     "avg_score": "2.59"
   },
   {
+    "author": "@ilhammasxot",
+    "author_url": "https://farcaster.xyz/ilhammasxot",
+    "casts": 1,
+    "posts": 0,
+    "comments": 1,
+    "likes": 1,
+    "recasts": 0,
+    "replies": 1,
+    "best_score": "2.59",
+    "top_cast_url": "https://farcaster.xyz/ilhammasxot/0x33071d05",
+    "avg_score": "2.59"
+  },
+  {
+    "author": "@pinklady77",
+    "author_url": "https://farcaster.xyz/pinklady77",
+    "casts": 1,
+    "posts": 0,
+    "comments": 1,
+    "likes": 1,
+    "recasts": 0,
+    "replies": 0,
+    "best_score": "2.59",
+    "top_cast_url": "https://farcaster.xyz/pinklady77/0x83c56ac5",
+    "avg_score": "2.59"
+  },
+  {
     "author": "@darkohh",
     "author_url": "https://farcaster.xyz/darkohh",
     "casts": 1,
@@ -754,29 +884,16 @@
     "avg_score": "2.59"
   },
   {
-    "author": "@cryp1",
-    "author_url": "https://farcaster.xyz/cryp1",
+    "author": "@4050",
+    "author_url": "https://farcaster.xyz/4050",
     "casts": 1,
-    "posts": 1,
-    "comments": 0,
+    "posts": 0,
+    "comments": 1,
     "likes": 1,
     "recasts": 0,
-    "replies": 0,
+    "replies": 1,
     "best_score": "2.59",
-    "top_cast_url": "https://farcaster.xyz/cryp1/0x86510abd",
-    "avg_score": "2.59"
-  },
-  {
-    "author": "@vanadij75",
-    "author_url": "https://farcaster.xyz/vanadij75",
-    "casts": 1,
-    "posts": 1,
-    "comments": 0,
-    "likes": 1,
-    "recasts": 0,
-    "replies": 0,
-    "best_score": "2.59",
-    "top_cast_url": "https://farcaster.xyz/vanadij75/0x5c4b8ff2",
+    "top_cast_url": "https://farcaster.xyz/4050/0x8b890431",
     "avg_score": "2.59"
   },
   {
@@ -806,8 +923,8 @@
     "avg_score": "2.59"
   },
   {
-    "author": "@10xchris",
-    "author_url": "https://farcaster.xyz/10xchris",
+    "author": "@mypokerofff",
+    "author_url": "https://farcaster.xyz/mypokerofff",
     "casts": 1,
     "posts": 0,
     "comments": 1,
@@ -815,12 +932,12 @@
     "recasts": 0,
     "replies": 1,
     "best_score": "2.59",
-    "top_cast_url": "https://farcaster.xyz/10xchris/0xbffac858",
+    "top_cast_url": "https://farcaster.xyz/mypokerofff/0x9a03c119",
     "avg_score": "2.59"
   },
   {
-    "author": "@cassie",
-    "author_url": "https://farcaster.xyz/cassie",
+    "author": "@olenakarp",
+    "author_url": "https://farcaster.xyz/olenakarp",
     "casts": 1,
     "posts": 0,
     "comments": 1,
@@ -828,20 +945,20 @@
     "recasts": 0,
     "replies": 0,
     "best_score": "2.59",
-    "top_cast_url": "https://farcaster.xyz/cassie/0x2e7b5028",
+    "top_cast_url": "https://farcaster.xyz/olenakarp/0x1ab55f59",
     "avg_score": "2.59"
   },
   {
-    "author": "@vexalus",
-    "author_url": "https://farcaster.xyz/vexalus",
+    "author": "@oxyl",
+    "author_url": "https://farcaster.xyz/oxyl",
     "casts": 1,
-    "posts": 0,
-    "comments": 1,
+    "posts": 1,
+    "comments": 0,
     "likes": 1,
-    "recasts": 1,
+    "recasts": 0,
     "replies": 0,
     "best_score": "2.59",
-    "top_cast_url": "https://farcaster.xyz/vexalus/0xfce34d82",
+    "top_cast_url": "https://farcaster.xyz/oxyl/0x29c85d8e",
     "avg_score": "2.59"
   },
   {
@@ -871,19 +988,6 @@
     "avg_score": "2.59"
   },
   {
-    "author": "@larovitchhh",
-    "author_url": "https://farcaster.xyz/larovitchhh",
-    "casts": 1,
-    "posts": 1,
-    "comments": 0,
-    "likes": 1,
-    "recasts": 0,
-    "replies": 0,
-    "best_score": "2.59",
-    "top_cast_url": "https://farcaster.xyz/larovitchhh/0x72b4f273",
-    "avg_score": "2.59"
-  },
-  {
     "author": "@annyslim",
     "author_url": "https://farcaster.xyz/annyslim",
     "casts": 1,
@@ -910,16 +1014,16 @@
     "avg_score": "2.59"
   },
   {
-    "author": "@manomario",
-    "author_url": "https://farcaster.xyz/manomario",
+    "author": "@ahsenkhan",
+    "author_url": "https://farcaster.xyz/ahsenkhan",
     "casts": 1,
-    "posts": 0,
-    "comments": 1,
+    "posts": 1,
+    "comments": 0,
     "likes": 1,
     "recasts": 0,
     "replies": 0,
     "best_score": "2.59",
-    "top_cast_url": "https://farcaster.xyz/manomario/0x3ce73b70",
+    "top_cast_url": "https://farcaster.xyz/ahsenkhan/0xe7bba47c",
     "avg_score": "2.59"
   },
   {
@@ -946,6 +1050,19 @@
     "replies": 0,
     "best_score": "2.59",
     "top_cast_url": "https://farcaster.xyz/konohime/0x0fffec7b",
+    "avg_score": "2.59"
+  },
+  {
+    "author": "@studi08f0rev3r",
+    "author_url": "https://farcaster.xyz/studi08f0rev3r",
+    "casts": 1,
+    "posts": 1,
+    "comments": 0,
+    "likes": 1,
+    "recasts": 0,
+    "replies": 0,
+    "best_score": "2.59",
+    "top_cast_url": "https://farcaster.xyz/studi08f0rev3r/0x21e8ee53",
     "avg_score": "2.59"
   },
   {
@@ -1001,19 +1118,6 @@
     "avg_score": "2.59"
   },
   {
-    "author": "@and42",
-    "author_url": "https://farcaster.xyz/and42",
-    "casts": 1,
-    "posts": 0,
-    "comments": 1,
-    "likes": 1,
-    "recasts": 0,
-    "replies": 0,
-    "best_score": "2.59",
-    "top_cast_url": "https://farcaster.xyz/and42/0x1988f303",
-    "avg_score": "2.59"
-  },
-  {
     "author": "@ucho",
     "author_url": "https://farcaster.xyz/ucho",
     "casts": 1,
@@ -1027,8 +1131,8 @@
     "avg_score": "2.59"
   },
   {
-    "author": "@maximthuhalko",
-    "author_url": "https://farcaster.xyz/maximthuhalko",
+    "author": "@benido",
+    "author_url": "https://farcaster.xyz/benido",
     "casts": 1,
     "posts": 0,
     "comments": 1,
@@ -1036,8 +1140,34 @@
     "recasts": 0,
     "replies": 0,
     "best_score": "2.59",
-    "top_cast_url": "https://farcaster.xyz/maximthuhalko/0x1d7b5113",
+    "top_cast_url": "https://farcaster.xyz/benido/0x8b31d0af",
     "avg_score": "2.59"
+  },
+  {
+    "author": "@djpablo48",
+    "author_url": "https://farcaster.xyz/djpablo48",
+    "casts": 1,
+    "posts": 1,
+    "comments": 0,
+    "likes": 0,
+    "recasts": 0,
+    "replies": 1,
+    "best_score": "1.00",
+    "top_cast_url": "https://farcaster.xyz/djpablo48/0x4566b47c",
+    "avg_score": "1.00"
+  },
+  {
+    "author": "@richieboston",
+    "author_url": "https://farcaster.xyz/richieboston",
+    "casts": 1,
+    "posts": 0,
+    "comments": 1,
+    "likes": 0,
+    "recasts": 0,
+    "replies": 1,
+    "best_score": "1.00",
+    "top_cast_url": "https://farcaster.xyz/richieboston/0x77dceefe",
+    "avg_score": "1.00"
   },
   {
     "author": "@ryangtanaka",
@@ -1053,8 +1183,8 @@
     "avg_score": "1.00"
   },
   {
-    "author": "@webthethird",
-    "author_url": "https://farcaster.xyz/webthethird",
+    "author": "@something-else",
+    "author_url": "https://farcaster.xyz/something-else",
     "casts": 1,
     "posts": 1,
     "comments": 0,
@@ -1062,7 +1192,7 @@
     "recasts": 0,
     "replies": 1,
     "best_score": "1.00",
-    "top_cast_url": "https://farcaster.xyz/webthethird/0x4df225bc",
+    "top_cast_url": "https://farcaster.xyz/something-else/0x92b537a4",
     "avg_score": "1.00"
   },
   {
