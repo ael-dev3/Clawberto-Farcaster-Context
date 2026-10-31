@@ -1,11 +1,11 @@
 [
   {
     "theme": "Base Culture",
-    "casts": 55,
-    "posts": 22,
-    "comments": 33,
-    "likes": 132,
-    "avg_score": "3.21",
+    "casts": 53,
+    "posts": 23,
+    "comments": 30,
+    "likes": 195,
+    "avg_score": "3.75",
     "top_author": "@crypticpoet",
     "top_cast_url": "https://farcaster.xyz/crypticpoet/0x3df78021"
   },
@@ -14,20 +14,20 @@
     "casts": 18,
     "posts": 10,
     "comments": 8,
-    "likes": 39,
-    "avg_score": "3.25",
+    "likes": 57,
+    "avg_score": "3.53",
     "top_author": "@diviflyy",
     "top_cast_url": "https://farcaster.xyz/diviflyy/0x58eff815"
   },
   {
     "theme": "Apps/Games",
-    "casts": 11,
-    "posts": 2,
-    "comments": 9,
-    "likes": 28,
-    "avg_score": "3.62",
-    "top_author": "@sub",
-    "top_cast_url": "https://farcaster.xyz/sub/0x2b9dbec2"
+    "casts": 9,
+    "posts": 3,
+    "comments": 6,
+    "likes": 24,
+    "avg_score": "3.63",
+    "top_author": "@ds8",
+    "top_cast_url": "https://farcaster.xyz/ds8/0x5f5940c5"
   },
   {
     "theme": "Protocol/Fork",
@@ -44,8 +44,8 @@
     "casts": 1,
     "posts": 1,
     "comments": 0,
-    "likes": 7,
-    "avg_score": "5.76",
+    "likes": 12,
+    "avg_score": "6.87",
     "top_author": "@bigballs",
     "top_cast_url": "https://farcaster.xyz/bigballs/0x218a183e"
   }
