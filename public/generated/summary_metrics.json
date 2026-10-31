@@ -9,7 +9,7 @@
   },
   {
     "metric": "generated_at_utc",
-    "value": "2026-10-31 12:37:17"
+    "value": "2026-10-31 21:38:26"
   },
   {
     "metric": "source",
@@ -29,54 +29,54 @@
   },
   {
     "metric": "window_start_utc",
-    "value": "2026-10-30 12:37:00"
+    "value": "2026-10-30 21:38:13"
   },
   {
     "metric": "window_end_utc",
-    "value": "2026-10-31 12:29:18"
+    "value": "2026-10-31 21:37:50"
   },
   {
     "metric": "total_records",
-    "value": 4847
+    "value": 4771
   },
   {
     "metric": "posts",
-    "value": 1570
+    "value": 1578
   },
   {
     "metric": "comments",
-    "value": 3277
+    "value": 3193
   },
   {
     "metric": "selected_records",
-    "value": 85
+    "value": 73
   },
   {
     "metric": "unique_authors",
-    "value": 1214
+    "value": 1258
   },
   {
     "metric": "total_likes",
-    "value": 4961
+    "value": 4486
   },
   {
     "metric": "total_recasts",
-    "value": 482
+    "value": 453
   },
   {
     "metric": "total_replies",
-    "value": 1675
+    "value": 1609
   },
   {
     "metric": "top_cast_score",
-    "value": "8.08"
+    "value": "9.50"
   },
   {
     "metric": "top_cast_author",
-    "value": "@crypticpoet"
+    "value": "@npcnexus"
   },
   {
     "metric": "top_cast_url",
-    "value": "https://farcaster.xyz/crypticpoet/0x3df78021"
+    "value": "https://farcaster.xyz/npcnexus/0x7129fa5b"
   }
 ]
