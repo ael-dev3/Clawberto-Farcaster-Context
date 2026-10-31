@@ -9,7 +9,7 @@
   },
   {
     "metric": "generated_at_utc",
-    "value": "2026-10-30 22:24:01"
+    "value": "2026-10-31 05:46:55"
   },
   {
     "metric": "source",
@@ -29,54 +29,54 @@
   },
   {
     "metric": "window_start_utc",
-    "value": "2026-10-29 22:23:45"
+    "value": "2026-10-30 05:47:19"
   },
   {
     "metric": "window_end_utc",
-    "value": "2026-10-30 22:22:51"
+    "value": "2026-10-31 05:46:22"
   },
   {
     "metric": "total_records",
-    "value": 5467
+    "value": 5204
   },
   {
     "metric": "posts",
-    "value": 1703
+    "value": 1678
   },
   {
     "metric": "comments",
-    "value": 3764
+    "value": 3526
   },
   {
     "metric": "selected_records",
-    "value": 117
+    "value": 89
   },
   {
     "metric": "unique_authors",
-    "value": 1349
+    "value": 1312
   },
   {
     "metric": "total_likes",
-    "value": 5397
+    "value": 4790
   },
   {
     "metric": "total_recasts",
-    "value": 477
+    "value": 414
   },
   {
     "metric": "total_replies",
-    "value": 1987
+    "value": 1804
   },
   {
     "metric": "top_cast_score",
-    "value": "9.76"
+    "value": "7.74"
   },
   {
     "metric": "top_cast_author",
-    "value": "@bytebot"
+    "value": "@crypticpoet"
   },
   {
     "metric": "top_cast_url",
-    "value": "https://farcaster.xyz/bytebot/0x40a244e8"
+    "value": "https://farcaster.xyz/crypticpoet/0x3df78021"
   }
 ]
