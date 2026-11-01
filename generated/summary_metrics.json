@@ -9,7 +9,7 @@
   },
   {
     "metric": "generated_at_utc",
-    "value": "2026-11-01 13:28:58"
+    "value": "2026-11-01 22:04:12"
   },
   {
     "metric": "source",
@@ -29,54 +29,54 @@
   },
   {
     "metric": "window_start_utc",
-    "value": "2026-10-31 13:28:46"
+    "value": "2026-10-31 22:04:40"
   },
   {
     "metric": "window_end_utc",
-    "value": "2026-11-01 13:28:27"
+    "value": "2026-11-01 22:04:00"
   },
   {
     "metric": "total_records",
-    "value": 5069
+    "value": 5147
   },
   {
     "metric": "posts",
-    "value": 1617
+    "value": 1652
   },
   {
     "metric": "comments",
-    "value": 3452
+    "value": 3495
   },
   {
     "metric": "selected_records",
-    "value": 82
+    "value": 93
   },
   {
     "metric": "unique_authors",
-    "value": 1300
+    "value": 1277
   },
   {
     "metric": "total_likes",
-    "value": 4681
+    "value": 4639
   },
   {
     "metric": "total_recasts",
-    "value": 567
+    "value": 401
   },
   {
     "metric": "total_replies",
-    "value": 1673
+    "value": 1506
   },
   {
     "metric": "top_cast_score",
-    "value": "10.00"
+    "value": "9.27"
   },
   {
     "metric": "top_cast_author",
-    "value": "@npcnexus"
+    "value": "@aviationdoctor"
   },
   {
     "metric": "top_cast_url",
-    "value": "https://farcaster.xyz/npcnexus/0x7129fa5b"
+    "value": "https://farcaster.xyz/aviationdoctor/0xaa8ea418"
   }
 ]
