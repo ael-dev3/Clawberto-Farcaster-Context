@@ -9,7 +9,7 @@
   },
   {
     "metric": "generated_at_utc",
-    "value": "2026-11-02 15:59:57"
+    "value": "2026-11-03 01:00:30"
   },
   {
     "metric": "source",
@@ -29,54 +29,54 @@
   },
   {
     "metric": "window_start_utc",
-    "value": "2026-11-01 16:00:00"
+    "value": "2026-11-02 01:00:02"
   },
   {
     "metric": "window_end_utc",
-    "value": "2026-11-02 15:59:34"
+    "value": "2026-11-03 00:58:28"
   },
   {
     "metric": "total_records",
-    "value": 5028
+    "value": 5023
   },
   {
     "metric": "posts",
-    "value": 1642
+    "value": 1680
   },
   {
     "metric": "comments",
-    "value": 3386
+    "value": 3343
   },
   {
     "metric": "selected_records",
-    "value": 102
+    "value": 95
   },
   {
     "metric": "unique_authors",
-    "value": 1232
+    "value": 1304
   },
   {
     "metric": "total_likes",
-    "value": 4790
+    "value": 4657
   },
   {
     "metric": "total_recasts",
-    "value": 409
+    "value": 426
   },
   {
     "metric": "total_replies",
-    "value": 1522
+    "value": 1493
   },
   {
     "metric": "top_cast_score",
-    "value": "7.86"
+    "value": "10.00"
   },
   {
     "metric": "top_cast_author",
-    "value": "@bytebot"
+    "value": "@milibooo"
   },
   {
     "metric": "top_cast_url",
-    "value": "https://farcaster.xyz/bytebot/0x55a01153"
+    "value": "https://farcaster.xyz/milibooo/0x39c76cd5"
   }
 ]
