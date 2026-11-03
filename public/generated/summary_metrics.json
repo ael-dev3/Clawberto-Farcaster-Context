@@ -9,7 +9,7 @@
   },
   {
     "metric": "generated_at_utc",
-    "value": "2026-11-03 14:19:44"
+    "value": "2026-11-03 23:25:42"
   },
   {
     "metric": "source",
@@ -29,23 +29,23 @@
   },
   {
     "metric": "window_start_utc",
-    "value": "2026-11-02 14:19:18"
+    "value": "2026-11-02 23:25:51"
   },
   {
     "metric": "window_end_utc",
-    "value": "2026-11-03 14:19:05"
+    "value": "2026-11-03 23:25:16"
   },
   {
     "metric": "total_records",
-    "value": 6011
+    "value": 6357
   },
   {
     "metric": "posts",
-    "value": 1979
+    "value": 1957
   },
   {
     "metric": "comments",
-    "value": 4032
+    "value": 4400
   },
   {
     "metric": "selected_records",
@@ -53,30 +53,30 @@
   },
   {
     "metric": "unique_authors",
-    "value": 1476
+    "value": 1557
   },
   {
     "metric": "total_likes",
-    "value": 5229
+    "value": 6108
   },
   {
     "metric": "total_recasts",
-    "value": 480
+    "value": 577
   },
   {
     "metric": "total_replies",
-    "value": 1914
+    "value": 2317
   },
   {
     "metric": "top_cast_score",
-    "value": "9.14"
+    "value": "9.33"
   },
   {
     "metric": "top_cast_author",
-    "value": "@arsalang75523"
+    "value": "@yerbearserker"
   },
   {
     "metric": "top_cast_url",
-    "value": "https://farcaster.xyz/arsalang75523/0xcd32baed"
+    "value": "https://farcaster.xyz/yerbearserker/0x68a71bf1"
   }
 ]
