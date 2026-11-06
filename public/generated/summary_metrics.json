@@ -9,7 +9,7 @@
   },
   {
     "metric": "generated_at_utc",
-    "value": "2026-11-06 06:52:05"
+    "value": "2026-11-06 19:27:03"
   },
   {
     "metric": "source",
@@ -29,39 +29,39 @@
   },
   {
     "metric": "window_start_utc",
-    "value": "2026-11-05 06:52:00"
+    "value": "2026-11-05 19:26:39"
   },
   {
     "metric": "window_end_utc",
-    "value": "2026-11-06 06:51:11"
+    "value": "2026-11-06 19:26:04"
   },
   {
     "metric": "total_records",
-    "value": 6614
+    "value": 5948
   },
   {
     "metric": "posts",
-    "value": 2370
+    "value": 1724
   },
   {
     "metric": "comments",
-    "value": 4244
+    "value": 4224
   },
   {
     "metric": "selected_records",
-    "value": 86
+    "value": 90
   },
   {
     "metric": "unique_authors",
-    "value": 1773
+    "value": 1249
   },
   {
     "metric": "total_likes",
-    "value": 4975
+    "value": 5146
   },
   {
     "metric": "total_recasts",
-    "value": 369
+    "value": 420
   },
   {
     "metric": "total_replies",
@@ -69,14 +69,14 @@
   },
   {
     "metric": "top_cast_score",
-    "value": "9.56"
+    "value": "8.27"
   },
   {
     "metric": "top_cast_author",
-    "value": "@luciano"
+    "value": "@shadowwalki"
   },
   {
     "metric": "top_cast_url",
-    "value": "https://farcaster.xyz/luciano/0x412246d3"
+    "value": "https://farcaster.xyz/shadowwalki/0x440fa7b9"
   }
 ]
