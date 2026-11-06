@@ -9,7 +9,7 @@
   },
   {
     "metric": "generated_at_utc",
-    "value": "2026-11-05 19:59:27"
+    "value": "2026-11-06 06:52:05"
   },
   {
     "metric": "source",
@@ -29,54 +29,54 @@
   },
   {
     "metric": "window_start_utc",
-    "value": "2026-11-04 19:59:15"
+    "value": "2026-11-05 06:52:00"
   },
   {
     "metric": "window_end_utc",
-    "value": "2026-11-05 19:57:53"
+    "value": "2026-11-06 06:51:11"
   },
   {
     "metric": "total_records",
-    "value": 6866
+    "value": 6614
   },
   {
     "metric": "posts",
-    "value": 2445
+    "value": 2370
   },
   {
     "metric": "comments",
-    "value": 4421
+    "value": 4244
   },
   {
     "metric": "selected_records",
-    "value": 95
+    "value": 86
   },
   {
     "metric": "unique_authors",
-    "value": 1838
+    "value": 1773
   },
   {
     "metric": "total_likes",
-    "value": 5642
+    "value": 4975
   },
   {
     "metric": "total_recasts",
-    "value": 471
+    "value": 369
   },
   {
     "metric": "total_replies",
-    "value": 2320
+    "value": 2291
   },
   {
     "metric": "top_cast_score",
-    "value": "9.61"
+    "value": "9.56"
   },
   {
     "metric": "top_cast_author",
-    "value": "@symbiotech"
+    "value": "@luciano"
   },
   {
     "metric": "top_cast_url",
-    "value": "https://farcaster.xyz/symbiotech/0xed5c278b"
+    "value": "https://farcaster.xyz/luciano/0x412246d3"
   }
 ]
