@@ -15,11 +15,11 @@ Static, cached Farcaster context from direct Hypersnap/Snapchain node scraping. 
 | Source | hypersnap |
 | Hub URL | http://54.157.62.17:3381 |
 | Readable shards | 1,2 |
-| Window UTC | 2026-11-07 22:09:00 → 2026-11-08 22:08:11 |
-| Total casts | 5394 |
-| Posts / comments | 1569 / 3825 |
-| Unique authors | 1234 |
-| Total likes / recasts / replies | 5071 / 401 / 2042 |
+| Window UTC | 2026-11-08 06:37:35 → 2026-11-09 06:36:53 |
+| Total casts | 5751 |
+| Posts / comments | 1649 / 4102 |
+| Unique authors | 1290 |
+| Total likes / recasts / replies | 4669 / 385 / 1920 |
 | Top cast author | @alitiknazoglu |
 | Top cast | https://farcaster.xyz/alitiknazoglu/0x04cd2812 |
 
@@ -29,10 +29,10 @@ Static, cached Farcaster context from direct Hypersnap/Snapchain node scraping. 
 | --- | --- | --- | --- |
 | summary_metrics | `generated/summary_metrics.csv` | 20 | [CSV](generated/summary_metrics.csv) / [JSON](generated/summary_metrics.json) |
 | theme_summary | `generated/theme_summary.csv` | 5 | [CSV](generated/theme_summary.csv) / [JSON](generated/theme_summary.json) |
-| authors | `generated/authors.csv` | 62 | [CSV](generated/authors.csv) / [JSON](generated/authors.json) |
-| top_casts | `generated/top_casts.csv` | 80 | [CSV](generated/top_casts.csv) / [JSON](generated/top_casts.json) |
-| posts | `generated/posts.csv` | 34 | [CSV](generated/posts.csv) / [JSON](generated/posts.json) |
-| comments | `generated/comments.csv` | 46 | [CSV](generated/comments.csv) / [JSON](generated/comments.json) |
+| authors | `generated/authors.csv` | 73 | [CSV](generated/authors.csv) / [JSON](generated/authors.json) |
+| top_casts | `generated/top_casts.csv` | 96 | [CSV](generated/top_casts.csv) / [JSON](generated/top_casts.json) |
+| posts | `generated/posts.csv` | 37 | [CSV](generated/posts.csv) / [JSON](generated/posts.json) |
+| comments | `generated/comments.csv` | 59 | [CSV](generated/comments.csv) / [JSON](generated/comments.json) |
 | agent_take | `generated/agent_take.csv` | 4 | [CSV](generated/agent_take.csv) / [JSON](generated/agent_take.json) |
 
 ## Data pipeline
