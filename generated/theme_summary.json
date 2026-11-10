@@ -1,52 +1,52 @@
 [
   {
     "theme": "Base Culture",
-    "casts": 38,
-    "posts": 17,
-    "comments": 21,
-    "likes": 72,
-    "avg_score": "3.19",
-    "top_author": "@sayangel",
-    "top_cast_url": "https://farcaster.xyz/sayangel/0xab1993a2"
+    "casts": 39,
+    "posts": 20,
+    "comments": 19,
+    "likes": 103,
+    "avg_score": "3.62",
+    "top_author": "@borodutch",
+    "top_cast_url": "https://farcaster.xyz/borodutch/0xfe0235c6"
   },
   {
     "theme": "Apps/Games",
-    "casts": 14,
-    "posts": 2,
-    "comments": 12,
-    "likes": 31,
-    "avg_score": "3.49",
-    "top_author": "@ds8",
-    "top_cast_url": "https://farcaster.xyz/ds8/0x49ce53c9"
-  },
-  {
-    "theme": "Protocol/Fork",
-    "casts": 6,
-    "posts": 1,
-    "comments": 5,
-    "likes": 9,
-    "avg_score": "2.94",
-    "top_author": "@zeuzc",
-    "top_cast_url": "https://farcaster.xyz/zeuzc/0x50e89ce9"
+    "casts": 19,
+    "posts": 3,
+    "comments": 16,
+    "likes": 84,
+    "avg_score": "4.41",
+    "top_author": "@project7",
+    "top_cast_url": "https://farcaster.xyz/project7/0xa9cfffe9"
   },
   {
     "theme": "Security/Ops",
-    "casts": 5,
-    "posts": 2,
-    "comments": 3,
-    "likes": 39,
-    "avg_score": "3.61",
+    "casts": 10,
+    "posts": 4,
+    "comments": 6,
+    "likes": 81,
+    "avg_score": "3.67",
     "top_author": "@npcnexus",
     "top_cast_url": "https://farcaster.xyz/npcnexus/0x48fd4d72"
   },
   {
-    "theme": "Token/Promo",
-    "casts": 5,
-    "posts": 0,
-    "comments": 5,
+    "theme": "Protocol/Fork",
+    "casts": 3,
+    "posts": 1,
+    "comments": 2,
     "likes": 4,
-    "avg_score": "2.27",
-    "top_author": "@crypticpoet",
-    "top_cast_url": "https://farcaster.xyz/crypticpoet/0xba2e59db"
+    "avg_score": "2.67",
+    "top_author": "@zeuzc",
+    "top_cast_url": "https://farcaster.xyz/zeuzc/0x50e89ce9"
+  },
+  {
+    "theme": "Token/Promo",
+    "casts": 2,
+    "posts": 1,
+    "comments": 1,
+    "likes": 2,
+    "avg_score": "2.25",
+    "top_author": "@bfg",
+    "top_cast_url": "https://farcaster.xyz/bfg/0x6700f471"
   }
 ]
