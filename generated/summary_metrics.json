@@ -9,7 +9,7 @@
   },
   {
     "metric": "generated_at_utc",
-    "value": "2026-11-11 06:28:11"
+    "value": "2026-11-11 19:38:18"
   },
   {
     "metric": "source",
@@ -29,54 +29,54 @@
   },
   {
     "metric": "window_start_utc",
-    "value": "2026-11-10 06:28:26"
+    "value": "2026-11-10 19:38:08"
   },
   {
     "metric": "window_end_utc",
-    "value": "2026-11-11 06:27:51"
+    "value": "2026-11-11 19:38:03"
   },
   {
     "metric": "total_records",
-    "value": 5916
+    "value": 5528
   },
   {
     "metric": "posts",
-    "value": 1625
+    "value": 1533
   },
   {
     "metric": "comments",
-    "value": 4291
+    "value": 3995
   },
   {
     "metric": "selected_records",
-    "value": 76
+    "value": 78
   },
   {
     "metric": "unique_authors",
-    "value": 1719
+    "value": 1398
   },
   {
     "metric": "total_likes",
-    "value": 5287
+    "value": 5795
   },
   {
     "metric": "total_recasts",
-    "value": 526
+    "value": 617
   },
   {
     "metric": "total_replies",
-    "value": 1887
+    "value": 2088
   },
   {
     "metric": "top_cast_score",
-    "value": "8.37"
+    "value": "8.54"
   },
   {
     "metric": "top_cast_author",
-    "value": "@zatweirdaj"
+    "value": "@mintclub"
   },
   {
     "metric": "top_cast_url",
-    "value": "https://farcaster.xyz/zatweirdaj/0xd9cbccc8"
+    "value": "https://farcaster.xyz/mintclub/0xab9faf0e"
   }
 ]

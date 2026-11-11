@@ -15,13 +15,13 @@ Static, cached Farcaster context from direct Hypersnap/Snapchain node scraping. 
 | Source | hypersnap |
 | Hub URL | http://54.157.62.17:3381 |
 | Readable shards | 1,2 |
-| Window UTC | 2026-11-10 06:28:26 → 2026-11-11 06:27:51 |
-| Total casts | 5916 |
-| Posts / comments | 1625 / 4291 |
-| Unique authors | 1719 |
-| Total likes / recasts / replies | 5287 / 526 / 1887 |
-| Top cast author | @zatweirdaj |
-| Top cast | https://farcaster.xyz/zatweirdaj/0xd9cbccc8 |
+| Window UTC | 2026-11-10 19:38:08 → 2026-11-11 19:38:03 |
+| Total casts | 5528 |
+| Posts / comments | 1533 / 3995 |
+| Unique authors | 1398 |
+| Total likes / recasts / replies | 5795 / 617 / 2088 |
+| Top cast author | @mintclub |
+| Top cast | https://farcaster.xyz/mintclub/0xab9faf0e |
 
 ## Published datasets
 
@@ -29,10 +29,10 @@ Static, cached Farcaster context from direct Hypersnap/Snapchain node scraping. 
 | --- | --- | --- | --- |
 | summary_metrics | `generated/summary_metrics.csv` | 20 | [CSV](generated/summary_metrics.csv) / [JSON](generated/summary_metrics.json) |
 | theme_summary | `generated/theme_summary.csv` | 5 | [CSV](generated/theme_summary.csv) / [JSON](generated/theme_summary.json) |
-| authors | `generated/authors.csv` | 69 | [CSV](generated/authors.csv) / [JSON](generated/authors.json) |
-| top_casts | `generated/top_casts.csv` | 76 | [CSV](generated/top_casts.csv) / [JSON](generated/top_casts.json) |
+| authors | `generated/authors.csv` | 70 | [CSV](generated/authors.csv) / [JSON](generated/authors.json) |
+| top_casts | `generated/top_casts.csv` | 78 | [CSV](generated/top_casts.csv) / [JSON](generated/top_casts.json) |
 | posts | `generated/posts.csv` | 29 | [CSV](generated/posts.csv) / [JSON](generated/posts.json) |
-| comments | `generated/comments.csv` | 47 | [CSV](generated/comments.csv) / [JSON](generated/comments.json) |
+| comments | `generated/comments.csv` | 49 | [CSV](generated/comments.csv) / [JSON](generated/comments.json) |
 | agent_take | `generated/agent_take.csv` | 4 | [CSV](generated/agent_take.csv) / [JSON](generated/agent_take.json) |
 
 ## Data pipeline
