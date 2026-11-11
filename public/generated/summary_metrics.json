@@ -9,7 +9,7 @@
   },
   {
     "metric": "generated_at_utc",
-    "value": "2026-11-10 19:45:59"
+    "value": "2026-11-11 06:28:11"
   },
   {
     "metric": "source",
@@ -29,54 +29,54 @@
   },
   {
     "metric": "window_start_utc",
-    "value": "2026-11-09 19:46:00"
+    "value": "2026-11-10 06:28:26"
   },
   {
     "metric": "window_end_utc",
-    "value": "2026-11-10 19:45:27"
+    "value": "2026-11-11 06:27:51"
   },
   {
     "metric": "total_records",
-    "value": 6661
+    "value": 5916
   },
   {
     "metric": "posts",
-    "value": 1975
+    "value": 1625
   },
   {
     "metric": "comments",
-    "value": 4686
+    "value": 4291
   },
   {
     "metric": "selected_records",
-    "value": 73
+    "value": 76
   },
   {
     "metric": "unique_authors",
-    "value": 1763
+    "value": 1719
   },
   {
     "metric": "total_likes",
-    "value": 5730
+    "value": 5287
   },
   {
     "metric": "total_recasts",
-    "value": 618
+    "value": 526
   },
   {
     "metric": "total_replies",
-    "value": 2292
+    "value": 1887
   },
   {
     "metric": "top_cast_score",
-    "value": "10.00"
+    "value": "8.37"
   },
   {
     "metric": "top_cast_author",
-    "value": "@npcnexus"
+    "value": "@zatweirdaj"
   },
   {
     "metric": "top_cast_url",
-    "value": "https://farcaster.xyz/npcnexus/0x48fd4d72"
+    "value": "https://farcaster.xyz/zatweirdaj/0xd9cbccc8"
   }
 ]
