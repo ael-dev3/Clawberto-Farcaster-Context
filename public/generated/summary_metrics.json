@@ -9,7 +9,7 @@
   },
   {
     "metric": "generated_at_utc",
-    "value": "2026-11-12 07:14:45"
+    "value": "2026-11-12 19:56:57"
   },
   {
     "metric": "source",
@@ -29,54 +29,54 @@
   },
   {
     "metric": "window_start_utc",
-    "value": "2026-11-11 07:14:15"
+    "value": "2026-11-11 19:57:13"
   },
   {
     "metric": "window_end_utc",
-    "value": "2026-11-12 07:13:41"
+    "value": "2026-11-12 19:56:07"
   },
   {
     "metric": "total_records",
-    "value": 4987
+    "value": 5361
   },
   {
     "metric": "posts",
-    "value": 1480
+    "value": 1783
   },
   {
     "metric": "comments",
-    "value": 3507
+    "value": 3578
   },
   {
     "metric": "selected_records",
-    "value": 75
+    "value": 78
   },
   {
     "metric": "unique_authors",
-    "value": 1292
+    "value": 1510
   },
   {
     "metric": "total_likes",
-    "value": 4884
+    "value": 4673
   },
   {
     "metric": "total_recasts",
-    "value": 555
+    "value": 736
   },
   {
     "metric": "total_replies",
-    "value": 1717
+    "value": 1834
   },
   {
     "metric": "top_cast_score",
-    "value": "8.63"
+    "value": "8.93"
   },
   {
     "metric": "top_cast_author",
-    "value": "@mintclub"
+    "value": "@zosphotos"
   },
   {
     "metric": "top_cast_url",
-    "value": "https://farcaster.xyz/mintclub/0xab9faf0e"
+    "value": "https://farcaster.xyz/zosphotos/0x0d97a65c"
   }
 ]
