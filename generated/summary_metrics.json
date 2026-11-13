@@ -9,7 +9,7 @@
   },
   {
     "metric": "generated_at_utc",
-    "value": "2026-11-13 06:49:33"
+    "value": "2026-11-13 19:45:29"
   },
   {
     "metric": "source",
@@ -29,54 +29,54 @@
   },
   {
     "metric": "window_start_utc",
-    "value": "2026-11-12 06:49:10"
+    "value": "2026-11-12 19:45:01"
   },
   {
     "metric": "window_end_utc",
-    "value": "2026-11-13 06:48:53"
+    "value": "2026-11-13 19:44:51"
   },
   {
     "metric": "total_records",
-    "value": 5890
+    "value": 5618
   },
   {
     "metric": "posts",
-    "value": 1967
+    "value": 1763
   },
   {
     "metric": "comments",
-    "value": 3923
+    "value": 3855
   },
   {
     "metric": "selected_records",
-    "value": 66
+    "value": 86
   },
   {
     "metric": "unique_authors",
-    "value": 1634
+    "value": 1500
   },
   {
     "metric": "total_likes",
-    "value": 4978
+    "value": 5887
   },
   {
     "metric": "total_recasts",
-    "value": 975
+    "value": 651
   },
   {
     "metric": "total_replies",
-    "value": 2118
+    "value": 1940
   },
   {
     "metric": "top_cast_score",
-    "value": "8.46"
+    "value": "8.71"
   },
   {
     "metric": "top_cast_author",
-    "value": "@statuette"
+    "value": "@arsalang75523"
   },
   {
     "metric": "top_cast_url",
-    "value": "https://farcaster.xyz/statuette/0x9b138d5e"
+    "value": "https://farcaster.xyz/arsalang75523/0x4945445c"
   }
 ]
