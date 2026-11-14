@@ -1,8 +1,8 @@
 table,file,rows
 summary_metrics,generated/summary_metrics.csv,20
 theme_summary,generated/theme_summary.csv,5
-authors,generated/authors.csv,70
-top_casts,generated/top_casts.csv,86
-posts,generated/posts.csv,23
-comments,generated/comments.csv,63
+authors,generated/authors.csv,67
+top_casts,generated/top_casts.csv,98
+posts,generated/posts.csv,25
+comments,generated/comments.csv,73
 agent_take,generated/agent_take.csv,4
